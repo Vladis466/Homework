@@ -7,3 +7,8 @@
  */
  
 
+void appendFiles(const char *archive, const char *files[], int num_files);
+void buildHeader(struct ar_hdr *hdr, const struct stat *st, char *fName);
+void fHeader(const char *file, const struct stat *st, struct ar_hdr *hdr);
+
+void ToC(char *archive, int verbosity);
