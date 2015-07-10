@@ -143,26 +143,34 @@ int main(int argc, char *argv[])
 }
 
 
+
 void deleteFiles(const char *aR, const char **delFiles ,int i)
 {
-	struct ar_hdr file_header;
-    int name_size = 0;
+	struct ar_hdr *tempCopy;
+    int nameSize = 0;
     int fd;
     int size;
+	char arHeadtext[8];
     ssize_t buf;
 	int d = 0;
+	
+	tempCopy = malloc(sizeof(struct ar_hdr));
+	off_t endFile;
+	off_t startFile;		//Find the start, we have the size, delete from start to end.
+	
+	
 	if(delFiles[0] == NULL) {
-		printf("No files entered. GoodBye. \n");
+		printf("No files entered. GoodBye. \n");		//Check that files were input.
 		exit(EXIT_FAILURE);
 	}
+	
 	printf("%s\n", delFiles[0]);
-	printf("%s\n", delFiles[1]);
-	char arHeadtext[8];
     fd = open(aR, O_RDONLY);
     read(fd, arHeadtext, 8);
-
-}
-
+/* 	if(memcmp(arHeadtext, "!<arch>", 8)) {
+		perror("read failed, wrong header");			//Not sure why this isnt working 
+		exit(EXIT_FAILURE);
+	} */
 
 
 
