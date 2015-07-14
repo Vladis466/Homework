@@ -20,7 +20,7 @@
  */
  
 #define _BSD_SOURCE 
-
+#include <stdbool.h>
 #include <dirent.h>
 #include <limits.h>
 #include <errno.h>
@@ -58,19 +58,27 @@
 //};
 
 //returns a file 
-char *trigger;
+char *trigger;   //Global var messing with the long fnames
 
 char *PermissionFiles(mode_t perm);
 void appendFiles(const char *archive, const char *files[], int num_files);
-void buildHeader(struct ar_hdr *hdr, const struct stat *st, char *fName);
+void formatHeader(struct ar_hdr *hdr, const struct stat *st, char *fName);
 void fHeader(const char *file, const struct stat *st, struct ar_hdr *hdr);
 void wrFileAr(int archive, int fd, struct stat *st);
 void appALL(const char *archive);
 void deleteFiles(const char *Ar, const char **delFiles ,int i);
-
+void evenLength( int fd, struct ar_hdr *file_header);
 void print_archive(const char *archive, int verbs);
 void print_hdr(struct ar_hdr *hdr);
-void evenLength( int fd, struct ar_hdr *file_header);
+int findHeader(int archFD, struct ar_hdr * headerCopy);
+
+
+
+
+
+
+
+
 
 int main(int argc, char *argv[])
 {	
@@ -128,49 +136,159 @@ int main(int argc, char *argv[])
 		//fd = open(theArchive, O_RDWR);
 		print_archive(theArchive, verbosity);
 	}
+	
 	if (setOpt == 4) { deleteFiles(theArchive, files, i); }
 	if (setOpt == 6) { appALL(theArchive); }
+    if (setOpt == 1) { appendFiles(theArchive, files, i); }
 	
-	
-	
- //   for (i = optind; i <argc; i++)
-
-
-    if (setOpt == 1) {
-            appendFiles(theArchive, files, i);
-	}
    return 0;
 }
 
 
 
-void deleteFiles(const char *aR, const char **delFiles ,int i)
+/*
+*  Create a temp file. Find the start of the header for the file. 
+*  copy the amount of bytes till the end. Delete.
+*/
+void deleteFiles(const char *aR, const char **delFiles ,int Count)
 {
+	int i = 0;
 	struct ar_hdr *tempCopy;
     int nameSize = 0;
     int fd;
     int size;
 	char arHeadtext[8];
-    ssize_t buf;
-	int d = 0;
+	char blkSize[1024];											//1024 = block size
+	off_t cur;
+	off_t postChop_end;
+    ssize_t buf;	
+	ssize_t num_read;
+	size_t idx;
+	static char nameCheck[255];
+
 	
 	tempCopy = malloc(sizeof(struct ar_hdr));
 	off_t endFile;
 	off_t startFile;		//Find the start, we have the size, delete from start to end.
-	
+	int fileSize;
 	
 	if(delFiles[0] == NULL) {
 		printf("No files entered. GoodBye. \n");		//Check that files were input.
 		exit(EXIT_FAILURE);
 	}
+	//printf("%s\n", delFiles[0]);
 	
-	printf("%s\n", delFiles[0]);
-    fd = open(aR, O_RDONLY);
-    read(fd, arHeadtext, 8);
-/* 	if(memcmp(arHeadtext, "!<arch>", 8)) {
-		perror("read failed, wrong header");			//Not sure why this isnt working 
+    fd = open(aR, O_RDWR);
+    read(fd, arHeadtext, 7);							//move the pointer forward past the header.
+	printf("%s\n", arHeadtext);
+	
+	
+ 	if(memcmp(arHeadtext, "!<arch>", 8)) {
+		perror("read failed, wrong header");			//Memory compare to make sure Correc header.
 		exit(EXIT_FAILURE);
-	} */
+	} 
+	
+
+	
+	
+	do {
+		startFile = findHeader(fd, tempCopy);
+		if (startFile == -1)
+		{
+			break;
+		}
+		
+
+
+		//
+		idx = (size_t) (sizeof( tempCopy->ar_name) - 1);
+		while (isspace(tempCopy->ar_name[idx]) || ((tempCopy->ar_name[idx] == '/')))
+			--idx;
+		strncpy(nameCheck, tempCopy->ar_name, idx + 1);
+		//Finish with  the null terminator
+		nameCheck[idx + 1] = '\0';
+
+	
+	} while (strcmp(nameCheck, delFiles[Count]) != 0);
+
+
+	
+	
+	
+	
+	
+	if (startFile == -1) { printf("Reached end of file.\n");}
+	
+	endFile = startFile + AR_HSZ + atoll(tempCopy->ar_size);
+	free(tempCopy);
+
+	fileSize = endFile - startFile;
+
+
+
+	/* set file offset to endFile of file to delete */
+	lseek(fd, endFile + 1, SEEK_CUR);						//Now we delete data left over.
+	while ((num_read = read(fd, blkSize, 1024)) > 0) {
+		cur = lseek(fd, 0, SEEK_CUR);
+
+		/* go back*/
+		lseek(fd, cur - num_read - fileSize - 1, SEEK_SET);
+
+	
+		if (write(fd, blkSize, num_read) != num_read)
+			printf("Wuut\n");
+
+		/*go forwrds */
+		lseek(fd, cur, SEEK_SET);
+	}
+
+	/* truncate archive */
+	postChop_end = lseek(fd, 0, SEEK_END) - fileSize;
+	ftruncate(fd, postChop_end);  //Shorten the file size to the size we want it now.
+	
+}
+
+
+
+int findHeader(int archFD, struct ar_hdr * headerCopy)
+{
+	char headerBuffer[AR_HSZ];
+	off_t headerOFF;
+	off_t arsize;
+	int check = 0;
+//	printf("%d\n", (int) AR_HSZ);
+	headerOFF = lseek(archFD, 0, SEEK_CUR);				//Header offset.
+	
+	if (headerOFF == -1) 
+	{
+	printf("went past end of file!");
+	return (headerOFF);
+	}
+
+	check = (read(archFD, headerBuffer, sizeof(headerBuffer)));
+	/* Read until weve checked everything. Having issues with reading the files.*/
+	if (check != sizeof(headerBuffer))
+	{	
+		printf("PassThrough Complete. \n\n");
+		return (-1);
+	}
+
+	memcpy(headerCopy, headerBuffer, sizeof(*headerCopy));			//pass it on to the copy back in the delete function
+
+	//go past past deletable file.
+	arsize = atoll(headerCopy->ar_size);
+	
+	if ((arsize % 2) == 1) { ++arsize; }
+
+	check =	lseek(archFD, arsize, SEEK_CUR);
+	if (check == -1) { return(-1); }
+
+	return (headerOFF);
+}
+
+
+
+
 
 
 
@@ -179,7 +297,7 @@ void deleteFiles(const char *aR, const char **delFiles ,int i)
  * 
  * Builds the header for the file in the archive.   
  */
-void buildHeader(struct ar_hdr *hdr, const struct stat *st, char *fName)
+void formatHeader(struct ar_hdr *hdr, const struct stat *st, char *fName)
 {
 	sprintf(hdr->ar_name, "%-16s", fName);
     sprintf(hdr->ar_date, "%-12ld", (long) st->st_mtime);
@@ -217,7 +335,7 @@ void fHeader(const char *file, const struct stat *st, struct ar_hdr *hdr)
         filename[i++] = ' ';
     }
 	printf("%s \n", filename);
-	buildHeader(hdr, st, filename);
+	formatHeader(hdr, st, filename);
 	
 
 }
@@ -225,8 +343,8 @@ void fHeader(const char *file, const struct stat *st, struct ar_hdr *hdr)
 
 /*
  * 
- *	Writes contents of the file 
- *  into the archive at the file specified.
+ *	File contents
+ *  get written in where desired in the space.
  *   
  */
 void wrFileAr(int archive, int fd, struct stat *st)
@@ -257,12 +375,21 @@ void appendFiles(const char *archive, const char *files[], int num_files)
 	
 	//Create the archive and append files. If archive exists, just append.
     fd = open(archive, O_APPEND | O_RDWR| O_EXCL | O_CREAT, SATANPERMS);
-		if(fd == -1) { open(archive, O_APPEND | O_RDWR, SATANPERMS); }
+	if (fd != -1)
+	{
+	//printf("%d \n", fd);
+	write(fd, "!<arch>\n", 8);
+	} else {  fd = open(archive, O_APPEND | O_RDWR, SATANPERMS); }
+	
+	
+	
+	
+	
 		//EXCL will make open fail if the archive exists. Added this second line
 		//because I was having a bad reading, some issues...DAMNIT FOOOOo
+//	printf("%d \n", fd);
 	
-	
-	write(fd, "!<arch>\n", 8);	//Writes header of archive file for UNIX into the new archive.(Check how to make so not always?)	
+		//Writes header of archive file for UNIX into the new archive.(Check how to make so not always?)	
 	
 	
 	
@@ -278,19 +405,13 @@ void appendFiles(const char *archive, const char *files[], int num_files)
 }
 
 
-/* Append all regular files 
- * 
- * get list of regular files in current directory (except archive
- *   itself)
- *  - uses stat and checks file type
- * pass list to 'quick append' function
- *
- */
+//Append all regular files in the current directory to a desired archive
+//This function primarily uses the provided dirent struct methods to manipulate the directory.
 void appALL(const char *archive)
 {
     char **files;
     DIR *openDIR;
-    struct dirent *ed;
+    struct dirent *dirWerk;
     int fileCount = 0;
 
   
@@ -299,9 +420,9 @@ void appALL(const char *archive)
 
     files = (char **) malloc( sizeof(char *) * 50);
 
-    while ((ed = readdir(openDIR)) != NULL) {
-        if(ed->d_type == DT_REG && strcmp(ed->d_name, archive) != 0) {  //to not copy ARCHIVE file
-            files[fileCount++] = ed->d_name;
+    while ((dirWerk = readdir(openDIR)) != NULL) {								  //theres still files to copy
+        if(dirWerk->d_type == DT_REG && strcmp(dirWerk->d_name, archive) != 0) {  //to not copy ARCHIVE file and make sure we are copying 
+            files[fileCount++] = dirWerk->d_name;
         }
     }
 
@@ -314,7 +435,9 @@ void appALL(const char *archive)
 
     
 
-
+// Prints the archive with desired info
+//
+//
 void print_archive(const char *archive, int verbs)
 {
     int name_size = 0;
@@ -355,23 +478,24 @@ void print_archive(const char *archive, int verbs)
     close(fd);
 }
 
+//The members are aligned to even byte boundaries.
+// If boundary not even, add a byte onto it,
+// Nevertheless, the size given reflects the actual size of the file exclusive of padding."[6]
 void evenLength( int fd, struct ar_hdr *hdrFile)
 {	
-	int size = 0;
+	int headerSize = 0;
 	
-	if ((size = strtol(hdrFile->ar_size, (char **)NULL, 10)) == LONG_MIN
-			|| size == LONG_MAX)
+	if ((headerSize = strtol(hdrFile->ar_size, (char **)NULL, 10)) == LONG_MIN
+			|| headerSize == LONG_MAX)
 	{
 		perror("strtol");
 		exit(EXIT_FAILURE);
 	}
 
 	/* Compensate for '\n' when the file length is even */
-	if ((size % 2) == 1) {
-		size++;
-	}
+	if ((headerSize % 2) == 1) { headerSize++; }
 
-	if (lseek(fd, size, SEEK_CUR) == -1) {
+	if (lseek(fd, headerSize, SEEK_CUR) == -1) {
 		perror("lseek");
 		exit(EXIT_FAILURE);
 	}
@@ -383,24 +507,24 @@ void evenLength( int fd, struct ar_hdr *hdrFile)
 void print_hdr(struct ar_hdr *hdr)
 {
 	int Nsize = 0;
-    mode_t perms;
-    mode_t *ps = &perms;
-    time_t date;
     long fileUid;
     long fileGid;
     long fileSize;
+    mode_t perms;
+    mode_t *Mode = &perms;
+    time_t date;
 
     char date_str[20];
 
 
 	
-    sscanf(hdr->ar_mode, "%lo", (long *) ps);
+    sscanf(hdr->ar_mode, "%lo", (long *) Mode);
     sscanf(hdr->ar_uid, "%ld", &fileUid);
     sscanf(hdr->ar_gid, "%ld", &fileGid);
     sscanf(hdr->ar_date, "%ld", &date);
     sscanf(hdr->ar_size, "%ld", &fileSize);
 
-    strftime(date_str, 20, "%b %d %H:%M %Y", localtime(&date));
+    strftime(date_str, 20, "%b %d %H:%M %Y", localtime(&date));  //format according to specs
 
     printf("%8s %ld/%ld %6ld %10s",
             PermissionFiles(perms), fileUid, fileGid, fileSize, date_str);
@@ -412,9 +536,9 @@ void print_hdr(struct ar_hdr *hdr)
 
 char *PermissionFiles(mode_t perm)
 {
-	static char ret[sizeof("rwxrwxrwx")];
+	static char permSize[sizeof("rwxrwxrwx")];
 
-	snprintf(ret, sizeof("rwxrwxrwx"), "%c%c%c%c%c%c%c%c%c",
+	snprintf(permSize, sizeof("rwxrwxrwx"), "%c%c%c%c%c%c%c%c%c",
 		 ((perm & S_IRUSR) ? 'r' : '-'),
 		 ((perm & S_IWUSR) ? 'w' : '-'),
 		 ((perm & S_IXUSR) ? ((perm & S_ISUID) ? 's' : 'x') :
@@ -428,7 +552,7 @@ char *PermissionFiles(mode_t perm)
 		 ((perm & S_IXOTH) ? ((perm & S_ISVTX) ? 't' : 'x') :
 		  ((perm & S_ISVTX) ? 'S' : '-')));
 
-	return (ret);
+	return (permSize);
 }
 
 //Record of resources for personal use.
