@@ -22,3 +22,6 @@ void fHeader(const char *file, const struct stat *st, struct ar_hdr *hdr);
 void wrFileAr(int archive, int fd, struct stat *st);
 void appALL(const char *archive);
 void deleteFiles(const char *Ar, const char **delFiles ,int i);
+void print_archive(const char *archive, int verbs);
+void print_hdr(struct ar_hdr *hdr);
+void evenLength( int fd, struct ar_hdr *file_header);
