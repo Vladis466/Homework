@@ -5,13 +5,13 @@ CXXFLAGS = -Wall -openmp -O3 -g
 #overkill on the flags, but that doesn't hurt anything
 LDFLAGS = -lrt -lpthread 
 #replace this if you want to change the output name
-TARGET = signal
+TARGET = Shell
 
 #any headers go here
-INCLUDES = 
+INCLUDES = curr_time.h get_num.h print_wait_status.h tlpi_hdr.h ename.c.inc error_functions.h
 
 #any .c or .cpp files go here
-SOURCE = sigSample.c
+SOURCE = Shell.c 
 
 
 
@@ -20,12 +20,13 @@ SOURCE = sigSample.c
 #default is to compile
 default: compile
 
+signal: sigSample.c sigSample
 
 fork: Forksample.c Forksample
 #	$(CC) -o fork -g Forksample.c $(CFLAGS)
 
-shell: Shell.c Shell
-	$(CC) $(CFLAGS) Shell.c -o myShell $(LDFLAGS)
+#shell: Shell.c Shell
+	#$(CC) $(CFLAGS) Shell.c -o myShell $(LDFLAGS)
 	
 	
 #depends on all of you source and header files
