@@ -2,6 +2,26 @@
 \usepackage{anysize}
 \marginsize{2cm}{2cm}{1cm}{1cm}
 
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+ label=\fbox{\color{Black}data.txt},
+ labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
 \begin{document}
 
 \begin{titlepage}
@@ -58,5 +78,8 @@ this project would have gone alot more smoothly. I also learned about how permis
     
 \end{enumerate}
 
+\section{Commit Log}
 
+
+\VerbatimInput{log.txt}
 \end{document}
