@@ -6,19 +6,24 @@ CXXFLAGS = -Wall -openmp -O3 -g
 LDFLAGS = -lrt -lpthread 
 #replace this if you want to change the output name
 TARGET = Shell
+TEXTARGET = writeup
+
+# LaTeX related constants
+HTML=main_html
+SRC=mt.h
 
 #any headers go here
-INCLUDES = curr_time.h get_num.h print_wait_status.h tlpi_hdr.h ename.c.inc error_functions.h
+INCLUDES = 
 
 #any .c or .cpp files go here
 SOURCE = Shell.c 
-
 
 
 	
 
 #default is to compile
 default: compile
+both: pdf html
 
 signal: sigSample.c sigSample
 
@@ -37,6 +42,37 @@ compile: ${SOURCE} ${INCLUDES}
 debug: ${SOURCE} ${INCLUDES}
 	${CC} ${CFLAGS} ${SOURCE} -o ${TARGET} ${LDFLAGS} -DDEBUG
 	
+dvi: ${TEXTARGET}.tex
+#	pygmentize the input source file -- THIS NAME SHOULD BE SAFE
+	pygmentize -f latex -o __${SRC}.tex ${SRC}
+#	run latex twice to get references correct
+	latex ${TEXTARGET}.tex
+#	you can also have a bibtex line here
+#	bibtex $(TEXTARGET).tex
+	latex $(TEXTARGET).tex
+#	remove the pygmentized output to avoid cluttering up the directory
+	rm __${SRC}.tex
+
+ps: dvi
+	dvips -R -Poutline -t letter ${TEXTARGET}.dvi -o ${TEXTARGET}.ps
+
+pdf: ps
+	ps2pdf ${TEXTARGET}.ps
+
+
+html:
+	cp ${TEXTARGET}.tex ${HTML}.tex
+	latex ${HTML}.tex
+	latex2html -split 0 -noshow_section_numbers -local_icons -no_navigation -noinfo -noaddress ${HTML}
+
+	sed 's/<BR><HR>//g' < ${HTML}/index.html > ${HTML}/index2.html
+	mv ${HTML}/index2.html ${TEXTARGET}.html
+	rm ${HTML}.*
+	rm -rf ${HTML}
+
+
 	
 clean:
-	rm -f *.o Forksample signal
+	rm -f *.o Forksample signal {TEXTARGET}.dvi ${TEXTARGET}.log ${TEXTARGET}.out ${TEXTARGET}.ps ${TEXTARGET}.aux ${TEXTARGET}.pdf ${CTARGET}
+	
+ 

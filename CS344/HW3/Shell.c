@@ -9,69 +9,48 @@
 #define _BSD_SOURCE
 #define MAX_CMD_LEN 200
 #define MAX_ENAME 133
+#define block_size 1024
 
+#include <sys/stat.h>
+#include <dirent.h>
 #include <sys/types.h>
 #include <stdio.h>
+#include <math.h>
 #include <signal.h>
 #include <string.h>
 #include <errno.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include "print_wait_status.h"
 #include "curr_time.h"
-#include "tlpi_hdr.h"
-#include "error_functions.h"
 
 
 
-static void outputError(Boolean useErr, int err, Boolean flushStdout, const char *format, va_list ap);
-static void terminate(Boolean useExit3);
+
+//static void outputError(Boolean useErr, int err, Boolean flushStdout, const char *format, va_list ap);
+//static void terminate(Boolean useExit3);
+//void errExit(const char *format, ...);
+
 void printWaitStatus(const char *msg, int status);
-void errExit(const char *format, ...);
-int theSystem(char *command);
-
-static char *ename[] = {
-    /*   0 */ "", 
-    /*   1 */ "EPERM", "ENOENT", "ESRCH", "EINTR", "EIO", "ENXIO", 
-    /*   7 */ "E2BIG", "ENOEXEC", "EBADF", "ECHILD", 
-    /*  11 */ "EAGAIN/EWOULDBLOCK", "ENOMEM", "EACCES", "EFAULT", 
-    /*  15 */ "ENOTBLK", "EBUSY", "EEXIST", "EXDEV", "ENODEV", 
-    /*  20 */ "ENOTDIR", "EISDIR", "EINVAL", "ENFILE", "EMFILE", 
-    /*  25 */ "ENOTTY", "ETXTBSY", "EFBIG", "ENOSPC", "ESPIPE", 
-    /*  30 */ "EROFS", "EMLINK", "EPIPE", "EDOM", "ERANGE", 
-    /*  35 */ "EDEADLK/EDEADLOCK", "ENAMETOOLONG", "ENOLCK", "ENOSYS", 
-    /*  39 */ "ENOTEMPTY", "ELOOP", "", "ENOMSG", "EIDRM", "ECHRNG", 
-    /*  45 */ "EL2NSYNC", "EL3HLT", "EL3RST", "ELNRNG", "EUNATCH", 
-    /*  50 */ "ENOCSI", "EL2HLT", "EBADE", "EBADR", "EXFULL", "ENOANO", 
-    /*  56 */ "EBADRQC", "EBADSLT", "", "EBFONT", "ENOSTR", "ENODATA", 
-    /*  62 */ "ETIME", "ENOSR", "ENONET", "ENOPKG", "EREMOTE", 
-    /*  67 */ "ENOLINK", "EADV", "ESRMNT", "ECOMM", "EPROTO", 
-    /*  72 */ "EMULTIHOP", "EDOTDOT", "EBADMSG", "EOVERFLOW", 
-    /*  76 */ "ENOTUNIQ", "EBADFD", "EREMCHG", "ELIBACC", "ELIBBAD", 
-    /*  81 */ "ELIBSCN", "ELIBMAX", "ELIBEXEC", "EILSEQ", "ERESTART", 
-    /*  86 */ "ESTRPIPE", "EUSERS", "ENOTSOCK", "EDESTADDRREQ", 
-    /*  90 */ "EMSGSIZE", "EPROTOTYPE", "ENOPROTOOPT", 
-    /*  93 */ "EPROTONOSUPPORT", "ESOCKTNOSUPPORT", 
-    /*  95 */ "EOPNOTSUPP/ENOTSUP", "EPFNOSUPPORT", "EAFNOSUPPORT", 
-    /*  98 */ "EADDRINUSE", "EADDRNOTAVAIL", "ENETDOWN", "ENETUNREACH", 
-    /* 102 */ "ENETRESET", "ECONNABORTED", "ECONNRESET", "ENOBUFS", 
-    /* 106 */ "EISCONN", "ENOTCONN", "ESHUTDOWN", "ETOOMANYREFS", 
-    /* 110 */ "ETIMEDOUT", "ECONNREFUSED", "EHOSTDOWN", "EHOSTUNREACH", 
-    /* 114 */ "EALREADY", "EINPROGRESS", "ESTALE", "EUCLEAN", 
-    /* 118 */ "ENOTNAM", "ENAVAIL", "EISNAM", "EREMOTEIO", "EDQUOT", 
-    /* 123 */ "ENOMEDIUM", "EMEDIUMTYPE", "ECANCELED", "ENOKEY", 
-    /* 127 */ "EKEYEXPIRED", "EKEYREVOKED", "EKEYREJECTED", 
-    /* 130 */ "EOWNERDEAD", "ENOTRECOVERABLE", "ERFKILL", "EHWPOISON"
-};
-
+int theSystem(const char *command);
+char **parser(const char *input);
+int changeDir(char **parsedArgs);
+void listDir();
+void helperMayo();
 
 int main(int argc, char *argv[])
 {
-	char str[MAX_CMD_LEN]; /* Command to be executed by system() */
+	char str[MAX_CMD_LEN]; /* Command to be executed by theSystem() */
 	int status; /* Status return from system() */
 	for (;;) { /* Read and execute a shell command */
-		printf("Give me thy command");
+	
+	
+	   char cwd[block_size];
+	   if (getcwd(cwd, sizeof(cwd)) != NULL)
+		   fprintf(stdout, "%s ", cwd);
+
+			
+		printf("TELL ME WHAT TO DO: \n");
 		fflush(stdout);
 		if (fgets(str, MAX_CMD_LEN, stdin) == NULL)
 			break; /* end-of-file */
@@ -80,11 +59,13 @@ int main(int argc, char *argv[])
 				//exit out
 				exit(EXIT_SUCCESS);
 			}
-			status = system(str);
+			status = theSystem(str);
 			printf("system() returned: status=0x%04x (%d,%d)\n",
 			(unsigned int) status, status >> 8, status & 0xff);
 		if (status == -1) {
-			errExit("system");
+			//errExit("system");
+			printf("The errExit function was simplified.");
+			exit(EXIT_FAILURE);
 		} else {
 			if (WIFEXITED(status) && WEXITSTATUS(status) == 127)
 			printf("(Probably) could not invoke shell\n");
@@ -97,14 +78,13 @@ int main(int argc, char *argv[])
 
 
 
-int
-system(const char *command)
+int theSystem(const char *command)
 {
     sigset_t blockMask, origMask;
     struct sigaction saIgnore, saOrigQuit, saOrigInt, saDefault;
     pid_t childPid;
     int status, savedErrno;
-
+	char ** parsedLine;						//the parsed command
     if (command == NULL)                /* Is a shell available? */
         return system(":") == 0;
 
@@ -123,6 +103,35 @@ system(const char *command)
     sigemptyset(&saIgnore.sa_mask);
     sigaction(SIGINT, &saIgnore, &saOrigInt);
     sigaction(SIGQUIT, &saIgnore, &saOrigQuit);
+	
+	
+	parsedLine = parser(command);
+	
+//		printf("[%s] \n", parsedLine[0]);
+	
+	if(strcmp(parsedLine[0],"cd") == 0)
+	{
+		changeDir(parsedLine);
+		
+	} else if(strcmp(parsedLine[0],"help\n") == 0)
+	{
+		helperMayo();
+		
+	} else if(strcmp(parsedLine[0],"ls\n") == 0)
+	{
+//		printf("ls reads");
+		listDir();
+		
+	} else if(strcmp(parsedLine[0],"exit\n") == 0)
+	{	
+		printf("killing children...\n");
+		kill(childPid, SIGTERM);
+		return 0;
+	} else 
+
+	{
+
+	
 
     switch (childPid = fork()) {
     case -1: /* fork() failed */
@@ -145,8 +154,12 @@ system(const char *command)
             sigaction(SIGQUIT, &saDefault, NULL);
 
         sigprocmask(SIG_SETMASK, &origMask, NULL);
+		
 
-        execl("/bin/sh", "sh", "-c", command, (char *) NULL);
+		
+		if (execvp(parsedLine[0], parsedLine) == -1) 
+			perror("Not a command mate!");			
+		// execl("/bin/sh", "sh", "-c", command, (char *) NULL);
         _exit(127);                     /* We could not exec the shell */
 
     default: /* Parent: wait for our child to terminate */
@@ -172,22 +185,95 @@ system(const char *command)
     sigaction(SIGQUIT, &saOrigQuit, NULL);
 
     errno = savedErrno;
-
+	
+	
+	}
     return status;
+
+
 }
 
 
 
 
+char **parser(const char *input)		//Will only parse by spaces
+{
+	
+	
+	char ** cmnds = malloc(64 * sizeof(char *));
+	char * dummy;
+	int i = 0;
+	dummy = strtok((char*)input, " ");	//parser
+	
+	
+	while(dummy != NULL)
+	{
+	
+		cmnds[i] = dummy;				//pointer at each parsed command line thinger majiger.
+//		printf("%s\n",  cmnds[i]);		
+		dummy = strtok (NULL, " ");		
+		i++;
+	}
+	
+//	printf("%s\n",  cmnds[1]);
+	return cmnds;
+}
 
 
 
+int changeDir(char **parsedArgs)
+{	
+	parsedArgs[1][strlen(parsedArgs[1])-1] = '\0';
+	
+//	printf("%ld \n", strlen(parsedArgs[1]));
+	printf("[%s] \n", parsedArgs[1]);
+	if(parsedArgs[1] == NULL)
+	{
+		printf("no argument received");
+	} else {
+	if(chdir(parsedArgs[1]) == -1)
+		perror("error with directory");
+	}
+	printf("cd succesful\n");
+	
+	return 1;
+}
+
+void listDir()
+{
+	DIR *curDir;
+	struct dirent *dp;
+	int i = 0;
+	curDir = opendir(".");						//open current directory
+	while ((dp = readdir(curDir)) != NULL)		//keeps pointing to the next thing in curDir
+	{
+		i++;
+		printf("  %s   ", dp->d_name);
+		if(i % 5 == 0)
+			printf("\n\n");
+	}
+	printf("\n\n");	
+	
+	closedir(curDir);
+	
+	
+
+}
 
 
 
+void helperMayo()
+{
 
+	printf("               	VLADS HELPFUL LIST FOR HELPING PEOPLE \n\n");
+	printf("to exit shell: 		 		exit \n\n");
+	printf("to change directory: 			cd 'directory name' \n\n");
+	printf("to list files in current directory: 	ls \n\n");
+	
 
+	printf("\n\n");
 
+}
 
 
 
@@ -226,10 +312,11 @@ printWaitStatus(const char *msg, int status)
 {
     if (msg != NULL)
         printf("%s", msg);
-
-    if (WIFEXITED(status)) {
+//non-zero value if status was returned for a child process that terminated normally.
+    if (WIFEXITED(status)) {	
         printf("child exited, status=%d\n", WEXITSTATUS(status));
-
+//Evaluates to a non-zero value if status was returned for a child process that 
+//terminated due to the receipt of a signal that was not caught 
     } else if (WIFSIGNALED(status)) {
         printf("child killed by signal %d (%s)",
                 WTERMSIG(status), strsignal(WTERMSIG(status)));
@@ -238,7 +325,8 @@ printWaitStatus(const char *msg, int status)
             printf(" (core dumped)");
 #endif
         printf("\n");
-
+//If the value of WIFSTOPPED(stat_val) is non-zero, 
+//this macro evaluates to the number of the signal that caused the child process to stop.
     } else if (WIFSTOPPED(status)) {
         printf("child stopped by signal %d (%s)\n",
                 WSTOPSIG(status), strsignal(WSTOPSIG(status)));
@@ -255,58 +343,10 @@ printWaitStatus(const char *msg, int status)
     }
 }
 
-void errExit(const char *format, ...)
-{
-    va_list argList;
-
-    va_start(argList, format);
-    outputError(TRUE, errno, TRUE, format, argList);
-    va_end(argList);
-
-    terminate(TRUE);
-	
-}
 
 
-static void
-terminate(Boolean useExit3)
-{
-    char *s;
-
-    /* Dump core if EF_DUMPCORE environment variable is defined and
-       is a nonempty string; otherwise call exit(3) or _exit(2),
-       depending on the value of 'useExit3'. */
-
-    s = getenv("EF_DUMPCORE");
-
-    if (s != NULL && *s != '\0')
-        abort();
-    else if (useExit3)
-        exit(EXIT_FAILURE);
-    else
-        _exit(EXIT_FAILURE);
-}
 
 
-static void outputError(Boolean useErr, int err, Boolean flushStdout,
-        const char *format, va_list ap)
-{
-#define BUF_SIZE 500
-    char buf[BUF_SIZE], userMsg[BUF_SIZE], errText[BUF_SIZE];
 
-    vsnprintf(userMsg, BUF_SIZE, format, ap);
-
-    if (useErr)
-        snprintf(errText, BUF_SIZE, " [%s %s]",
-                (err > 0 && err <= MAX_ENAME) ?
-                ename[err] : "?UNKNOWN?", strerror(err));
-    else
-        snprintf(errText, BUF_SIZE, ":");
-
-    snprintf(buf, BUF_SIZE, "ERROR%s %s\n", errText, userMsg);
-
-    if (flushStdout)
-        fflush(stdout);       /* Flush any pending stdout */
-    fputs(buf, stderr);
-    fflush(stderr);           /* In case stderr is not line-buffered */
-}
+//Websites linked below were used as learning guides for this assignment. 
+//http://stephen-brennan.com/2015/01/16/write-a-shell-in-c/
