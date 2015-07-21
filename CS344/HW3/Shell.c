@@ -37,6 +37,15 @@ char **parser(const char *input);
 int changeDir(char **parsedArgs);
 void listDir();
 void helperMayo();
+void launchProg(char** parsedArgs);
+
+
+struct pipe {
+	int pIn[2];
+	int pOut[2];
+};
+
+
 
 int main(int argc, char *argv[])
 {
@@ -59,7 +68,10 @@ int main(int argc, char *argv[])
 				//exit out
 				exit(EXIT_SUCCESS);
 			}
+			if(strcmp(str, " ") != 0)
+			{
 			status = theSystem(str);
+			}
 			printf("system() returned: status=0x%04x (%d,%d)\n",
 			(unsigned int) status, status >> 8, status & 0xff);
 		if (status == -1) {
@@ -156,9 +168,8 @@ int theSystem(const char *command)
         sigprocmask(SIG_SETMASK, &origMask, NULL);
 		
 
-		
-		if (execvp(parsedLine[0], parsedLine) == -1) 
-			perror("Not a command mate!");			
+		launchProg(parsedLine);
+	
 		// execl("/bin/sh", "sh", "-c", command, (char *) NULL);
         _exit(127);                     /* We could not exec the shell */
 
@@ -215,6 +226,7 @@ char **parser(const char *input)		//Will only parse by spaces
 		i++;
 	}
 	
+
 //	printf("%s\n",  cmnds[1]);
 	return cmnds;
 }
@@ -269,13 +281,20 @@ void helperMayo()
 	printf("to exit shell: 		 		exit \n\n");
 	printf("to change directory: 			cd 'directory name' \n\n");
 	printf("to list files in current directory: 	ls \n\n");
-	
-
 	printf("\n\n");
 
 }
 
+void launchProg(char** parsedArgs)
+{
 
+//	if (execve(parsedArgs[0], parsedArgs) == -1) 
+//		perror("Not a command mate!");	
+		
+	if (execvp(parsedArgs[0], parsedArgs) == -1) 
+		perror("Not a command mate!");		
+
+}
 
 
 

@@ -1,11 +1,11 @@
 CC = icc
 CXX = icpc
-CFLAGS = -Wall -std=c99 -openmp -O3 -g -I.
+CFLAGS = -Wall -std=gnu99 -openmp -O3 -g -I.
 CXXFLAGS = -Wall -openmp -O3 -g
 #overkill on the flags, but that doesn't hurt anything
-LDFLAGS = -lrt -lpthread 
+LDFLAGS = -lrt -lpthread
 #replace this if you want to change the output name
-TARGET = Shell
+CTARGET = Shell
 TEXTARGET = writeup
 
 # LaTeX related constants
@@ -13,35 +13,23 @@ HTML=main_html
 SRC=mt.h
 
 #any headers go here
-INCLUDES = 
+INCLUDES =
 
 #any .c or .cpp files go here
-SOURCE = Shell.c 
+SOURCE = Shell.c
 
-
-	
-
-#default is to compile
-default: compile
+#default is to compile and pdf
+default: pdf compile
 both: pdf html
 
-signal: sigSample.c sigSample
-
-fork: Forksample.c Forksample
-#	$(CC) -o fork -g Forksample.c $(CFLAGS)
-
-#shell: Shell.c Shell
-	#$(CC) $(CFLAGS) Shell.c -o myShell $(LDFLAGS)
-	
-	
 #depends on all of you source and header files
 compile: ${SOURCE} ${INCLUDES}
 #this assumes you actually are linking all of the source files together
-	${CC} ${CFLAGS} ${SOURCE} -o ${TARGET} ${LDFLAGS}
+	${CC} ${CFLAGS} ${SOURCE} -o ${CTARGET} ${LDFLAGS}
 
 debug: ${SOURCE} ${INCLUDES}
-	${CC} ${CFLAGS} ${SOURCE} -o ${TARGET} ${LDFLAGS} -DDEBUG
-	
+	${CC} ${CFLAGS} ${SOURCE} -o ${CTARGET} ${LDFLAGS} -DDEBUG
+
 dvi: ${TEXTARGET}.tex
 #	pygmentize the input source file -- THIS NAME SHOULD BE SAFE
 	pygmentize -f latex -o __${SRC}.tex ${SRC}
@@ -70,9 +58,7 @@ html:
 	rm ${HTML}.*
 	rm -rf ${HTML}
 
-
-	
 clean:
-	rm -f *.o Forksample signal {TEXTARGET}.dvi ${TEXTARGET}.log ${TEXTARGET}.out ${TEXTARGET}.ps ${TEXTARGET}.aux ${TEXTARGET}.pdf ${CTARGET}
+	rm ${TEXTARGET}.dvi ${TEXTARGET}.log ${TEXTARGET}.out ${TEXTARGET}.ps ${TEXTARGET}.aux ${TEXTARGET}.pdf ${CTARGET}
 	
  
