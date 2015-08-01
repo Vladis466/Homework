@@ -19,7 +19,6 @@
 #define BITTEST(a, b) ((a)[BITSLOT(b)] & BITMASK(b))
 #define BITNSLOTS(nb) ((nb + CHAR_BIT - 1) / CHAR_BIT)
 
-
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -47,14 +46,14 @@
 *
 *
 */
-
+unsigned int masks[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 struct data
 {
 
 	int offset;
-	int sliceSt;
-	int sliceEnd;
+	unsigned int sliceSt;
+	unsigned int sliceEnd;
 	char *myList;
 	
 };
@@ -66,19 +65,42 @@ char List[CharSPACE];
 
 void mapPrimes(long *bitArr, long Count);
 
-int happyOrsad(unsigned int Number)
+int happyOrsad(unsigned int nerm)
 {
-
-	return 1;
+	unsigned int total;
+	unsigned int first;
+	
+	while(1){
+		total = 0;
+		first = 0;
+		
+		while(nerm > 0)
+		{ 
+		first = nerm % 10;	//get first digit
+		nerm /= 10;			//remove digit from num;
+		total += pow(first, 2); //Add sum of squares to total
+	//	printf("number: %d\n", nerm);
+		}
+		if(total==1)
+			return 1;
+		if(total==4||total==16||total==37||total==58||total==89||total==145||total==42||total==20)
+			return 0;
+			
+		nerm = total;		//Loop back and do it all again with the new 'number'
+		
+	}
+	
 }
 
-void mapReader(char singleBit, int Num)
+
+unsigned char mapReader(unsigned char singleBit, unsigned int Num)
 {
 	//Max index point
-	unsigned int Index = Num * 4 + 3;						//Keep track of what number were on.
-	char temp;
+	unsigned int Index = Num * 4 + 3+1;						//Keep track of what number were on.
+	unsigned char temp;
 	int j;
-	
+	//printf("number: %d\n", Num);
+	//printf("number: %d\n", Index);
 	//for the specified bit (4 nums), copy it over
 	//Iterate through it.
 	//If a number is prime, increment the counter
@@ -94,13 +116,12 @@ void mapReader(char singleBit, int Num)
 		if(!CHECK_BIT(temp, j))
 			{
 				printf("Prime Found\n");
-				//If returns 1(happy), else sad;
+				//If returns true (happy), else sad;
 				if(happyOrsad(Index))
-				{
-					
-					
-				} else
-				{
+				{	
+					printf("AND ITS HAPPY\n");
+					temp |= masks[j + 1];  
+				} 
 			} else
 			{
 				printf("prime not found\n");
@@ -109,18 +130,18 @@ void mapReader(char singleBit, int Num)
 		Index--;
 		
 	}
+	return temp;
 	
-	FILE *fp;
-	fp = fopen("premDs", "w");
-	
-	fwrite(&temp, sizeof(singleBit), sizeof(singleBit)/sizeof(singleBit), fp);		
+	//FILE *fp;
+	//fp = fopen("premDs", "w");
+	//fwrite(&temp, sizeof(singleBit), sizeof(singleBit)/sizeof(singleBit), fp);		
 
 
 }
 void *dot(void *arg)
 {
 	FILE *fp;
-	int i;
+	unsigned int i;
 	
 	
 	
@@ -130,19 +151,19 @@ void *dot(void *arg)
 	
 	printf("I'm thread #%d, and I'm starting up.\n", d->offset);	
 		
-	pthread_mutex_lock(&mutex_sum);
+	//pthread_mutex_lock(&mutex_sum);
 
 	printf("%d start: \n", d->sliceSt);
 	printf("%d end: \n", d->sliceEnd);
-	//for(i = d->sliceSt; i < d->sliceEnd; i++);
-	//{
-	mapReader(List[0], i); 
-	//}
+	for(i = d->sliceSt; i < d->sliceEnd; i++)
+	{
+	List[i] = mapReader(List[i], i); 
+	}
 	
 	fp = fopen("Checker", "w");
-	fwrite(List, 1, 1, fp);	
+	fwrite(List, sizeof(List[0]), 20, fp);	
 	
-	pthread_mutex_unlock(&mutex_sum);
+	//pthread_mutex_unlock(&mutex_sum);
 	
 	pthread_exit((void*) 0);
 }
@@ -179,14 +200,14 @@ int main(int argc, char **argv)
 	
 	//The number of bytes we want to pull in 
 	numBytes = Inpt / 4; 							//4 numbers are kept per char.
-	if (numBytes % 4 > 0) { numBytes++;}
+	if (Inpt % 4 > 0) { numBytes++;}
 
 	char myPrimes[numBytes];						//So we get an array of that many chars(x4 numbers)
 	
 	fp = fopen("bitMap", "r");
-	printf("ERROR\n");
+	//printf("ERROR\n");
 	fread(List, sizeof(myPrimes[0]), sizeof(myPrimes)/sizeof(myPrimes[0]), fp );
-	printf("ERROR\n");	
+	//printf("ERROR\n");	
 	Inpt = numBytes / NUM_THREADS;
 	rem = numBytes % NUM_THREADS;
 
