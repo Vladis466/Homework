@@ -50,7 +50,7 @@ unsigned int masks[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 struct data
 {
-
+	unsigned int Depth;
 	int offset;
 	unsigned int sliceSt;
 	unsigned int sliceEnd;
@@ -61,6 +61,7 @@ struct data
 struct data d[NUM_THREADS];
 pthread_t threads[NUM_THREADS];
 pthread_mutex_t mutex_sum;
+
 char List[CharSPACE];
 
 void mapPrimes(long *bitArr, long Count);
@@ -101,6 +102,9 @@ unsigned char mapReader(unsigned char singleBit, unsigned int Num)
 	int j;
 	//printf("number: %d\n", Num);
 	//printf("number: %d\n", Index);
+	
+	
+	
 	//for the specified bit (4 nums), copy it over
 	//Iterate through it.
 	//If a number is prime, increment the counter
@@ -119,7 +123,7 @@ unsigned char mapReader(unsigned char singleBit, unsigned int Num)
 				//If returns true (happy), else sad;
 				if(happyOrsad(Index))
 				{	
-					printf("AND ITS HAPPY\n");
+					//printf("AND ITS HAPPY\n");
 					temp |= masks[j + 1];  
 				} 
 			} else
@@ -161,7 +165,8 @@ void *dot(void *arg)
 	}
 	
 	fp = fopen("Checker", "w");
-	fwrite(List, sizeof(List[0]), 20, fp);	
+	printf("%d amt of bits\n",d->Depth);
+	fwrite(List, sizeof(List[0]), d->Depth, fp);	
 	
 	//pthread_mutex_unlock(&mutex_sum);
 	
@@ -179,12 +184,12 @@ int main(int argc, char **argv)
 {
 	FILE *fp; 
 	int i;
-	int numBytes;
+	long numBytes;
 	long Inpt= 0;
 	int rem = 0;
 	struct primeArr *primeArray;
 	pthread_attr_t attr;
-
+	
 	printf("Please enter the max integer to search through for primes: ---->    ");
 	scanf("%ld",&Inpt);
 
@@ -193,30 +198,33 @@ int main(int argc, char **argv)
 	//IgnorePts(primeArray);
 	//p_primeArr(primeArray);
 	//mapPrimes(primeArray->num, Inpt);
-	
+
 	pthread_mutex_init(&mutex_sum, NULL);
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	
 	//The number of bytes we want to pull in 
+	
 	numBytes = Inpt / 4; 							//4 numbers are kept per char.
+//	printf("ERROR\n");
 	if (Inpt % 4 > 0) { numBytes++;}
-
-	char myPrimes[numBytes];						//So we get an array of that many chars(x4 numbers)
+//	printf("ERROR\n");
+	unsigned char *myPrimes = malloc(sizeof(unsigned char*) * numBytes);
+	//char myPrimes[numBytes];						//So we get an array of that many chars(x4 numbers)
+//	printf("ERRORhelp\n");
+	
 	
 	fp = fopen("bitMap", "r");
-	//printf("ERROR\n");
-	fread(List, sizeof(myPrimes[0]), sizeof(myPrimes)/sizeof(myPrimes[0]), fp );
-	//printf("ERROR\n");	
+	printf("ERROR\n");
+	fread(List, sizeof(myPrimes[0]), numBytes, fp );
+	printf("ERROR\n");	
 	Inpt = numBytes / NUM_THREADS;
 	rem = numBytes % NUM_THREADS;
 
 	
-	
-	
-	
 	for(i=0; i<NUM_THREADS; ++i)
 	{
+		d[i].Depth = numBytes;
 		int j = 0;
 		int k = 0;
 		d[i].offset = i;
