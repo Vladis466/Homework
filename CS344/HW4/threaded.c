@@ -7,17 +7,17 @@
 
 #define _POSIX_C_SOURCE 200809L
 #define _BSD_SOURCE
-#define NUM_THREADS 1
+#define NUM_THREADS 16
 #define CharSPACE 1073741824
 #define VEC_LEN 1000000
 #define CHECK_BIT(var,pos) ((var) & (1<<(pos)))
 
-#define BITMASK(b) (1 << ((b) % CHAR_BIT))
-#define BITSLOT(b) ((b) / CHAR_BIT)
+#define BITMASK(b) (1 << ((b) % 8))
+#define BITSLOT(b) ((b) / 8)
 #define BITSET(a, b) ((a)[BITSLOT(b)] |= BITMASK(b))
 #define BITCLEAR(a, b) ((a)[BITSLOT(b)] &= ~BITMASK(b))
 #define BITTEST(a, b) ((a)[BITSLOT(b)] & BITMASK(b))
-#define BITNSLOTS(nb) ((nb + CHAR_BIT - 1) / CHAR_BIT)
+#define BITNSLOTS(nb) ((nb + 8 - 1) / 8)
 
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -47,7 +47,7 @@
 *
 */
 unsigned int masks[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
-
+int happyCount = 0;
 struct data
 {
 	unsigned int Depth;
@@ -62,36 +62,68 @@ struct data d[NUM_THREADS];
 pthread_t threads[NUM_THREADS];
 pthread_mutex_t mutex_sum;
 
-char List[CharSPACE];
+static char List[CharSPACE];
 
-void mapPrimes(long *bitArr, long Count);
+void mapPrimes(unsigned int *bitArr, long Count);
+void runThreads(long numBytes, long Inpt, int rem);
 
-int happyOrsad(unsigned int nerm)
+
+/*Will extract and turn the current char-bit masked
+** happy primes an unsigned int bit-mask.
+*/
+void mapTurnin(int byteAmt)
 {
-	unsigned int total;
-	unsigned int first;
+	FILE *fp;
+	FILE *fd;
+	unsigned int i;
+	int j;
+	int k = 0;
+	char temp[1];
+	temp[0] = List[0];
+	//This is the actual number value as we iterate 2^32-1 times.
+	unsigned int Index = 1;
+	//unsigned int  *intMask = malloc(sizeof(unsigned int*) * byteAmt);
+	unsigned int  intMask[happyCount];
+	//We want to iterate through the char array 
+	for(i = 0; i<byteAmt; i++)
+	{
 	
-	while(1){
-		total = 0;
-		first = 0;
-		
-		while(nerm > 0)
-		{ 
-		first = nerm % 10;	//get first digit
-		nerm /= 10;			//remove digit from num;
-		total += pow(first, 2); //Add sum of squares to total
-	//	printf("number: %d\n", nerm);
-		}
-		if(total==1)
-			return 1;
-		if(total==4||total==16||total==37||total==58||total==89||total==145||total==42||total==20)
-			return 0;
+	//For each byte we want to extract the happy derps, so only look at 2nd bit.		
+		for (j = 7; j > -1; j = j - 2)
+		{
+			if(CHECK_BIT(List[i], j))
+				{
+					printf("EXTRACT HAPPINESS  %d  %d  %d\n", Index, i, j);
+					//Filter the value into our mask and increment index
+					intMask[k] = 0xFFFFFFFF & Index;
+					k++; 
+				}else
+				{
+				//printf("No happy\n");
+				}
+			//We go down the index because our list is backwards.
+			Index++;
 			
-		nerm = total;		//Loop back and do it all again with the new 'number'
-		
+		}
 	}
 	
+	printf("intmask size:  %ld\n",sizeof(intMask));
+	fp = fopen("Turnin", "w");
+	
+	fwrite(intMask, sizeof(intMask[0]), sizeof(intMask)/sizeof(intMask[0]), fp);
+	fclose(fp);
+	fd = fopen("TurninChar", "w");
+	fwrite(temp, sizeof(List[0]), 1, fp);
+	 
+	fclose(fd);
+
+
+
 }
+
+
+int happyOrsad(unsigned int nerm);
+
 
 
 unsigned char mapReader(unsigned char singleBit, unsigned int Num)
@@ -119,16 +151,17 @@ unsigned char mapReader(unsigned char singleBit, unsigned int Num)
 	for (j = 0; j < 8; j = j + 2){
 		if(!CHECK_BIT(temp, j))
 			{
-				printf("Prime Found\n");
+				//printf("Prime Found\n");
 				//If returns true (happy), else sad;
 				if(happyOrsad(Index))
 				{	
 					//printf("AND ITS HAPPY\n");
 					temp |= masks[j + 1];  
+					happyCount++;
 				} 
 			} else
 			{
-				printf("prime not found\n");
+				//printf("prime not found\n");
 			}
 		//We go down the index because our list is backwards.
 		Index--;
@@ -142,6 +175,7 @@ unsigned char mapReader(unsigned char singleBit, unsigned int Num)
 
 
 }
+
 void *dot(void *arg)
 {
 	FILE *fp;
@@ -153,7 +187,7 @@ void *dot(void *arg)
 	
 	
 	
-	printf("I'm thread #%d, and I'm starting up.\n", d->offset);	
+	printf("I'm thread #%d, and I'm starting up.\n", d->offset + 1);	
 		
 	//pthread_mutex_lock(&mutex_sum);
 
@@ -161,17 +195,96 @@ void *dot(void *arg)
 	printf("%d end: \n", d->sliceEnd);
 	for(i = d->sliceSt; i < d->sliceEnd; i++)
 	{
-	List[i] = mapReader(List[i], i); 
+	List[i] = mapReader(List[i], i);
 	}
 	
 	fp = fopen("Checker", "w");
-	printf("%d amt of bits\n",d->Depth);
-	fwrite(List, sizeof(List[0]), d->Depth, fp);	
-	
+
+		
+	fwrite(List, sizeof(List[0]), d->Depth, fp);
+
+	if(d->offset == 0)
+		printf(" AMT OF BITS:  --->> %d\n",d->Depth);		
 	//pthread_mutex_unlock(&mutex_sum);
-	
+	fclose(fp);
 	pthread_exit((void*) 0);
 }
+
+
+
+
+/*
+int derp(int Max)
+{
+	char bitarray[BITNSLOTS(Max)];
+	int i, j;
+
+	memset(bitarray, 0, BITNSLOTS(Max));
+
+	for(i = 2; i < Max; i++) {
+		if(!BITTEST(bitarray, i)) {
+//			printf("%d\n", i);
+			for(j = i + i; j < Max; j += i)
+				BITSET(bitarray, j);
+		}
+		
+	}
+	
+//	for(i = 0; i < 20; i++)
+//	{
+//		printf("%d\n", bitarray[i]);
+//	}
+	return 0;
+	
+	
+}
+*/
+
+void runSystem(long numBytes, long Inpt, int rem)
+{
+    uint64_t j;
+    uint64_t k;
+    uint64_t i;
+    uint64_t counter = 0;
+    uint64_t n;
+
+    //struct thread_args *data = (struct thread_args *) arguments;
+    n = ((arg.end_bit - arg.start_bit) + 1);
+
+    //printf("This is process %lld working [%lld - %lld] n is %lld \n", arg.process_id, arg.start_bit, arg.end_bit, n);
+
+    if(arg.start_bit == 1){
+        arg.start_bit = 2;
+    }
+
+    for(i = arg.start_bit; i < arg.end_bit; i += 3) {
+		if(!BITTEST(bitmap_array, i)){
+			for(j = i * i; j < arg.end_bit; j += i)
+				BITSET(bitmap_array, j);
+				//printf("%lld is not prime\n", j);
+		}
+	}
+
+    for(i = arg.start_bit; i < arg.end_bit; i++){
+        if(!BITTEST(bitmap_array, i)){
+            counter++;
+            //printf("%lld is prime\n", i);
+        }
+    }
+
+    //printf("number of primes for process %lld = %lld\n\n",arg.process_id, counter);
+    exit(EXIT_SUCCESS);
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -183,25 +296,26 @@ void *dot(void *arg)
 int main(int argc, char **argv)
 {
 	FILE *fp; 
-	int i;
+	int i, choice;
 	long numBytes;
 	long Inpt= 0;
 	int rem = 0;
+
 	struct primeArr *primeArray;
-	pthread_attr_t attr;
+	
 	
 	printf("Please enter the max integer to search through for primes: ---->    ");
 	scanf("%ld",&Inpt);
+//	derp(Inpt);
 
-	//Used this function to initially get my numbers into a BITMAP
-	//primeArray = crinit_primeArr(Inpt);
-	//IgnorePts(primeArray);
-	//p_primeArr(primeArray);
-	//mapPrimes(primeArray->num, Inpt);
 
-	pthread_mutex_init(&mutex_sum, NULL);
-	pthread_attr_init(&attr);
-	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
+
+//	Used this function to initially get my numbers into a BITMAP
+//	primeArray = crinit_primeArr(Inpt);
+//	IgnorePts(primeArray);
+//	p_primeArr(primeArray);						<<<-------------------------
+//	mapPrimes(primeArray->num, Inpt);
+//	freeArr(primeArray);
 	
 	//The number of bytes we want to pull in 
 	
@@ -213,14 +327,50 @@ int main(int argc, char **argv)
 	//char myPrimes[numBytes];						//So we get an array of that many chars(x4 numbers)
 //	printf("ERRORhelp\n");
 	
-	
+	//We open our bitmap(hashed in chars) and set it in the global list array
 	fp = fopen("bitMap", "r");
-	printf("ERROR\n");
 	fread(List, sizeof(myPrimes[0]), numBytes, fp );
-	printf("ERROR\n");	
+	//printf("ERROR\n");	
 	Inpt = numBytes / NUM_THREADS;
 	rem = numBytes % NUM_THREADS;
 
+	printf("Would you like to run threads or system? 1 for threads, 2 for system, anything else to quit");
+	scanf("%d",&choice); 
+	
+	if(choice == 1)
+		runThreads(numBytes, Inpt, rem);
+		
+	if(choice == 2)
+	{
+		switch(pid[i] = fork()){
+			case -1:
+				strerror(err);
+			case 0:
+				runSystem(numBytes, Inpt, rem);
+			default:
+				break;
+			}
+		
+		
+		
+		
+
+	
+	}
+
+	
+	return EXIT_SUCCESS;
+}
+
+
+void runThreads(long numBytes, long Inpt, int rem)
+{
+	pthread_attr_t attr;
+	int i;
+	
+	pthread_mutex_init(&mutex_sum, NULL);
+	pthread_attr_init(&attr);
+	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	
 	for(i=0; i<NUM_THREADS; ++i)
 	{
@@ -247,24 +397,18 @@ int main(int argc, char **argv)
 		pthread_join(threads[i], NULL);
 	}
 
-
-
-
-
 	pthread_mutex_destroy(&mutex_sum);
 	
-
 	
-	return EXIT_SUCCESS;
+	mapTurnin(numBytes);
+
+
 }
 
 
 
-
-
-
 //Used to map my primes initially to create file I would later use.
-void mapPrimes(long *bitArr, long Count)
+void mapPrimes(unsigned int *bitArr, long Count)
 {
 	
 	FILE *fp;
@@ -301,3 +445,35 @@ void mapPrimes(long *bitArr, long Count)
 	fclose(fp);
 
 }
+
+int happyOrsad(unsigned int nerm)
+{
+	unsigned int total;
+	unsigned int first;
+	
+	while(1){
+		total = 0;
+		first = 0;
+		
+		while(nerm > 0)
+		{ 
+		first = nerm % 10;	//get first digit
+		nerm /= 10;			//remove digit from num;
+		total += pow(first, 2); //Add sum of squares to total
+	//	printf("number: %d\n", nerm);
+		}
+		if(total==1)
+			return 1;
+		if(total==4||total==16||total==37||total==58||total==89||total==145||total==42||total==20)
+			return 0;
+			
+		nerm = total;		//Loop back and do it all again with the new 'number'
+		
+	}
+	
+}
+
+
+
+
+// http://c-faq.com/misc/bitsets.html was used
