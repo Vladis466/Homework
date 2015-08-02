@@ -1,0 +1,74 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+\usepackage{verbatim}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%pull in the necessary preamble matter for pygments output
+\input{pygments.tex}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs311 ``operating systems'' files filesystem I/O},
+  pdftitle = {CS 311 Project 3: UNIX Process Control},
+  pdfsubject = {CS 311 Project 3},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\section{Design}
+	My initial design was to copy sections of an array into different threads or processes and have it compile the results after all processes were
+	completed. Although it worked relatively well with low intervals, I quickly understood this design was flawed so I reset and started over.
+	After discussing with peers and the instructor, i redesigned my system so i could initally feed my primes into a bit mask. I used chars to mask the bits,
+	and I was able to fit four numbers per char as I wanted to leave a bit for designating the happy/sad state of the number. 
+	My plan was to mask my bit array in a file of this format and then feed it through the threads/processes which would each be given offsets depending on the amount.
+	
+	This part was difficult until i implemented a global array which simplified alot of the copying I was previously doing. 
+	I used primarily the examples from class and man pages to apply threads and processes. In order to handle signals I used the previous assignments work and revisited 
+	the textbook.
+\section{Work log}
+\verbatiminput{log.txt}
+
+\section{Challenges}
+My greatest difficult dealt with memory allocation. I learned a lot having to manipulate different types in order to efficiently pass my data
+along to different processes. I struggled greatly with even getting my algorithm to give me a bit array with uint entries.
+
+
+\section{Answers}
+\subsection{Main point of the assignment}
+More programming at the system level. For me the most important port of this assignment was learning to manipulate
+bits and functionality(the threads and processes) when dealing with heavy loads on memory and process time. I feel this
+was a critical skill to pick up although I have not seen the sun in the last week because of it.
+
+\subsection{Solution Accuracy}
+I used a variety of primitive testing methods, primarily printing the many iterators I used to keep track of my variables.
+I am confident that my solution works correctly as the list of Happy Primes is not that extensive and creating a simple algorithm
+to print my results showed that my answers were in line with expected results for the first few thousand numbers.
+
+Also the command xxd -b was great for checking my low numbers. It prints the contents of a file in binary to the command line.
+
+\subsection{Learnings}
+My understanding of how to manipulate memory and make programs much more efficient has increased greatly.
+I feel this is a very important set of tools to keep in mind when building programs to be memory-efficient and short on run-time.
+
+\end{document}

@@ -7,7 +7,7 @@
 
 #define _POSIX_C_SOURCE 200809L
 #define _BSD_SOURCE
-#define NUM_THREADS 16
+#define NUM_THR_PROC 2
 #define CharSPACE 1073741824
 #define VEC_LEN 1000000
 #define CHECK_BIT(var,pos) ((var) & (1<<(pos)))
@@ -30,8 +30,9 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <semaphore.h>
-
-
+#include <stdint.h>
+#include <fcntl.h>
+#include <sys/mman.h>
 #include <pthread.h>
 #include "primes.h"
 /*
@@ -58,8 +59,8 @@ struct data
 	
 };
 
-struct data d[NUM_THREADS];
-pthread_t threads[NUM_THREADS];
+struct data d[NUM_THR_PROC];
+pthread_t threads[NUM_THR_PROC];
 pthread_mutex_t mutex_sum;
 
 static char List[CharSPACE];
@@ -240,45 +241,65 @@ int derp(int Max)
 }
 */
 
-void runSystem(long numBytes, long Inpt, int rem)
+void runSystem(unsigned int start,unsigned int end,unsigned int offset)
 {
-    uint64_t j;
-    uint64_t k;
-    uint64_t i;
-    uint64_t counter = 0;
-    uint64_t n;
 
-    //struct thread_args *data = (struct thread_args *) arguments;
-    n = ((arg.end_bit - arg.start_bit) + 1);
-
-    //printf("This is process %lld working [%lld - %lld] n is %lld \n", arg.process_id, arg.start_bit, arg.end_bit, n);
-
-    if(arg.start_bit == 1){
-        arg.start_bit = 2;
-    }
-
-    for(i = arg.start_bit; i < arg.end_bit; i += 3) {
-		if(!BITTEST(bitmap_array, i)){
-			for(j = i * i; j < arg.end_bit; j += i)
-				BITSET(bitmap_array, j);
-				//printf("%lld is not prime\n", j);
-		}
+	FILE *fp;
+	unsigned int i;
+	
+	
+	
+	//struct data *d = (struct data*) arg;
+	
+	
+	
+	printf("I'm Child #%d, and I'm starting up.\n", d->offset + 1);	
+		
+	//pthread_mutex_lock(&mutex_sum);
+	
+	printf("%d start: \n", d->sliceSt);
+	printf("%d end: \n", d->sliceEnd);
+	for(i = d->sliceSt; i < d->sliceEnd; i++)
+	{
+	List[i] = mapReader(List[i], i);
 	}
+	
+	fp = fopen("Checker", "w");
 
-    for(i = arg.start_bit; i < arg.end_bit; i++){
-        if(!BITTEST(bitmap_array, i)){
-            counter++;
-            //printf("%lld is prime\n", i);
-        }
-    }
+		
+	fwrite(List, sizeof(List[0]), d->Depth, fp);	
+	
+	
 
-    //printf("number of primes for process %lld = %lld\n\n",arg.process_id, counter);
-    exit(EXIT_SUCCESS);
+    //exit(EXIT_SUCCESS);
 
 }
 
 
+void *mount_shmem(char *path, int object_size){
+	int shmem_fd;
+	void *addr;
 
+	/* create and resize it */
+	shmem_fd = shm_open(path, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
+	if (shmem_fd == -1){
+		fprintf(stdout, "failed to open shared memory object\n");
+		exit(EXIT_FAILURE);
+	}
+	/* resize it to something reasonable */
+	if (ftruncate(shmem_fd, object_size) == -1){
+		fprintf(stdout, "failed to resize shared memory object\n");
+		exit(EXIT_FAILURE);
+	}
+
+	addr = mmap(NULL, object_size, PROT_READ | PROT_WRITE, MAP_SHARED, shmem_fd, 0);
+	if (addr == MAP_FAILED){
+		fprintf(stdout, "failed to map shared memory object\n");
+		exit(EXIT_FAILURE);
+	}
+
+	return addr;
+}
 
 
 
@@ -296,13 +317,13 @@ void runSystem(long numBytes, long Inpt, int rem)
 int main(int argc, char **argv)
 {
 	FILE *fp; 
-	int i, choice;
+	int i, choice, err;
 	long numBytes;
 	long Inpt= 0;
 	int rem = 0;
-
+	pid_t pid[NUM_THR_PROC];
 	struct primeArr *primeArray;
-	
+	int object_size = 1024 * 1024 * 600;
 	
 	printf("Please enter the max integer to search through for primes: ---->    ");
 	scanf("%ld",&Inpt);
@@ -331,8 +352,8 @@ int main(int argc, char **argv)
 	fp = fopen("bitMap", "r");
 	fread(List, sizeof(myPrimes[0]), numBytes, fp );
 	//printf("ERROR\n");	
-	Inpt = numBytes / NUM_THREADS;
-	rem = numBytes % NUM_THREADS;
+	Inpt = numBytes / NUM_THR_PROC;
+	rem = numBytes % NUM_THR_PROC;
 
 	printf("Would you like to run threads or system? 1 for threads, 2 for system, anything else to quit");
 	scanf("%d",&choice); 
@@ -342,25 +363,51 @@ int main(int argc, char **argv)
 		
 	if(choice == 2)
 	{
-		switch(pid[i] = fork()){
-			case -1:
-				strerror(err);
-			case 0:
-				runSystem(numBytes, Inpt, rem);
-			default:
-				break;
+		void *myAddr = mount_shmem("/shProc", object_size);
+		
+		for(i = 0; i < NUM_THR_PROC; i++)
+		{
+			for(i=0; i<NUM_THR_PROC; ++i)
+			{
+				d[i].Depth = numBytes;
+				int j = 0;
+				int k = 0;
+				d[i].offset = i;
+				d[i].sliceSt = (Inpt * i);										
+				d[i].sliceEnd = Inpt * (i + 1);
+				
+				//If it is our last fork or thread...
+				if(i == NUM_THR_PROC - 1)
+				{
+					d[i].sliceEnd = d[i].sliceEnd + rem;
+				}
+			}		
+			switch(pid[i] = fork())
+			{
+				case -1:
+					fprintf(stderr, "Fork failed");
+				case 0: //child process
+					printf("%d start: \n", d[i].sliceSt);
+					printf("%d end: \n", d->sliceEnd);
+					runSystem(d[i].sliceSt, d[i].sliceEnd, d[i].offset);
+				default:
+					break;
 			}
-		
-		
-		
-		
-
-	
+		}
 	}
 
+	//Parse the char array and extract all happy primes with this FUNCtion.
+	mapTurnin(numBytes);
+	
+	while(wait(NULL) != -1);
+    shm_unlink("/shProc");
 	
 	return EXIT_SUCCESS;
 }
+
+
+
+
 
 
 void runThreads(long numBytes, long Inpt, int rem)
@@ -372,7 +419,7 @@ void runThreads(long numBytes, long Inpt, int rem)
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	
-	for(i=0; i<NUM_THREADS; ++i)
+	for(i=0; i<NUM_THR_PROC; ++i)
 	{
 		d[i].Depth = numBytes;
 		int j = 0;
@@ -381,7 +428,7 @@ void runThreads(long numBytes, long Inpt, int rem)
 		d[i].sliceSt = (Inpt * i);										
 		d[i].sliceEnd = Inpt * (i + 1);
 		
-		if(i == NUM_THREADS - 1)
+		if(i == NUM_THR_PROC - 1)
 		{
 			d[i].sliceEnd = d[i].sliceEnd + rem;
 		}
@@ -392,7 +439,7 @@ void runThreads(long numBytes, long Inpt, int rem)
 
 	pthread_attr_destroy(&attr);
 
-	for(i=0; i<NUM_THREADS; ++i)
+	for(i=0; i<NUM_THR_PROC; ++i)
 	{
 		pthread_join(threads[i], NULL);
 	}
@@ -400,7 +447,7 @@ void runThreads(long numBytes, long Inpt, int rem)
 	pthread_mutex_destroy(&mutex_sum);
 	
 	
-	mapTurnin(numBytes);
+	
 
 
 }
