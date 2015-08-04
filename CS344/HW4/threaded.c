@@ -35,6 +35,7 @@
 #include <sys/mman.h>
 #include <pthread.h>
 #include "primes.h"
+#include <time.h>
 /*
 *	Divide number into 'threads' parts using modulus 
 *	Add them up to create start and end of each section.
@@ -49,6 +50,7 @@
 */
 unsigned int masks[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 int happyCount = 0;
+
 struct data
 {
 	unsigned int Depth;
@@ -65,7 +67,7 @@ pthread_mutex_t mutex_sum;
 
 static char List[CharSPACE];
 
-void mapPrimes(unsigned int *bitArr, long Count);
+
 void runThreads(long numBytes, long Inpt, int rem);
 
 
@@ -84,7 +86,8 @@ void mapTurnin(int byteAmt)
 	//This is the actual number value as we iterate 2^32-1 times.
 	unsigned int Index = 1;
 	//unsigned int  *intMask = malloc(sizeof(unsigned int*) * byteAmt);
-	unsigned int  intMask[happyCount];
+	//unsigned int  intMask[happyCount + 50000];
+	unsigned int  *intMask = malloc(sizeof(unsigned int) * (happyCount));
 	//We want to iterate through the char array 
 	for(i = 0; i<byteAmt; i++)
 	{
@@ -94,7 +97,7 @@ void mapTurnin(int byteAmt)
 		{
 			if(CHECK_BIT(List[i], j))
 				{
-					printf("EXTRACT HAPPINESS  %d  %d  %d\n", Index, i, j);
+					//printf("EXTRACT HAPPINESS  %d  %d  %d\n", Index, i, j);
 					//Filter the value into our mask and increment index
 					intMask[k] = 0xFFFFFFFF & Index;
 					k++; 
@@ -108,10 +111,10 @@ void mapTurnin(int byteAmt)
 		}
 	}
 	
-	printf("intmask size:  %ld\n",sizeof(intMask));
+	printf("intmask size:  %ld\n",sizeof(intMask ) * happyCount);
 	fp = fopen("Turnin", "w");
 	
-	fwrite(intMask, sizeof(intMask[0]), sizeof(intMask)/sizeof(intMask[0]), fp);
+	fwrite(intMask, sizeof(intMask[0]), happyCount, fp);
 	fclose(fp);
 	fd = fopen("TurninChar", "w");
 	fwrite(temp, sizeof(List[0]), 1, fp);
@@ -315,7 +318,8 @@ void *mount_shmem(char *path, int object_size){
 
 
 int main(int argc, char **argv)
-{
+{	
+	clock_t tic = clock();
 	FILE *fp; 
 	int i, choice, err;
 	long numBytes;
@@ -324,6 +328,8 @@ int main(int argc, char **argv)
 	pid_t pid[NUM_THR_PROC];
 	struct primeArr *primeArray;
 	int object_size = 1024 * 1024 * 600;
+	sigset_t blockMask, origMask;
+    struct sigaction saIgnore, saOrigQuit, saOrigInt, saDefault;
 	
 	printf("Please enter the max integer to search through for primes: ---->    ");
 	scanf("%ld",&Inpt);
@@ -334,9 +340,10 @@ int main(int argc, char **argv)
 //	Used this function to initially get my numbers into a BITMAP
 //	primeArray = crinit_primeArr(Inpt);
 //	IgnorePts(primeArray);
-//	p_primeArr(primeArray);						<<<-------------------------
+//	p_primeArr(primeArray);						//<<<-------------------------
 //	mapPrimes(primeArray->num, Inpt);
 //	freeArr(primeArray);
+
 	
 	//The number of bytes we want to pull in 
 	
@@ -358,12 +365,24 @@ int main(int argc, char **argv)
 	printf("Would you like to run threads or system? 1 for threads, 2 for system, anything else to quit");
 	scanf("%d",&choice); 
 	
+	//SIGNAL DEALING
+	
+	sigemptyset(&blockMask);            /* Block SIGCHLD */
+    sigaddset(&blockMask, SIGCHLD);
+    sigprocmask(SIG_BLOCK, &blockMask, &origMask);
+
+    saIgnore.sa_handler = SIG_IGN;      /* Ignore SIGINT and SIGQUIT */
+    saIgnore.sa_flags = 0;
+    sigemptyset(&saIgnore.sa_mask);
+    sigaction(SIGINT, &saIgnore, &saOrigInt);
+    sigaction(SIGQUIT, &saIgnore, &saOrigQuit);
 	if(choice == 1)
 		runThreads(numBytes, Inpt, rem);
 		
 	if(choice == 2)
 	{
 		void *myAddr = mount_shmem("/shProc", object_size);
+		myAddr = List;
 		
 		for(i = 0; i < NUM_THR_PROC; i++)
 		{
@@ -381,19 +400,35 @@ int main(int argc, char **argv)
 				{
 					d[i].sliceEnd = d[i].sliceEnd + rem;
 				}
-			}		
+			}
+		}
+		for(i = 0; i < NUM_THR_PROC; i++)
+		{		
 			switch(pid[i] = fork())
 			{
 				case -1:
 					fprintf(stderr, "Fork failed");
 				case 0: //child process
+					saDefault.sa_handler = SIG_DFL;
+					saDefault.sa_flags = 0;
+					sigemptyset(&saDefault.sa_mask);
+
+					if (saOrigInt.sa_handler != SIG_IGN)
+						sigaction(SIGINT, &saDefault, NULL);
+					if (saOrigQuit.sa_handler != SIG_IGN)
+						sigaction(SIGQUIT, &saDefault, NULL);
+
+					sigprocmask(SIG_SETMASK, &origMask, NULL);
 					printf("%d start: \n", d[i].sliceSt);
 					printf("%d end: \n", d->sliceEnd);
 					runSystem(d[i].sliceSt, d[i].sliceEnd, d[i].offset);
+					
+					exit(EXIT_SUCCESS);
 				default:
 					break;
 			}
 		}
+		
 	}
 
 	//Parse the char array and extract all happy primes with this FUNCtion.
@@ -402,6 +437,10 @@ int main(int argc, char **argv)
 	while(wait(NULL) != -1);
     shm_unlink("/shProc");
 	
+
+	clock_t toc = clock();
+
+    printf("Elapsed: %f seconds\n", (double)(toc - tic) / CLOCKS_PER_SEC);
 	return EXIT_SUCCESS;
 }
 
@@ -415,7 +454,7 @@ void runThreads(long numBytes, long Inpt, int rem)
 	pthread_attr_t attr;
 	int i;
 	
-	pthread_mutex_init(&mutex_sum, NULL);
+	//pthread_mutex_init(&mutex_sum, NULL);
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	
@@ -444,54 +483,15 @@ void runThreads(long numBytes, long Inpt, int rem)
 		pthread_join(threads[i], NULL);
 	}
 
-	pthread_mutex_destroy(&mutex_sum);
+	//pthread_mutex_destroy(&mutex_sum);
 	
-	
-	
-
-
 }
 
 
 
-//Used to map my primes initially to create file I would later use.
-void mapPrimes(unsigned int *bitArr, long Count)
-{
-	
-	FILE *fp;
-	int i = 0;
-	int j = 0;
-	
-	//Create size of array for map to file. Add 1 more if uneven.
-	Count = Count / 4;
-	if (Count % 4 > 0) { Count++;}
-	char myPrimes[Count];
-	
-	//
-	while(j < Count)
-	{
-		//cancel out everything except binary ones
-		myPrimes[j] = 0xFF & bitArr[i];
-		//Shift over and repeat process with next number.
-		myPrimes[j] = myPrimes[j] << 2;
-		myPrimes[j] = myPrimes[j] ^ bitArr[i+1];
-		myPrimes[j] = myPrimes[j] << 2;
-		myPrimes[j] = myPrimes[j] ^ bitArr[i+2];
-		myPrimes[j] = myPrimes[j] << 2;
-		myPrimes[j] = myPrimes[j] ^ bitArr[i+3]; 
-			
-		i = i + 4;
-		j++;
-	}
-	
-	fp = fopen("bitMap", "w");
-	
-	fwrite(myPrimes, sizeof(myPrimes[0]), sizeof(myPrimes)/sizeof(myPrimes[0]), fp);
-	
-	 
-	fclose(fp);
 
-}
+
+
 
 int happyOrsad(unsigned int nerm)
 {
