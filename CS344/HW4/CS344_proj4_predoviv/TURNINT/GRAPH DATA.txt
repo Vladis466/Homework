@@ -1,0 +1,163 @@
+
+200,000,000 with 1 threads:
+intmask size:  12562336
+Elapsed: 12.320000 seconds
+12.178u 0.155s 0:17.12 71.9%    0+0k 0+109944io 0pf+0w
+
+20,000,000 with 1 threads:
+intmask size:  1399720
+Elapsed: 1.310000 seconds
+1.315u 0.010s 0:04.45 29.6%     0+0k 0+11144io 0pf+0w
+
+
+2,000,000 with 1 threads:
+intmask size:  166472
+Elapsed: 0.150000 seconds
+0.151u 0.005s 0:03.97 3.7%      0+0k 0+1160io 0pf+0w
+
+
+
+
+
+200,000,000 with 2 threads:
+intmask size:  1324324
+Elapsed: 1.550000 seconds
+15.499u 0.140s 0:11.94 130.9%   0+0k 0+195328io 0pf+0w
+
+20,000,000 with 2 threads:
+intmask size:  1396472
+Elapsed: 1.740000 seconds
+1.727u 0.021s 0:04.60 37.8%     0+0k 0+20912io 0pf+0w
+
+2,000,000 with 2 threads:
+intmask size:  163434
+Elapsed: 0.240000 seconds
+0.169u 0.008s 0:05.62 2.8%      0+0k 0+2136io 0pf+0w
+
+
+
+
+
+200,000,000 with 4 threads:
+intmask size:  12378856
+Elapsed: 17.600000 seconds
+17.357u 0.260s 0:10.85 162.3%   0+0k 0+402760io 0pf+0w
+
+
+
+20,000,000 with 4 threads:
+intmask size:  1381784
+Elapsed: 1.690000 seconds
+1.641u 0.056s 0:04.90 34.4%     0+0k 0+40432io 0pf+0w
+
+
+2,000,000 with 4 threads:
+intmask size:  163344
+Elapsed: 0.230000 seconds
+0.217u 0.025s 0:04.58 5.0%      0+0k 0+8040io 0pf+0w
+
+
+
+
+
+200,000,000 with 8 threads:
+intmask size:  12516408
+Elapsed: 15.530000 seconds
+14.841u 0.694s 0:38.42 40.4%    0+0k 0+793544io 0pf+0w
+
+20,000,000 with 8 threads:
+intmask size:  1339048
+Elapsed: 1.680000 seconds
+1.593u 0.098s 0:10.11 16.6%     0+0k 0+79464io 0pf+0w
+
+2,000,000 with 8 threads:
+intmask size:  159712
+Elapsed: 0.180000 seconds
+0.176u 0.017s 0:06.21 2.8%      0+0k 0+8040io 0pf+0w
+
+
+
+200,000,000 with 16 threads:
+intmask size:  12385368
+Elapsed: 16.800000 seconds
+15.882u 0.930s 0:30.26 55.5%    0+0k 0+1574728io 0pf+0w
+
+20,000,000 with 16 threads:
+intmask size:  1387680
+Elapsed: 1.770000 seconds
+1.655u 0.129s 0:15.43 11.4%     0+0k 0+157656io 0pf+0w
+
+
+
+2,000,000 with 16 threads:
+intmask size:  163104
+Elapsed: 0.210000 seconds
+0.197u 0.025s 0:03.23 6.5%      0+0k 0+15912io 0pf+0w
+
+
+
+
+
+
+
+
+200,000,000 with 25 threads:
+intmask size:  11143280
+Elapsed: 22.090000 seconds
+21.262u 0.832s 0:20.78 106.3%   0+0k 0+2452496io 0pf+0w
+
+20,000,000 with 25 threads:
+AMT OF BITS:  --->> 5000000
+intmask size:  1301824
+Elapsed: 5.030000 seconds
+4.705u 0.338s 0:14.52 34.6%     0+0k 0+245480io 0pf+0w
+
+
+2,000,000 with 25 threads:
+ AMT OF BITS:  --->> 500000
+intmask size:  154000
+Elapsed: 0.560000 seconds
+0.497u 0.074s 0:13.38 4.1%      0+0k 0+24760io 0pf+0w
+os-class ~/cs344/hw/hw4 80%
+
+
+
+
+
+200,000,000 with 32 threads:
+intmask size:  11431296
+Elapsed: 33.810000 seconds
+30.661u 3.158s 0:20.39 165.8%   0+0k 0+3136424io 0pf+0w
+
+20,000,000 with 32 threads:
+intmask size:  1145624
+Elapsed: 2.520000 seconds
+2.355u 0.174s 0:12.96 19.4%     0+0k 0+313704io 0pf+0w
+
+2,000,000 with 32 threads:
+AMT OF BITS:  --->> 500000
+intmask size:  153944
+Elapsed: 0.590000 seconds
+0.504u 0.098s 0:08.66 6.8%      0+0k 0+31648io 0pf+0w
+
+
+
+
+
+200,000,000 with 64 threads:
+intmask size:  8373736
+Elapsed: 34.620000 seconds
+28.911u 5.713s 1:00.61 57.1%    0+0k 0+6258688io 0pf+0w
+
+20,000,000 with 64 threads:
+AMT OF BITS:  --->> 5000000
+intmask size:  960288
+Elapsed: 4.370000 seconds
+3.454u 0.922s 0:32.35 13.5%     0+0k 0+626104io 0pf+0w
+
+2,000,000 with 64 threads:
+ AMT OF BITS:  --->> 500000
+intmask size:  136576
+Elapsed: 0.310000 seconds
+0.236u 0.090s 0:08.43 3.7%      0+0k 0+63120io 0pf+0w
+

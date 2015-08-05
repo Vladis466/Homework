@@ -1,0 +1,8 @@
+* b4fb479 : Final tweaks, but getting latex file ready so pushing for logs. Signak checking updated, still working on correct use of process version. I found my mistakes but ran out of time to fix them regarding hitting UINT MAX. I simply was not allocating memory on the heap on numerous occasions. Fixed alot of issues but sieve needs a rewrite and I am able to max out my threads as far as my sieve can currently go.
+* 3fc0ebe : Having this strange issue where my parameters dont get passed into the children. Further disciplinary action required.
+* 1714a10 : Working on system version. My prime finder wont reach UintMax and I hate life because of it. However threaded is working well, the global bitmask array works like a charm, and I have succesfully extracted happiness from all primes selected
+* 9266c75 : Happy primes are correctly inserted into the BIT MASK IT WORK IM NOT AN IDIOT. Still cant hit UINT max, implementing threads.
+* 557b38f : happy prime finder is working correctly, at least on low numbers. Checking the bit map every time is slow and painful. Next going to try to implement the threads correctly, or create the output bitmask from the List array bitmap.
+* 328945f : Began implementing bit map. Forgot to update lately. Having issues reaching uintmax. Not sure how to go precisely though bitmap.
+* c3e1cb7 : logged
+* 1d06dfd : Started assignment doing threads first. Using sieve from first assignment.
