@@ -1,0 +1,89 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+\usepackage{verbatim}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%pull in the necessary preamble matter for pygments output
+\input{pygments.tex}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs311 ``operating systems'' files filesystem I/O},
+  pdftitle = {CS 311 Project 3: UNIX Process Control},
+  pdfsubject = {CS 311 Project 3},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\section{Design}
+
+\begin{itemize} 
+\item The design of my program will begin by taking into consideration everything required from the algorithm in the compute.c file. 
+Doing as much of compute.c first will help me to structure how I will need to send and recieve information.
+
+\item For this assignment I really want to focus on testing everything locally before beginning to connect the many parts
+of my project. For this reason I next plan on implementing the timing loop in my compute.c file before adding in communication.
+I will insert rudimentary versions of the client/server examples into the manage/compute files respectively while building the other areas of the
+assignment.
+
+\item Next I will look to implement a simple server on my manage.py file which upon completion, will be morphed
+into a concurrent server.
+
+\item The parsing will come last since I can implement simple communication 
+without detecting whether or not I want to kill the process or compute the files.
+\ldots 
+\end{itemize}
+
+
+
+\subsection{Where I differed}
+For testing purposes I ended up using a server written in C, using many of the details provided by the walkthrough in the link below.
+This was due to the fact that I programmed most compute.c first, except for the parsing and threading sections.
+http://www.linuxhowtos.org/C_C++/socket.htm?userrate=1
+
+
+\section{Work log}
+\verbatiminput{log.txt}
+
+\section{Challenges}
+My main concern was conceptually grasping the relationship between created child processes 
+and how to correctly implement piping between my newly created processes.
+
+
+\section{Answers}
+\subsection{Main point of the assignment}
+Learn the concepts of forking and piping. The basics of how a shell and system() function.
+Work with signals 
+
+\subsection{Solution Accuracy}
+My Shell runs correctly when tested with the implemented functions. You can access files, 
+change directories, and run programs. However, I had to resort to using execvp as I was having major issues
+:( .
+
+
+\subsection{Learnings}
+Grasped a better concept of the basis of a shell and how to create one. How they convert the information 
+into action and deal with running different processes. Initially I had no idea about the whole child creation process.
+
+\end{document}
