@@ -6,6 +6,7 @@ import socket
 import optparse
 import time
 import select
+import string
 
 HOST = ''   # Symbolic name, meaning all available interfaces
 PORT = 6969 # Arbitrary non-privileged port
@@ -41,7 +42,7 @@ def connect():
 	
 	return sockfd
 	
-def handleChild(sockConn):
+def handleProc(sockConn):
     # read a line that tells us how many bytes to write
     #bytes = int(sock.recv(1024))
     # get our random bytes
@@ -51,49 +52,32 @@ def handleChild(sockConn):
     # send them all
     #sock.sendall(data)	
 	data = sockConn.recv(1024)
+	print('data');
 	sockConn.sendall(data)
 
 def babySitter(servSock):
-	spawnCnt = 0
-	# spawn a new child process for every request
-	while True:
-		try:
-			conn, cliAddr = servSock.accept()
-			
-		#used for socket errors within exceptions(changed in 2.6, I know outraichous)
-		except IOError as e:
-			code, msg = e.args
-			#if this is the error, retry, not actually broke. o/w you probs broke something
-			if code == errno.EINTR:
-				continue
-			else:
-				raise
-
-		pid = os.fork()
-		if pid == 0: # child
-			spawnCnt += 1
-			# close listening socket
-			print ('Spawning: %d' %spawnCnt)
-			servSock.close()
-			handleChild(conn)
-			os._exit(0)
-
-		# parent - close connected socket
-		conn.close()
+	msg = []
+	#servSock.close()
+	#handleProc(conn)
+	# parent - close connected socket
+	#conn.close()
 	 
 	#wait to accept a connection - blocking call
-	#conn, addr = servSock.accept()
+	
 	#now keep talking with the client
-	#while 1:
-		
-		#print ('Connected with ' + addr[0] + ':' + str(addr[1]))
+	
+	while 1:
+		conn, addr = servSock.accept()
+		print ('Connected with ' + addr[0] + ':' + str(addr[1]))
 		#now keep talking with the client
-		#data = conn.recv(1024)
-		#conn.sendall(data)
-
-
-
-
+		data = conn.recv(15)
+		# sending the data to evaluate the size we must reach for performance calc
+		print("number: ", data);
+		num =  int(data);
+		print('Number: ', num);
+		msg.append('5')
+		msg.append(data)
+		conn.sendall(msg[1])
 
 
 
@@ -111,7 +95,7 @@ def main():
 	
 if __name__ == '__main__':
     main()
-
+	
 
 	
 	
