@@ -1,0 +1,115 @@
+
+/*------------------STYLING FOR LOGIN PAGE!------------------*/
+
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nameInput {
+  .show();
+}
+/********************Styling for Appointments.php*************************/
+
+}
+.box-hrs{
+  position: relative;
+  right: 20%;
+  bottom: 304px;  
+  float: right;
+}
+#box-form{
+      position: relative;
+      width: 25%;
+      padding: 10px;
+      border: 5px white;
+      margin: 0; 
+      display: block;
+}
+
+#box-formd{
+     
+      width: 100%;
+      padding-top: 60px;
+      float:left;
+      
+
+        
+}       
+      
+*[data-href] {
+    cursor: pointer;
+}     
+     
+/*
+ * Footer
+ */
+
+.blog-footer {
+  position:relative;
+
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+   margin-bottom: 0;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
