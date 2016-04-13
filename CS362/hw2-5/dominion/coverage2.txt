@@ -1,0 +1,69 @@
+Used gcov for testing.
+
+pre gcov testing bugs found:	
+	For the most part everything seems to be working correctly.
+	Tests are simple enough, I am confident in my results.
+	Minor bugs were fixed regarding correct syntax for accessing pointers and initializing 
+	the game when necessary. Used print functions to make sure the values were correct before
+	simplifying the test cases.
+
+File 'unittest1.c'
+Lines executed:87.50% of 8
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+Calls executed:66.67% of 3
+unittest1.c:creating 'unittest1.c.gcov
+
+File 'unittest2.c'
+Lines executed:90.91% of 11
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+Calls executed:75.00% of 4
+unittest2.c:creating 'unittest2.c.gcov'
+
+File 'unittest3.c'
+Lines executed:90.91% of 11
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:66.67% of 3
+unittest3.c:creating 'unittest3.c.gcov'
+
+File 'unittest4.c'
+Lines executed:100.00% of 17
+Branches executed:100.00% of 8
+Taken at least once:62.50% of 8
+Calls executed:62.50% of 8
+unittest4.c:creating 'unittest4.c.gcov'
+
+File 'cardtest1.c'
+Lines executed:90.91% of 22
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:75.00% of 4
+cardtest1.c:creating 'cardtest1.c.gcov'
+
+File 'cardtest2.c'
+Lines executed:90.48% of 21
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:75.00% of 4
+cardtest2.c:creating 'cardtest2.c.gcov'
+
+
+File 'cardtest3.c'
+Lines executed:95.00% of 20
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:80.00% of 5
+cardtest3.c:creating 'cardtest3.c.gcov'
+
+File 'cardtest4.c'
+Lines executed:95.00% of 20
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:80.00% of 5
+cardtest4.c:creating 'cardtest4.c.gcov'
+
+All tests appear to be executed with high percentages for liknes and branches. This suggests that my code is for the most part necessary and working correctly.
+One thing I noticed is that it might not be necessary to run some of these tests so many times, because we seem to be achieving the same result each time. 
+My reasoning initially was that different seedings might affect the test results differently but so far evidence of this is highly inconclusive.

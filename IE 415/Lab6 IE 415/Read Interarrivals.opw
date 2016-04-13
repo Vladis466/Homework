@@ -1,0 +1,8 @@
+[RESOURCES]
+[VARIABLES]
+Delay for Interarrival.NumberOut
+Create Entity Arrival.NumberOut Orig
+Dispose 1.NumberOut
+Create Arrival Control Entity.NumberOut
+Delay for Interarrival.NumberIn
+Create Entity Arrival.NumberOut Dup

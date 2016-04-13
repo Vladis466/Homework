@@ -1,0 +1,129 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+\usepackage{verbatim}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%pull in the necessary preamble matter for pygments output
+\input{pygments.tex}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs311 ``operating systems'' sockets with JSON},
+  pdftitle = {CS 311 Project 5:},
+  pdfsubject = {CS 311 Project 5},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\title{Sockets and Regular Expressions \\ CS 344 assignment 5, summer 2015}
+\author{Vlad Predovic}
+\maketitle
+\section{Design}
+
+\begin{itemize} 
+\item The design of my program will begin by taking into consideration everything required from the algorithm in the compute.c file. 
+Doing as much of compute.c first will help me to structure how I will need to send and recieve information.
+
+\item For this assignment I really want to focus on testing everything locally before beginning to connect the many parts
+of my project. For this reason I next plan on implementing the timing loop in my compute.c file before adding in communication.
+I will insert rudimentary versions of the client/server examples into the manage/compute files respectively while building the other areas of the
+assignment. In my compute.c file I plan on having a separate function to create each thread and compute the values autonomously. 
+This function will then return to main, which is charge of gathering details like run time and killing if necessary.
+
+\item Next I will look to implement a simple server on my manage.py file which upon completion, will be morphed
+into a concurrent server. I plan on using the select method to handle multiple client connections at once. Creating a basic setup
+should be simple enough. I just want the skeleton of what a concurrent server looks like before I implement the parsing aspect
+of this assignment.
+
+\item Once my compute.c is somewhat in order and I have a skeleton for my concurrent server I will work on passing information
+back and forth through the system. This can be a bit tricky since network passes information as bytes and there is some header
+space to deal with ass well. I will begin by just getting a simple parser moving back and forth and ultimately build up my JSON
+parser.
+
+\item After all this is completed I should be able to beef up my server and get it working with report.py. From what I understand
+report.py should be fairly simple to implement as I am just calling for information.
+\ldots 
+\end{itemize}
+
+
+
+\subsection{Where I differed}
+For testing purposes I ended up using a server written in C, using many of the details provided by the walkthrough in the link below.
+This was due to the fact that I programmed most compute.c first, except for the parsing and threading sections so I really wanted to understand
+what was going on (networks and sockets are my favourite topic :D). 
+Implementing a concurrent server was much more of an issue and complicated details. As a result I implemented most of the communication
+between server and client first. I ended up brute-forcing the JSON due to a lack of time but it works well.
+
+
+
+
+\section{Work log}
+\verbatiminput{log.txt}
+
+\begin{enumerate}
+\item 8/4/2015 Tuesday:
+	Began design of compute.c and implemented working brute force algorithm and simple timing loop during otherwise uneventful office hours.
+\item 8/6/2015 Thursday:
+	Read up on sockets, more design
+\item 8/7/1015 Friday
+	Implemented client-server system, implemented concurrency using children but discarded since I do not want to deal with children.
+Hence the random babysitter function which should be renamed.
+\item 8/12/2015 Wednesday 3:30am:
+	One assignment, two final projects, a presentation, and an oral exam later I finally have time to work on this. 
+Failed at implementing concurrent server using select method. Indentation issues in python proved to be my bane. I hate python.
+\item 8/13/2015 Thursday 6:47pm:
+	Working communication between server and client, JSON brute force works fairly well. Random start generator implemented.
+Brb, I have another final to write up...
+\item  8/13/2015 Thursday 11:25pm:
+	Figured out my problem, I was using sendall instead of send throwing me into an infinite loop. Racing to implement as much
+as I can now. Report.py works at least. 
+
+\end{enumerate}
+\section{Challenges}
+I struggled with the python architecture in terms of implementing a concurrent server while trying to not break everything else. 
+I feel this ultimately hindered me as I spent a lot of times debugging and changing the implementation of my server which took time 
+away from working on the more difficult tasks like JSON parsing. 
+
+
+\section{Answers}
+\subsection{Main point of the assignment}
+Understanding client server relationship and nitty gritty of how information is passed over a network. 
+Also, improving string manipulation skills. Regular Expressions are pretty cool.
+
+\subsection{Solution Accuracy}
+The use of a client server system indirectly also serves as verification of  correctly working system.
+This is because I am able to display information on separate sessions which would be very difficult
+to arrive to accidentally. I used this to verify output on server side and client side.
+Apart from this I used the GDB debugger during the PCRE implementation to follow variables '
+and a massive amount of print statements. Also some error flags sprinkled throughout.
+
+
+\subsection{Learnings}
+Working with sockets was a lot of fun, in a masochistic sense of course, like everything else in systems programming.
+Implementing how to properly send and receive information was very interesting as I had previously taken a
+telecommunications class that was all theory(IE418).
+Also became aware of the very interesting tool, regular expressions. Overall enjoyed this project.
+I can really see the value in becoming fluent at using these regular expressions.
+
+\end{document}

@@ -1,0 +1,58 @@
+1. Language:
+Java
+
+
+2. List the tools you looked at before selecting this tool:
+I looked at stackoverflow for recommendations. I chose the first that stood out.
+
+
+3. Tool selected for using:
+FindBugs
+
+
+4. Why this tool:
+This was recommended as a good Java static analysis tool. The website and manual
+looks professional, the application has a GUI, and it is relatively easy to run.
+
+
+5. Which software project did you analyze?:
+I chose a software project I wrote for an AI class. It implements several search
+algorithms on a game.
+
+
+6. Provide details of software.
+
+a. a SLOC:
+719 lines
+
+b. Domain:
+Console application
+
+
+7. What problems did you face while using this tool?:
+It was user-friendly, but I had a couple minor problems. First, the file types it
+asked for was confusing, as it did not mention .class, which I use. Second, a
+strange fact is it requires not the source files, but the directory of the source
+files, in order to show lines of code in the analysis.
+
+
+8. Did the tool find any false positive warnings, and how many:
+At least one, but I am pretty sure a second one warning is not relavent to my code.
+
+
+9. Did the tool report some warnings which were actually bugs, and how many:
+No real bugs were found, but there were some good practice suggestions.
+
+
+10. Did the tool miss some bugs which you already knew were actually bugs, and how many:
+No. My program is already working, and I know of no bugs.
+
+
+11. Discuss your overall experience with using this tool:
+Overall, I would call this a positive experience. Using the tool is surprisingly simple.
+Just download, then run the GUI, and finally select the javabytes and source files, and
+it works. The analysis took a couple of seconds for a few hundred lines, which is fine
+for small or medium projects. The content in the warnings are sometimes not useful, but
+did give some good suggestions for good programming practice, such as using %n instead
+of \n in a formatted string. However, I did not run it on a project I am currently
+testing, so I can't see how well it catches bugs.

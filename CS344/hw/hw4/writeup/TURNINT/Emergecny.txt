@@ -1,0 +1,1 @@
+icc -g -pthread -Wall -std=gnu99 -lpthread threaded.c primes.c -o threaded -lrt

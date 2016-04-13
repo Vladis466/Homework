@@ -1,0 +1,7 @@
+import os, shlex, subprocess, time
+
+def ls_sp:
+    command = "ls-lartn"
+    command_parsed = shlex.split(command)
+    subprocess.Popen()
+

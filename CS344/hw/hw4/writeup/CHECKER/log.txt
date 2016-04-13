@@ -1,0 +1,42 @@
+commit b4fb479ffa8c6bfe0950cdadad0368804328d2df
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Mon Aug 3 22:05:41 2015 -0700
+
+    Final tweaks, but getting latex file ready so pushing for logs. Signak checking updated, still working on correct use of process version. I found my mistakes but ran out of time to fix them regarding hitting UINT MAX. I simply was not allocating memory on the heap on numerous occasions. Fixed alot of issues but sieve needs a rewrite and I am able to max out my threads as far as my sieve can currently go.
+
+commit 3fc0ebed59db927783a0782fd26c27f4d59f4c56
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Sun Aug 2 03:00:43 2015 -0700
+
+    Having this strange issue where my parameters dont get passed into the children. Further disciplinary action required.
+
+commit 1714a10ef1e501204cb1c84ede86894898289997
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Sat Aug 1 21:07:12 2015 -0700
+
+    Working on system version. My prime finder wont reach UintMax and I hate life because of it. However threaded is working well, the global bitmask array works like a charm, and I have succesfully extracted happiness from all primes selected
+
+commit 9266c7565ac5d58662652c3bab5fe418d8d7bf34
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Fri Jul 31 22:16:22 2015 -0700
+
+    Happy primes are correctly inserted into the BIT MASK IT WORK IM NOT AN IDIOT. Still cant hit UINT max, implementing threads.
+
+commit 557b38fad5929c1984121649def5715bba8e4797
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Fri Jul 31 20:37:36 2015 -0700
+
+    happy prime finder is working correctly, at least on low numbers. Checking the bit map every time is slow and painful. Next going to try to implement the threads correctly, or create the output bitmask from the List array bitmap.
+
+commit 328945fdcb5b4e6bc2602216b9294778c72099aa
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Fri Jul 31 17:29:46 2015 -0700
+
+    Began implementing bit map. Forgot to update lately. Having issues reaching uintmax. Not sure how to go precisely though bitmap.
+
+commit c3e1cb751701e9b69c10a69602d50557a72c1035
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Wed Jul 22 22:47:10 2015 -0700
+
+    logged
+

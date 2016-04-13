@@ -1,0 +1,39 @@
+I chose for randomtestcard.c to test the mine card.
+
+First implementation:
+I ran a single run for each card, no random factor. Both tests were
+successes.
+The line coverage is
+randomtestcard - 23.26%
+randomtestadventurer - 18.40%
+
+Second implementation:
+I ran 10,000 tests each, with random elements: for adventurer card,
+number of players and hand position were randomized. For mine card,
+number of players, hand position, card chosen to discard, and card
+chosen to gain were randomized. I ended up finding and fixing a bug
+in dominion.c, which asked if the gain card was not worth too little;
+actually, it should ask if the gain card is worth too much. All tests
+in the end were successes.
+The line coverage is
+randomtestcard - 24.83%
+randomtestadventurer - 20.31%
+
+Third implementation:
+I did not change the adventurer implementation, and nothing changed
+with a new run. The mine card testing added tests that were supposed
+to fail, by returning -1 (which is a testing success if it fails).
+Again, everything was successful.
+The line coverage is
+randomtestcard - 25.17%
+
+Now I will try to break dominion.c code slightly to see if my tests
+catch it. I will list the change alongside the number of failures I
+find. For the adventurer card:
+removed temphand[z] = cardDrawn; - 0 failures out of 10,000
+removed z++; - 5416 failures out of 10,000 after some changes
+
+For the mine card:
+changed a conditional to choice2 > treasure_map && choice2 < curse - 0 failures out of 10,000
+note: It seems that a further failure check in dominion.c always catches these failures, so it's not actually a problem.
+removed discardCard(handPos, currentPlayer, state, 0); - 4914 failures out of 10,000

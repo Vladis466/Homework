@@ -1,0 +1,8 @@
+plan:
+
+fill deck with (random number) of (each card, each selected from card enum randomly)
+
+ensure only treasure cards are considered treasure cards (between 4 and 6)
+
+results: 
+seems to work just fine with default deck, haven't tested with range of decks

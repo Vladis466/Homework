@@ -1,0 +1,21 @@
+[RESOURCES]
+Resource 1
+Resource 2
+Bridge
+[VARIABLES]
+Server 1.NumberOut
+Dispose 2.NumberOut
+Server 1.NumberIn
+Ship crossing.NumberOut
+Wait for Bridge.NumberIn
+Dispose 1.NumberOut
+Decide 1.NumberOut True
+Ship crossing.NumberIn
+Server 2.NumberIn
+Server 2.NumberOut
+Bridge is down.NumberOut False
+Trucks.NumberOut
+Bridge is down.NumberOut True
+Decide 1.NumberOut False
+Wait for Bridge.NumberOut
+Ships.NumberOut

@@ -1,0 +1,20 @@
+[RESOURCES]
+Resource 1
+Worker 1
+Worker 2
+Worker 3
+Worker 4
+Worker 5
+[VARIABLES]
+Dispose 2.NumberOut
+Rework.NumberOut
+Vehicles Being Shipped.NumberOut
+Final Inspection.NumberIn
+Loading Area.NumberIn
+Vehicles Arrive.NumberOut
+Final Inspection.NumberOut
+Trucks Arrive.NumberOut
+Loading Area.NumberOut
+Ready for Final Inspection?.NumberOut False
+Rework.NumberIn
+Ready for Final Inspection?.NumberOut True

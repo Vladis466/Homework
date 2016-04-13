@@ -1,0 +1,10 @@
+1. 16 push operations would cost 24. 32 push operations would cost 56. Worst case is O(n).
+
+2. 16 push operations would cost 60. 32 push operations would cost 260. Worst case is O(n).
+
+3. 
+
+To get a worst case scenario you need to push to max capacity of the array, then pop off any part of the array that is not being used. In that case, you could achieve O(n^2). 
+
+
+To create a better system, you would be to still have to double the capacity when array is full but when you start popping, you should only half the array when you reach N/4. This way, you would only pop when you absolutely need to but still have quite a bit of room to push before the next resize. 

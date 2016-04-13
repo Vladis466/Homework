@@ -1,0 +1,7 @@
+[RESOURCES]
+Server
+[VARIABLES]
+Process 1.NumberOut
+Customer Arrival.NumberOut
+Process 1.NumberIn
+Customers Leaving.NumberOut

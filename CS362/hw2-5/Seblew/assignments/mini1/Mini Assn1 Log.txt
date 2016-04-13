@@ -1,0 +1,107 @@
+processing file: m_config.c
+Running from dir: \\stak.engr.oregonstate.edu\students\s\seblew\cs362\chocolate-doom\src
+command:
+C:\splint-3.1.1\bin\splint.exe -standard  +posixstrictlib -preproc +posixlib -retvalint -exportlocal +matchanyintegral +ptrnegate \
+ -predboolothers -branchstate -retvalother -nullret -formattype -onlytrans -mustfreefresh -globs -isoreserved -namechecks \
+ +gnuextensions -paramuse -exportheader -declundef -temptrans -nullassign -formatconst -readonlytrans -noeffect \
+ -globstate -compdestroy \
+ m_config.c
+============= stdout: =============
+Command Line: Selecting library posixlib after library posixstrictlib was
+                 selected (only one library may be used)
+doomtype.h(81,3): Type boolean is probably meant as a boolean type, but the
+    boolean type name is not set. Use -booltype boolean to set it.
+  Use the -booltype, -boolfalse and -booltrue flags to change the name of the
+  default boolean type. (Use -likelybool to inhibit warning)
+m_config.c: (in function SearchCollection)
+m_config.c(1581,14): Operand of ! is non-boolean (int):
+                        !strcmp(name, collection->defaults[i].name)
+  The operand of a boolean operator is not a boolean. Use +ptrnegate to allow !
+  to be used on pointers. (Use -boolops to inhibit warning)
+m_config.c(1583,20): Immediate address &collection->defaults[] returned as
+                        implicitly only: &collection->defaults[i]
+  An immediate address (result of & operator) is transferred inconsistently.
+  (Use -immediatetrans to inhibit warning)
+m_config.c(1602,21): Initial value of scantokey[2] is type char, expects int:
+                        '1'
+  To make char and int types equivalent, use +charint.
+m_config.c(1602,29): Initial value of scantokey[3] is type char, expects int:
+                        '2'
+m_config.c(1602,37): Initial value of scantokey[4] is type char, expects int:
+                        '3'
+m_config.c(1602,45): Initial value of scantokey[5] is type char, expects int:
+                        '4'
+m_config.c(1618,3): Additional initialization errors for scantokey not reported
+m_config.c: (in function SaveDefaultCollection)
+m_config.c(1639,14): Operand of ! is non-boolean (boolean): !defaults[i].bound
+m_config.c(1673,26): Left operand of && is non-boolean (int):
+    defaults[i].untranslated && v == defaults[i].original_translated
+m_config.c: (in function LoadDefaultCollection)
+m_config.c(1799,13): Operand of ! is non-boolean (int): !feof(f)
+m_config.c(1812,29): Operand of ! is non-boolean (boolean): !def->bound
+m_config.c: (in function M_SaveDefaultsAlternate)
+m_config.c(1881,5): Implicitly only storage doom_defaults.filename (type char
+    *) not released before assignment: doom_defaults.filename = orig_main
+  A memory leak has been detected. Only-qualified storage is not released
+  before the last reference to it is lost. (Use -mustfreeonly to inhibit
+  warning)
+m_config.c(1882,5): Implicitly only storage extra_defaults.filename (type char
+    *) not released before assignment: extra_defaults.filename = orig_extra
+m_config.c: (in function M_LoadDefaults)
+m_config.c(1905,9): Test expression for if not boolean, type int: i
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+m_config.c(1907,2): Implicitly only storage doom_defaults.filename (type char
+    *) not released before assignment: doom_defaults.filename = myargv[i + 1]
+m_config.c(1907,2): Unqualified storage myargv[i + 1] assigned to implicitly
+                       only: doom_defaults.filename = myargv[i + 1]
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+m_config.c(1912,9): Implicitly only storage doom_defaults.filename (type char
+    *) not released before assignment: doom_defaults.filename =
+    M_StringJoin(configdir, default_main_config, NULL)
+m_config.c(1927,9): Test expression for if not boolean, type int: i
+m_config.c(1929,9): Implicitly only storage extra_defaults.filename (type char
+    *) not released before assignment: extra_defaults.filename = myargv[i + 1]
+m_config.c(1929,9): Unqualified storage myargv[i + 1] assigned to implicitly
+                       only: extra_defaults.filename = myargv[i + 1]
+m_config.c(1935,9): Implicitly only storage extra_defaults.filename (type char
+    *) not released before assignment: extra_defaults.filename =
+    M_StringJoin(configdir, default_extra_config, NULL)
+m_config.c(1939,27): Storage doom_defaults.filename reachable from passed
+    parameter is unqualified (should be implicitly only): &doom_defaults
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+m_config.c: (in function M_BindIntVariable)
+m_config.c(1982,5): Assignment of boolean to boolean: variable->bound = true
+  Types are incompatible. (Use -type to inhibit warning)
+m_config.c: (in function M_BindFloatVariable)
+m_config.c(1993,5): Assignment of boolean to boolean: variable->bound = true
+m_config.c: (in function M_BindStringVariable)
+m_config.c(2004,5): Assignment of boolean to boolean: variable->bound = true
+m_config.c: (in function M_SetVariable)
+m_config.c(2016,30): Operand of ! is non-boolean (boolean): !variable->bound
+m_config.c(2023,12): Return value type boolean does not match declared type
+                        boolean: true
+m_config.c: (in function M_GetIntVariable)
+m_config.c(2034,30): Operand of ! is non-boolean (boolean): !variable->bound
+m_config.c: (in function M_GetStringVariable)
+m_config.c(2049,30): Operand of ! is non-boolean (boolean): !variable->bound
+m_config.c(2055,12): Unqualified storage *variable->location.s returned as
+                        implicitly only: *variable->location.s
+m_config.c: (in function M_GetFloatVariable)
+m_config.c(2064,30): Operand of ! is non-boolean (boolean): !variable->bound
+m_config.c: (in function M_GetSaveGameDir)
+m_config.c(2149,10): Operand of ! is non-boolean (int): !strcmp(configdir, "")
+
+
+
+
+============ end stdout =============
+============= stderr: =============
+=========== end stderr ==============
+Finished checking: 
+32 code warnings
+================================
+
+Checking finished

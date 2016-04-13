@@ -1,0 +1,25 @@
+[RESOURCES]
+Resource 1
+Resource Parking
+Worker 1
+Worker 2
+Worker 3
+Worker 4
+[VARIABLES]
+Rework.NumberOut
+Load up Truck.NumberOut
+Vehicles Being Shipped.NumberOut
+Final Inspection.NumberIn
+Vehicles Arrive.NumberOut
+Load up Truck.NumberIn
+Final Inspection.NumberOut
+Is Loading Area Full?.NumberOut True
+Parking Lot.NumberIn
+Ready for Final Inspection?.NumberOut False
+Parking Lot.NumberOut
+Is Loading Area Full?.NumberOut False
+Rework.NumberIn
+Ready for Final Inspection?.NumberOut True
+Variable 1
+Trucks Arriving.NumberIn
+Trucks Arriving.NumberOut

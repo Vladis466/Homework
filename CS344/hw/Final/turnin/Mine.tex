@@ -1,0 +1,274 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}                                        
+
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{listings}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  basicstyle=\ttfamily,            % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=10pt,                  % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=8,                       % sets default tabsize to 8 spaces
+  %title=\lstname                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\lstdefinestyle{niceC}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=0.2in,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+%random comment
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs344 ``operating systems'' files filesystem I/O},
+  pdftitle = {Comparison of OS API's},
+  pdfsubject = {CS 344 Final},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\title{Comparison of selected POSIX and Windows API \\ CS 344 Final, summer 2015}
+\author{Vlad Predovic}
+\maketitle
+
+\section{Introduction}
+	Throughout this class several key topics of system programming have covered. Among these are file I/O, shell implementation with piping and redirection, 
+distributing work through threading or spawning sub-processes, and cross language server/client interaction. However, 
+if there is any key lesson to be learned about systems programming from this class it is just how quickly, and obscurely, 
+things can go wrong if system level implementations are not handled with meticulous scrutiny(synonyms x \= 2  for emphasis).
+
+	The following three sections provide a brief summary of the importance behind each tool. 
+A comparison of differences in the API implementation in POSIX and windows will then be laid out.
+Finally, these differences will be discussed, and, as in most duels to the death, a choice will be made for better implementation.
+The topics covered will be socket implementation(specifically network sockets), file I/O, and communication through Piping.
+
+
+\section{Sockets:}
+	Sockets were first implemented in UNIX as a method allowing autonomous processes to communicate. Most socket implementations
+at their core follow a client-server model where the server creates a socket that 'listens'
+while the client creates a socket which attempts to to connect to the former. Ultimately, information can
+be sent back and forth until the connection is interrupted.
+
+
+\begin{enumerate}
+  \item Set-up
+Header files used: Windows(winsock.h)			POSIX(sys/socket.h, arpa/inet.h, netinet/in.h)
+
+	For the most part, set-up of a simple socket connection is identical. Both implementations use the 'sockaddr\_in'
+struct to maintain addressing data for create the connection. However, the windows implementation requires a few extra lines
+to initialize by using the WSAStartup() function. As a result, information on the WinSock implementation is stored in the WSADATA
+struct and the function serves to initialize much of the data and structures that are necessary to use the sockets.
+
+  \item Main Functionality \newline
+	Both the windows API and POSIX standard use the same basic methods and calls to communicate between
+client and server.
+
+
+  \item Clean up and Error Checking \newline 
+  
+
+	Since we initialize an additional struct we have to close it as well using WSAcleanup(). As for error 
+checking, POSIX relies on the errno library to set flags and report while the windows API uses 
+WSAgetlasterror() which reports the last error that occurred. Instead of directly closing the socket by
+accesing the file descriptor using close(), we use the close-socket() function.
+
+\end{enumerate}
+	The changes are slight between the two implementations. A few different function calls are used to 
+initialize, clean up, and error check functionality with basically the same parameters and functionality. These
+basically consist of prefixing POSIX function call names with 'WSA'(ex: WSAsend). Windows is a little cleaner 
+with only one necessary header file, and the WSAData struct can be ignored for the most part unless the user 
+specifically wants information it contains. However, windows 8 introduced specific socket API's like WinRT 
+and WebSockets, extensions used for specific purposes like high performance for developing network apps and special bi-directional web sockets.
+
+Although very similar, Windows deserves a slight edge due to having additional and more updated functionality
+which can be used for very specific purposes.
+
+
+\section{File I/O}
+	One of the most critical aspects of an operating system is how objects interact with 
+each other and the user. File I/O(input and output) refers to the operations used to access,
+read, write, display, and manipulate standard files within the OS. 
+	
+\begin{enumerate}
+  \item Header files used: Windows(alot....)\newline			POSIX(sys/stat.h, fcntl.h, sys/types.h)
+  
+  \item Main Functionality \newline
+	OS functionality is to an extent defined by the fundamental needs and performance considerations 
+a working system as we know it. Due to this, many similarities can be found between the operations
+in the Windows and POSIX implementations. The CreateFile() call is the windows equivalent of the POSIX open()
+call. It also returns a file descriptor as an integer used to refer to files such as sockets/terminals/etc..
+In both versions a user must enter a pathname, access flags, and permissions. These similarites are seen throughout
+most of the function calls, at least on a superficial levels. How both operating systems achieve the similar results 
+tends to vary a little. 	
+
+  \item File Descriptors(FD) \newline
+I decided to cover file descriptors as these are critical to manipulating files at a systems level.
+On both POSIX and Windows FD's map to their respective descriptions through a table. 
+However, FD objects in POSIX can be sent via sockets while in windows they cannot. Windows instead
+employs the function DuplicateHandle() which can be called by both the source and target processes. That
+way when messages are received over a socket, the FD is hashed into the table of the current process.
+
+  \item Linearity \newline
+	One of the great things about UNIX had to do with the term 'everything is a file'. The Linux kernel 
+represents information from applications as if they were files, which makes them able to be accessed by 
+the same functions that we use to garner information from a regular text file. Windows on the other hand
+stores important details like the registry and system logs as databases. However, you cannot just access 
+these like normal files. In windows, many different versions of read(), write(), and other fundamental tools
+are necessary to access the different file types.
+
+\end{enumerate}
+ Although one could argue that Windows can provide much more specialized tool sets which can give extra
+information, for the task of systems programming POSIX seems more powerful. From this brief comparison,
+ the POSIX implementation is clearly superior as it grants you much more access and control
+with far fewer tools.
+
+
+\section{Threading} 
+	Threading is the process by which we divide a set of tasks into smaller tasks, each with its own execution instructions, 
+and run through these all semi-concurrently. On multi core processors, these threads are capable of running in parallel.
+If implemented correctly, threading can increase speed up your program significantly. 
+
+\begin{enumerate}
+  \item Set-up \newline
+Header files used: Windows(process, thread)			POSIX(signal.h, pthread.h)
+	
+	In Windows all thread types belong to the object HANDLE. This simplifies implementation as opposed to 
+the POSIX implementation where each objects can have different data types (pthread\_t, pthread\_cond\_t). 
+OIn Windows you use system calls to work with threads while in POSIX we have implemented a library.
+
+
+  \item Main Functionality \newline
+	In both Windows and and POSIX threads are passed one parameter and return a single value. In windows
+this value is of type DWORD. In addition, in Windows the kernel handles the execution of all threads. 
+Since Windows only uses one object, the amount of functions needed is greatly reduced
+and we get some increased flexibility kind of like file I/O with POSIX. A great example is the WaitForMultipleObjects function call.
+This handle can be set to any combination of threads, mutexes, semaphores, and events, granting us functionality that
+would be much trickier to achieve with POSIX thread implementations. M
+
+  \item Resource Accessibility \newline
+Both POSIX and Windows also have trouble dealing with resource accessibility. While both POSIX
+and WINDOWS implement semaphores and mutexes to deal with this, Windows also uses events and critical sections while POSIX 
+conditional variables. One of the advantages Windows provides its users with is the conditional variable. This
+allows synchronization based on the value of data instead of just focusing on controlling the access
+to data that threads have.
+
+
+
+\end{enumerate}
+
+	I would have to say that the implementation of threads by Windows is more appealing since we are able to encapsulate
+all the different types within the same object. This ultimately makes the uses quicker to learn threading implementations.
+In addition, the use of implementations like the conditional variable provide flexibility which is not available in the
+POSIX implementation
+
+
+\section{Piping}
+\begin{enumerate} 
+	\item Useage \newline
+	Piping is a method that has been critical to the communication between processes throughout the development and usage
+	of UNIX systems. Windows also implements piping for interprocess communication  with the same first-in first-out (FIFO)
+	properties. Each pipe has an entry and exit, through which the read and write respectively. These are known as handles in Windows.
+	
+	\item Comparison \newline
+	Pipes in POSIX are basically used by having another program transmit data. In Windows similar methods are used. An interesting
+	feature built in to Windows is the use of Mailslots. A Mailslot is used for one way intercommunication. Messages can be stored there,
+	and then the owner of the Mailslot can at some point come and retrieve the message. This is similar and is implemented in client-server
+	socket systems through windows. Another feature available are named pipes. Named pipes are similar to traditional pipes except they 
+	can communicate with multiple processes that do not need to necessarily exist at the same time.
+	
+	To my knowledge both implementations are fairly similar, at least from a high-level perspective. However,
+	the idea of mailslots highly appeals to me, particularly because I would want to try it with the last assignment we 
+	did using a concurrent server and transmitting socket information.
+	
+\end{enumerate}
+
+\section{Conclusion}
+
+	I have now provided four brief comparisons of API implementations in POSIX in Windows. I did not expect
+the implementations to be as comparable as they were, to the point where simple implementations of certain functions,
+like a client-server connection, are practically identical. Each implementation has its own advantages, but ultimately 
+the Windows implementation appears to be more complex and customizable and ultimately more useful at the moment due to
+the enormous quantity of software that runs on Windows.
+
+
+
+	
+\section{Primary Sources}
+
+\href{https://msdn.microsoft.com/en-us/library/ms740525(v=vs.85).aspx }{'Socket Options.' (Windows). N.p., n.d. Web. 14 Aug. 2015.}
+
+\href{https://msdn.microsoft.com/en-us/library/windows/desktop/ms740642(v=VS.85).aspx }{"What's New for Windows Sockets." (Windows). N.p., n.d. Web. 14 Aug. 2015.}
+
+\href{http://man7.org/linux/man-pages/man2/socket.2.html }{"Socket(2) - Linux Manual Page." Socket(2) - Linux Manual Page. N.p., n.d. Web. 14 Aug. 2015.}
+
+\href{http://yarchive.net/comp/linux/everything_is_file.html }{"The Everything-is-a-file Principle (Linus Torvalds)." The Everything-is-a-file Principle (Linus Torvalds). N.p., n.d. Web. 14 Aug. 2015.}
+
+\href{http://man7.org/linux/man-pages/man2/open.2.html }{"Open(2) - Linux Manual Page." Open(2) - Linux Manual Page. N.p., n.d. Web. 14 Aug. 2015.}
+
+\href{http://linux.die.net/man/7/pthreads }{"Pthreads(7) - Linux Man Page." Pthreads(7): POSIX Threads. N.p., n.d. Web. 15 Aug. 2015.}
+
+\href{https://msdn.microsoft.com/en-us/library/windows/hardware/ff565772(v=vs.85).aspx}{"Windows Kernel-Mode Process and Thread Manager." - Windows 10 Hardware Dev. N.p., n.d. Web. 15 Aug. 2015.}
+
+\href{https://msdn.microsoft.com/en-us/library/windows/desktop/ms682516(v=vs.85).aspx }{"Creating Threads." (Windows). N.p., n.d. Web. 15 Aug. 2015.}
+\end{document}

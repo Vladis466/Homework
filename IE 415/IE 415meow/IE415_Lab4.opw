@@ -1,0 +1,12 @@
+[RESOURCES]
+Resource 1
+Server
+[VARIABLES]
+Process 1.NumberOut
+Customer Arrival.NumberOut
+Process 2.NumberIn
+Decide 1.NumberOut True
+Process 2.NumberOut
+Decide 1.NumberOut False
+Process 1.NumberIn
+Customers Leaving.NumberOut

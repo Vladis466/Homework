@@ -1,0 +1,28 @@
+E:\Projects\AIStudio\Debug\SampleCropor.exe.config
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.exe
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.pdb
+E:\Projects\AIStudio\Debug\SampleCropor.exe
+E:\Projects\AIStudio\Debug\SampleCropor.pdb
+E:\Projects\AIStudio\Debug\af\SampleCropor.resources.dll
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\ImageAnnotator.csprojResolveAssemblyReference.cache
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.InputForm.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.ImageAnnotator.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.Properties.Resources.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.ImageAnnotator.af.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\ImageAnnotator.csproj.GenerateResource.Cache
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\SampleCropor.exe.licenses
+E:\Projects\AIStudio\ImageAnnotator\obj\Debug\af\SampleCropor.resources.dll
+L:\Summer Projects\Tools\Source\Debug\SampleCropor.exe.config
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.exe
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.pdb
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\ImageAnnotator.csprojResolveAssemblyReference.cache
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.InputForm.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.ImageAnnotator.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.Properties.Resources.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.ImageAnnotator.af.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\ImageAnnotator.csproj.GenerateResource.Cache
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\SampleCropor.exe.licenses
+L:\Summer Projects\Tools\Source\Debug\SampleCropor.exe
+L:\Summer Projects\Tools\Source\Debug\SampleCropor.pdb
+L:\Summer Projects\Tools\Source\Debug\af\SampleCropor.resources.dll
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Debug\af\SampleCropor.resources.dll

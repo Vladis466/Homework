@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>User Guide</title>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="#">Hello</a>
+          <a class="blog-nav-item" href="#">darkness</a>
+          <a class="blog-nav-item" href="#">my</a>
+          <a class="blog-nav-item" href="#">old</a>
+          <a class="blog-nav-item" href="#">friend</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">An MTConnect User Guide for</h1>
+        <p class="lead blog-description">How to monitor factory data from on your mobile device. 
+        This guide is designed to show someone with basic or no programming knowledge how standardizing your 
+        machinery using MTConnect can simplify the development process of applications to monitor and extract the data being generated.
+        </p>
+      </div>
+
+
+<ul class="nav nav-pills">
+  <li class="active"><a data-toggle="pill" href="#home">Background</a></li>
+  <li><a data-toggle="pill" href="#menu1">Tools</a></li>
+  <li><a data-toggle="pill" href="#menu2">Step 1</a></li>
+  <li><a data-toggle="pill" href="#menu3">Step 2</a></li>
+  <li><a data-toggle="pill" href="#menu4">Step 3</a></li>
+  <li><a data-toggle="pill" href="#menu5">Step 4</a></li>
+  <li><a data-toggle="pill" href="#menu6">Step 5</a></li>
+</ul>
+
+
+
+
+
+<div class="row">                   <!-- Used so that the text wraps.-->
+
+  <div class="col-sm-8 blog-main">  <!-- Used so that the text wraps.-->
+
+    <div class="blog-post">  <!-- Used so that the text wraps.-->
+
+<div class="tab-content" >
+  <div id="home" class="tab-pane fade in active" >
+    <h2>What is MTConnect useful for?</h2>
+    <hr>
+            <p>In layman's terms, MTConnect is a project hoping to create a worldwide standard for the structure and movement of information
+            gathered from Industrial machinery. CNC machinery (machinery controlled by computers) are very common nowadays as they have many advantages, the important one to this guide being the ability to gather data.</p>
+
+    <h2>So whats the point?</h2>
+    <hr>            
+            <p>The implementation of the MTConnect standard would allow for easy and quick development of <strong><font color="#669900">user-friendly applications </font></strong> within an industrialized complex. These could be similar in appearance to the ones you use today on your smartphone except they would be used primarily by line managers, technicians, and others to analyze data, implement solutions, or avoid performance issues.</p>
+    <h2>How is this different than what currently exists?</h2>
+    <hr>
+            <p>Aesthetically, applications in industry tend to be discouraging and cluttered, as budgets are tight and the emphasis is on functionality. Hiring experts to analyze the data from all different CNC machines and create customized tools is extremely expensive.
+          Adopting the MTConnect standard across factories would highly reduce the barrier of entry for developers by giving them all the <strong><font color="#669900">powerful styling and functional tools</font></strong> currently available for web or native(phone-based) applications. </p>
+
+  </div>
+
+
+
+  <div id="menu1" class="tab-pane fade">
+    <h2>The MtConnect Agent</h2>
+    <hr>  
+          <p>The agent is basically a server, a web-based location where all the <em>current data</em>can be accessed. In a factory where the machinery complies to the MTConnect standard, all your machines would provide their data through adapters that would then provide their data to the agent. For this guide we will assume the agent is constantly running and automatically updated, since this should almost always be the case in a fully-functioning factory.</p>
+          <p>MtConnect provides a sample agent we can use to experiment with our application. This agent can be viewed here:</p>
+          <blockquote>
+            <p><a href="http://agent.mtconnect.org/">Sample agent</a></p> (Or at the bottom of the page under Points of Reference)
+          </blockquote>
+
+    <h2>Choosing the Intel XDK</h2>
+    <hr> 
+          <p>The Intel XDK is a nifty Integrated Development Environment that simplifies much of the development process of mobile
+            applications for you. It also allows you to quickly build hybrid applications, meaning that they will work on all 
+            devices with just one build. Finally it is free, quick to install, and easy to set up making it perfect for this example. </p>
+    
+          <blockquote>
+            <p><a href="https://software.intel.com/en-us/intel-xdk">Getting the Intel XDK</a></p>
+          </blockquote>
+
+          <p> The next page will guide you on setting up a simple environment on the Intel XDK and the functions that will 
+            be utilized. For additional information on the Intel XDK please refer to it's documentation by following the link below.</p>
+              
+          <blockquote>
+            <p><a href="https://software.intel.com/en-us/xdk/docs/intel-xdk-guided-tutorial">XDK Getting Started</a></p>
+          </blockquote> 
+  </div>
+
+
+
+  <div id="menu2" class="tab-pane fade">
+    <h2>Setting up the Application</h2>
+    <hr>
+        <p> The mobile application will be set up to be as simple as possible as the focus of this guide
+        is highlighting the interaction between your mobile application and the agent. Follow these
+        steps to begin creating an app.
+        <ol>
+        <li>Open up the Intel XDK. On the top left there should be a projects dropdown menu. Click <em>New Project</em>.</li>
+        <li>Now click the plus sign next to the word 'Templates on the upper left side of the page. Select <em>Layout and User Interface</em></li>
+        <li>Next out of the eight options that appear on your screen select the one on the far right, <em>Single View App</em></li>
+        <li>Click the checkbox: <em>Use App Designer</em></li> and then press continue on the bottom right corner of the screen.
+        </ol>
+        <img src="How-ToXDK.jpg" alt="Intel View" style="width:620px;height:420px;">
+        </p>
+         <p> In order to start you will first have to insert a column by dragging it from the layout menu under CONTROLS on the right side of the screen onto your app design. Then click it and press the edit HTML button found on the bottom right of the screen. Find the div that corresponds to that column and give it an ID so we can later write the results to it. I gave mine the id of "output" as shown below.</p>
+            <pre><code>< div id="output" class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0" ></code></pre>
+  </div>
+
+
+
+
+  <div id="menu3" class="tab-pane fade">
+    <h2>Setting up the Application Part.2</h2>
+    <hr>
+        <p>We now have the frame for our application. Ultimately we will create an app that at the push of a button gives the user
+          with a status update on whether the machine in question is currently running or not. This is a very simple application meant to show how easy it can be to recieve updated data from the machinery. Realistically you could access many more details such as sampling the last cuts the machine made or what events were ran by users on the machine.</p><br> 
+
+          The following points guide you in developing the rest of this app:
+        <ol>
+        <li>Insert a <em>BUTTON</em> from the Controls menu on the left side of the page.</li>
+        <li>Now highlight that button by clicking on it. On the bottom right side of the page an INTERACTIVITY menu should appear. Click on the dropdown "not set" and select <em>Custom Script</em>.</li>
+        <li>Now click the button that says Edit Script. This should take you to a Javascript file in which the functionality will be implented for to interact with the agent.</li>
+        </ol>
+        <img src="How-ToXDK2.jpg" alt="Intel View2" style="width:620px;height:420px;">
+        <p>All programming for this project will be done in HTML and Javascript. These are two of three cornerstones of web programming, with CSS being the third, used primarily for styling.</p>
+        <p>You should now be presented with this excerpt. Here we will program the button to retrieve the information we need about a given cutting machine when pressed. The next pages will go over interacting with the agent to accomplish this task.</p>
+        <pre><code> function register_event_handlers()
+ {
+     /* button  Button */
+    $(document).on("click", ".uib_w_2", function(evt)
+    {
+        /* your code goes here */ 
+    });
+    
+    }
+ document.addEventListener("app.Ready", register_event_handlers, false);
+})();
+</code></pre>
+
+</div>
+
+
+
+
+
+
+  <div id="menu4" class="tab-pane fade">
+    <h2>Interacting with the Agent</h2>
+    <hr>
+        <p>The MtConnect agent responds only to the URI that it is provided. It can return information on devices, streams, assets, or errors. The details of the return are seperated into Samples, Events, and Conditions. Additional information about what all these represent can be found in section 3 of <a href="http://static1.squarespace.com/static/54011775e4b0bc1fe0fb8494/t/557f2897e4b04b2acdba80b5/1434396823825/mtc_part_1_overview_v1.3.pdf">the Architectural Overview</a></p>
+       <p>For example:
+
+            <ol class="list-unstyled">
+              <li>the URI  <a href="http://agent.mtconnect.org/sample?count=100">http://agent.mtconnect.org/sample?count=100</a> would return 100 of the last samples collected for the devices listed. The agent providen by MTConnect only simulates one device, the VMC-3Axis</li>              
+              <li>the URI <a href="http://agent.mtconnect.org/current">http://agent.mtconnect.org/current </a>returns a list of current Samples, Events, and Conditions for each data item contained in the device and component stream.</li>
+              <li>the URI <a href="http://agent.mtconnect.org/probe">http://agent.mtconnect.org/probe</a> returns the component composition of the device, and all data items available.</li>
+            </ol>
+
+        <h2>Calling data for the mobile Application</h2>
+        <hr>
+        <p>For the moment, the feature of interest is the condition. According to the MTConnect standard, the conditions are a peice of information depicting the state of the device in question. The possible states are Normal, Warning, Fault, or Unavailable.</p>
+        <p>The simple mobile application will begin by sending a request to the agent in order to gather all current data on the VMC-3Axis</p>
+        <p>The following code would send a request to the agent every time you clicked the button:</p>
+      
+        <pre><code> function register_event_handlers() 
+          {
+        /* button  Button */
+    $(document).on("click", ".uib_w_3", function(evt)
+    {
+        /* <font color="red">your code goes here  ONLY INSERT THE NEXT LINE*</font color="red">*/ 
+    intel.xdk.device.getRemoteData("http://agent.mtconnect.org/current", "GET", "", "study_Results", "error_handler");
+    });
+    
+    }</code></pre>
+
+        <p>Make the changes above as compared to step 2.</p>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="menu5" class="tab-pane fade">
+    <h2>Projecting the Data</h2>
+    <hr>
+          <p>We now have all the information returned from the agent in the variable data. The following code was implemented in order to extract the information in question, <em>Is the VMC-3Axis currently turned on or off?</em></p>
+    <h2>Parsing the data</h2>
+          <p>By simply examining the raw data we can identify how to access the current state of the machinery.</p><br>
+          <p>The first fourl lines of the code below parse the data looking for the field "PowerState" and then extract the response provided by the agent. This was done using regular expressions as I was having issues with the Intel XDK functions, but there are much easier ways of parsing an XML document than this.</p><br>
+          <p> The last line show below returns the output to the main page below the button on the user's mobile application.
+
+            <pre><code>function error_handler(data) { alert("error: " + data); }
+function study_Results(data) 
+{ 
+  var rePower = /PowerState(.+?(?=<))/;
+  var txt = data.match(rePower);
+  var Response = String(txt).split(">");
+  var Response2 = String(Response).split(",");
+
+  document.getElementById("output").innerHTML = "The VMC-3Axis is currently: " +
+                    Response2[1];
+} </code></pre>
+
+            <p>This excerpt of the code is put at the bottom of the file titled "index_user_scripts.js" below everything else.</p>
+  </div>
+
+
+
+
+  <div id="menu6" class="tab-pane fade">
+    <h2>A mobile Application!</h2>
+    <hr>
+    <p>Congratulations, we have now created an app that can operate on android phones or iphones and will automatically tell you the current state of a milling device located within a factory. Cool stuff huh>?</p><br>
+            <p>If you head over to the emulate tab now and and run the app, clicking the Button should yield the following results.</p>
+        <center><img src="xDk-HoWTO_CS496_FinalPic.jpg" alt="Intel View3" style="width:320px;height:420px;"></center>
+ <p>Seems a little anticlimatic....... But it works. It is important to keep in mind what is actually going on here. Lets say you needed to know when the machine was done with an operation. You could easily modify an application to alert you of a change as the agent would be updated.</p>
+<br><br>
+
+<p> Thank you for reading my guide. I hope that the power and possibilities of establishing a global standard for machining such as MTConnect are much clearer now. My hope was to show that with such an adoption the barrier of entry and specialization needed to develop applications for the workplace would drop dramatically.</p>  
+
+  </div>  
+</div> <!-- Tab content closing div -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+            <h2 class="blog-post-title">Points of Reference</h2>
+
+            <p>Below you will find references to common programming terms that I may/may not cover throughout this guide.</p>
+            <hr>
+            <p>I want to know more about the <a href="http://www.w3.org/XML/">XML Data format.</a></p>
+            <p>I want to know more about the <a href="http://static1.squarespace.com/static/54011775e4b0bc1fe0fb8494/t/557af7d6e4b070455fec768d/1434122198226/MTC_Part_2_Components++1.3.1+Final.pdf">XML structure defined by MTConnect.</a></p>
+            <p>What is the agent used for the <a href="http://agent.mtconnect.org/">code examples?</a></p>
+            <p>Below is the structure of the code snippet used extract data from the agent. The source can be found within the <a href="https://software.intel.com/en-us/node/493009">Intel XDK documentation</a></p>              
+            <pre><code><ul><!--
+                 --><li>var parameters = new intel.xdk.Device.RemoteDataParameters();</li><!--
+                 --><li>parameters.url = "http://twitter.com/statuses/public_timeline.xml";</li><!-- 
+                 --><li>parameters.id = '12345';</li><!--  
+                 --><li>intel.xdk.device.getRemoteDataExt(parameters);</li><!--
+         --></ul></code></pre>
+
+
+
+          </div><!-- /.blog-post -->
+
+
+        </div><!-- /.blog-main -->
+
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>A jumpstart to understanding and getting started with MTConnect by <a href="https://twitter.com/vladp6">Vlad Predovic</a>.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Additional References</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/mtconnect">MtConnect Github</a></li>
+              <li><a href="http://www.automation.com/pdf_articles/gettingstartedwithmtconnectwritingclientsrevisionjuly2013.pdf">Helpful documentation on Agent capabilites</a></li>
+              <li><a href="http://static1.squarespace.com/static/54011775e4b0bc1fe0fb8494/t/55a95a6de4b0761435642d65/1437162093593/MTConnectWorkshop_2015_Evans_MTConnectApplicationDevelopment.pdf">MTConnect concept slides</a></li>
+              <li><a href="#">MtConnect Home</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Design built thanks to <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+
+  </body>
+</html>

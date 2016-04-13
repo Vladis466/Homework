@@ -1,0 +1,2 @@
+Changes to dominion.c 6/30/2015
+implemented the functions caseSmithy, caseVillage, caseGreatHall, caseOutpost, and caseSalvager and replaced the code inside their respective switch statements in cardEffect. The new functions can be found at the end of dominion.c

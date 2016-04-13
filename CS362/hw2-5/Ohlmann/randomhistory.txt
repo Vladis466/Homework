@@ -1,0 +1,60 @@
+My first run:
+
+profiling:/nfs/stak/students/o/ohlmannm/cs362/dominion/dominion.gcda:Merge mismatch for summaries
+profiling:/nfs/stak/students/o/ohlmannm/cs362/dominion/rngs.gcda:Merge mismatch for summaries
+Random Test Smithy Start
+Random Test Finished with 0 failed tests out of 133
+File 'dominion.c'
+Lines executed:26.51% of 581
+Branches executed:29.02% of 417
+Taken at least once:19.90% of 417
+Calls executed:16.84% of 95
+dominion.c:creating 'dominion.c.gcov'
+
+Then after I included additional tests:
+
+Random Test Smithy Start
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+incorrect hand count
+incorrect deck count
+check failed
+...
+...
+...
+Random Test Finished with 433 failed tests out of 433
+File 'dominion.c'
+Lines executed:26.51% of 581
+Branches executed:29.02% of 417
+Taken at least once:19.90% of 417
+Calls executed:16.84% of 95
+dominion.c:creating 'dominion.c.gcov'
+

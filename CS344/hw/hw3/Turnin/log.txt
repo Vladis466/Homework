@@ -1,0 +1,37 @@
+commit 1d06dfde26a7e664328b4609d3e678bafed4bc38
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Mon Jul 20 22:44:02 2015 -0700
+
+    Some more implementation, semi final commit
+
+commit 66b2d5c8514fd3b410279b995a8a28acb9ade2d3
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Mon Jul 20 14:21:18 2015 -0700
+
+    Basic function implementations complete, next piping
+
+commit f519c2beca64971bdd0c07c114acc0eeb046b30c
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Sun Jul 19 18:00:20 2015 -0700
+
+    adding stuff from different classes
+
+commit 851d1b5199a50619baced770e4a47572c9ce6da0
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Sun Jul 19 02:20:29 2015 -0700
+
+    Working skeleton version. Added alot of implementations from text to get a better idea of the program
+
+commit 923a4791ae977ecbdf91c6a456aca0dfdb616049
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Wed Jul 15 23:34:40 2015 -0700
+
+     Began assignment 3 by reading up and using some of the example files provided.
+
+commit 0caf8ffcf62f56c7f7617f79efe7af4a0a12f6b3
+Author: Vladis466 <predovic900@gmail.com>
+Date:   Mon Jul 13 21:19:28 2015 -0700
+
+    uploaded log
+
+commit 

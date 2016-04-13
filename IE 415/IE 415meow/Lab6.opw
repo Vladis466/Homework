@@ -1,0 +1,37 @@
+[RESOURCES]
+Resource 1
+Resource 2
+Resource 3
+[VARIABLES]
+Decide 3.NumberOut True
+Up Brigde.NumberOut
+Bridge is down?.NumberOut True
+Deck 1.NumberIn
+Dock 2.NumberIn
+Bridge Up or Down?.NumberOut True
+Dock 2.NumberOut
+Process 6.NumberOut
+Decide 3.NumberOut False
+Dispose 4.NumberOut
+Deck 1.NumberOut
+To Open Bridge.NumberIn
+Ship Crossing.NumberOut
+Process 6.NumberIn
+To Open Bridge.NumberOut
+Ship Arrival.NumberOut
+Truck Leaves.NumberOut
+Ship Crossing.NumberIn
+Truck Arrival.NumberOut
+Deck 2.NumberIn
+Dock1.NumberOut
+Go to the Shortest Lines.NumberOut False
+Trucks.NumberOut
+Ship Leaves.NumberOut
+Dispose 3.NumberOut
+Dock1.NumberIn
+Go to the Shortest Lines.NumberOut True
+Up Brigde.NumberIn
+Bridge Up or Down?.NumberOut False
+Bridge is down?.NumberOut False
+Deck 2.NumberOut
+Ships.NumberOut

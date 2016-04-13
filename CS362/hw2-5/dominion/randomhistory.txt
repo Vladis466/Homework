@@ -1,0 +1,63 @@
+
+
+
+Adventurer:
+
+I began by random testing unit by creating an initializing frame for the game where I randomized all
+parameters before calling the card effects.
+
+I began creating my test by using manual inputs to make sure things were working correctly. I used a combination of printf 
+statements and assertions so I could know exactly what was occuring with everyones money count when the
+adventurer card was played.
+
+In order to increase my coverage I set the program to run 100 times and used a combination of random number
+generating functions and the modulus operator to further increase the randomness of my data.
+
+Random bugs introduced cause instant failures. Examples of these were changing the coin increase amount or giving the system
+negative card counts. 
+
+However I got to see the positive effects of random testing in action. After setting my system to run 10,000
+times my program failed, therefore finding bugs that had previously not appeared.
+
+My branch coverage was good, line coverage not so much. This is because a few of the lines would only run
+if I hit an error, which apparently I did not for those.
+Only 62.5% of my lines were taken at least once. This is due to the same issue.
+
+File 'randomtestadventurer.c'
+Lines executed:86.67% of 45
+Branches executed:91.67% of 24
+Taken at least once:62.50% of 24
+Calls executed:90.00% of 10
+
+
+
+
+Salvager:
+
+The advantage I had when testing the salvager card was that I already had a preliminary
+understanding of how the card worked since I had implemented it as one of my manual tests.
+
+I began once again by randomizing many of the initial parameters of the game to see if they
+would have any effect on the overall result. 
+
+One of my worries was redundant testing. The salvager card is much simpler than the adventurer,
+and so alot of the randomizations to the game will ultimately have no effect. However I left them 
+in there because I do not have a 100% complete grasp of how this programmed version of the game dominion
+works so theres always a chance I missed a possible edge condition conflict.
+
+I implemented and removed checks on other variables to see what they would do. In a sense I performed a little
+bit of regression testing on my test cases.
+
+Gcov showed excellent branch coverage. I had 86% and 71% respectively in the other categories
+because certain debug issues never came up and so a few calls never had to be executed.
+
+File 'randomtestcard.c'
+Lines executed:100.00% of 37
+Branches executed:100.00% of 14
+Taken at least once:71.43% of 14
+Calls executed:86.67% of 15
+
+
+One of the cool things about random testing is that my random testing for salvager card gives me errors
+under certain conditions which I still have not figured it. It always happens about 10-15 times every 100 runs
+on random lines suggesting it is a result of the randomized testing.

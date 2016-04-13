@@ -1,0 +1,7 @@
+103,108d102
+< playCard returned -1:
+< handPos=4
+< card=11
+< choice1=0
+< choice2=4
+< choice3=-1

@@ -1,0 +1,12 @@
+unittest1 for compare(): success
+unittest2 for isGameOver(): expected isGameOver() to be true by 3 empty piles, but it's false
+unittest3 for getWinners(): expected winner to be 2, found 1 is 0, 2 is 1, 3 is 1
+unittest4 for updateCoins(): success
+cardtest1 for cardEffectSmithy(): expected 7 cards, found 8
+cardtest2 for cardEffectGreatHall(): success
+cardtest3 for cardEffect() for council_room: success
+cardtest4 for cardEffect() for village: success
+File 'dominion.c'
+Lines executed:32.47% of 576
+dominion.c:creating 'dominion.c.gcov'
+

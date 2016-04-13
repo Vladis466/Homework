@@ -1,0 +1,299 @@
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 1 of 5
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .11382     (Corr)     3.9708E-05 10.022       2495    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       2495    
+Entity 1.WaitTime                           1.4943     .49895     .00000     140.02       2495    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       2495    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       2495    
+Entity 1.TotalTime                          1.6082     .50886     2.9162E-04 145.48       2495    
+Process 1.Queue.WaitingTime                 .23893     .06322     .00000     1.3863       2451    
+Process 2.Queue.WaitingTime                 71.486     (Insuf)    .00000     145.46         46    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1187.0     (Corr)     .00000     2410.0     2410.0    
+Resource 1.NumberBusy                       .84827     (Corr)     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .84827     (Corr)     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .99992     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .99992     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               3.6602     (Corr)     .00000     24.000     1.0000    
+Process 2.Queue.NumberInQueue               1181.5     (Corr)     .00000     2407.0     2407.0    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           4905.0    
+Entity 1.NumberOut                          2495.0    
+Resource 1.NumberSeized                     2451.0    
+Resource 1.ScheduledUtilization             .84827    
+Resource 2.NumberSeized                     46.000    
+Resource 2.ScheduledUtilization             .99992    
+System.NumberOut                            2495.0    
+
+Beginning replication 2 of 5
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 2 of 5
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .11587     (Corr)     5.7019E-06 10.834       2449    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       2449    
+Entity 1.WaitTime                           1.7441     .59109     .00000     141.66       2449    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       2449    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       2449    
+Entity 1.TotalTime                          1.8600     .60083     4.9074E-05 150.73       2449    
+Process 1.Queue.WaitingTime                 .23270     .07189     .00000     1.5582       2400    
+Process 2.Queue.WaitingTime                 75.756     (Insuf)    .00000     150.67         51    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1219.8     (Corr)     .00000     2439.0     2439.0    
+Resource 1.NumberBusy                       .81071     .03871     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .81071     .03871     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               3.4906     1.1150     .00000     23.000     1.0000    
+Process 2.Queue.NumberInQueue               1214.5     (Corr)     .00000     2436.0     2436.0    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           4888.0    
+Entity 1.NumberOut                          2449.0    
+Resource 1.NumberSeized                     2400.0    
+Resource 1.ScheduledUtilization             .81071    
+Resource 2.NumberSeized                     51.000    
+Resource 2.ScheduledUtilization             1.0000    
+System.NumberOut                            2449.0    
+
+Beginning replication 3 of 5
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 3 of 5
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .11590     .02439     3.3530E-05 23.713       2516    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       2516    
+Entity 1.WaitTime                           1.3605     .38755     .00000     154.78       2516    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       2516    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       2516    
+Entity 1.TotalTime                          1.4764     .40041     9.0037E-05 157.38       2516    
+Process 1.Queue.WaitingTime                 .28687     (Corr)     .00000     1.7454       2475    
+Process 2.Queue.WaitingTime                 66.762     (Insuf)    .00000     157.33         43    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1174.9     (Corr)     .00000     2382.0     2378.0    
+Resource 1.NumberBusy                       .82543     .04457     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .82543     .04457     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .99964     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .99964     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               4.4414     (Corr)     .00000     27.000     4.0000    
+Process 2.Queue.NumberInQueue               1168.6     (Corr)     .00000     2372.0     2372.0    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           4894.0    
+Entity 1.NumberOut                          2516.0    
+Resource 1.NumberSeized                     2475.0    
+Resource 1.ScheduledUtilization             .82543    
+Resource 2.NumberSeized                     43.000    
+Resource 2.ScheduledUtilization             .99964    
+System.NumberOut                            2516.0    
+
+Beginning replication 4 of 5
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 4 of 5
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .11825     .01806     1.0118E-06 13.320       2461    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       2461    
+Entity 1.WaitTime                           1.9507     .68634     .00000     156.38       2461    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       2461    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       2461    
+Entity 1.TotalTime                          2.0689     .69172     5.9246E-05 156.52       2461    
+Process 1.Queue.WaitingTime                 .19918     .05589     .00000     1.4283       2409    
+Process 2.Queue.WaitingTime                 82.915     (Insuf)    .00000     156.51         54    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1227.1     (Corr)     .00000     2395.0     2392.0    
+Resource 1.NumberBusy                       .81933     .03514     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .81933     .03514     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               2.9995     .91080     .00000     23.000     2.0000    
+Process 2.Queue.NumberInQueue               1222.3     (Corr)     .00000     2389.0     2388.0    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           4853.0    
+Entity 1.NumberOut                          2461.0    
+Resource 1.NumberSeized                     2409.0    
+Resource 1.ScheduledUtilization             .81933    
+Resource 2.NumberSeized                     54.000    
+Resource 2.ScheduledUtilization             1.0000    
+System.NumberOut                            2461.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .11495     (Corr)     5.5001E-06 12.959       2521    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       2521    
+Entity 1.WaitTime                           1.5691     .39331     .00000     141.78       2521    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       2521    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       2521    
+Entity 1.TotalTime                          1.6840     .40166     5.9670E-04 151.03       2521    
+Process 1.Queue.WaitingTime                 .30654     .07855     .00000     1.5298       2476    
+Process 2.Queue.WaitingTime                 71.236     (Insuf)    .00000     151.02         47    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1253.7     (Corr)     .00000     2469.0     2469.0    
+Resource 1.NumberBusy                       .84740     .04059     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .84740     .04059     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               4.7496     1.1943     .00000     22.000     4.0000    
+Process 2.Queue.NumberInQueue               1247.1     (Corr)     .00000     2463.0     2463.0    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           4990.0    
+Entity 1.NumberOut                          2521.0    
+Resource 1.NumberSeized                     2476.0    
+Resource 1.ScheduledUtilization             .84740    
+Resource 2.NumberSeized                     47.000    
+Resource 2.ScheduledUtilization             1.0000    
+System.NumberOut                            2521.0    
+
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Output Summary for 5 Replications
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 3/2015
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           4906.0     63.101     4853.0     4990.0     5
+Entity 1.NumberOut                          2488.4     40.089     2449.0     2521.0     5
+Resource 1.NumberSeized                     2442.2     44.670     2400.0     2476.0     5
+Resource 1.ScheduledUtilization             .83023     .02099     .81071     .84827     5
+Resource 2.NumberSeized                     48.200     5.3685     43.000     54.000     5
+Resource 2.ScheduledUtilization             .99991     1.9390E-04 .99964     1.0000     5
+System.NumberOut                            2488.4     40.089     2449.0     2521.0     5
+
+Simulation run time: 0.00 minutes.
+Simulation run complete.

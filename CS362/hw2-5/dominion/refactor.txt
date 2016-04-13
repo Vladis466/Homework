@@ -1,0 +1,11 @@
+Updated the Smithy, Cutpurse, and Village to have their own functions.
+
+All implementations are correct.
+
+
+
+2nd update:
+
+Added function for remodel card.Implementation is wrong(You do not discard a trashed card)
+
+Added function for great_hall card. Implementation is wrong(you do not draw a card).

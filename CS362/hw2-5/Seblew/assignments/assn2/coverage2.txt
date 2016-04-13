@@ -1,0 +1,10 @@
+Tests covered between 15.63% and 26.56% of the code, which sounds about right.
+Initializing the game (and playing a card) has a minimum amount of overhead,
+which contributes to a minimum amount of coverage. Understandably, tests that
+initialized the game AND played a card had a universally higher coverage
+percentage than unit tests that only tested one function.
+The test with the lowest coverage, Unit Test 4, tested a small function that
+only views or modifies a few variables.
+The test with the highest coverage, Card Test 2, confuses me. Smithy only draws
+four cards so it should only have to touch the drawCard function, yet it has
+more code coverage than a more complex card like Cutpurse or Adventurer.

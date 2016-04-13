@@ -1,0 +1,11 @@
+[RESOURCES]
+Resource 1
+[VARIABLES]
+Processo.NumberIn
+Dispose 1.NumberOut
+Process 2.NumberIn
+Decide 1.NumberOut True
+Create 1.NumberOut
+Process 2.NumberOut
+Processo.NumberOut
+Decide 1.NumberOut False

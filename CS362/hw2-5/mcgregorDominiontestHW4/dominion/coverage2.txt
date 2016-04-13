@@ -1,0 +1,24 @@
+What each unit test tests:
+unittest1 - compare()
+unittest2 - isGameOver()
+unittest3 - getWinners()
+unittest4 - updateCoins()
+cardtest1 - smithy
+cardtest2 - great_hall
+cardtest3 - council_room
+cardtest4 - village
+
+I found three bugs. One is in isGameOver(). When I emptied three piles,
+it failed to give a game over. I believe this is because the for-loop
+fails to check the last one or two piles.
+
+The second is in getWinners(). In a 3 player game, I kept player three
+the initial hand, replaced player 1's hand with curses, and replaced player
+2's hand with provinces. I expected player 2 to win, but player 2 and 3
+tied.
+
+Third, cardEffectSmithy(). This is an expected bug I placed into it: the
+smithy card is not discarded.
+
+The coverage is about 1/3. So, there needs to be many more unit tests to
+cover it. Doing all the cards would especially be tedious, but necessary.

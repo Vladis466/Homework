@@ -1,0 +1,109 @@
+#include "cirListDeque.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void assertTrue(int predicate, char *message)
+{
+	printf("%s: ", message);
+	if (predicate)
+		printf("PASSED\n");
+	else
+		printf("FAILED\n");
+}
+
+
+
+int main(int argc, char* argv[]) {
+        
+	struct cirListDeque * myDeq;
+	/* Test your linked list in here! */
+
+	myDeq = createCirListDeque();
+
+	
+	printf("\n\nTesting addFront and addBack functions...\n");
+	addFrontCirListDeque(myDeq, 2);
+	addFrontCirListDeque(myDeq, 3);
+	addFrontCirListDeque(myDeq, 4);
+	addBackCirListDeque(myDeq, 5);
+	addBackCirListDeque(myDeq, 6);
+	addBackCirListDeque(myDeq, 7);
+	printf("The array's content (back to front): [7,6,5,2,3,4]\n");
+	printCirListDeque(myDeq);
+
+	printf("\n\nTesting front/back\n");
+	assertTrue(EQ(frontCirListDeque(myDeq), 4), "Test front element == 4");
+	assertTrue(EQ(backCirListDeque(myDeq), 7), "Test back element == 7");
+	//assertTrue(EQ(myDeq.size, 6), "Test size = 5");
+
+	printf("\n\nTesting remove\n");
+	removeBackCirListDeque(myDeq);
+	removeFrontCirListDeque(myDeq);
+	removeFrontCirListDeque(myDeq);
+	printf("The array's content (back to front): [6,5,2]\n");
+	printCirListDeque(myDeq);
+
+	printf("\n\nThe array's content reversed (back to front): [2,5,6]\n");
+	reverseCirListDeque(myDeq);
+	printCirListDeque(myDeq);
+	/*
+
+	printf("\n\nTesting putDynArr...\nCalling putDynArr(dyn, 2, 7)\n");
+	putDynArr(dyn, 2, 7);
+	printf("The array's content: [3,4,7,5,6]\n");
+	assertTrue(EQ(getDynArr(dyn, 2), 7), "Test 3rd element == 7");
+	assertTrue(sizeDynArr(dyn) == 5, "Test size = 5");
+
+	printf("\n\nTesting swapDynArr...\nCalling swapDynArr(dyn, 2, 4)\n");
+	swapDynArr(dyn, 2, 4);
+	printf("The array's content: [3,4,6,5,7]\n");
+	assertTrue(EQ(getDynArr(dyn, 2), 6), "Test 3rd element == 6");
+	assertTrue(EQ(getDynArr(dyn, 4), 7), "Test 5th element == 7");
+
+	printf("\n\nTesting removeAtDynArr...\nCalling removeAtDynArr(dyn, 1)\n");
+	removeAtDynArr(dyn, 1);
+	printf("The array's content: [3,6,5,7]\n");
+	assertTrue(EQ(getDynArr(dyn, 0), 3), "Test 1st element == 3");
+	assertTrue(EQ(getDynArr(dyn, 3), 7), "Test 4th element == 7");
+	assertTrue(sizeDynArr(dyn) == 4, "Test size = 4");
+
+	printf("\n\nTesting stack interface...\n");
+	printf("The stack's content: [3,6,5,7] <- top\n");
+	assertTrue(!isEmptyDynArr(dyn), "Testing isEmptyDynArr");
+	assertTrue(EQ(topDynArr(dyn), 7), "Test topDynArr == 7");
+
+	popDynArr(dyn);
+	printf("Poping...\nThe stack's content: [3,6,5] <- top\n");
+	assertTrue(EQ(topDynArr(dyn), 5), "Test topDynArr == 5");
+
+	assertTrue(EQ(sizeDynArr(dyn), 3), "~~~Size of the dynamic array is now 3");
+
+
+	pushDynArr(dyn, 9);
+	printf("Pushing 9...\nThe stack's content: [3,6,5,9] <- top\n");
+	assertTrue(EQ(topDynArr(dyn), 9), "Test topDynArr == 9");
+
+	printf("\n\nTesting bag interface...\n");
+	printf("The bag's content: [3,6,5,9]\n");
+
+	assertTrue(EQ(sizeDynArr(dyn), 4), "~~~Size of the dynamic array is now 4");
+
+
+	assertTrue(containsDynArr(dyn, 3), "Test containing 3");
+	assertTrue(containsDynArr(dyn, 6), "Test containing 6");
+	assertTrue(containsDynArr(dyn, 5), "Test containing 5");
+	assertTrue(containsDynArr(dyn, 9), "Test containing 9");
+	assertTrue(!containsDynArr(dyn, 7), "Test not containing 7");
+
+	removeDynArr(dyn, 3);
+	printf("Removing 3...\nThe stack's content: [6,5,9]\n");
+	assertTrue(!containsDynArr(dyn, 3), "Test not containing 3");
+
+	assertTrue(EQ(sizeDynArr(dyn), 3), "~~~Size of the dynamic array is now 3");
+	*/
+	return 0;
+	return 0;
+}
+
+

@@ -1,0 +1,66 @@
+SIMAN Run Controller.
+
+1852.6229 Hours>
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: College of Engineering                                      Model revision date: 2/18/2015
+
+Replication ended at time      : 1852.6229 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .01862     5.6797E-05 3.9733E-08 .25319     222032    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000     222032    
+Entity 1.WaitTime                           .01534     6.0104E-04 .00000     .26110     222032    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000     222032    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000     222032    
+Entity 1.TotalTime                          .03396     6.2796E-04 3.9733E-08 .30855     222032    
+Server 1.Queue.WaitingTime                  .00990     (Corr)     .00000     .15405     150341    
+Control Numbers in System.Queue.WaitingTim  .00571     4.7712E-04 .00000     .21646     222037    
+Server 2.Queue.WaitingTime                  .00906     1.4611E-04 .00000     .12061      71694    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                4.0703     .08645     .00000     33.000     6.0000    
+Resource 1.NumberBusy                       .83649     .00302     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .83649     .00302     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .56096     .00641     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .56096     .00641     .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .83462     .00419     .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .83462     .00419     .00000     1.0000     1.0000    
+Server 1.Queue.NumberInQueue                .80314     .01503     .00000     2.0000     2.0000    
+Control Numbers in System.Queue.NumberInQu  .68446     .05716     .00000     27.000     1.0000    
+Server 2.Queue.NumberInQueue                .35068     .00824     .00000     1.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           2.2204E+05
+Entity 1.NumberOut                          2.2203E+05
+Resource 1.NumberSeized                     98311.    
+Resource 1.ScheduledUtilization             .83649    
+Resource 2.NumberSeized                     62025.    
+Resource 2.ScheduledUtilization             .56096    
+Resource 3.NumberSeized                     61699.    
+Resource 3.ScheduledUtilization             .83462    
+System.NumberOut                            2.2203E+05
+
+
+Simulation run time: 4.52 minutes.
+Simulation run complete.

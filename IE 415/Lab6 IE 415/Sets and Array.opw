@@ -1,0 +1,15 @@
+[RESOURCES]
+Resource 1
+Resource 2
+Resource 3
+[VARIABLES]
+Server 1.NumberOut
+Server 1.NumberIn
+Go to shortest line.NumberOut False
+Go to shortest line.NumberOut True
+Dispose 1.NumberOut
+Set 1 Times
+Create 1.NumberOut
+Server 2.NumberIn
+Server 2.NumberOut
+Set 2 Times

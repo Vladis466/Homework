@@ -1,0 +1,2580 @@
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 1 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               810.00     (Insuf)    180.00     1440.0         14    
+Entity 1.VATime                             112.18     (Insuf)    .00000     220.36         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           273.44     (Insuf)    .00000     779.11         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          313.85     (Insuf)    .00000     802.16         23    
+Assembly2.Queue.WaitingTime                 286.02     (Insuf)    155.64     397.28          4    
+Assembly3.Queue.WaitingTime                 386.50     (Insuf)    184.33     544.32          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          7    
+Wait For Cart.Queue.WaitingTime             76.778     (Insuf)    9.0999     135.56         14    
+Process 1.Queue.WaitingTime                 36.311     (Insuf)    .00000     127.04         33    
+Process 2.Queue.WaitingTime                 20.534     (Insuf)    .00000     60.164         40    
+Process 3.Queue.WaitingTime                 11.500     (Insuf)    .00000     40.215         21    
+Assembly1.Queue.WaitingTime                 201.73     (Insuf)    .00000     429.51          7    
+Batch 1.Queue.WaitingTime                   15.832     (Insuf)    .00000     65.941         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                38.186     (Insuf)    .00000     75.000     70.000    
+Resource 1.NumberBusy                       .70447     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70447     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .03648     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .03648     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .84151     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .84151     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .44459     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .44459     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95350     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95350     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.2163     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.9160     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .74646     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .83965     (Insuf)    .00000     3.0000     1.0000    
+Process 2.Queue.NumberInQueue               .57042     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .16771     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.4884     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 1.0225     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           135.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     33.000    
+Resource 1.ScheduledUtilization             .70447    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .03648    
+Resource 5.NumberSeized                     40.000    
+Resource 5.ScheduledUtilization             .84151    
+Resource 6.NumberSeized                     21.000    
+Resource 6.ScheduledUtilization             .44459    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .95350    
+System.NumberOut                            23.000    
+
+Beginning replication 2 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 2 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               876.00     (Insuf)    360.00     1440.0         15    
+Entity 1.VATime                             111.63     (Insuf)    .00000     201.81         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           287.79     (Insuf)    .00000     793.71         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          331.69     (Insuf)    .00000     845.71         24    
+Assembly2.Queue.WaitingTime                 312.50     (Insuf)    106.38     603.70          5    
+Assembly3.Queue.WaitingTime                 325.10     (Insuf)    163.64     443.00          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          8    
+Wait For Cart.Queue.WaitingTime             83.525     (Insuf)    11.901     172.70         15    
+Process 1.Queue.WaitingTime                 38.668     (Insuf)    .00000     105.24         38    
+Process 2.Queue.WaitingTime                 22.435     (Insuf)    .00000     89.595         39    
+Process 3.Queue.WaitingTime                 25.694     (Insuf)    .00000     86.971         21    
+Assembly1.Queue.WaitingTime                 274.67     (Insuf)    .00000     593.33          8    
+Batch 1.Queue.WaitingTime                   13.627     (Insuf)    .00000     68.778         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                38.264     (Insuf)    .00000     79.000     70.000    
+Resource 1.NumberBusy                       .76878     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .76878     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .04604     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04604     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .80649     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .80649     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .44157     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .44157     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .92579     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .92579     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.2057     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.9026     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .87005     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               1.0204     (Insuf)    .00000     3.0000     .00000    
+Process 2.Queue.NumberInQueue               .61956     (Insuf)    .00000     3.0000     1.0000    
+Process 3.Queue.NumberInQueue               .37471     (Insuf)    .00000     3.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.3713     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .88863     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           139.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     38.000    
+Resource 1.ScheduledUtilization             .76878    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .04604    
+Resource 5.NumberSeized                     39.000    
+Resource 5.ScheduledUtilization             .80649    
+Resource 6.NumberSeized                     21.000    
+Resource 6.ScheduledUtilization             .44157    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .92579    
+System.NumberOut                            24.000    
+
+Beginning replication 3 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 3 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             112.64     (Insuf)    .00000     209.51         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           286.43     (Insuf)    .00000     741.52         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          325.60     (Insuf)    .00000     812.00         24    
+Assembly2.Queue.WaitingTime                 303.95     (Insuf)    102.26     623.40          5    
+Assembly3.Queue.WaitingTime                 364.74     (Insuf)    196.48     484.97          3    
+Rework.Queue.WaitingTime                    .18827     (Insuf)    .00000     1.5061          8    
+Wait For Cart.Queue.WaitingTime             89.832     (Insuf)    28.630     161.87         15    
+Process 1.Queue.WaitingTime                 31.188     (Insuf)    .00000     70.305         36    
+Process 2.Queue.WaitingTime                 16.154     (Insuf)    .00000     56.817         40    
+Process 3.Queue.WaitingTime                 9.0426     (Insuf)    .00000     27.459         17    
+Assembly1.Queue.WaitingTime                 213.13     (Insuf)    .00000     540.07          8    
+Batch 1.Queue.WaitingTime                   13.993     (Insuf)    .00000     66.226         90    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                36.670     (Insuf)    .00000     73.000     64.000    
+Resource 1.NumberBusy                       .71359     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .71359     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .03966     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .03966     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .83113     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .83113     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .35738     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .35738     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95121     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95121     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.1272     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.7396     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00105     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .93576     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .77972     (Insuf)    .00000     2.0000     .00000    
+Process 2.Queue.NumberInQueue               .45883     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .10675     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.3011     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .87801     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           133.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     36.000    
+Resource 1.ScheduledUtilization             .71359    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .03966    
+Resource 5.NumberSeized                     40.000    
+Resource 5.ScheduledUtilization             .83113    
+Resource 6.NumberSeized                     17.000    
+Resource 6.ScheduledUtilization             .35738    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95121    
+System.NumberOut                            24.000    
+
+Beginning replication 4 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 4 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               900.00     (Insuf)    360.00     1440.0         14    
+Entity 1.VATime                             110.57     (Insuf)    .00000     201.69         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           274.88     (Insuf)    .00000     747.98         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          320.45     (Insuf)    .00000     782.83         23    
+Assembly2.Queue.WaitingTime                 290.27     (Insuf)    90.723     453.87          4    
+Assembly3.Queue.WaitingTime                 346.64     (Insuf)    191.60     491.79          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          7    
+Wait For Cart.Queue.WaitingTime             97.966     (Insuf)    32.331     154.04         14    
+Process 1.Queue.WaitingTime                 34.749     (Insuf)    .00000     78.107         37    
+Process 2.Queue.WaitingTime                 27.416     (Insuf)    .00000     62.924         38    
+Process 3.Queue.WaitingTime                 28.567     (Insuf)    .00000     65.581         24    
+Assembly1.Queue.WaitingTime                 228.74     (Insuf)    .00000     538.13          8    
+Batch 1.Queue.WaitingTime                   14.552     (Insuf)    .00000     103.52         96    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                36.148     (Insuf)    .00000     89.000     80.000    
+Resource 1.NumberBusy                       .74645     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74645     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04136     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04136     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .79175     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .79175     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .50375     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .50375     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .90393     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .90393     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.9122     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               1.7438     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .95246     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .92589     (Insuf)    .00000     3.0000     2.0000    
+Process 2.Queue.NumberInQueue               .76934     (Insuf)    .00000     2.0000     2.0000    
+Process 3.Queue.NumberInQueue               .49848     (Insuf)    .00000     2.0000     1.0000    
+Assembly1.Queue.NumberInQueue               2.1748     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 .97015     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           145.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .74645    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .04136    
+Resource 5.NumberSeized                     38.000    
+Resource 5.ScheduledUtilization             .79175    
+Resource 6.NumberSeized                     24.000    
+Resource 6.ScheduledUtilization             .50375    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .90393    
+System.NumberOut                            23.000    
+
+Beginning replication 5 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 5 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               912.00     (Insuf)    360.00     1440.0         15    
+Entity 1.VATime                             111.98     (Insuf)    .00000     201.87         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           371.83     (Insuf)    .00000     968.19         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          413.17     (Insuf)    .00000     1012.5         24    
+Assembly2.Queue.WaitingTime                 441.94     (Insuf)    104.47     714.10          5    
+Assembly3.Queue.WaitingTime                 486.23     (Insuf)    209.32     723.82          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             101.79     (Insuf)    11.968     177.44         15    
+Process 1.Queue.WaitingTime                 32.088     (Insuf)    .00000     78.609         39    
+Process 2.Queue.WaitingTime                 20.361     (Insuf)    .00000     76.325         41    
+Process 3.Queue.WaitingTime                 19.057     (Insuf)    .00000     59.992         27    
+Assembly1.Queue.WaitingTime                 316.66     (Insuf)    .00000     662.15          7    
+Batch 1.Queue.WaitingTime                   14.808     (Insuf)    .00000     79.558        102    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                47.373     (Insuf)    .00000     96.000     83.000    
+Resource 1.NumberBusy                       .78893     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .78893     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05818     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05818     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .83095     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .83095     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .54264     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .54264     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .94473     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94473     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.8232     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               2.5410     (Insuf)    .00000     6.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           1.0604     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .88912     (Insuf)    .00000     3.0000     1.0000    
+Process 2.Queue.NumberInQueue               .58502     (Insuf)    .00000     3.0000     1.0000    
+Process 3.Queue.NumberInQueue               .35733     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.1555     (Insuf)    .00000     7.0000     7.0000    
+Batch 1.Queue.NumberInQueue                 1.0602     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           152.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     39.000    
+Resource 1.ScheduledUtilization             .78893    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05818    
+Resource 5.NumberSeized                     41.000    
+Resource 5.ScheduledUtilization             .83095    
+Resource 6.NumberSeized                     27.000    
+Resource 6.ScheduledUtilization             .54264    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .94473    
+System.NumberOut                            24.000    
+
+Beginning replication 6 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 6 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               864.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             111.61     (Insuf)    .00000     198.39         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           249.97     (Insuf)    .00000     751.00         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          294.10     (Insuf)    .00000     753.07         24    
+Assembly2.Queue.WaitingTime                 269.57     (Insuf)    105.90     496.60          5    
+Assembly3.Queue.WaitingTime                 356.99     (Insuf)    201.96     451.06          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          9    
+Wait For Cart.Queue.WaitingTime             67.792     (Insuf)    1.2299     178.07         15    
+Process 1.Queue.WaitingTime                 23.300     (Insuf)    .00000     64.781         39    
+Process 2.Queue.WaitingTime                 9.7939     (Insuf)    .00000     33.764         35    
+Process 3.Queue.WaitingTime                 9.2749     (Insuf)    .00000     25.013         13    
+Assembly1.Queue.WaitingTime                 189.03     (Insuf)    .00000     548.33          8    
+Batch 1.Queue.WaitingTime                   16.085     (Insuf)    .00000     86.103         84    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                29.535     (Insuf)    .00000     65.000     56.000    
+Resource 1.NumberBusy                       .79338     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .79338     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04403     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04403     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .71073     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .71073     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .24578     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .24578     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .92850     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .92850     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.6085     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.2868     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .70617     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .63784     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .23805     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .08373     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               1.8894     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 .93831     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           125.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     39.000    
+Resource 1.ScheduledUtilization             .79338    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .04403    
+Resource 5.NumberSeized                     35.000    
+Resource 5.ScheduledUtilization             .71073    
+Resource 6.NumberSeized                     13.000    
+Resource 6.ScheduledUtilization             .24578    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .92850    
+System.NumberOut                            24.000    
+
+Beginning replication 7 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 7 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               900.00     (Insuf)    360.00     1440.0         14    
+Entity 1.VATime                             110.50     (Insuf)    .00000     207.14         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           292.50     (Insuf)    .00000     856.99         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          337.40     (Insuf)    .00000     880.58         23    
+Assembly2.Queue.WaitingTime                 419.16     (Insuf)    117.51     660.09          5    
+Assembly3.Queue.WaitingTime                 430.27     (Insuf)    236.23     598.17          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          6    
+Wait For Cart.Queue.WaitingTime             73.926     (Insuf)    11.143     155.41         14    
+Process 1.Queue.WaitingTime                 25.219     (Insuf)    .00000     56.401         41    
+Process 2.Queue.WaitingTime                 20.838     (Insuf)    .00000     49.504         33    
+Process 3.Queue.WaitingTime                 16.570     (Insuf)    .00000     44.744         22    
+Assembly1.Queue.WaitingTime                 214.41     (Insuf)    .00000     528.12          7    
+Batch 1.Queue.WaitingTime                   15.969     (Insuf)    .00000     78.466         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                40.334     (Insuf)    .00000     81.000     72.000    
+Resource 1.NumberBusy                       .85922     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .85922     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .03120     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .03120     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .69282     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .69282     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .43808     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .43808     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .90750     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .90750     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.5056     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.1115     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .71873     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .73346     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .47755     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .25315     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.6803     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 1.0413     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           137.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     41.000    
+Resource 1.ScheduledUtilization             .85922    
+Resource 2.NumberSeized                     6.0000    
+Resource 2.ScheduledUtilization             .03120    
+Resource 5.NumberSeized                     33.000    
+Resource 5.ScheduledUtilization             .69282    
+Resource 6.NumberSeized                     22.000    
+Resource 6.ScheduledUtilization             .43808    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .90750    
+System.NumberOut                            23.000    
+
+Beginning replication 8 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 8 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               864.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             111.54     (Insuf)    .00000     202.47         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           271.27     (Insuf)    .00000     716.30         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          314.62     (Insuf)    .00000     804.84         24    
+Assembly2.Queue.WaitingTime                 267.64     (Insuf)    140.00     348.58          3    
+Assembly3.Queue.WaitingTime                 367.74     (Insuf)    221.50     463.83          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         10    
+Wait For Cart.Queue.WaitingTime             98.333     (Insuf)    16.534     179.87         15    
+Process 1.Queue.WaitingTime                 30.009     (Insuf)    .00000     81.483         37    
+Process 2.Queue.WaitingTime                 17.954     (Insuf)    .00000     54.054         38    
+Process 3.Queue.WaitingTime                 12.369     (Insuf)    .00000     35.236         22    
+Assembly1.Queue.WaitingTime                 202.24     (Insuf)    .00000     530.46         10    
+Batch 1.Queue.WaitingTime                   14.935     (Insuf)    .00000     76.356         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                35.434     (Insuf)    .00000     79.000     70.000    
+Resource 1.NumberBusy                       .77636     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .77636     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05205     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05205     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .78483     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .78483     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .45135     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .45135     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .95019     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95019     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.8732     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.6824     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           1.0243     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .79898     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .47380     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .19781     (Insuf)    .00000     2.0000     1.0000    
+Assembly1.Queue.NumberInQueue               2.1582     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .96984     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           139.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .77636    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .05205    
+Resource 5.NumberSeized                     38.000    
+Resource 5.ScheduledUtilization             .78483    
+Resource 6.NumberSeized                     22.000    
+Resource 6.ScheduledUtilization             .45135    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95019    
+System.NumberOut                            24.000    
+
+Beginning replication 9 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 9 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               855.00     (Insuf)    180.00     1440.0         16    
+Entity 1.VATime                             112.23     (Insuf)    .00000     202.08         25    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         25    
+Entity 1.WaitTime                           310.92     (Insuf)    .00000     747.43         25    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         25    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         25    
+Entity 1.TotalTime                          354.01     (Insuf)    .00000     835.24         25    
+Assembly2.Queue.WaitingTime                 316.15     (Insuf)    93.197     559.36          5    
+Assembly3.Queue.WaitingTime                 382.59     (Insuf)    173.61     589.88          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         10    
+Wait For Cart.Queue.WaitingTime             84.581     (Insuf)    5.2497     166.51         16    
+Process 1.Queue.WaitingTime                 24.463     (Insuf)    .00000     67.142         38    
+Process 2.Queue.WaitingTime                 13.195     (Insuf)    .00000     50.634         31    
+Process 3.Queue.WaitingTime                 12.186     (Insuf)    .00000     31.956         16    
+Assembly1.Queue.WaitingTime                 278.54     (Insuf)    .00000     509.78          8    
+Batch 1.Queue.WaitingTime                   16.895     (Insuf)    .00000     102.87         81    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                33.292     (Insuf)    .00000     58.000     49.000    
+Resource 1.NumberBusy                       .78309     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .78309     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04954     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04954     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .63738     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .63738     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .33674     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .33674     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .94119     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94119     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.8582     (Insuf)    .00000     3.0000     3.0000    
+Assembly3.Queue.NumberInQueue               1.4664     (Insuf)    .00000     3.0000     3.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .93979     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .69647     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .28407     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .13541     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.1018     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 .96052     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           122.00    
+Entity 1.NumberOut                          73.000    
+Resource 1.NumberSeized                     38.000    
+Resource 1.ScheduledUtilization             .78309    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .04954    
+Resource 5.NumberSeized                     31.000    
+Resource 5.ScheduledUtilization             .63738    
+Resource 6.NumberSeized                     16.000    
+Resource 6.ScheduledUtilization             .33674    
+AssemblyTime.NumberSeized                   17.000    
+AssemblyTime.ScheduledUtilization           .94119    
+System.NumberOut                            25.000    
+
+Beginning replication 10 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 10 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               858.46     (Insuf)    360.00     1440.0         13    
+Entity 1.VATime                             113.28     (Insuf)    .00000     215.88         22    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         22    
+Entity 1.WaitTime                           312.25     (Insuf)    .00000     834.47         22    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         22    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         22    
+Entity 1.TotalTime                          356.45     (Insuf)    .00000     922.90         22    
+Assembly2.Queue.WaitingTime                 370.15     (Insuf)    124.34     637.68          4    
+Assembly3.Queue.WaitingTime                 396.60     (Insuf)    256.64     486.04          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         16    
+Wait For Cart.Queue.WaitingTime             91.505     (Insuf)    27.896     157.72         13    
+Process 1.Queue.WaitingTime                 28.835     (Insuf)    .00000     65.188         37    
+Process 2.Queue.WaitingTime                 13.920     (Insuf)    .00000     33.213         36    
+Process 3.Queue.WaitingTime                 9.0960     (Insuf)    .00000     31.778         14    
+Assembly1.Queue.WaitingTime                 312.22     (Insuf)    .00000     677.02          7    
+Batch 1.Queue.WaitingTime                   16.652     (Insuf)    .00000     79.314         84    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                41.104     (Insuf)    .00000     69.000     64.000    
+Resource 1.NumberBusy                       .74392     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74392     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .07956     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .07956     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .74141     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .74141     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .29495     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .29495     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .93901     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .93901     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.5347     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.1608     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .82609     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .74450     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .34802     (Insuf)    .00000     1.0000     .00000    
+Process 3.Queue.NumberInQueue               .08843     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.7438     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .99727     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           125.00    
+Entity 1.NumberOut                          61.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .74392    
+Resource 2.NumberSeized                     16.000    
+Resource 2.ScheduledUtilization             .07956    
+Resource 5.NumberSeized                     36.000    
+Resource 5.ScheduledUtilization             .74141    
+Resource 6.NumberSeized                     14.000    
+Resource 6.ScheduledUtilization             .29495    
+AssemblyTime.NumberSeized                   14.000    
+AssemblyTime.ScheduledUtilization           .93901    
+System.NumberOut                            22.000    
+
+Beginning replication 11 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 11 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               888.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             112.76     (Insuf)    .00000     211.98         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           314.98     (Insuf)    .00000     793.16         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          358.48     (Insuf)    .00000     836.43         24    
+Assembly2.Queue.WaitingTime                 421.37     (Insuf)    150.33     641.13          5    
+Assembly3.Queue.WaitingTime                 365.95     (Insuf)    212.50     443.40          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         13    
+Wait For Cart.Queue.WaitingTime             85.570     (Insuf)    1.1887     170.55         15    
+Process 1.Queue.WaitingTime                 31.914     (Insuf)    .00000     87.319         36    
+Process 2.Queue.WaitingTime                 15.934     (Insuf)    .00000     46.758         45    
+Process 3.Queue.WaitingTime                 10.089     (Insuf)    .00000     33.507         24    
+Assembly1.Queue.WaitingTime                 269.24     (Insuf)    .00000     510.55          8    
+Batch 1.Queue.WaitingTime                   13.117     (Insuf)    .00000     58.905        102    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                44.412     (Insuf)    .00000     90.000     81.000    
+Resource 1.NumberBusy                       .76483     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .76483     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .06746     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .06746     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .91152     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .91152     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .48195     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .48195     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .94495     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94495     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.6734     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               2.4393     (Insuf)    .00000     6.0000     6.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .89136     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .83372     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .50515     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .16816     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.9298     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 .92915     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           150.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     36.000    
+Resource 1.ScheduledUtilization             .76483    
+Resource 2.NumberSeized                     13.000    
+Resource 2.ScheduledUtilization             .06746    
+Resource 5.NumberSeized                     45.000    
+Resource 5.ScheduledUtilization             .91152    
+Resource 6.NumberSeized                     24.000    
+Resource 6.ScheduledUtilization             .48195    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .94495    
+System.NumberOut                            24.000    
+
+Beginning replication 12 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 12 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               888.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             114.10     (Insuf)    .00000     204.79         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           284.85     (Insuf)    .00000     743.61         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          333.55     (Insuf)    .00000     815.37         24    
+Assembly2.Queue.WaitingTime                 333.13     (Insuf)    100.18     512.19          4    
+Assembly3.Queue.WaitingTime                 410.82     (Insuf)    247.83     520.10          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         10    
+Wait For Cart.Queue.WaitingTime             78.036     (Insuf)    .95785     174.23         15    
+Process 1.Queue.WaitingTime                 23.274     (Insuf)    .00000     65.942         36    
+Process 2.Queue.WaitingTime                 13.221     (Insuf)    .00000     29.801         34    
+Process 3.Queue.WaitingTime                 6.2045     (Insuf)    .00000     31.244         18    
+Assembly1.Queue.WaitingTime                 215.96     (Insuf)    .00000     512.19          9    
+Batch 1.Queue.WaitingTime                   16.905     (Insuf)    .00000     90.250         84    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                31.032     (Insuf)    .00000     71.000     58.000    
+Resource 1.NumberBusy                       .74594     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74594     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05306     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05306     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .69890     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .69890     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .34948     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .34948     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .93984     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .93984     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.5897     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.4854     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .81288     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .59381     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .31896     (Insuf)    .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .07756     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               1.9382     (Insuf)    .00000     5.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 .99403     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           127.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     36.000    
+Resource 1.ScheduledUtilization             .74594    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .05306    
+Resource 5.NumberSeized                     34.000    
+Resource 5.ScheduledUtilization             .69890    
+Resource 6.NumberSeized                     18.000    
+Resource 6.ScheduledUtilization             .34948    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .93984    
+System.NumberOut                            24.000    
+
+Beginning replication 13 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 13 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               866.25     (Insuf)    180.00     1440.0         16    
+Entity 1.VATime                             112.82     (Insuf)    .00000     196.96         25    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         25    
+Entity 1.WaitTime                           243.70     (Insuf)    .00000     605.05         25    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         25    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         25    
+Entity 1.TotalTime                          283.35     (Insuf)    .00000     685.80         25    
+Assembly2.Queue.WaitingTime                 250.14     (Insuf)    106.48     415.64          5    
+Assembly3.Queue.WaitingTime                 304.24     (Insuf)    216.15     427.67          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         10    
+Wait For Cart.Queue.WaitingTime             89.859     (Insuf)    14.854     166.57         16    
+Process 1.Queue.WaitingTime                 24.186     (Insuf)    .00000     85.027         37    
+Process 2.Queue.WaitingTime                 13.245     (Insuf)    .00000     30.989         31    
+Process 3.Queue.WaitingTime                 7.7270     (Insuf)    .00000     26.394         14    
+Assembly1.Queue.WaitingTime                 127.67     (Insuf)    .00000     382.85          9    
+Batch 1.Queue.WaitingTime                   15.731     (Insuf)    .00000     81.233         81    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                27.252     (Insuf)    .00000     55.000     46.000    
+Resource 1.NumberBusy                       .77336     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .77336     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04908     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04908     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .63285     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .63285     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .28766     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .28766     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95331     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95331     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.2732     (Insuf)    .00000     3.0000     3.0000    
+Assembly3.Queue.NumberInQueue               1.1068     (Insuf)    .00000     3.0000     3.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .99844     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .62322     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .28515     (Insuf)    .00000     1.0000     .00000    
+Process 3.Queue.NumberInQueue               .07512     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               1.5316     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 .88492     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           119.00    
+Entity 1.NumberOut                          73.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .77336    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .04908    
+Resource 5.NumberSeized                     31.000    
+Resource 5.ScheduledUtilization             .63285    
+Resource 6.NumberSeized                     14.000    
+Resource 6.ScheduledUtilization             .28766    
+AssemblyTime.NumberSeized                   17.000    
+AssemblyTime.ScheduledUtilization           .95331    
+System.NumberOut                            25.000    
+
+Beginning replication 14 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 14 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             114.64     (Insuf)    .00000     202.35         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           348.12     (Insuf)    .00000     905.97         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          389.34     (Insuf)    .00000     959.23         24    
+Assembly2.Queue.WaitingTime                 453.79     (Insuf)    117.23     721.34          6    
+Assembly3.Queue.WaitingTime                 386.31     (Insuf)    176.64     508.45          3    
+Rework.Queue.WaitingTime                    .48072     (Insuf)    .00000     7.2107         15    
+Wait For Cart.Queue.WaitingTime             75.922     (Insuf)    22.532     145.88         15    
+Process 1.Queue.WaitingTime                 31.696     (Insuf)    .00000     106.07         39    
+Process 2.Queue.WaitingTime                 17.623     (Insuf)    .00000     67.588         39    
+Process 3.Queue.WaitingTime                 18.669     (Insuf)    .00000     50.470         19    
+Assembly1.Queue.WaitingTime                 305.07     (Insuf)    .00000     656.38          7    
+Batch 1.Queue.WaitingTime                   14.843     (Insuf)    .00000     72.285         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                43.744     (Insuf)    .00000     77.000     68.000    
+Resource 1.NumberBusy                       .78178     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .78178     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .08524     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .08524     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .81094     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .81094     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .40142     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .40142     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95734     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95734     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.7008     (Insuf)    .00000     5.0000     4.0000    
+Assembly3.Queue.NumberInQueue               2.3838     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00501     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .79086     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .85844     (Insuf)    .00000     3.0000     .00000    
+Process 2.Queue.NumberInQueue               .47732     (Insuf)    .00000     3.0000     .00000    
+Process 3.Queue.NumberInQueue               .24633     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.8894     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 .98486     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           137.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     39.000    
+Resource 1.ScheduledUtilization             .78178    
+Resource 2.NumberSeized                     15.000    
+Resource 2.ScheduledUtilization             .08524    
+Resource 5.NumberSeized                     39.000    
+Resource 5.ScheduledUtilization             .81094    
+Resource 6.NumberSeized                     19.000    
+Resource 6.ScheduledUtilization             .40142    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95734    
+System.NumberOut                            24.000    
+
+Beginning replication 15 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 15 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             115.80     (Insuf)    .00000     203.44         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           313.79     (Insuf)    .00000     866.59         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          359.02     (Insuf)    .00000     904.05         24    
+Assembly2.Queue.WaitingTime                 451.74     (Insuf)    149.67     699.43          5    
+Assembly3.Queue.WaitingTime                 378.09     (Insuf)    212.82     511.17          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             67.265     (Insuf)    8.7643     135.18         15    
+Process 1.Queue.WaitingTime                 26.063     (Insuf)    .00000     69.941         36    
+Process 2.Queue.WaitingTime                 12.089     (Insuf)    .00000     35.710         36    
+Process 3.Queue.WaitingTime                 9.0210     (Insuf)    .00000     34.176         19    
+Assembly1.Queue.WaitingTime                 284.20     (Insuf)    .00000     622.40          8    
+Batch 1.Queue.WaitingTime                   19.181     (Insuf)    .00000     146.31         87    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                36.899     (Insuf)    .00000     73.000     64.000    
+Resource 1.NumberBusy                       .74924     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74924     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05878     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05878     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .73558     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .73558     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .39438     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .39438     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .96035     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .96035     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.2386     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.7583     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .70068     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .67251     (Insuf)    .00000     2.0000     2.0000    
+Process 2.Queue.NumberInQueue               .31731     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .13241     (Insuf)    .00000     2.0000     1.0000    
+Assembly1.Queue.NumberInQueue               2.4660     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 1.1625     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           133.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     36.000    
+Resource 1.ScheduledUtilization             .74924    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05878    
+Resource 5.NumberSeized                     36.000    
+Resource 5.ScheduledUtilization             .73558    
+Resource 6.NumberSeized                     19.000    
+Resource 6.ScheduledUtilization             .39438    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .96035    
+System.NumberOut                            24.000    
+
+Beginning replication 16 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 16 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               887.14     (Insuf)    180.00     1440.0         14    
+Entity 1.VATime                             111.85     (Insuf)    .00000     207.54         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           321.32     (Insuf)    .00000     766.48         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          366.95     (Insuf)    .00000     878.08         23    
+Assembly2.Queue.WaitingTime                 321.48     (Insuf)    117.92     514.11          4    
+Assembly3.Queue.WaitingTime                 389.97     (Insuf)    197.55     576.58          4    
+Rework.Queue.WaitingTime                    .86778     (Insuf)    .00000     6.0845          9    
+Wait For Cart.Queue.WaitingTime             112.30     (Insuf)    3.8374     178.82         14    
+Process 1.Queue.WaitingTime                 22.255     (Insuf)    .00000     75.653         41    
+Process 2.Queue.WaitingTime                 13.912     (Insuf)    .00000     59.030         35    
+Process 3.Queue.WaitingTime                 10.289     (Insuf)    .00000     32.743         15    
+Assembly1.Queue.WaitingTime                 292.84     (Insuf)    .00000     560.62          7    
+Batch 1.Queue.WaitingTime                   15.628     (Insuf)    .00000     81.047         87    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                39.488     (Insuf)    .00000     74.000     65.000    
+Resource 1.NumberBusy                       .83389     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .83389     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04712     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04712     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .72524     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .72524     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .32249     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .32249     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .94371     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94371     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.2245     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.9225     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00542     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           1.0918     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .63583     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .33815     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .10719     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.6578     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .97000     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           130.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     41.000    
+Resource 1.ScheduledUtilization             .83389    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .04712    
+Resource 5.NumberSeized                     35.000    
+Resource 5.ScheduledUtilization             .72524    
+Resource 6.NumberSeized                     15.000    
+Resource 6.ScheduledUtilization             .32249    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .94371    
+System.NumberOut                            23.000    
+
+Beginning replication 17 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 17 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               848.57     (Insuf)    180.00     1440.0         14    
+Entity 1.VATime                             113.69     (Insuf)    .00000     212.31         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           202.42     (Insuf)    .00000     478.01         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          250.74     (Insuf)    .00000     598.02         23    
+Assembly2.Queue.WaitingTime                 200.82     (Insuf)    106.71     387.73          6    
+Assembly3.Queue.WaitingTime                 245.51     (Insuf)    245.51     245.51          1    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             85.250     (Insuf)    2.4692     179.48         14    
+Process 1.Queue.WaitingTime                 23.989     (Insuf)    .00000     63.403         37    
+Process 2.Queue.WaitingTime                 13.147     (Insuf)    .00000     33.273         30    
+Process 3.Queue.WaitingTime                 10.015     (Insuf)    .00000     31.808         14    
+Assembly1.Queue.WaitingTime                 108.06     (Insuf)    .00000     295.98          8    
+Batch 1.Queue.WaitingTime                   17.477     (Insuf)    .00000     123.19         78    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                23.485     (Insuf)    .00000     58.000     53.000    
+Resource 1.NumberBusy                       .75810     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .75810     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05324     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05324     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .61016     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .61016     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .28833     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .28833     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .96017     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .96017     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.1329     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               .72347     (Insuf)    .00000     3.0000     3.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .82883     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .64265     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .29303     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .09737     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               1.2685     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 .94672     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           118.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .75810    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05324    
+Resource 5.NumberSeized                     30.000    
+Resource 5.ScheduledUtilization             .61016    
+Resource 6.NumberSeized                     14.000    
+Resource 6.ScheduledUtilization             .28833    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .96017    
+System.NumberOut                            23.000    
+
+Beginning replication 18 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 18 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               840.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             110.25     (Insuf)    .00000     202.65         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           244.02     (Insuf)    .00000     667.24         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          277.89     (Insuf)    .00000     710.80         24    
+Assembly2.Queue.WaitingTime                 200.45     (Insuf)    70.863     355.66          4    
+Assembly3.Queue.WaitingTime                 366.36     (Insuf)    205.94     469.49          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          8    
+Wait For Cart.Queue.WaitingTime             91.112     (Insuf)    6.6208     168.80         15    
+Process 1.Queue.WaitingTime                 24.697     (Insuf)    .00000     80.486         37    
+Process 2.Queue.WaitingTime                 14.369     (Insuf)    .00000     59.824         30    
+Process 3.Queue.WaitingTime                 13.495     (Insuf)    .00000     51.940         15    
+Assembly1.Queue.WaitingTime                 126.18     (Insuf)    .00000     398.47          9    
+Batch 1.Queue.WaitingTime                   17.991     (Insuf)    .00000     86.460         81    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                28.709     (Insuf)    .00000     58.000     51.000    
+Resource 1.NumberBusy                       .75840     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .75840     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .03953     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .03953     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .60579     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .60579     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .29853     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .29853     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95842     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95842     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.4926     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.0774     (Insuf)    .00000     3.0000     3.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .94908     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .64134     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .30102     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .14058     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               1.7095     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 1.0120     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           120.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .75840    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .03953    
+Resource 5.NumberSeized                     30.000    
+Resource 5.ScheduledUtilization             .60579    
+Resource 6.NumberSeized                     15.000    
+Resource 6.ScheduledUtilization             .29853    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95842    
+System.NumberOut                            24.000    
+
+Beginning replication 19 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 19 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             113.43     (Insuf)    .00000     196.95         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           334.74     (Insuf)    .00000     892.17         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          371.54     (Insuf)    .00000     937.60         24    
+Assembly2.Queue.WaitingTime                 369.93     (Insuf)    88.743     658.22          5    
+Assembly3.Queue.WaitingTime                 451.06     (Insuf)    226.53     660.51          3    
+Rework.Queue.WaitingTime                    .87053     (Insuf)    .00000     4.9654          9    
+Wait For Cart.Queue.WaitingTime             84.070     (Insuf)    16.174     149.41         15    
+Process 1.Queue.WaitingTime                 45.476     (Insuf)    .00000     137.90         34    
+Process 2.Queue.WaitingTime                 17.590     (Insuf)    .00000     54.105         43    
+Process 3.Queue.WaitingTime                 16.201     (Insuf)    .00000     54.884         26    
+Assembly1.Queue.WaitingTime                 267.84     (Insuf)    .00000     719.89          8    
+Batch 1.Queue.WaitingTime                   12.871     (Insuf)    .00000     73.102         99    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                46.147     (Insuf)    .00000     86.000     77.000    
+Resource 1.NumberBusy                       .70933     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70933     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05100     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05100     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .85845     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .85845     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .57011     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .57011     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .94909     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94909     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.8079     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               2.4796     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00544     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .87573     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               1.0737     (Insuf)    .00000     3.0000     .00000    
+Process 2.Queue.NumberInQueue               .52943     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .29253     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.1087     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 .89447     (Insuf)    .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           146.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     34.000    
+Resource 1.ScheduledUtilization             .70933    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .05100    
+Resource 5.NumberSeized                     43.000    
+Resource 5.ScheduledUtilization             .85845    
+Resource 6.NumberSeized                     26.000    
+Resource 6.ScheduledUtilization             .57011    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .94909    
+System.NumberOut                            24.000    
+
+Beginning replication 20 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 20 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               888.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             110.92     (Insuf)    .00000     195.44         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           366.49     (Insuf)    .00000     929.28         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          398.28     (Insuf)    .00000     916.35         24    
+Assembly2.Queue.WaitingTime                 446.82     (Insuf)    119.41     629.89          6    
+Assembly3.Queue.WaitingTime                 418.30     (Insuf)    233.73     516.52          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             81.254     (Insuf)    2.3288     173.99         15    
+Process 1.Queue.WaitingTime                 30.097     (Insuf)    .00000     89.676         38    
+Process 2.Queue.WaitingTime                 18.117     (Insuf)    .00000     60.119         39    
+Process 3.Queue.WaitingTime                 17.198     (Insuf)    .00000     57.832         23    
+Assembly1.Queue.WaitingTime                 316.03     (Insuf)    .00000     610.49          7    
+Batch 1.Queue.WaitingTime                   17.231     (Insuf)    .00000     144.17         96    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                43.410     (Insuf)    .00000     83.000     74.000    
+Resource 1.NumberBusy                       .77833     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .77833     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .05295     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05295     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .79941     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .79941     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .46841     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .46841     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .94940     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94940     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.5166     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.2576     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .84640     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .83664     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .49122     (Insuf)    .00000     2.0000     1.0000    
+Process 3.Queue.NumberInQueue               .27470     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.0323     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 1.1570     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           143.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     38.000    
+Resource 1.ScheduledUtilization             .77833    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05295    
+Resource 5.NumberSeized                     39.000    
+Resource 5.ScheduledUtilization             .79941    
+Resource 6.NumberSeized                     23.000    
+Resource 6.ScheduledUtilization             .46841    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .94940    
+System.NumberOut                            24.000    
+
+Beginning replication 21 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 21 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               866.25     (Insuf)    180.00     1440.0         16    
+Entity 1.VATime                             113.09     (Insuf)    .00000     205.73         25    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         25    
+Entity 1.WaitTime                           390.81     (Insuf)    .00000     1046.9         25    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         25    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         25    
+Entity 1.TotalTime                          388.63     (Insuf)    .00000     1051.6         25    
+Assembly2.Queue.WaitingTime                 365.63     (Insuf)    103.99     616.29          4    
+Assembly3.Queue.WaitingTime                 496.52     (Insuf)    205.98     713.43          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             85.231     (Insuf)    1.2465     149.29         16    
+Process 1.Queue.WaitingTime                 44.358     (Insuf)    .00000     164.83         38    
+Process 2.Queue.WaitingTime                 29.752     (Insuf)    .00000     138.46         38    
+Process 3.Queue.WaitingTime                 35.890     (Insuf)    .00000     121.51         23    
+Assembly1.Queue.WaitingTime                 239.26     (Insuf)    .00000     661.94          9    
+Batch 1.Queue.WaitingTime                   12.949     (Insuf)    .00000     70.670         96    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                45.339     (Insuf)    .00000     78.000     69.000    
+Resource 1.NumberBusy                       .79231     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .79231     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .05782     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05782     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .79137     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .79137     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .47831     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .47831     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .95448     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95448     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.6276     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.4418     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .94701     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               1.1857     (Insuf)    .00000     5.0000     1.0000    
+Process 2.Queue.NumberInQueue               .78515     (Insuf)    .00000     5.0000     .00000    
+Process 3.Queue.NumberInQueue               .58910     (Insuf)    .00000     4.0000     1.0000    
+Assembly1.Queue.NumberInQueue               2.9345     (Insuf)    .00000     6.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .86328     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           142.00    
+Entity 1.NumberOut                          73.000    
+Resource 1.NumberSeized                     38.000    
+Resource 1.ScheduledUtilization             .79231    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05782    
+Resource 5.NumberSeized                     38.000    
+Resource 5.ScheduledUtilization             .79137    
+Resource 6.NumberSeized                     23.000    
+Resource 6.ScheduledUtilization             .47831    
+AssemblyTime.NumberSeized                   17.000    
+AssemblyTime.ScheduledUtilization           .95448    
+System.NumberOut                            25.000    
+
+Beginning replication 22 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 22 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               835.71     (Insuf)    180.00     1440.0         14    
+Entity 1.VATime                             116.66     (Insuf)    .00000     208.93         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           300.37     (Insuf)    .00000     764.64         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          340.64     (Insuf)    .00000     869.06         23    
+Assembly2.Queue.WaitingTime                 386.15     (Insuf)    136.79     597.86          4    
+Assembly3.Queue.WaitingTime                 405.69     (Insuf)    215.85     524.51          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          8    
+Wait For Cart.Queue.WaitingTime             84.151     (Insuf)    .19384     155.90         14    
+Process 1.Queue.WaitingTime                 21.205     (Insuf)    .00000     76.544         37    
+Process 2.Queue.WaitingTime                 12.577     (Insuf)    .00000     53.810         31    
+Process 3.Queue.WaitingTime                 13.278     (Insuf)    .00000     52.315         12    
+Assembly1.Queue.WaitingTime                 223.39     (Insuf)    .00000     543.08          8    
+Batch 1.Queue.WaitingTime                   19.274     (Insuf)    .00000     95.423         78    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                32.636     (Insuf)    .00000     60.000     51.000    
+Resource 1.NumberBusy                       .75755     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .75755     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .04474     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04474     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .64028     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .64028     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .25625     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .25625     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95587     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95587     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.7840     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.5723     (Insuf)    .00000     3.0000     3.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .81814     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .55634     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .27078     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .11065     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.0604     (Insuf)    .00000     4.0000     4.0000    
+Batch 1.Queue.NumberInQueue                 1.0440     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           116.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .75755    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .04474    
+Resource 5.NumberSeized                     31.000    
+Resource 5.ScheduledUtilization             .64028    
+Resource 6.NumberSeized                     12.000    
+Resource 6.ScheduledUtilization             .25625    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .95587    
+System.NumberOut                            23.000    
+
+Beginning replication 23 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 23 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             112.73     (Insuf)    .00000     211.98         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           333.54     (Insuf)    .00000     915.84         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          379.72     (Insuf)    .00000     997.10         24    
+Assembly2.Queue.WaitingTime                 427.98     (Insuf)    125.97     680.63          5    
+Assembly3.Queue.WaitingTime                 369.88     (Insuf)    204.43     480.41          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             85.538     (Insuf)    16.215     155.66         15    
+Process 1.Queue.WaitingTime                 26.877     (Insuf)    .00000     78.638         36    
+Process 2.Queue.WaitingTime                 13.782     (Insuf)    .00000     40.898         38    
+Process 3.Queue.WaitingTime                 9.9198     (Insuf)    .00000     33.578         23    
+Assembly1.Queue.WaitingTime                 329.18     (Insuf)    .00000     673.19          8    
+Batch 1.Queue.WaitingTime                   15.327     (Insuf)    .00000     76.792         96    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                45.335     (Insuf)    .00000     79.000     70.000    
+Resource 1.NumberBusy                       .76401     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .76401     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .05548     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05548     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .79664     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .79664     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .47753     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .47753     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95715     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95715     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.8211     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.4487     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .89103     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .68199     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .36370     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .15844     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.0906     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 1.0218     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           139.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     36.000    
+Resource 1.ScheduledUtilization             .76401    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05548    
+Resource 5.NumberSeized                     38.000    
+Resource 5.ScheduledUtilization             .79664    
+Resource 6.NumberSeized                     23.000    
+Resource 6.ScheduledUtilization             .47753    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95715    
+System.NumberOut                            24.000    
+
+Beginning replication 24 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 24 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             112.37     (Insuf)    .00000     211.42         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           285.64     (Insuf)    .00000     704.72         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          333.32     (Insuf)    .00000     798.89         24    
+Assembly2.Queue.WaitingTime                 261.38     (Insuf)    97.352     374.08          4    
+Assembly3.Queue.WaitingTime                 374.93     (Insuf)    189.60     519.63          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          8    
+Wait For Cart.Queue.WaitingTime             80.780     (Insuf)    18.593     149.28         15    
+Process 1.Queue.WaitingTime                 22.847     (Insuf)    .00000     72.415         40    
+Process 2.Queue.WaitingTime                 13.255     (Insuf)    .00000     33.990         37    
+Process 3.Queue.WaitingTime                 1.8918     (Insuf)    .00000     9.0559         12    
+Assembly1.Queue.WaitingTime                 270.17     (Insuf)    .00000     567.13          8    
+Batch 1.Queue.WaitingTime                   15.584     (Insuf)    .00000     80.131         87    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                35.004     (Insuf)    .00000     69.000     60.000    
+Resource 1.NumberBusy                       .80640     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .80640     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .04701     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04701     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .77533     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .77533     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .25303     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .25303     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95788     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95788     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.9701     (Insuf)    .00000     4.0000     4.0000    
+Assembly3.Queue.NumberInQueue               1.7212     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .84146     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .63861     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .34371     (Insuf)    .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .01577     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.2605     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .94154     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           129.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     40.000    
+Resource 1.ScheduledUtilization             .80640    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .04701    
+Resource 5.NumberSeized                     37.000    
+Resource 5.ScheduledUtilization             .77533    
+Resource 6.NumberSeized                     12.000    
+Resource 6.ScheduledUtilization             .25303    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95788    
+System.NumberOut                            24.000    
+
+Beginning replication 25 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 25 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               900.00     (Insuf)    360.00     1440.0         14    
+Entity 1.VATime                             113.43     (Insuf)    .00000     220.32         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           333.71     (Insuf)    .00000     807.68         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          379.05     (Insuf)    .00000     892.61         23    
+Assembly2.Queue.WaitingTime                 414.06     (Insuf)    137.57     646.74          4    
+Assembly3.Queue.WaitingTime                 449.60     (Insuf)    283.82     575.85          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000         11    
+Wait For Cart.Queue.WaitingTime             103.57     (Insuf)    46.961     173.90         14    
+Process 1.Queue.WaitingTime                 26.761     (Insuf)    .00000     100.34         39    
+Process 2.Queue.WaitingTime                 18.539     (Insuf)    .00000     56.279         37    
+Process 3.Queue.WaitingTime                 18.659     (Insuf)    .00000     42.803         17    
+Assembly1.Queue.WaitingTime                 305.90     (Insuf)    .00000     704.17          8    
+Batch 1.Queue.WaitingTime                   16.301     (Insuf)    .00000     68.779         90    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                41.724     (Insuf)    .00000     82.000     73.000    
+Resource 1.NumberBusy                       .80841     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .80841     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .05253     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .05253     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .75533     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .75533     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .32671     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .32671     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .94778     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94778     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.4192     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.1872     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           1.0070     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .80327     (Insuf)    .00000     3.0000     3.0000    
+Process 2.Queue.NumberInQueue               .52571     (Insuf)    .00000     3.0000     2.0000    
+Process 3.Queue.NumberInQueue               .24242     (Insuf)    .00000     2.0000     1.0000    
+Assembly1.Queue.NumberInQueue               2.6972     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 1.0188     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           138.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     39.000    
+Resource 1.ScheduledUtilization             .80841    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .05253    
+Resource 5.NumberSeized                     37.000    
+Resource 5.ScheduledUtilization             .75533    
+Resource 6.NumberSeized                     17.000    
+Resource 6.ScheduledUtilization             .32671    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .94778    
+System.NumberOut                            23.000    
+
+Beginning replication 26 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 26 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               887.14     (Insuf)    360.00     1440.0         14    
+Entity 1.VATime                             111.78     (Insuf)    .00000     201.69         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           304.08     (Insuf)    .00000     771.84         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          347.12     (Insuf)    .00000     851.78         23    
+Assembly2.Queue.WaitingTime                 280.95     (Insuf)    117.59     423.50          4    
+Assembly3.Queue.WaitingTime                 349.11     (Insuf)    189.50     496.09          3    
+Rework.Queue.WaitingTime                    .50646     (Insuf)    .00000     4.5581          9    
+Wait For Cart.Queue.WaitingTime             96.656     (Insuf)    3.5320     168.31         14    
+Process 1.Queue.WaitingTime                 20.756     (Insuf)    .00000     62.219         41    
+Process 2.Queue.WaitingTime                 15.634     (Insuf)    .00000     56.221         37    
+Process 3.Queue.WaitingTime                 13.892     (Insuf)    .00000     38.075         16    
+Assembly1.Queue.WaitingTime                 322.91     (Insuf)    .00000     637.73          8    
+Batch 1.Queue.WaitingTime                   13.850     (Insuf)    .00000     81.779         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                40.563     (Insuf)    .00000     79.000     70.000    
+Resource 1.NumberBusy                       .84934     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .84934     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04357     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04357     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .75250     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .75250     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .34311     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .34311     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .92031     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .92031     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.3834     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.1813     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00317     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .93972     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .59860     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .40172     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .15437     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.6774     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 .89453     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           135.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     41.000    
+Resource 1.ScheduledUtilization             .84934    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .04357    
+Resource 5.NumberSeized                     37.000    
+Resource 5.ScheduledUtilization             .75250    
+Resource 6.NumberSeized                     16.000    
+Resource 6.ScheduledUtilization             .34311    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .92031    
+System.NumberOut                            23.000    
+
+Beginning replication 27 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 27 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             113.63     (Insuf)    .00000     195.59         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           269.42     (Insuf)    .00000     816.90         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          312.38     (Insuf)    .00000     873.03         24    
+Assembly2.Queue.WaitingTime                 247.26     (Insuf)    80.318     454.74          5    
+Assembly3.Queue.WaitingTime                 441.27     (Insuf)    195.93     613.35          3    
+Rework.Queue.WaitingTime                    .35080     (Insuf)    .00000     3.5079         10    
+Wait For Cart.Queue.WaitingTime             81.927     (Insuf)    18.286     147.74         15    
+Process 1.Queue.WaitingTime                 26.758     (Insuf)    .00000     88.004         34    
+Process 2.Queue.WaitingTime                 17.591     (Insuf)    .00000     41.240         36    
+Process 3.Queue.WaitingTime                 12.497     (Insuf)    .00000     33.800         23    
+Assembly1.Queue.WaitingTime                 190.90     (Insuf)    .00000     559.43          8    
+Batch 1.Queue.WaitingTime                   13.959     (Insuf)    .00000     99.992         90    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                34.433     (Insuf)    .00000     73.000     64.000    
+Resource 1.NumberBusy                       .69480     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .69480     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04872     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04872     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .74581     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .74581     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .47591     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .47591     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .95473     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .95473     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               1.9650     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               1.5895     (Insuf)    .00000     4.0000     4.0000    
+Rework.Queue.NumberInQueue                  .00244     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .85341     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .64827     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .43978     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .19962     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               2.1692     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 .87416     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           133.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     34.000    
+Resource 1.ScheduledUtilization             .69480    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .04872    
+Resource 5.NumberSeized                     36.000    
+Resource 5.ScheduledUtilization             .74581    
+Resource 6.NumberSeized                     23.000    
+Resource 6.ScheduledUtilization             .47591    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .95473    
+System.NumberOut                            24.000    
+
+Beginning replication 28 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 28 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               888.00     (Insuf)    360.00     1440.0         15    
+Entity 1.VATime                             110.89     (Insuf)    .00000     197.77         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           345.58     (Insuf)    .00000     834.69         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          384.29     (Insuf)    .00000     927.96         24    
+Assembly2.Queue.WaitingTime                 390.41     (Insuf)    115.85     657.07          5    
+Assembly3.Queue.WaitingTime                 448.41     (Insuf)    186.01     703.26          4    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          9    
+Wait For Cart.Queue.WaitingTime             97.974     (Insuf)    28.895     168.80         15    
+Process 1.Queue.WaitingTime                 30.708     (Insuf)    .00000     94.729         37    
+Process 2.Queue.WaitingTime                 16.879     (Insuf)    .00000     56.263         41    
+Process 3.Queue.WaitingTime                 11.435     (Insuf)    .00000     56.521         23    
+Assembly1.Queue.WaitingTime                 308.96     (Insuf)    .00000     745.50          7    
+Batch 1.Queue.WaitingTime                   14.631     (Insuf)    .00000     87.272         99    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                47.863     (Insuf)    .00000     83.000     74.000    
+Resource 1.NumberBusy                       .76433     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .76433     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .04764     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04764     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .84575     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .84575     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .46709     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .46709     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .93159     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .93159     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.9888     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               2.6160     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           1.0205     (Insuf)    .00000     3.0000     .00000    
+Process 1.Queue.NumberInQueue               .78904     (Insuf)    .00000     2.0000     .00000    
+Process 2.Queue.NumberInQueue               .48061     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .18264     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.2141     (Insuf)    .00000     6.0000     6.0000    
+Batch 1.Queue.NumberInQueue                 1.0059     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           143.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     37.000    
+Resource 1.ScheduledUtilization             .76433    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .04764    
+Resource 5.NumberSeized                     41.000    
+Resource 5.ScheduledUtilization             .84575    
+Resource 6.NumberSeized                     23.000    
+Resource 6.ScheduledUtilization             .46709    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .93159    
+System.NumberOut                            24.000    
+
+Beginning replication 29 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 29 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               874.28     (Insuf)    180.00     1440.0         14    
+Entity 1.VATime                             112.63     (Insuf)    .00000     209.85         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           339.54     (Insuf)    .00000     878.35         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          385.79     (Insuf)    .00000     1025.8         23    
+Assembly2.Queue.WaitingTime                 426.87     (Insuf)    120.17     685.14          5    
+Assembly3.Queue.WaitingTime                 428.98     (Insuf)    201.60     560.96          3    
+Rework.Queue.WaitingTime                    .00000     (Insuf)    .00000     .00000          8    
+Wait For Cart.Queue.WaitingTime             97.991     (Insuf)    6.0313     179.87         14    
+Process 1.Queue.WaitingTime                 21.631     (Insuf)    .00000     63.468         38    
+Process 2.Queue.WaitingTime                 14.051     (Insuf)    .00000     33.800         34    
+Process 3.Queue.WaitingTime                 9.4688     (Insuf)    .00000     33.383         22    
+Assembly1.Queue.WaitingTime                 316.32     (Insuf)    .00000     741.65          7    
+Batch 1.Queue.WaitingTime                   17.092     (Insuf)    .00000     82.243         90    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                45.595     (Insuf)    .00000     79.000     70.000    
+Resource 1.NumberBusy                       .79787     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .79787     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .04625     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .04625     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .71320     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .71320     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .44251     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .44251     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberBusy                     .94287     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .94287     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               2.8632     (Insuf)    .00000     5.0000     5.0000    
+Assembly3.Queue.NumberInQueue               2.4947     (Insuf)    .00000     5.0000     5.0000    
+Rework.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Wait For Cart.Queue.NumberInQueue           .95269     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .58506     (Insuf)    .00000     2.0000     1.0000    
+Process 2.Queue.NumberInQueue               .34278     (Insuf)    .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .14466     (Insuf)    .00000     1.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.0777     (Insuf)    .00000     5.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 1.0832     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           135.00    
+Entity 1.NumberOut                          65.000    
+Resource 1.NumberSeized                     38.000    
+Resource 1.ScheduledUtilization             .79787    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .04625    
+Resource 5.NumberSeized                     34.000    
+Resource 5.ScheduledUtilization             .71320    
+Resource 6.NumberSeized                     22.000    
+Resource 6.ScheduledUtilization             .44251    
+AssemblyTime.NumberSeized                   15.000    
+AssemblyTime.ScheduledUtilization           .94287    
+System.NumberOut                            23.000    
+
+Beginning replication 30 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 30 of 30
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+Replication ended at time      : 1440.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+TimeinProcess                               852.00     (Insuf)    180.00     1440.0         15    
+Entity 1.VATime                             116.48     (Insuf)    .00000     204.86         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           353.29     (Insuf)    .00000     868.84         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          401.34     (Insuf)    .00000     960.96         24    
+Assembly2.Queue.WaitingTime                 426.11     (Insuf)    95.344     714.73          5    
+Assembly3.Queue.WaitingTime                 495.95     (Insuf)    218.05     759.07          4    
+Rework.Queue.WaitingTime                    .25463     (Insuf)    .00000     3.0555         12    
+Wait For Cart.Queue.WaitingTime             85.518     (Insuf)    7.0636     165.51         15    
+Process 1.Queue.WaitingTime                 30.100     (Insuf)    .00000     95.467         40    
+Process 2.Queue.WaitingTime                 19.690     (Insuf)    .00000     63.276         39    
+Process 3.Queue.WaitingTime                 13.177     (Insuf)    .00000     52.296         22    
+Assembly1.Queue.WaitingTime                 335.45     (Insuf)    .00000     801.29          7    
+Batch 1.Queue.WaitingTime                   14.588     (Insuf)    .00000     66.001         99    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                49.565     (Insuf)    .00000     83.000     74.000    
+Resource 1.NumberBusy                       .82242     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .82242     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .06188     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .06188     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .82227     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .82227     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .47054     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .47054     (Insuf)    .00000     1.0000     .00000    
+AssemblyTime.NumberBusy                     .97539     (Insuf)    .00000     1.0000     1.0000    
+AssemblyTime.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+AssemblyTime.Utilization                    .97539     (Insuf)    .00000     1.0000     1.0000    
+Assembly2.Queue.NumberInQueue               3.0989     (Insuf)    .00000     6.0000     6.0000    
+Assembly3.Queue.NumberInQueue               2.8379     (Insuf)    .00000     6.0000     6.0000    
+Rework.Queue.NumberInQueue                  .00212     (Insuf)    .00000     1.0000     .00000    
+Wait For Cart.Queue.NumberInQueue           .89082     (Insuf)    .00000     2.0000     .00000    
+Process 1.Queue.NumberInQueue               .83612     (Insuf)    .00000     3.0000     .00000    
+Process 2.Queue.NumberInQueue               .53329     (Insuf)    .00000     2.0000     .00000    
+Process 3.Queue.NumberInQueue               .20132     (Insuf)    .00000     2.0000     .00000    
+Assembly1.Queue.NumberInQueue               3.3613     (Insuf)    .00000     6.0000     5.0000    
+Batch 1.Queue.NumberInQueue                 1.0088     (Insuf)    .00000     3.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           143.00    
+Entity 1.NumberOut                          69.000    
+Resource 1.NumberSeized                     40.000    
+Resource 1.ScheduledUtilization             .82242    
+Resource 2.NumberSeized                     12.000    
+Resource 2.ScheduledUtilization             .06188    
+Resource 5.NumberSeized                     39.000    
+Resource 5.ScheduledUtilization             .82227    
+Resource 6.NumberSeized                     22.000    
+Resource 6.ScheduledUtilization             .47054    
+AssemblyTime.NumberSeized                   16.000    
+AssemblyTime.ScheduledUtilization           .97539    
+System.NumberOut                            24.000    
+
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                 Output Summary for 30 Replications
+
+Project: Unnamed Project                                             Run execution date : 3/ 4/2015
+Analyst: CoE IT Support                                              Model revision date: 3/ 4/2015
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           134.26     3.5770     116.00     152.00     30
+Entity 1.NumberOut                          67.933     1.0327     61.000     73.000     30
+Resource 1.NumberSeized                     37.533     .75143     33.000     41.000     30
+Resource 1.ScheduledUtilization             .77296     .01484     .69480     .85922     30
+Resource 2.NumberSeized                     9.8666     .83044     6.0000     16.000     30
+Resource 2.ScheduledUtilization             .05137     .00426     .03120     .08524     30
+Resource 5.NumberSeized                     36.700     1.4180     30.000     45.000     30
+Resource 5.ScheduledUtilization             .75654     .02924     .60579     .91152     30
+Resource 6.NumberSeized                     19.233     1.6309     12.000     27.000     30
+Resource 6.ScheduledUtilization             .39702     .03422     .24578     .57011     30
+AssemblyTime.NumberSeized                   15.733     .25818     14.000     17.000     30
+AssemblyTime.ScheduledUtilization           .94534     .00588     .90393     .97539     30
+System.NumberOut                            23.733     .25818     22.000     25.000     30
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.

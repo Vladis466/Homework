@@ -1,0 +1,4395 @@
+This is the document containing the gameresults.out info for one of my classmates dominion implementation using
+my testdominion.c file. In this file I discovered that some of the cards that appeared to be in the game had a value
+that was not associated with any of the enumerated cards. These appear as CARD NOT FOUND when printed from the deck/hand/discard.
+
+Starting Round 1
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper copper copper estate copper 
+Player 1 has the following in his deck:
+estate copper copper copper estate 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper copper copper copper copper estate copper estate estate 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper estate copper estate copper copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 1's turn #1
+Selecting card for purchase...
+Card selected for purchase: cutpurse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper estate 
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+estate estate copper estate copper 
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper estate copper estate copper copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 1's turn #1
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper estate 
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+estate estate copper estate copper 
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper estate copper estate copper copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 2's turn #1
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper estate 
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+copper copper estate copper estate 
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #1
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper estate 
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+copper copper estate copper estate 
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #1
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+estate copper copper copper estate 
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+Ending Player 3's turn #1
+
+Finished Round 1
+
+Starting Round 2
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+estate copper copper copper estate 
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper copper copper copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+
+Starting Player 1's turn #2
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 5
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper estate estate copper copper copper estate 
+Player 2 has the following in his hand:
+copper copper copper copper copper 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+Ending Player 1's turn #2
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 5
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper estate estate copper copper copper estate 
+Player 2 has the following in his hand:
+copper copper copper copper copper 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper copper estate copper 
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+
+Starting Player 2's turn #2
+Selecting card for purchase...
+Card selected for purchase: tribute
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper estate estate copper copper copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper tribute copper copper copper copper copper 
+Player 3 has the following in his hand:
+copper estate copper copper copper 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+Ending Player 2's turn #2
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+cutpurse copper copper copper estate copper estate estate copper copper copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper tribute copper copper copper copper copper 
+Player 3 has the following in his hand:
+copper estate copper copper copper 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate 
+
+Starting Player 3's turn #2
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+cutpurse copper copper copper estate 
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper tribute copper copper copper copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate copper copper estate copper copper copper 
+Ending Player 3's turn #2
+
+Finished Round 2
+
+Starting Round 3
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+cutpurse copper copper copper estate 
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo estate estate copper estate copper tribute copper copper copper copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate copper copper estate copper copper copper 
+
+Starting Player 1's turn #3
+Selecting card for purchase...
+Card selected for purchase: silver
+Selecting card for action...
+Card selected for action: cutpurse
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+copper tribute copper estate estate 
+Player 2 has the following in his deck:
+copper estate copper copper copper copper embargo 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate copper copper estate copper copper copper 
+Ending Player 1's turn #3
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+copper tribute copper estate estate 
+Player 2 has the following in his deck:
+copper estate copper copper copper copper embargo 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+embargo copper copper estate copper estate copper copper estate copper copper copper 
+
+Starting Player 2's turn #3
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #3
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper estate copper estate copper estate 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #3
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+estate copper estate copper estate 
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+curse copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Ending Player 3's turn #3
+
+Finished Round 3
+
+Starting Round 4
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+estate copper estate copper estate 
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+curse copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+
+Starting Player 1's turn #4
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper curse estate copper estate copper estate 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+curse copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Ending Player 1's turn #4
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper curse estate copper estate copper estate 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+curse copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+
+Starting Player 2's turn #4
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper curse estate copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper estate copper copper copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #4
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper copper 
+Player 1 has the following in his discard pile:
+silver estate copper copper copper curse estate copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper estate copper copper copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #4
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper copper estate silver estate 
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper estate copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Ending Player 3's turn #4
+
+Finished Round 4
+
+Starting Round 5
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper copper estate silver estate 
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+embargo copper tribute copper estate estate embargo copper estate copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+
+Starting Player 1's turn #5
+Selecting card for purchase...
+Card selected for purchase: cutpurse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+estate embargo copper copper estate 
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Ending Player 1's turn #5
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+estate embargo copper copper estate 
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+
+Starting Player 2's turn #5
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #5
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper copper curse copper estate copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #5
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper estate copper curse copper 
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+embargo curse CARD NOT FOUND copper CARD NOT FOUND copper 
+Ending Player 3's turn #5
+
+Finished Round 5
+
+Starting Round 6
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper estate copper curse copper 
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate estate copper copper copper tribute 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+embargo curse CARD NOT FOUND copper CARD NOT FOUND copper 
+
+Starting Player 1's turn #6
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate estate copper estate copper curse copper 
+Player 2 has the following in his hand:
+tribute copper copper copper estate 
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+embargo curse CARD NOT FOUND copper CARD NOT FOUND copper 
+Ending Player 1's turn #6
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate estate copper estate copper curse copper 
+Player 2 has the following in his hand:
+tribute copper copper copper estate 
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+embargo curse CARD NOT FOUND copper CARD NOT FOUND copper 
+
+Starting Player 2's turn #6
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate estate copper estate copper curse copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper embargo tribute copper copper copper estate 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #6
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper 
+Player 1 has the following in his discard pile:
+cutpurse copper copper estate silver estate estate copper estate copper curse copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper embargo tribute copper copper copper estate 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #6
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper copper estate copper estate 
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper embargo tribute copper copper copper estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+embargo curse copper CARD NOT FOUND copper CARD NOT FOUND 
+Ending Player 3's turn #6
+
+Finished Round 6
+
+Starting Round 7
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper copper estate copper estate 
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate estate copper copper embargo tribute copper copper copper estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+embargo curse copper CARD NOT FOUND copper CARD NOT FOUND 
+
+Starting Player 1's turn #7
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+estate copper copper embargo estate 
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+embargo curse copper CARD NOT FOUND copper CARD NOT FOUND 
+Ending Player 1's turn #7
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+estate copper copper embargo estate 
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+embargo curse copper CARD NOT FOUND copper CARD NOT FOUND 
+
+Starting Player 2's turn #7
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+embargo curse CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #7
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper estate copper curse copper estate 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+embargo curse CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #7
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+estate copper curse copper estate 
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse CARD NOT FOUND 
+Ending Player 3's turn #7
+
+Finished Round 7
+
+Starting Round 8
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+estate copper curse copper estate 
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper copper estate embargo copper tribute 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse CARD NOT FOUND 
+
+Starting Player 1's turn #8
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+tribute copper embargo estate copper 
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse CARD NOT FOUND 
+Ending Player 1's turn #8
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+tribute copper embargo estate copper 
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse embargo 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse CARD NOT FOUND 
+
+Starting Player 2's turn #8
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper embargo tribute copper embargo estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #8
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate cutpurse copper silver copper 
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper embargo tribute copper embargo estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #8
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper silver copper cutpurse estate 
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper embargo tribute copper embargo estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 3's turn #8
+
+Finished Round 8
+
+Starting Round 9
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper silver copper cutpurse estate 
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper copper estate copper 
+Player 2 has the following in his discard pile:
+curse estate copper copper embargo tribute copper embargo estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 1's turn #9
+Selecting card for purchase...
+Card selected for purchase: village
+Selecting card for action...
+Card selected for action: cutpurse
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate village copper silver copper estate 
+Player 2 has the following in his hand:
+copper estate copper copper embargo 
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 1's turn #9
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate village copper silver copper estate 
+Player 2 has the following in his hand:
+copper estate copper copper embargo 
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 2's turn #9
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate village copper silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND copper curse curse CARD NOT FOUND 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #9
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+
+Player 1 has the following in his discard pile:
+estate copper copper estate copper estate curse estate copper curse copper estate village copper silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND copper curse curse CARD NOT FOUND 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #9
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 1
+
+Player 1 has the following in his hand:
+estate estate estate estate copper 
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper curse curse CARD NOT FOUND 
+Ending Player 3's turn #9
+
+Finished Round 9
+
+Starting Round 10
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 1
+
+Player 1 has the following in his hand:
+estate estate estate estate copper 
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper copper embargo copper copper estate 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper curse curse CARD NOT FOUND 
+
+Starting Player 1's turn #10
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+estate copper copper embargo copper 
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper curse curse CARD NOT FOUND 
+Ending Player 1's turn #10
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+estate copper copper embargo copper 
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND copper curse curse CARD NOT FOUND 
+
+Starting Player 2's turn #10
+Selecting card for purchase...
+Card selected for purchase: village
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper village estate copper copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #10
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse copper copper estate estate copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper village estate copper copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #10
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper estate estate copper copper 
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper village estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+copper curse CARD NOT FOUND CARD NOT FOUND copper curse 
+Ending Player 3's turn #10
+
+Finished Round 10
+
+Starting Round 11
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper estate estate copper copper 
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate tribute curse copper 
+Player 2 has the following in his discard pile:
+estate copper estate copper village estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+copper curse CARD NOT FOUND CARD NOT FOUND copper curse 
+
+Starting Player 1's turn #11
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+copper curse tribute estate village 
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+copper curse CARD NOT FOUND CARD NOT FOUND copper curse 
+Ending Player 1's turn #11
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+copper curse tribute estate village 
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+copper curse CARD NOT FOUND CARD NOT FOUND copper curse 
+
+Starting Player 2's turn #11
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+copper CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #11
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver copper curse copper copper village curse 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+copper CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #11
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+curse village copper copper curse 
+Player 1 has the following in his deck:
+silver copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+embargo copper CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 3's turn #11
+
+Finished Round 11
+
+Starting Round 12
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+curse village copper copper curse 
+Player 1 has the following in his deck:
+silver copper 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+embargo copper CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 1's turn #12
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: village
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper copper curse copper copper copper curse 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+embargo copper CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 1's turn #12
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper copper curse copper copper copper curse 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse 
+Player 3 has the following in his discard pile:
+embargo copper CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 2's turn #12
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper copper curse copper copper copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village embargo copper copper copper estate copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #12
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+silver 
+Player 1 has the following in his discard pile:
+copper estate estate estate estate copper curse copper estate estate copper copper copper curse copper copper copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village embargo copper copper copper estate copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #12
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+silver estate estate copper estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village embargo copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Ending Player 3's turn #12
+
+Finished Round 12
+
+Starting Round 13
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+silver estate estate copper estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate estate 
+Player 2 has the following in his discard pile:
+copper copper curse tribute estate village embargo copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+
+Starting Player 1's turn #13
+Selecting card for purchase...
+Card selected for purchase: silver
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+estate estate copper copper embargo 
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Ending Player 1's turn #13
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+estate estate copper copper embargo 
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse embargo 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+
+Starting Player 2's turn #13
+Selecting card for purchase...
+Card selected for purchase: embargo
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+embargo curse copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #13
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper estate copper curse copper copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+embargo curse copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #13
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper copper curse copper estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse copper 
+Ending Player 3's turn #13
+
+Finished Round 13
+
+Starting Round 14
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper copper curse copper estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper copper estate copper estate curse 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse copper 
+
+Starting Player 1's turn #14
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+curse estate copper estate copper 
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse copper 
+Ending Player 1's turn #14
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+curse estate copper estate copper 
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse copper 
+
+Starting Player 2's turn #14
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper curse curse estate copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND curse curse copper curse 
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #14
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper copper curse curse copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper curse curse estate copper estate copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND curse curse copper curse 
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #14
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper curse curse copper copper 
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper curse curse estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse curse copper curse 
+Ending Player 3's turn #14
+
+Finished Round 14
+
+Starting Round 15
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+copper curse curse copper copper 
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+copper tribute village copper 
+Player 2 has the following in his discard pile:
+embargo estate estate copper curse curse estate copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse curse copper curse 
+
+Starting Player 1's turn #15
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate curse copper curse curse copper copper 
+Player 2 has the following in his hand:
+copper village tribute copper copper 
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper embargo 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse curse copper curse 
+Ending Player 1's turn #15
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate curse copper curse curse copper copper 
+Player 2 has the following in his hand:
+copper village tribute copper copper 
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper embargo 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper copper 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND curse curse copper curse 
+
+Starting Player 2's turn #15
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+Card selected for action: village
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate curse copper curse curse copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+copper copper curse curse copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #15
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper 
+Player 1 has the following in his discard pile:
+silver silver estate estate copper estate estate copper copper curse copper estate curse copper curse curse copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+copper copper curse curse copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #15
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+copper estate estate copper estate 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+copper copper copper curse curse copper 
+Ending Player 3's turn #15
+
+Finished Round 15
+
+Starting Round 16
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+copper estate estate copper estate 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate curse estate estate estate copper 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+copper copper copper curse curse copper 
+
+Starting Player 1's turn #16
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+copper estate estate estate curse 
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+copper copper copper curse curse copper 
+Ending Player 1's turn #16
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+copper estate estate estate curse 
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+copper copper copper curse curse copper 
+
+Starting Player 2's turn #16
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper copper copper estate estate estate curse 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND copper copper 
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #16
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver estate copper silver curse copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper copper copper estate estate estate curse 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND copper copper 
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #16
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper curse silver copper estate 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper copper copper estate estate estate curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND copper copper 
+Ending Player 3's turn #16
+
+Finished Round 16
+
+Starting Round 17
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper curse silver copper estate 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate 
+Player 2 has the following in his discard pile:
+curse copper embargo tribute copper copper copper copper estate estate estate curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND copper copper 
+
+Starting Player 1's turn #17
+Selecting card for purchase...
+Card selected for purchase: cutpurse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+estate copper curse copper copper 
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND copper copper 
+Ending Player 1's turn #17
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+estate copper curse copper copper 
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse curse copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND copper copper 
+
+Starting Player 2's turn #17
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+copper curse curse copper copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #17
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse curse copper estate copper silver 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+copper curse curse copper copper 
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #17
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+silver copper estate copper curse 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+Ending Player 3's turn #17
+
+Finished Round 17
+
+Starting Round 18
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+silver copper estate copper curse 
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper curse curse estate embargo estate 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+
+Starting Player 1's turn #18
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 0
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+estate embargo estate curse curse 
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+Ending Player 1's turn #18
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 0
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+estate embargo estate curse curse 
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND curse copper copper copper 
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+
+Starting Player 2's turn #18
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+copper copper copper curse CARD NOT FOUND 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+Ending Player 2's turn #18
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper curse copper estate copper curse 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+copper copper copper curse CARD NOT FOUND 
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper 
+
+Starting Player 3's turn #18
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+curse copper estate copper curse 
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper estate copper copper copper curse CARD NOT FOUND 
+Ending Player 3's turn #18
+
+Finished Round 18
+
+Starting Round 19
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+curse copper estate copper curse 
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+tribute copper estate copper copper 
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper estate copper copper copper curse CARD NOT FOUND 
+
+Starting Player 1's turn #19
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse estate curse copper estate copper curse 
+Player 2 has the following in his hand:
+copper copper estate copper tribute 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper estate copper copper copper curse CARD NOT FOUND 
+Ending Player 1's turn #19
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse estate curse copper estate copper curse 
+Player 2 has the following in his hand:
+copper copper estate copper tribute 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+estate estate copper curse copper copper estate embargo estate curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+
+Player 3 has the following in his discard pile:
+estate copper curse curse copper copper estate copper copper copper curse CARD NOT FOUND 
+
+Starting Player 2's turn #19
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse estate curse copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper estate embargo estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #19
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper 
+Player 1 has the following in his discard pile:
+copper copper estate estate copper estate cutpurse copper curse silver copper estate copper silver copper estate copper curse estate curse copper estate copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper estate embargo estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #19
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+copper estate copper estate curse 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper estate embargo estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Ending Player 3's turn #19
+
+Finished Round 19
+
+Starting Round 20
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+copper estate copper estate curse 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper estate embargo estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+
+Starting Player 1's turn #20
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+copper curse estate embargo estate 
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Ending Player 1's turn #20
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+copper curse estate embargo estate 
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper copper curse CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND 
+
+Starting Player 2's turn #20
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: embargo
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #20
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate copper curse copper curse cutpurse 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #20
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+cutpurse curse copper curse copper 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Ending Player 3's turn #20
+
+Finished Round 20
+
+Starting Round 21
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+cutpurse curse copper curse copper 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate copper estate curse copper 
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+
+Starting Player 1's turn #21
+Selecting card for purchase...
+Card selected for purchase: estate
+Selecting card for action...
+Card selected for action: cutpurse
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+copper curse estate copper estate 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+Ending Player 1's turn #21
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+copper curse estate copper estate 
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper curse CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND copper 
+
+Starting Player 2's turn #21
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate curse copper curse estate copper estate 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #21
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper copper estate copper silver estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate curse copper curse estate copper estate 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #21
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+estate silver copper estate copper 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate curse copper curse estate copper estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+Ending Player 3's turn #21
+
+Finished Round 21
+
+Starting Round 22
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+estate silver copper estate copper 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+
+Player 2 has the following in his discard pile:
+copper copper estate copper tribute curse curse copper copper curse estate curse copper curse estate copper estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+
+Starting Player 1's turn #22
+Selecting card for purchase...
+Card selected for purchase: silver
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+curse curse tribute copper copper 
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+Ending Player 1's turn #22
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+curse curse tribute copper copper 
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper copper CARD NOT FOUND CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+copper CARD NOT FOUND CARD NOT FOUND curse copper CARD NOT FOUND 
+
+Starting Player 2's turn #22
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #22
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate estate copper curse silver copper 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #22
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper silver curse copper estate 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 3's turn #22
+
+Finished Round 22
+
+Starting Round 23
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+copper silver curse copper estate 
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper estate estate curse curse copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 1's turn #23
+Selecting card for purchase...
+Card selected for purchase: village
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+copper curse curse estate estate 
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+Ending Player 1's turn #23
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+copper curse curse estate estate 
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+curse CARD NOT FOUND CARD NOT FOUND copper CARD NOT FOUND curse 
+
+Starting Player 2's turn #23
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #23
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate copper copper estate copper estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #23
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+estate copper estate copper copper 
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+Ending Player 3's turn #23
+
+Finished Round 23
+
+Starting Round 24
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 3
+
+Player 1 has the following in his hand:
+estate copper estate copper copper 
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse copper estate copper copper copper 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+
+Starting Player 1's turn #24
+Selecting card for purchase...
+Card selected for purchase: silver
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate silver estate copper estate copper copper 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+Ending Player 1's turn #24
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 4
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate silver estate copper estate copper copper 
+Player 2 has the following in his hand:
+copper copper copper estate copper 
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse 
+Player 3 has the following in his discard pile:
+copper copper CARD NOT FOUND CARD NOT FOUND CARD NOT FOUND curse 
+
+Starting Player 2's turn #24
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate silver estate copper estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate curse copper copper copper estate copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #24
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 2
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+estate 
+Player 1 has the following in his discard pile:
+curse copper estate copper estate curse estate copper curse copper curse silver estate silver copper estate copper village copper silver curse copper estate silver estate copper estate copper copper 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate curse copper copper copper estate copper 
+Player 3 has the following in his hand:
+curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #24
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+estate copper copper silver estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate curse copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Ending Player 3's turn #24
+
+Finished Round 24
+
+Starting Round 25
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 4
+
+Player 1 has the following in his hand:
+estate copper copper silver estate 
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+estate curse 
+Player 2 has the following in his discard pile:
+copper curse curse tribute copper copper copper copper curse curse estate estate curse copper copper copper estate copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+
+Starting Player 1's turn #25
+Selecting card for purchase...
+Card selected for purchase: gardens
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+curse estate curse copper curse 
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+Ending Player 1's turn #25
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+curse estate curse copper curse 
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+CARD NOT FOUND CARD NOT FOUND copper curse 
+Player 3 has the following in his discard pile:
+curse curse CARD NOT FOUND copper copper CARD NOT FOUND 
+
+Starting Player 2's turn #25
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #25
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 1
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper curse copper silver curse silver 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+curse copper CARD NOT FOUND CARD NOT FOUND curse 
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #25
+Selecting card for purchase...
+Card selected for purchase: copper
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 5
+
+Player 1 has the following in his hand:
+silver curse silver copper curse 
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND CARD NOT FOUND curse 
+Ending Player 3's turn #25
+
+Finished Round 25
+
+Starting Round 26
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 5
+
+Player 1 has the following in his hand:
+silver curse silver copper curse 
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse copper copper estate tribute copper 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND CARD NOT FOUND curse 
+
+Starting Player 1's turn #26
+Selecting card for purchase...
+Card selected for purchase: curse
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate curse silver curse silver copper curse 
+Player 2 has the following in his hand:
+copper tribute estate copper copper 
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND CARD NOT FOUND curse 
+Ending Player 1's turn #26
+
+Game State:
+Number of Players: 3
+Whose Turn: 2
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate curse silver curse silver copper curse 
+Player 2 has the following in his hand:
+copper tribute estate copper copper 
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+copper CARD NOT FOUND curse CARD NOT FOUND copper 
+Player 3 has the following in his discard pile:
+copper curse copper CARD NOT FOUND CARD NOT FOUND curse 
+
+Starting Player 2's turn #26
+Selecting card for purchase...
+Card selected for purchase: village
+Selecting card for action...
+Card selected for action: tribute
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate curse silver curse silver copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse village copper tribute estate copper copper 
+Player 3 has the following in his hand:
+copper copper curse CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+Ending Player 2's turn #26
+
+Game State:
+Number of Players: 3
+Whose Turn: 3
+Coins: 3
+
+Player 1 has the following in his hand:
+
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate village curse copper estate copper 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate curse silver curse silver copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse village copper tribute estate copper copper 
+Player 3 has the following in his hand:
+copper copper curse CARD NOT FOUND copper 
+Player 3 has the following in his deck:
+curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+
+
+Starting Player 3's turn #26
+Selecting card for purchase...
+Card selected for purchase: silver
+Selecting card for action...
+No action cards in hand.
+
+Game State:
+Number of Players: 3
+Whose Turn: 1
+Coins: 2
+
+Player 1 has the following in his hand:
+copper estate copper curse village 
+Player 1 has the following in his deck:
+copper estate estate copper copper estate copper curse curse silver estate copper copper estate estate 
+Player 1 has the following in his discard pile:
+gardens estate copper copper silver estate curse silver curse silver copper curse 
+Player 2 has the following in his hand:
+
+Player 2 has the following in his deck:
+curse copper estate copper copper curse copper copper estate curse 
+Player 2 has the following in his discard pile:
+curse curse estate curse copper curse village copper tribute estate copper copper 
+Player 3 has the following in his hand:
+
+Player 3 has the following in his deck:
+curse CARD NOT FOUND 
+Player 3 has the following in his discard pile:
+silver copper copper curse CARD NOT FOUND copper 
+Ending Player 3's turn #26
+
+Finished Round 26
+
+Game Finished

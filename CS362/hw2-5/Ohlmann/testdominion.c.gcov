@@ -1,0 +1,417 @@
+        -:    0:Source:testdominion.c
+        -:    0:Graph:testdominion.gcno
+        -:    0:Data:testdominion.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <assert.h>
+        -:    8:#include <string.h>
+        -:    9:#include <time.h>
+        -:   10:
+        -:   11:int testdominion(struct gameState *gstate);					//plays through a game of dominion
+        -:   12:int get_actioncard(int player, struct gameState *gstate); 	//gets position of a random action card in player hand
+        -:   13:int get_supplycard(struct gameState *gstate); 				//gets enum of a random supply card available for purchase
+        -:   14:char *getcardname(int n); 									//returns a *char containing the name of a given card enum
+        -:   15:int print_gamestate(struct gameState *gstate);				//prints the state of the gameand player hands
+        -:   16:
+function main called 2 returned 100% blocks executed 69%
+        2:   17:int main()
+        -:   18:{
+        2:   19:	printf("\n");
+call    0 returned 100%
+        -:   20:	//srand(time(NULL));
+        -:   21:	struct gameState newgame;
+        2:   22:	int player_count = (rand() % (MAX_PLAYERS - 1)) + 2;
+call    0 returned 100%
+        -:   23:	//int i, j, t;
+        -:   24:	//int k[10];
+        -:   25:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
+        2:   26:           sea_hag, tribute, smithy};
+        -:   27:	//int l[20] = {adventurer, council_room, feast, gardens, mine, remodel, smithy,
+        -:   28:	//				village, baron, great_hall, minion, steward, tribute, ambassador,
+        -:   29:	//				cutpurse, embargo, outpost, salvager, sea_hag, treasure_map};
+        -:   30:	/*for(i = 0; i < 20; i++)
+        -:   31:	{
+        -:   32:		t = rand() % 20;
+        -:   33:		j = l[t];
+        -:   34:		l[t] = l[i];
+        -:   35:		l[i] = j;
+        -:   36:	}*/
+        -:   37:	//for(i = 0; i < 10; i++){k[i] = l[i];}
+        2:   38:	if(initializeGame(player_count, k, rand(), &newgame) == -1)
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:   39:	{
+    #####:   40:		printf("\nERROR: Initialize game failed.");
+call    0 never executed
+    #####:   41:		return -1;
+        -:   42:	}
+        2:   43:	if(testdominion(&newgame) == -1)
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+        -:   44:	{
+    #####:   45:		printf("\nERROR: Test game failed.");
+call    0 never executed
+    #####:   46:		return -1;
+        -:   47:	}
+        2:   48:	return 0;
+        -:   49:}
+        -:   50:
+function testdominion called 2 returned 100% blocks executed 96%
+        2:   51:int testdominion(struct gameState *gstate)
+        -:   52:{
+        -:   53:	int player, test, i;
+        2:   54:	int playercount = gstate->numPlayers;
+        2:   55:	int roundcount = 0;
+        2:   56:	int playerturn[playercount];
+        2:   57:	int round_finished = 0;
+        2:   58:	int turn_finished = 0;
+        2:   59:	int round_flag = 0;
+        2:   60:	for(i = 0; i < playercount; i++){playerturn[i] = 0;}
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       86:   61:	while(isGameOver(gstate) == 0)
+call    0 returned 100%
+branch  1 taken 98%
+branch  2 taken 2% (fallthrough)
+        -:   62:	{
+       82:   63:		roundcount++;
+       82:   64:		printf("\nStarting Round %d\n", roundcount);
+call    0 returned 100%
+       82:   65:		round_flag = 0;
+       82:   66:		round_finished = 0;
+      410:   67:		while(round_finished == 0)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:   68:		{
+      246:   69:			print_gamestate(gstate);
+call    0 returned 100%
+      246:   70:			player = gstate->whoseTurn;
+      246:   71:			playerturn[player]++;
+      246:   72:			printf("\nStarting Player %d's turn #%d\n", player + 1, playerturn[player]);
+call    0 returned 100%
+      246:   73:			turn_finished = 0;
+      738:   74:			while(turn_finished == 0)
+branch  0 taken 50%
+branch  1 taken 50% (fallthrough)
+        -:   75:			{
+      684:   76:				while(gstate->numBuys > 0 && gstate->coins > 0)
+branch  0 taken 56% (fallthrough)
+branch  1 taken 44%
+branch  2 taken 78%
+branch  3 taken 22% (fallthrough)
+        -:   77:				{
+      192:   78:					if(buyCard(get_supplycard(gstate), gstate) == -1)
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+        -:   79:					{
+    #####:   80:						printf("\nERROR: buyCard() failed.\n");
+call    0 never executed
+        -:   81:					}
+      192:   82:					gstate->phase = 0;
+      192:   83:					if(gstate->numActions > 0)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:   84:					{
+      192:   85:						test = get_actioncard(player, gstate);
+call    0 returned 100%
+      192:   86:						if(test == -1)
+branch  0 taken 65% (fallthrough)
+branch  1 taken 35%
+        -:   87:						{
+      124:   88:							printf("No action cards in hand.\n");
+call    0 returned 100%
+        -:   89:						}
+       68:   90:						else if(playCard(test, rand() % 2, rand() % 2, rand() % 2, gstate) == -1)
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+branch  4 taken 24% (fallthrough)
+branch  5 taken 76%
+        -:   91:						{
+       16:   92:							printf("ERROR: playCard() failed.\n");
+call    0 returned 100%
+        -:   93:						}
+        -:   94:					}
+        -:   95:				}
+      246:   96:				if(endTurn(gstate) == -1)
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+        -:   97:				{
+    #####:   98:					printf("\nERROR: endTurn() failed.\n");
+call    0 never executed
+        -:   99:				}
+        -:  100:				else
+        -:  101:				{
+      246:  102:					turn_finished = 1;
+        -:  103:				}
+        -:  104:			}
+      246:  105:			print_gamestate(gstate);
+call    0 returned 100%
+      246:  106:			printf("Ending Player %d's turn #%d\n", player + 1, playerturn[player]);
+call    0 returned 100%
+      246:  107:			if(whoseTurn(gstate) == 0 && round_flag == 1)
+call    0 returned 100%
+branch  1 taken 33% (fallthrough)
+branch  2 taken 67%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0%
+        -:  108:			{
+       82:  109:				round_finished = 1;
+        -:  110:			}
+      246:  111:			if(round_flag == 0){round_flag = 1;}
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        -:  112:		}
+       82:  113:		printf("\nFinished Round %d\n", roundcount);
+call    0 returned 100%
+        -:  114:	}
+        2:  115:	printf("\nGame Finished\n");
+call    0 returned 100%
+        2:  116:	return 0;
+        -:  117:}
+        -:  118:
+function get_actioncard called 192 returned 100% blocks executed 100%
+      192:  119:int get_actioncard(int player, struct gameState *gstate)
+        -:  120:{
+      192:  121:	printf("Selecting card for action...\n");
+call    0 returned 100%
+        -:  122:	int i;
+      192:  123:	int hand_count = gstate->handCount[player];
+      192:  124:	int action_card_count = 0;
+      192:  125:	int action_card_pos[hand_count];
+        -:  126:	int action_card_rand;
+        -:  127:	int temp;
+        -:  128:	//printf("hand count = %d\n", hand_count);
+     1152:  129:	for(i = 0; i < hand_count; i++)
+branch  0 taken 83%
+branch  1 taken 17% (fallthrough)
+        -:  130:	{
+        -:  131:		//printf("get_actioncard_loop i = %d\n", i);
+      960:  132:		temp = gstate->hand[player][i];
+      960:  133:		if(temp >= adventurer && temp <= treasure_map)
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:  134:		{
+       78:  135:			action_card_pos[action_card_count] = i;
+       78:  136:			action_card_count++;
+        -:  137:		}
+        -:  138:	}
+        -:  139:	//printf("action_card_count = %d\n", action_card_count);
+      192:  140:	if(action_card_count == 0){return -1;}
+branch  0 taken 65% (fallthrough)
+branch  1 taken 35%
+       68:  141:	action_card_rand = action_card_pos[rand() % action_card_count];
+call    0 returned 100%
+       68:  142:	printf("Card selected for action: %s\n", getcardname(gstate->hand[player][action_card_rand]));
+call    0 returned 100%
+call    1 returned 100%
+       68:  143:	return action_card_rand;
+        -:  144:}
+        -:  145:
+function get_supplycard called 192 returned 100% blocks executed 100%
+      192:  146:int get_supplycard(struct gameState *gstate)
+        -:  147:{
+      192:  148:	printf("Selecting card for purchase...\n");
+call    0 returned 100%
+        -:  149:	int i;
+      192:  150:	int supply_card_count = 0; //number of acceptable supply card options
+        -:  151:	int supply_card_pos[27]; //array of acceptable supply cards in total supply
+        -:  152:	int supply_card_rand; //randomly selected card from set of acceptable supply cards
+     5376:  153:	for(i = 0; i < 27; i++)
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+        -:  154:	{
+     5184:  155:		if(getCost(i) <= gstate->coins && supplyCount(i, gstate) > 0)
+call    0 returned 100%
+branch  1 taken 34% (fallthrough)
+branch  2 taken 66%
+call    3 returned 100%
+branch  4 taken 60% (fallthrough)
+branch  5 taken 40%
+        -:  156:		{
+     1072:  157:			supply_card_pos[supply_card_count] = i;
+     1072:  158:			supply_card_count++;
+        -:  159:		}
+        -:  160:	}
+      192:  161:	supply_card_rand = supply_card_pos[rand() % supply_card_count];
+call    0 returned 100%
+      192:  162:	printf("Card selected for purchase: %s\n", getcardname(supply_card_rand));
+call    0 returned 100%
+call    1 returned 100%
+      192:  163:	return supply_card_rand;
+        -:  164:}
+        -:  165:
+function getcardname called 29148 returned 100% blocks executed 50%
+    29148:  166:char *getcardname(int n)
+        -:  167:{
+    29148:  168:	switch(n)
+branch  0 taken 14%
+branch  1 taken 25%
+branch  2 taken 0%
+branch  3 taken 0%
+branch  4 taken 38%
+branch  5 taken 8%
+branch  6 taken 0%
+branch  7 taken 0%
+branch  8 taken 0%
+branch  9 taken 0%
+branch 10 taken 2%
+branch 11 taken 2%
+branch 12 taken 0%
+branch 13 taken 0%
+branch 14 taken 2%
+branch 15 taken 0%
+branch 16 taken 0%
+branch 17 taken 1%
+branch 18 taken 0%
+branch 19 taken 1%
+branch 20 taken 0%
+branch 21 taken 1%
+branch 22 taken 1%
+branch 23 taken 0%
+branch 24 taken 0%
+branch 25 taken 1%
+branch 26 taken 0%
+branch 27 taken 6%
+        -:  169:	{
+        -:  170:		case curse:
+     4036:  171:			return "curse";
+        -:  172:		case estate:
+     7192:  173:			return "estate";
+        -:  174:		case duchy:
+    #####:  175:			return "duchy";
+        -:  176:		case province:
+    #####:  177:			return "province"; 
+        -:  178:		case copper:
+    10962:  179:			return "copper";
+        -:  180:		case silver:
+     2302:  181:			return "silver";
+        -:  182:		case gold:
+    #####:  183:			return "gold";
+        -:  184:		case adventurer:
+    #####:  185:			return "adventurer";
+        -:  186:		case council_room:
+    #####:  187:			return "council_room";
+        -:  188:		case feast:
+    #####:  189:			return "feast";
+        -:  190:		case gardens:
+      584:  191:			return "gardens";
+        -:  192:		case mine:
+      512:  193:			return "mine";
+        -:  194:		case remodel:
+    #####:  195:			return "remodel";
+        -:  196:		case smithy:
+    #####:  197:			return "smithy";
+        -:  198:		case village:
+      510:  199:			return "village";
+        -:  200:		case baron:
+    #####:  201:			return "baron"; 
+        -:  202:		case great_hall:
+    #####:  203:			return "great_hall";
+        -:  204:		case minion:
+      136:  205:			return "minion";
+        -:  206:		case steward:
+    #####:  207:			return "steward";
+        -:  208:		case tribute:
+      260:  209:			return "tribute";
+        -:  210:		case ambassador:
+    #####:  211:			return "ambassador";
+        -:  212:		case cutpurse:
+      240:  213:			return "cutpurse";
+        -:  214:		case embargo:
+      412:  215:			return "embargo";
+        -:  216:		case outpost:
+    #####:  217:			return "outpost";
+        -:  218:		case salvager:
+    #####:  219:			return "salvager";
+        -:  220:		case sea_hag:
+      318:  221:			return "sea_hag";
+        -:  222:		case treasure_map:
+    #####:  223:			return "treasure_map";
+        -:  224:		default:
+     1684:  225:			return "CARD NOT FOUND";
+        -:  226:	}
+        -:  227:}
+        -:  228:
+function print_gamestate called 492 returned 100% blocks executed 100%
+      492:  229:int print_gamestate(struct gameState *gstate)
+        -:  230:{
+        -:  231:	int i, j;
+      492:  232:	printf("\nGame State:\n");
+call    0 returned 100%
+      492:  233:	printf("Number of Players: %d\n", gstate->numPlayers);
+call    0 returned 100%
+        -:  234:	//printf("Buys: %d\n", gstate->numBuys);
+        -:  235:	//printf("Actions: %d\n", gstate->numActions);
+        -:  236:	//printf("Outpost Played: %d\n", gstate->outpostPlayed);
+        -:  237:	//printf("Outpost Turn: %d\n", gstate->outpostTurn);
+      492:  238:	printf("Whose Turn: %d\n", gstate->whoseTurn + 1);
+call    0 returned 100%
+        -:  239:	//printf("Phase: %d\n", gstate->phase);
+      492:  240:	printf("Coins: %d\n", gstate->coins);
+call    0 returned 100%
+        -:  241:	//printf("Played Card Count: %d\n", gstate->playedCardCount);
+      492:  242:	printf("\n");
+call    0 returned 100%
+     1968:  243:	for(i = 0; i < gstate->numPlayers; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  244:	{	
+     1476:  245:		printf("Player %d has the following in his hand:\n", i + 1);
+call    0 returned 100%
+     3936:  246:		for(j = 0; j < gstate->handCount[i]; j++)
+branch  0 taken 63%
+branch  1 taken 38% (fallthrough)
+        -:  247:		{
+     2460:  248:			printf("%s ", getcardname(gstate->hand[i][j]));
+call    0 returned 100%
+call    1 returned 100%
+        -:  249:		}
+     1476:  250:		printf("\n");
+call    0 returned 100%
+     1476:  251:		printf("Player %d has the following in his deck:\n", i + 1);
+call    0 returned 100%
+    13062:  252:		for(j = 0; j < gstate->deckCount[i]; j++)
+branch  0 taken 89%
+branch  1 taken 11% (fallthrough)
+        -:  253:		{
+    11586:  254:			printf("%s ", getcardname(gstate->deck[i][j]));
+call    0 returned 100%
+call    1 returned 100%
+        -:  255:		}
+     1476:  256:		printf("\n");
+call    0 returned 100%
+     1476:  257:		printf("Player %d has the following in his discard pile:\n", i + 1);
+call    0 returned 100%
+    16318:  258:		for(j = 0; j < gstate->discardCount[i]; j++)
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+        -:  259:		{
+    14842:  260:			printf("%s ", getcardname(gstate->discard[i][j]));
+call    0 returned 100%
+call    1 returned 100%
+        -:  261:		}
+     1476:  262:		printf("\n");
+call    0 returned 100%
+        -:  263:	}
+        -:  264:	
+        -:  265:	
+      492:  266:	return 0;
+        -:  267:}
+        -:  268:
+        -:  269:

@@ -1,0 +1,25 @@
+[RESOURCES]
+Resource 1
+Resource 2
+[VARIABLES]
+Walk to line.NumberOut
+Ticket 1.NumberIn
+Decide 2.NumberOut False
+Ticket 1.NumberOut
+Shortest Line.NumberOut True
+Shortest Line.NumberOut False
+Decide 4.NumberOut True
+100 Groups Arrive.NumberOut
+Create buses.NumberOut
+Groups Waiting.NumberOut True
+Decide 4.NumberOut False
+Ticket 2.NumberIn
+Walk to line.NumberIn
+Separate individuals.NumberOut Orig
+Decide 2.NumberOut True
+Ticket 2.NumberOut
+Groups Waiting.NumberOut False
+Dispose Shuttle.NumberOut
+Dispose Groups.NumberOut
+Batch.NumberOut
+Separate individuals.NumberOut Dup

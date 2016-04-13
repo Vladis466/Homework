@@ -1,0 +1,13 @@
+1. ate, tea. The second hash function sums the product of each ascii value times it's placement. It does shifting + folding. First one only does folding.
+ 
+2. With the second method we avoid having to 'chain' as much(less memory from chaining links) or open addressing. Therefore less collisions and faster bag operations.
+
+3. No because each individual key needs its own link. Hash1 should be slower due to collisions.
+
+4. No, because load factor = #elements / size of the table. # of elements added and size of table will not vary.
+
+5. Yes, a hash function might perform better and result in a uniform distribution of elements --->more buckets utilized..
+
+6. Yes, prime number tables tend to be more full. Less empty buckets.
+
+7. Larger tables take longer to compute. The performance change doesn't appear until a table size of around 1,000,000.

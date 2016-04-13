@@ -1,0 +1,4 @@
+3	do assignment 5
+1	study heap-based priority queue
+101	review trees for Midterm 2
+2000	2000

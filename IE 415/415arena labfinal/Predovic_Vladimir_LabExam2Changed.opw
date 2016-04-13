@@ -1,0 +1,36 @@
+[RESOURCES]
+Resource 1
+Resource 2
+Resource 5
+Resource 6
+AssemblyTime
+[VARIABLES]
+Rework.NumberOut
+Decide 10.NumberOut True
+Batch 1.NumberOut
+Process 1.NumberOut
+Assembly3.NumberOut
+Assembly2.NumberIn
+Decide 11.NumberOut True
+Process 3.NumberOut
+Process 2.NumberIn
+Decide 10.NumberOut False
+Decide 8.NumberOut True
+Decide 8.NumberOut False
+Assembly2.NumberOut
+Carts.NumberOut
+Dispose Cart.NumberOut
+Fail Inspection.NumberOut False
+Decide 9.NumberOut False
+Process 2.NumberOut
+Assembly1.NumberIn
+Decide 11.NumberOut False
+Assembly3.NumberIn
+Decide 9.NumberOut True
+Fail Inspection.NumberOut True
+Assembly1.NumberOut
+Dispose Groups.NumberOut
+Arrival.NumberOut
+Rework.NumberIn
+Process 1.NumberIn
+Process 3.NumberIn

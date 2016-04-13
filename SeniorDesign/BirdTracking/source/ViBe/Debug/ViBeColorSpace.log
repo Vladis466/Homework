@@ -1,0 +1,16 @@
+﻿Build started 8/18/2014 6:45:50 PM.
+     1>Project "L:\Summer Projects\Source\ViBe\ViBeColorSpace.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ViBe.cpp main.cpp
+         main.cpp
+         ViBe.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"L:\Summer Projects\Source\ViBe\Debug\ViBeColorSpace.exe" /INCREMENTAL /NOLOGO opencv_core249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"L:\Summer Projects\Source\ViBe\Debug\ViBeColorSpace.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"L:\Summer Projects\Source\ViBe\Debug\ViBeColorSpace.lib" /MACHINE:X86 Debug\main.obj
+         Debug\ViBe.obj
+         ViBeColorSpace.vcxproj -> L:\Summer Projects\Source\ViBe\Debug\ViBeColorSpace.exe
+     1>Done Building Project "L:\Summer Projects\Source\ViBe\ViBeColorSpace.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.06

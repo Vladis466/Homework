@@ -1,0 +1,74 @@
+problem 1(search):
+
+(gdb) inspect argc
+$1 = 3
+
+(gdb) inspect argv[0]
+$2 = 0x7fffffffe681 "/nfs/stak/students/p/predoviv/cs162/labs/lab4/search"
+
+(gdb) inspect argv[1]
+$4 = 0x7fffffffe6b6 "cat"
+
+(gdb) inspect argv[2]
+$5 = 0x7fffffffe6ba "a"
+(gdb)
+
+
+Breakpoint 2, main (argc=3, argv=0x7fffffffe3c8) at search.cpp:21
+21              for(i = 0; i < strlen(str); i++ ) {
+(gdb) inspect str[1]
+$6 = 97 'a'
+(gdb) inspect str[0]
+$7 = 99 'c'
+(gdb) inspect str[2]
+$8 = 116 't'
+(gdb) inspect str[3]
+$9 = 0 '\000'
+(gdb) inspect found
+$10 = false
+(gdb) inspect ch
+$11 = 97 'a'
+
+To fix we just added a break if the letter was found. The issue was it was overwriting.
+
+problem 2(average):
+
+Breakpoint 1, average (valueArray=0x7fffffffe2d0, size=4) at average.cpp:31
+31        for(i = 0; i < size; i++){
+(gdb) inspect valueArray[0]
+$1 = 1
+(gdb) inspect size
+$2 = 4
+(gdb) inspect average
+$3 = 4196661
+
+Average was not assigned a value. To fix this I set a break at line 31(the for loop) and then inspected the values.
+Afterwards average returned 2 but values were correct. Issue was type int.
+
+35        result = average / size;
+(gdb) inspect average
+$1 = 10
+(gdb) inspect size
+$2 = 4
+Return type was wrong. As we can see the values at the end of the calculation are correct.
+
+
+
+problem 3:
+
+#0  mystery_helper (s="", result="god") at mystery.cpp:23
+#1  0x0000000000400e60 in mystery_helper (s="g", result="od")
+    at mystery.cpp:25
+#2  0x0000000000400e60 in mystery_helper (s="og", result="d")
+    at mystery.cpp:25
+#3  0x0000000000400e60 in mystery_helper (s="dog", result="")
+    at mystery.cpp:25
+#4  0x0000000000400d24 in mystery (s="dog") at mystery.cpp:18
+#5  0x0000000000400c23 in main () at mystery.cpp:13
+
+problem 4: We believe mystery_helper was called 3 times. This is because it is a 3 letter word.
+
+problem 5: It goes through a word one letter at a time and reverses the order by
+saving the letter in the result empty string slowly adding each letter on to the end and subtracting 
+it from the initial word.
+substring  copies whatever is in the string in between the bounds into another string.

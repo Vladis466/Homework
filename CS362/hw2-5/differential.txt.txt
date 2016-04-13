@@ -1,0 +1,15 @@
+I compared my code with mcGregors code using the diff plugin (known as 'compare') on notepad++. Our implementations
+differed greatly as I went with a more visual method of what was occuring in the game by showing the state of cards on the playing field.
+
+
+
+However, I believe this is a great way of showing how another persons code can easily enhance your own. My initial takeaway was that I could greatly 
+enhance my code by including the player scores at the end of each turn instead of just at the end of the game. His code could be improved by adding counters to show the effects
+of cards being played.
+
+Our outputs had similarities in the sense that we both tried depicting the game from a players point of view. We both identified that the most important aspect to 
+recreating a game of dominion would be focusing on the data related to whatever player's turn it currently was. This is also valuable information as it serves
+as complementary evidence that this could have been the correct decision to take (or we could be both wrong). 
+
+
+

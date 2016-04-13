@@ -1,0 +1,13 @@
+OS: Windows 8.1 Pro
+IDE: Visual Studio 2013 Pro
+CPU: Intel(R) Core(TM) i7-3930K @ 3.3GHZ 6 Cores
+Memory: 32 GB
+HardDriver: 4TB
+Graphic Memory: 4GB
+
+-----------------------------------
+To Conduct deep CCN experiments
+
+RAM >= 32GB
+CPU i7
+2 x nVidia k40 or other configuration

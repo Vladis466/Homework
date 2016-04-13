@@ -1,0 +1,9 @@
+Cards set to run function when called in case switch. 
+
+Changes to cards:
+
+village: no changes.
+smithy: changed a number.
+great hall: no changes.
+steward: check the arguments.
+outpost: no changes.

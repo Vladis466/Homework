@@ -1,0 +1,70 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+\usepackage{verbatim}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%pull in the necessary preamble matter for pygments output
+\input{pygments.tex}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs311 ``operating systems'' files filesystem I/O},
+  pdftitle = {CS 311 Project 3: UNIX Process Control},
+  pdfsubject = {CS 311 Project 3},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\section{Design}
+The design for my program consisted of three separate parts. The first take was to create a parser
+to interact with the user and the rest of the program. The next was to develop my built in commands.
+For my simple Shell I wrote a 'help' menu to make grading easier. The commands ls, cd, and exit are 
+included. Finally the third task was to avoid having to access the binsh shell and implement my own
+to execute the commands.
+For the most part I followed this design. There weren't any aggressive changes I had to make to the overall
+scope of the design
+\section{Work log}
+\verbatiminput{log.txt}
+
+\section{Challenges}
+My main concern was conceptually grasping the relationship between created child processes 
+and how to correctly implement piping between my newly created processes.
+
+
+\section{Answers}
+\subsection{Main point of the assignment}
+Learn the concepts of forking and piping. The basics of how a shell and system() function.
+Work with signals 
+
+\subsection{Solution Accuracy}
+My Shell runs correctly when tested with the implemented functions. You can access files, 
+change directories, and run programs. However, I had to resort to using execvp as I was having major issues
+:( .
+
+
+\subsection{Learnings}
+Grasped a better concept of the basis of a shell and how to create one. How they convert the information 
+into action and deal with running different processes. Initially I had no idea about the whole child creation process.
+
+\end{document}

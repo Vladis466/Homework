@@ -1,0 +1,23 @@
+[RESOURCES]
+Resource 1
+Resource 2
+Resource 3
+Resource 4
+[VARIABLES]
+Rework.NumberOut
+Prep A.NumberOut
+Sealer.NumberOut
+Shipped.NumberOut
+Prep A.NumberIn
+Inspection Station 1.NumberOut False
+Part B.NumberOut
+Scrapped.NumberOut
+Insepction Station 2.NumberOut True
+Inspection Station 1.NumberOut True
+Insepction Station 2.NumberOut False
+Salvaged.NumberOut
+Part A.NumberOut
+Prep B.NumberOut
+Prep B.NumberIn
+Rework.NumberIn
+Sealer.NumberIn

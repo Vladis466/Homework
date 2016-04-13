@@ -1,0 +1,872 @@
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 1 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    81.909     (Insuf)    1.4193     159.46        163    
+Entity 1.VATime                             .51117     .01716     .25047     1.5492        655    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        655    
+Entity 1.WaitTime                           2.1828     (Corr)     .00000     11.751        655    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        655    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        655    
+Entity 1.TotalTime                          2.6940     (Corr)     .25235     12.355        655    
+Hold 3.Queue.WaitingTime                    .27041     (Corr)     .00000     3.9520        492    
+Hold 4.Queue.WaitingTime                    5.2777     (Insuf)    .00000     11.751        164    
+Final Inspection.Queue.WaitingTime          .14624     .04483     .00000     1.1395        494    
+Rework.Queue.WaitingTime                    .03811     (Insuf)    .00000     .39128         52    
+Loading Area.Queue.WaitingTime              .08617     (Insuf)    .00000     1.1734        164    
+Loading Area for Truck.Queue.WaitingTime    .71239     (Corr)     .00000     5.9135        492    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                11.169     (Corr)     .00000     29.000     11.000    
+Resource 1.NumberBusy                       .59710     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .59710     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberBusy                         .18840     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .18840     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .70751     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .70751     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberBusy                         .60497     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .60497     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .83152     (Insuf)    .00000     14.000     .00000    
+Hold 4.Queue.NumberInQueue                  5.4957     (Insuf)    .00000     13.000     6.0000    
+Final Inspection.Queue.NumberInQueue        .45271     .15337     .00000     6.0000     2.0000    
+Rework.Queue.NumberInQueue                  .01238     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .08833     (Insuf)    .00000     3.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  2.1905     (Corr)     .00000     10.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           666.00    
+Entity 1.NumberOut                          655.00    
+Resource 1.NumberSeized                     164.00    
+Resource 1.ScheduledUtilization             .59710    
+Worker 1.NumberSeized                       44.000    
+Worker 1.ScheduledUtilization               .18840    
+Worker 2.NumberSeized                       268.00    
+Worker 2.ScheduledUtilization               .70751    
+Worker 3.NumberSeized                       234.00    
+Worker 3.ScheduledUtilization               .60497    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            655.00    
+
+Beginning replication 2 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 2 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    78.091     (Insuf)    1.7138     159.53        159    
+Entity 1.VATime                             .51764     .01522     .25013     1.4230        636    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        636    
+Entity 1.WaitTime                           2.2928     (Corr)     .00000     13.505        636    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        636    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        636    
+Entity 1.TotalTime                          2.8105     (Corr)     .25013     14.070        636    
+Hold 3.Queue.WaitingTime                    .00000     .00000     .00000     .00000        479    
+Hold 4.Queue.WaitingTime                    7.6955     (Insuf)    .00000     13.505        159    
+Final Inspection.Queue.WaitingTime          .15549     .06949     .00000     1.3004        480    
+Rework.Queue.WaitingTime                    .03445     (Insuf)    .00000     .63233         51    
+Loading Area.Queue.WaitingTime              .03150     (Insuf)    .00000     .44915        159    
+Loading Area for Truck.Queue.WaitingTime    .32134     .03378     .00000     2.5131        477    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                11.640     (Corr)     .00000     23.000     12.000    
+Resource 1.NumberBusy                       .58005     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .58005     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberBusy                         .20967     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .20967     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .70584     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .70584     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberBusy                         .56982     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .56982     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Hold 4.Queue.NumberInQueue                  8.1017     (Corr)     .00000     17.000     9.0000    
+Final Inspection.Queue.NumberInQueue        .46646     .23034     .00000     6.0000     .00000    
+Rework.Queue.NumberInQueue                  .01098     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .03130     (Insuf)    .00000     1.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  .96457     .06311     .00000     3.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           648.00    
+Entity 1.NumberOut                          636.00    
+Resource 1.NumberSeized                     159.00    
+Resource 1.ScheduledUtilization             .58005    
+Worker 1.NumberSeized                       49.000    
+Worker 1.ScheduledUtilization               .20967    
+Worker 2.NumberSeized                       269.00    
+Worker 2.ScheduledUtilization               .70584    
+Worker 3.NumberSeized                       213.00    
+Worker 3.ScheduledUtilization               .56982    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            636.00    
+
+Beginning replication 3 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 3 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    79.452     (Insuf)    1.3153     158.23        142    
+Entity 1.VATime                             .50201     .01796     .25066     1.4357        568    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        568    
+Entity 1.WaitTime                           5.6061     (Corr)     .00000     16.692        568    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        568    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        568    
+Entity 1.TotalTime                          6.1081     (Corr)     .28931     17.235        568    
+Hold 3.Queue.WaitingTime                    3.9217     (Corr)     .00000     12.048        436    
+Hold 4.Queue.WaitingTime                    .04174     (Insuf)    .00000     1.8297        142    
+Final Inspection.Queue.WaitingTime          .17116     .06840     .00000     1.3491        479    
+Rework.Queue.WaitingTime                    .00614     (Insuf)    .00000     .26716         49    
+Loading Area.Queue.WaitingTime              .23399     (Insuf)    .00000     1.6760        142    
+Loading Area for Truck.Queue.WaitingTime    3.4600     .51512     .00000     8.8630        426    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                24.474     (Corr)     .00000     53.000     53.000    
+Resource 1.NumberBusy                       .51265     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .51265     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberBusy                         .20376     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .20376     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberBusy                         .69382     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .69382     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberBusy                         .53756     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .53756     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  12.273     (Corr)     .00000     40.000     40.000    
+Hold 4.Queue.NumberInQueue                  .03704     (Insuf)    .00000     2.0000     .00000    
+Final Inspection.Queue.NumberInQueue        .51241     .22555     .00000     8.0000     .00000    
+Rework.Queue.NumberInQueue                  .00188     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .20767     (Insuf)    .00000     3.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  9.4938     (Insuf)    .00000     10.000     10.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           621.00    
+Entity 1.NumberOut                          568.00    
+Resource 1.NumberSeized                     142.00    
+Resource 1.ScheduledUtilization             .51265    
+Worker 1.NumberSeized                       47.000    
+Worker 1.ScheduledUtilization               .20376    
+Worker 2.NumberSeized                       268.00    
+Worker 2.ScheduledUtilization               .69382    
+Worker 3.NumberSeized                       213.00    
+Worker 3.ScheduledUtilization               .53756    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            568.00    
+
+Beginning replication 4 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 4 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    82.745     (Insuf)    1.7896     159.38        158    
+Entity 1.VATime                             .50309     .01217     .25011     1.4179        635    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        635    
+Entity 1.WaitTime                           3.5585     (Corr)     .00000     19.369        635    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        635    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        635    
+Entity 1.TotalTime                          4.0615     (Corr)     .25118     19.883        635    
+Hold 3.Queue.WaitingTime                    .00000     .00000     .00000     .00000        477    
+Hold 4.Queue.WaitingTime                    12.656     (Insuf)    .00000     19.309        159    
+Final Inspection.Queue.WaitingTime          .17389     .05955     .00000     1.0225        477    
+Rework.Queue.WaitingTime                    .03888     (Insuf)    .00000     .54316         46    
+Loading Area.Queue.WaitingTime              .04067     (Insuf)    .00000     .64808        159    
+Loading Area for Truck.Queue.WaitingTime    .35996     (Corr)     .00000     2.3622        477    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                17.162     (Corr)     .00000     28.000     18.000    
+Resource 1.NumberBusy                       .56887     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .56887     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberBusy                         .18516     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .18516     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .70299     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .70299     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberBusy                         .53978     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .53978     (Insuf)    .00000     1.0000     .00000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Hold 4.Queue.NumberInQueue                  13.522     (Corr)     .00000     22.000     17.000    
+Final Inspection.Queue.NumberInQueue        .51841     .21707     .00000     6.0000     .00000    
+Rework.Queue.NumberInQueue                  .01118     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .04041     (Insuf)    .00000     1.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  1.0731     (Corr)     .00000     7.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           653.00    
+Entity 1.NumberOut                          635.00    
+Resource 1.NumberSeized                     159.00    
+Resource 1.ScheduledUtilization             .56887    
+Worker 1.NumberSeized                       45.000    
+Worker 1.ScheduledUtilization               .18516    
+Worker 2.NumberSeized                       269.00    
+Worker 2.ScheduledUtilization               .70299    
+Worker 3.NumberSeized                       209.00    
+Worker 3.ScheduledUtilization               .53978    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            635.00    
+
+Beginning replication 5 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 5 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    82.817     (Insuf)    1.9529     159.85        158    
+Entity 1.VATime                             .51570     .01607     .25028     1.4616        632    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        632    
+Entity 1.WaitTime                           3.7643     (Corr)     .00000     13.237        632    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        632    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        632    
+Entity 1.TotalTime                          4.2800     (Corr)     .28154     14.187        632    
+Hold 3.Queue.WaitingTime                    2.0469     (Corr)     .00000     10.195        476    
+Hold 4.Queue.WaitingTime                    .16047     (Insuf)    .00000     4.4534        158    
+Final Inspection.Queue.WaitingTime          .16561     (Corr)     .00000     1.5903        477    
+Rework.Queue.WaitingTime                    .01093     (Insuf)    .00000     .40147         52    
+Loading Area.Queue.WaitingTime              .34226     (Insuf)    .00000     2.6984        158    
+Loading Area for Truck.Queue.WaitingTime    2.6281     .47033     .00000     7.9771        474    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                16.959     (Corr)     .00000     47.000     6.0000    
+Resource 1.NumberBusy                       .57571     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .57571     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberBusy                         .20494     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .20494     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .69260     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .69260     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberBusy                         .57719     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .57719     (Insuf)    .00000     1.0000     .00000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  6.0897     (Corr)     .00000     34.000     .00000    
+Hold 4.Queue.NumberInQueue                  .19460     (Insuf)    .00000     5.0000     3.0000    
+Final Inspection.Queue.NumberInQueue        .49374     (Corr)     .00000     8.0000     .00000    
+Rework.Queue.NumberInQueue                  .00355     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .33798     (Insuf)    .00000     5.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  7.7889     (Insuf)    .00000     10.000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           638.00    
+Entity 1.NumberOut                          632.00    
+Resource 1.NumberSeized                     158.00    
+Resource 1.ScheduledUtilization             .57571    
+Worker 1.NumberSeized                       47.000    
+Worker 1.ScheduledUtilization               .20494    
+Worker 2.NumberSeized                       265.00    
+Worker 2.ScheduledUtilization               .69260    
+Worker 3.NumberSeized                       217.00    
+Worker 3.ScheduledUtilization               .57719    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            632.00    
+
+Beginning replication 6 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 6 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    83.607     (Insuf)    1.8139     159.64        168    
+Entity 1.VATime                             .51869     .02239     .25171     1.4766        675    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        675    
+Entity 1.WaitTime                           3.4571     (Corr)     .00000     12.523        675    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        675    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        675    
+Entity 1.TotalTime                          3.9758     (Corr)     .25463     13.747        675    
+Hold 3.Queue.WaitingTime                    2.0563     (Corr)     .00000     10.215        508    
+Hold 4.Queue.WaitingTime                    2.4196     (Insuf)    .00000     11.859        169    
+Final Inspection.Queue.WaitingTime          .16847     .04379     .00000     1.0128        510    
+Rework.Queue.WaitingTime                    .03847     (Insuf)    .00000     .48356         62    
+Loading Area.Queue.WaitingTime              .30190     (Insuf)    .00000     2.4123        169    
+Loading Area for Truck.Queue.WaitingTime    1.4787     (Corr)     .00000     8.3549        507    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                17.126     (Corr)     .00000     47.000     17.000    
+Resource 1.NumberBusy                       .61299     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .61299     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberBusy                         .21415     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .21415     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .74767     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .74767     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberBusy                         .62227     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .62227     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  6.5287     (Insuf)    .00000     33.000     .00000    
+Hold 4.Queue.NumberInQueue                  2.8396     (Insuf)    .00000     13.000     11.000    
+Final Inspection.Queue.NumberInQueue        .54020     .16189     .00000     5.0000     2.0000    
+Rework.Queue.NumberInQueue                  .01491     (Insuf)    .00000     2.0000     .00000    
+Loading Area.Queue.NumberInQueue            .31888     (Insuf)    .00000     5.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  4.6866     (Corr)     .00000     10.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           692.00    
+Entity 1.NumberOut                          675.00    
+Resource 1.NumberSeized                     169.00    
+Resource 1.ScheduledUtilization             .61299    
+Worker 1.NumberSeized                       50.000    
+Worker 1.ScheduledUtilization               .21415    
+Worker 2.NumberSeized                       286.00    
+Worker 2.ScheduledUtilization               .74767    
+Worker 3.NumberSeized                       236.00    
+Worker 3.ScheduledUtilization               .62227    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            675.00    
+
+Beginning replication 7 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 7 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    81.903     (Insuf)    1.7135     159.58        148    
+Entity 1.VATime                             .50791     (Corr)     .25074     1.4690        595    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        595    
+Entity 1.WaitTime                           1.4211     (Corr)     .00000     9.4224        595    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        595    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        595    
+Entity 1.TotalTime                          1.9290     (Corr)     .25123     10.084        595    
+Hold 3.Queue.WaitingTime                    .00000     .00000     .00000     .00000        447    
+Hold 4.Queue.WaitingTime                    4.2574     (Insuf)    .00000     9.4224        149    
+Final Inspection.Queue.WaitingTime          .10674     .03706     .00000     .84208        448    
+Rework.Queue.WaitingTime                    .03644     (Insuf)    .00000     .47842         39    
+Loading Area.Queue.WaitingTime              .01926     (Insuf)    .00000     .36208        149    
+Loading Area for Truck.Queue.WaitingTime    .36522     .04577     .00000     3.6399        447    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                7.2918     (Corr)     .00000     16.000     9.0000    
+Resource 1.NumberBusy                       .54615     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .54615     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberBusy                         .15406     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .15406     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .66453     (Insuf)    .00000     1.0000     1.0000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .66453     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberBusy                         .52686     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .52686     (Insuf)    .00000     1.0000     .00000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Hold 4.Queue.NumberInQueue                  4.0541     (Insuf)    .00000     10.000     7.0000    
+Final Inspection.Queue.NumberInQueue        .29888     .11327     .00000     6.0000     .00000    
+Rework.Queue.NumberInQueue                  .00888     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .01794     (Insuf)    .00000     1.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  1.0203     .07057     .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           604.00    
+Entity 1.NumberOut                          595.00    
+Resource 1.NumberSeized                     149.00    
+Resource 1.ScheduledUtilization             .54615    
+Worker 1.NumberSeized                       36.000    
+Worker 1.ScheduledUtilization               .15406    
+Worker 2.NumberSeized                       259.00    
+Worker 2.ScheduledUtilization               .66453    
+Worker 3.NumberSeized                       192.00    
+Worker 3.ScheduledUtilization               .52686    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            595.00    
+
+Beginning replication 8 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 8 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    83.022     (Insuf)    1.5051     159.98        148    
+Entity 1.VATime                             .50567     .01510     .25072     1.3973        592    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        592    
+Entity 1.WaitTime                           5.1461     (Corr)     .00000     32.766        592    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        592    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        592    
+Entity 1.TotalTime                          5.6518     (Corr)     .25361     33.376        592    
+Hold 3.Queue.WaitingTime                    .00000     .00000     .00000     .00000        444    
+Hold 4.Queue.WaitingTime                    19.184     (Insuf)    .86068     32.547        148    
+Final Inspection.Queue.WaitingTime          .10092     .03762     .00000     .79172        444    
+Rework.Queue.WaitingTime                    .03824     (Insuf)    .00000     .73868         41    
+Loading Area.Queue.WaitingTime              .02791     (Insuf)    .00000     .41772        148    
+Loading Area for Truck.Queue.WaitingTime    .35302     .03790     .00000     2.4650        444    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                24.787     (Corr)     .00000     48.000     39.000    
+Resource 1.NumberBusy                       .54050     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .54050     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberBusy                         .16911     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .16911     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .66167     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .66167     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberBusy                         .49971     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .49971     (Insuf)    .00000     1.0000     .00000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Hold 4.Queue.NumberInQueue                  21.621     (Corr)     .00000     40.000     39.000    
+Final Inspection.Queue.NumberInQueue        .28006     .13791     .00000     5.0000     .00000    
+Rework.Queue.NumberInQueue                  .00980     (Insuf)    .00000     2.0000     .00000    
+Loading Area.Queue.NumberInQueue            .02582     (Insuf)    .00000     1.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  .97963     .06126     .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           631.00    
+Entity 1.NumberOut                          592.00    
+Resource 1.NumberSeized                     148.00    
+Resource 1.ScheduledUtilization             .54050    
+Worker 1.NumberSeized                       39.000    
+Worker 1.ScheduledUtilization               .16911    
+Worker 2.NumberSeized                       253.00    
+Worker 2.ScheduledUtilization               .66167    
+Worker 3.NumberSeized                       193.00    
+Worker 3.ScheduledUtilization               .49971    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            592.00    
+
+Beginning replication 9 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 9 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    78.688     (Insuf)    1.7095     154.19        157    
+Entity 1.VATime                             .50778     .01785     .25077     1.4012        628    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        628    
+Entity 1.WaitTime                           1.3709     (Corr)     .00000     8.9800        628    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        628    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        628    
+Entity 1.TotalTime                          1.8787     (Corr)     .25294     9.4806        628    
+Hold 3.Queue.WaitingTime                    .02398     .04022     .00000     1.3981        481    
+Hold 4.Queue.WaitingTime                    2.9291     (Insuf)    .00000     8.9800        157    
+Final Inspection.Queue.WaitingTime          .13236     .04929     .00000     1.4853        485    
+Rework.Queue.WaitingTime                    .03664     (Insuf)    .00000     .36000         50    
+Loading Area.Queue.WaitingTime              .05709     (Insuf)    .00000     .63652        157    
+Loading Area for Truck.Queue.WaitingTime    .66917     (Corr)     .00000     5.0251        471    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                7.6368     (Corr)     .00000     18.000     14.000    
+Resource 1.NumberBusy                       .57280     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .57280     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberBusy                         .19765     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .19765     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .68672     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .68672     (Insuf)    .00000     1.0000     .00000    
+Worker 3.NumberBusy                         .57485     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .57485     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .07720     (Insuf)    .00000     5.0000     3.0000    
+Hold 4.Queue.NumberInQueue                  2.8742     (Insuf)    .00000     11.000     .00000    
+Final Inspection.Queue.NumberInQueue        .40123     (Corr)     .00000     7.0000     .00000    
+Rework.Queue.NumberInQueue                  .01145     (Insuf)    .00000     1.0000     .00000    
+Loading Area.Queue.NumberInQueue            .05602     (Insuf)    .00000     2.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  2.1847     (Corr)     .00000     10.000     10.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           642.00    
+Entity 1.NumberOut                          628.00    
+Resource 1.NumberSeized                     157.00    
+Resource 1.ScheduledUtilization             .57280    
+Worker 1.NumberSeized                       45.000    
+Worker 1.ScheduledUtilization               .19765    
+Worker 2.NumberSeized                       268.00    
+Worker 2.ScheduledUtilization               .68672    
+Worker 3.NumberSeized                       222.00    
+Worker 3.ScheduledUtilization               .57485    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            628.00    
+
+Beginning replication 10 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 10 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 160.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    81.482     (Insuf)    1.8942     159.62        146    
+Entity 1.VATime                             .52031     .02167     .25012     1.4639        587    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        587    
+Entity 1.WaitTime                           2.2245     (Corr)     .00000     17.714        587    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        587    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        587    
+Entity 1.TotalTime                          2.7449     (Corr)     .25337     18.307        587    
+Hold 3.Queue.WaitingTime                    .00000     .00000     .00000     .00000        443    
+Hold 4.Queue.WaitingTime                    7.5586     (Insuf)    .00000     17.714        147    
+Final Inspection.Queue.WaitingTime          .08593     .03575     .00000     .77753        444    
+Rework.Queue.WaitingTime                    .04157     (Insuf)    .00000     .82417         57    
+Loading Area.Queue.WaitingTime              .02369     (Insuf)    .00000     .30493        147    
+Loading Area for Truck.Queue.WaitingTime    .35717     .03837     .00000     2.3126        441    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                10.313     (Corr)     .00000     22.000     16.000    
+Resource 1.NumberBusy                       .53749     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .53749     (Insuf)    .00000     1.0000     1.0000    
+Worker 1.NumberBusy                         .21288     (Insuf)    .00000     1.0000     .00000    
+Worker 1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 1.Utilization                        .21288     (Insuf)    .00000     1.0000     .00000    
+Worker 2.NumberBusy                         .65918     .04779     .00000     1.0000     .00000    
+Worker 2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 2.Utilization                        .65918     .04779     .00000     1.0000     .00000    
+Worker 3.NumberBusy                         .51127     (Insuf)    .00000     1.0000     1.0000    
+Worker 3.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 3.Utilization                        .51127     (Insuf)    .00000     1.0000     1.0000    
+Worker 4.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 4.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 4.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberBusy                         .00000     (Insuf)    .00000     .00000     .00000    
+Worker 5.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Worker 5.Utilization                        .00000     (Insuf)    .00000     .00000     .00000    
+Hold 3.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Hold 4.Queue.NumberInQueue                  7.1298     (Insuf)    .00000     17.000     12.000    
+Final Inspection.Queue.NumberInQueue        .23846     .11606     .00000     5.0000     .00000    
+Rework.Queue.NumberInQueue                  .01481     (Insuf)    .00000     2.0000     .00000    
+Loading Area.Queue.NumberInQueue            .02176     (Insuf)    .00000     1.0000     .00000    
+Loading Area for Truck.Queue.NumberInQueue  .98807     .07912     .00000     5.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           603.00    
+Entity 1.NumberOut                          587.00    
+Resource 1.NumberSeized                     147.00    
+Resource 1.ScheduledUtilization             .53749    
+Worker 1.NumberSeized                       50.000    
+Worker 1.ScheduledUtilization               .21288    
+Worker 2.NumberSeized                       258.00    
+Worker 2.ScheduledUtilization               .65918    
+Worker 3.NumberSeized                       193.00    
+Worker 3.ScheduledUtilization               .51127    
+Worker 4.NumberSeized                       .00000    
+Worker 4.ScheduledUtilization               .00000    
+Worker 5.NumberSeized                       .00000    
+Worker 5.ScheduledUtilization               .00000    
+System.NumberOut                            587.00    
+
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                 Output Summary for 10 Replications
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           639.80     19.556     603.00     692.00     10
+Entity 1.NumberOut                          620.30     24.010     568.00     675.00     10
+Resource 1.NumberSeized                     155.20     6.0301     142.00     169.00     10
+Resource 1.ScheduledUtilization             .56443     .02159     .51265     .61299     10
+Worker 1.NumberSeized                       45.200     3.3004     36.000     50.000     10
+Worker 1.ScheduledUtilization               .19398     .01423     .15406     .21415     10
+Worker 2.NumberSeized                       266.30     6.3627     253.00     286.00     10
+Worker 2.ScheduledUtilization               .69225     .01913     .65918     .74767     10
+Worker 3.NumberSeized                       212.20     11.478     192.00     236.00     10
+Worker 3.ScheduledUtilization               .55643     .02862     .49971     .62227     10
+Worker 4.NumberSeized                       .00000     .00000     .00000     .00000     10
+Worker 4.ScheduledUtilization               .00000     .00000     .00000     .00000     10
+Worker 5.NumberSeized                       .00000     .00000     .00000     .00000     10
+Worker 5.ScheduledUtilization               .00000     .00000     .00000     .00000     10
+System.NumberOut                            620.30     24.010     568.00     675.00     10
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.

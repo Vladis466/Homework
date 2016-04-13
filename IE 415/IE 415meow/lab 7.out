@@ -1,0 +1,684 @@
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 1 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .88181     (Insuf)    .01443     1.7000        100    
+Entity 1.VATime                             .02513     (Insuf)    .00000     .09094        152    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        152    
+Entity 1.WaitTime                           .92982     (Insuf)    .00000     2.8379        152    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        152    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        152    
+Entity 1.TotalTime                          .58023     (Insuf)    .00000     1.7000        152    
+ticket 2.Queue.WaitingTime                  .52460     (Insuf)    .00000     1.1716        101    
+Hold 4 costpmer.Queue.WaitingTime           .01443     (Insuf)    .01443     .01443          1    
+Hold costpmer.Queue.WaitingTime             .29512     (Insuf)    .00000     .50378        100    
+Match.Queue1.WaitingTime                    .01838     (Insuf)    .00000     .11047        100    
+Match.Queue2.WaitingTime                    .08324     (Insuf)    .00000     .30703        100    
+ticket 1.Queue.WaitingTime                  .49151     (Insuf)    .00000     .87550         99    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                73.265     (Insuf)    .00000     200.00     48.000    
+Resource 1.NumberBusy                       .27277     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .27277     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .36567     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .36567     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                16.055     (Insuf)    .00000     97.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.398     (Insuf)    .00000     48.000     48.000    
+Hold costpmer.Queue.NumberInQueue           8.9429     (Insuf)    .00000     31.000     .00000    
+Match.Queue1.NumberInQueue                  .55682     (Insuf)    .00000     12.000     .00000    
+Match.Queue2.NumberInQueue                  2.5225     (Insuf)    .00000     22.000     .00000    
+ticket 1.Queue.NumberInQueue                14.745     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          352.00    
+Resource 1.NumberSeized                     99.000    
+Resource 1.ScheduledUtilization             .27277    
+Resource 2.NumberSeized                     101.00    
+Resource 2.ScheduledUtilization             .36567    
+System.NumberOut                            152.00    
+
+Beginning replication 2 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 2 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84991     (Insuf)    .02419     1.6666        100    
+Entity 1.VATime                             .02419     (Insuf)    .00000     .07487        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .87275     (Insuf)    .00000     2.6486        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56301     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .51002     (Insuf)    .00000     1.0097        100    
+Hold 4 costpmer.Queue.WaitingTime           .02419     (Insuf)    .02419     .02419          1    
+Hold costpmer.Queue.WaitingTime             .32879     (Insuf)    .00000     .63218        100    
+Match.Queue1.WaitingTime                    .01490     (Insuf)    .00000     .10404        100    
+Match.Queue2.WaitingTime                    .06975     (Insuf)    .00000     .16655        100    
+ticket 1.Queue.WaitingTime                  .39415     (Insuf)    .00000     .91595        100    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                72.847     (Insuf)    .00000     200.00     49.000    
+Resource 1.NumberBusy                       .28396     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .28396     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .31168     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .31168     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                15.455     (Insuf)    .00000     97.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.886     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           9.9633     (Insuf)    .00000     38.000     .00000    
+Match.Queue1.NumberInQueue                  .45163     (Insuf)    .00000     10.000     .00000    
+Match.Queue2.NumberInQueue                  2.1137     (Insuf)    .00000     17.000     .00000    
+ticket 1.Queue.NumberInQueue                11.944     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     100.00    
+Resource 1.ScheduledUtilization             .28396    
+Resource 2.NumberSeized                     100.00    
+Resource 2.ScheduledUtilization             .31168    
+System.NumberOut                            151.00    
+
+Beginning replication 3 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 3 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84977     (Insuf)    .00992     1.6666        100    
+Entity 1.VATime                             .02329     (Insuf)    .00000     .07480        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .90767     (Insuf)    .00000     2.7019        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56282     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .58663     (Insuf)    .00000     1.0576         98    
+Hold 4 costpmer.Queue.WaitingTime           .00992     (Insuf)    .00992     .00992          1    
+Hold costpmer.Queue.WaitingTime             .27731     (Insuf)    .00000     .59407        100    
+Match.Queue1.WaitingTime                    .03864     (Insuf)    .00000     .15408        100    
+Match.Queue2.WaitingTime                    .12146     (Insuf)    .00000     .26765        100    
+ticket 1.Queue.WaitingTime                  .35117     (Insuf)    .00000     .75200        102    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                71.284     (Insuf)    .00000     200.00     49.000    
+Resource 1.NumberBusy                       .23795     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .23795     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .32609     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .32609     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                17.421     (Insuf)    .00000     96.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.881     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           8.4033     (Insuf)    .00000     36.000     .00000    
+Match.Queue1.NumberInQueue                  1.1707     (Insuf)    .00000     21.000     .00000    
+Match.Queue2.NumberInQueue                  3.6805     (Insuf)    .00000     34.000     .00000    
+ticket 1.Queue.NumberInQueue                10.854     (Insuf)    .00000     96.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     102.00    
+Resource 1.ScheduledUtilization             .23795    
+Resource 2.NumberSeized                     98.000    
+Resource 2.ScheduledUtilization             .32609    
+System.NumberOut                            151.00    
+
+Beginning replication 4 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 4 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .86435     (Insuf)    .03338     1.7000        100    
+Entity 1.VATime                             .02311     (Insuf)    .00000     .07558        152    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        152    
+Entity 1.WaitTime                           .93934     (Insuf)    .00000     2.7517        152    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        152    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        152    
+Entity 1.TotalTime                          .56888     (Insuf)    .00000     1.7000        152    
+ticket 2.Queue.WaitingTime                  .60567     (Insuf)    .00000     1.0807        100    
+Hold 4 costpmer.Queue.WaitingTime           .01733     (Insuf)    .00128     .03338          2    
+Hold costpmer.Queue.WaitingTime             .24922     (Insuf)    .00000     .58649        100    
+Match.Queue1.WaitingTime                    .20275     (Insuf)    .00000     .43485        100    
+Match.Queue2.WaitingTime                    .03222     (Insuf)    .00000     .14582        100    
+ticket 1.Queue.WaitingTime                  .33758     (Insuf)    .00000     .69895        100    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                70.829     (Insuf)    .00000     203.00     48.000    
+Resource 1.NumberBusy                       .21799     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .21799     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .33469     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .33469     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                18.353     (Insuf)    .00000     98.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.404     (Insuf)    .00000     48.000     48.000    
+Hold costpmer.Queue.NumberInQueue           7.5522     (Insuf)    .00000     35.000     .00000    
+Match.Queue1.NumberInQueue                  6.1440     (Insuf)    .00000     42.000     .00000    
+Match.Queue2.NumberInQueue                  .97649     (Insuf)    .00000     24.000     .00000    
+ticket 1.Queue.NumberInQueue                10.229     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          352.00    
+Resource 1.NumberSeized                     100.00    
+Resource 1.ScheduledUtilization             .21799    
+Resource 2.NumberSeized                     100.00    
+Resource 2.ScheduledUtilization             .33469    
+System.NumberOut                            152.00    
+
+Beginning replication 5 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 5 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84978     (Insuf)    .01164     1.6666        100    
+Entity 1.VATime                             .02203     (Insuf)    .00000     .07121        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .85064     (Insuf)    .00000     2.5216        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56285     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .46829     (Insuf)    .00000     .88494         98    
+Hold 4 costpmer.Queue.WaitingTime           .01164     (Insuf)    .01164     .01164          1    
+Hold costpmer.Queue.WaitingTime             .36583     (Insuf)    .00000     .75806        100    
+Match.Queue1.WaitingTime                    .06997     (Insuf)    .00000     .17859        100    
+Match.Queue2.WaitingTime                    .01445     (Insuf)    .00000     .08809        100    
+ticket 1.Queue.WaitingTime                  .36782     (Insuf)    .00000     .78277        102    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                73.981     (Insuf)    .00000     203.00     49.000    
+Resource 1.NumberBusy                       .24350     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .24350     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .27632     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .27632     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                13.906     (Insuf)    .00000     96.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.882     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           11.085     (Insuf)    .00000     46.000     .00000    
+Match.Queue1.NumberInQueue                  2.1204     (Insuf)    .00000     20.000     .00000    
+Match.Queue2.NumberInQueue                  .43777     (Insuf)    .00000     12.000     .00000    
+ticket 1.Queue.NumberInQueue                11.369     (Insuf)    .00000     96.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     102.00    
+Resource 1.ScheduledUtilization             .24350    
+Resource 2.NumberSeized                     98.000    
+Resource 2.ScheduledUtilization             .27632    
+System.NumberOut                            151.00    
+
+Beginning replication 6 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 6 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .86627     (Insuf)    .02145     1.7000        100    
+Entity 1.VATime                             .02278     (Insuf)    .00000     .09642        152    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        152    
+Entity 1.WaitTime                           .86407     (Insuf)    .00000     2.5330        152    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        152    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        152    
+Entity 1.TotalTime                          .57009     (Insuf)    .00000     1.7000        152    
+ticket 2.Queue.WaitingTime                  .47142     (Insuf)    .00000     .86953         98    
+Hold 4 costpmer.Queue.WaitingTime           .01326     (Insuf)    .00508     .02145          2    
+Hold costpmer.Queue.WaitingTime             .36780     (Insuf)    .00000     .80333        100    
+Match.Queue1.WaitingTime                    .04788     (Insuf)    .00000     .13552        100    
+Match.Queue2.WaitingTime                    .00707     (Insuf)    .00000     .04512        100    
+ticket 1.Queue.WaitingTime                  .41997     (Insuf)    .00000     .84929        102    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                74.533     (Insuf)    .00000     200.00     48.000    
+Resource 1.NumberBusy                       .26553     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .26553     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .26868     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .26868     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                13.999     (Insuf)    .00000     97.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.401     (Insuf)    .00000     48.000     48.000    
+Hold costpmer.Queue.NumberInQueue           11.145     (Insuf)    .00000     49.000     .00000    
+Match.Queue1.NumberInQueue                  1.4509     (Insuf)    .00000     17.000     .00000    
+Match.Queue2.NumberInQueue                  .21415     (Insuf)    .00000     7.0000     .00000    
+ticket 1.Queue.NumberInQueue                12.981     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          352.00    
+Resource 1.NumberSeized                     102.00    
+Resource 1.ScheduledUtilization             .26553    
+Resource 2.NumberSeized                     98.000    
+Resource 2.ScheduledUtilization             .26868    
+System.NumberOut                            152.00    
+
+Beginning replication 7 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 7 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84997     (Insuf)    .03078     1.6666        100    
+Entity 1.VATime                             .02425     (Insuf)    .00000     .07424        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .88271     (Insuf)    .00000     2.6698        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56310     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .50924     (Insuf)    .00000     1.0406        100    
+Hold 4 costpmer.Queue.WaitingTime           .03078     (Insuf)    .03078     .03078          1    
+Hold costpmer.Queue.WaitingTime             .31328     (Insuf)    .00000     .60223        100    
+Match.Queue1.WaitingTime                    .00312     (Insuf)    .00000     .04063        100    
+Match.Queue2.WaitingTime                    .13098     (Insuf)    .00000     .28048        100    
+ticket 1.Queue.WaitingTime                  .37596     (Insuf)    .00000     .83399        100    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                72.366     (Insuf)    .00000     202.00     49.000    
+Resource 1.NumberBusy                       .26125     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .26125     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .31962     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .31962     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                15.431     (Insuf)    .00000     98.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.888     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           9.4933     (Insuf)    .00000     38.000     .00000    
+Match.Queue1.NumberInQueue                  .09461     (Insuf)    .00000     5.0000     .00000    
+Match.Queue2.NumberInQueue                  3.9692     (Insuf)    .00000     25.000     .00000    
+ticket 1.Queue.NumberInQueue                11.392     (Insuf)    .00000     99.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     100.00    
+Resource 1.ScheduledUtilization             .26125    
+Resource 2.NumberSeized                     100.00    
+Resource 2.ScheduledUtilization             .31962    
+System.NumberOut                            151.00    
+
+Beginning replication 8 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 8 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .88169     (Insuf)    .03021     1.7000        100    
+Entity 1.VATime                             .02507     (Insuf)    .00000     .07254        152    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        152    
+Entity 1.WaitTime                           1.0037     (Insuf)    .00000     2.9523        152    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        152    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        152    
+Entity 1.TotalTime                          .58030     (Insuf)    .00000     1.7000        152    
+ticket 2.Queue.WaitingTime                  .67970     (Insuf)    .00000     1.2836        100    
+Hold 4 costpmer.Queue.WaitingTime           .01803     (Insuf)    .00584     .03021          2    
+Hold costpmer.Queue.WaitingTime             .18286     (Insuf)    .00000     .39169        100    
+Match.Queue1.WaitingTime                    .22754     (Insuf)    .00000     .53527        100    
+Match.Queue2.WaitingTime                    .01948     (Insuf)    .00000     .13094        100    
+ticket 1.Queue.WaitingTime                  .41574     (Insuf)    .00000     .75626        100    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                69.863     (Insuf)    .00000     202.00     48.000    
+Resource 1.NumberBusy                       .24007     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .24007     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .39624     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .39624     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                20.596     (Insuf)    .00000     98.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.404     (Insuf)    .00000     48.000     48.000    
+Hold costpmer.Queue.NumberInQueue           5.5410     (Insuf)    .00000     24.000     .00000    
+Match.Queue1.NumberInQueue                  6.8950     (Insuf)    .00000     43.000     .00000    
+Match.Queue2.NumberInQueue                  .59037     (Insuf)    .00000     14.000     .00000    
+ticket 1.Queue.NumberInQueue                12.598     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          352.00    
+Resource 1.NumberSeized                     100.00    
+Resource 1.ScheduledUtilization             .24007    
+Resource 2.NumberSeized                     100.00    
+Resource 2.ScheduledUtilization             .39624    
+System.NumberOut                            152.00    
+
+Beginning replication 9 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 9 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84984     (Insuf)    .01261     1.6666        100    
+Entity 1.VATime                             .02504     (Insuf)    .00000     .09598        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .93865     (Insuf)    .00000     2.8525        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56293     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .60285     (Insuf)    .00000     1.2112         99    
+Hold 4 costpmer.Queue.WaitingTime           .00889     (Insuf)    .00517     .01261          2    
+Hold costpmer.Queue.WaitingTime             .22857     (Insuf)    .00000     .45043        100    
+Match.Queue1.WaitingTime                    .13676     (Insuf)    .00000     .31688        100    
+Match.Queue2.WaitingTime                    .00535     (Insuf)    .00000     .08315        100    
+ticket 1.Queue.WaitingTime                  .44523     (Insuf)    .00000     .90933        101    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                69.827     (Insuf)    .00000     201.00     49.000    
+Resource 1.NumberBusy                       .28051     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .28051     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .37634     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .37634     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                18.085     (Insuf)    .00000     98.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.884     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           6.9263     (Insuf)    .00000     28.000     .00000    
+Match.Queue1.NumberInQueue                  4.1442     (Insuf)    .00000     24.000     .00000    
+Match.Queue2.NumberInQueue                  .16217     (Insuf)    .00000     9.0000     .00000    
+ticket 1.Queue.NumberInQueue                13.626     (Insuf)    .00000     98.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     101.00    
+Resource 1.ScheduledUtilization             .28051    
+Resource 2.NumberSeized                     99.000    
+Resource 2.ScheduledUtilization             .37634    
+System.NumberOut                            151.00    
+
+Beginning replication 10 of 10
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 10 of 10
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+Replication ended at time      : 3.3 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Record 1                                    .84988     (Insuf)    .01870     1.6666        100    
+Entity 1.VATime                             .02314     (Insuf)    .00000     .07765        151    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
+Entity 1.WaitTime                           .86395     (Insuf)    .00000     2.6233        151    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
+Entity 1.TotalTime                          .56297     (Insuf)    .00000     1.6666        151    
+ticket 2.Queue.WaitingTime                  .48957     (Insuf)    .00000     .99486         99    
+Hold 4 costpmer.Queue.WaitingTime           .01050     (Insuf)    .00230     .01870          2    
+Hold costpmer.Queue.WaitingTime             .34399     (Insuf)    .00000     .64758        100    
+Match.Queue1.WaitingTime                    .05888     (Insuf)    .00000     .13797        100    
+Match.Queue2.WaitingTime                    .01485     (Insuf)    .00000     .10337        100    
+ticket 1.Queue.WaitingTime                  .39798     (Insuf)    .00000     .81114        101    
+Batch 1.Queue.WaitingTime                   .00000     (Insuf)    .00000     .00000        200    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                73.318     (Insuf)    .00000     200.00     49.000    
+Resource 1.NumberBusy                       .25430     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .25430     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .30591     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .30591     (Insuf)    .00000     1.0000     .00000    
+ticket 2.Queue.NumberInQueue                14.687     (Insuf)    .00000     97.000     .00000    
+Hold 4 costpmer.Queue.NumberInQueue         11.885     (Insuf)    .00000     49.000     49.000    
+Hold costpmer.Queue.NumberInQueue           10.424     (Insuf)    .00000     40.000     .00000    
+Match.Queue1.NumberInQueue                  1.7842     (Insuf)    .00000     14.000     .00000    
+Match.Queue2.NumberInQueue                  .44986     (Insuf)    .00000     13.000     .00000    
+ticket 1.Queue.NumberInQueue                12.180     (Insuf)    .00000     97.000     .00000    
+Batch 1.Queue.NumberInQueue                 .00000     (Insuf)    .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           400.00    
+Entity 1.NumberOut                          351.00    
+Resource 1.NumberSeized                     101.00    
+Resource 1.ScheduledUtilization             .25430    
+Resource 2.NumberSeized                     99.000    
+Resource 2.ScheduledUtilization             .30591    
+System.NumberOut                            151.00    
+
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                 Output Summary for 10 Replications
+
+Project: Unnamed Project                                             Run execution date : 8/12/2014
+Analyst: support                                                     Model revision date: 8/12/2014
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           400.00     .00000     400.00     400.00     10
+Entity 1.NumberOut                          351.40     .36938     351.00     352.00     10
+Resource 1.NumberSeized                     100.70     .75776     99.000     102.00     10
+Resource 1.ScheduledUtilization             .25578     .01501     .21799     .28396     10
+Resource 2.NumberSeized                     99.300     .75776     98.000     101.00     10
+Resource 2.ScheduledUtilization             .32812     .02966     .26868     .39624     10
+System.NumberOut                            151.40     .36938     151.00     152.00     10
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.

@@ -1,0 +1,2066 @@
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 1 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .64796     (Insuf)    .05439     .99868         29    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         29    
+Entity 1.WaitTime                           .39907     (Insuf)    .00000     2.1222         29    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         29    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         29    
+Entity 1.TotalTime                          1.0470     (Insuf)    .10725     2.6312         29    
+Wait for bridge down.Queue.WaitingTime      .04373     (Insuf)    .00000     .39641         19    
+Wait ship.Queue.WaitingTime                 .05204     (Insuf)    .05122     .05286          2    
+Server 1.Queue.WaitingTime                  .65605     (Insuf)    .00000     1.9181         12    
+Server 2.Queue.WaitingTime                  .46503     (Insuf)    .00000     1.3071          8    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         11    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          9    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.1866     (Insuf)    .00000     8.0000     3.0000    
+Resource 1.NumberBusy                       .91887     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .91887     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .67488     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .67488     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .33783     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .33783     (Insuf)    .00000     1.0000     1.0000    
+Wait for bridge down.Queue.NumberInQueue    .08309     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01041     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .78955     (Insuf)    .00000     3.0000     1.0000    
+Server 2.Queue.NumberInQueue                .37202     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           32.000    
+Entity 1.NumberOut                          29.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .91887    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .67488    
+Bridge.NumberSeized                         20.000    
+Bridge.ScheduledUtilization                 .33783    
+System.NumberOut                            29.000    
+
+Beginning replication 2 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 2 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .51672     (Insuf)    .05168     .97186         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           .17791     (Insuf)    .00000     .94360         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          .69462     (Insuf)    .08882     1.6807         24    
+Wait for bridge down.Queue.WaitingTime      .05538     (Insuf)    .00000     .36563         12    
+Wait ship.Queue.WaitingTime                 .19128     (Insuf)    .01909     .28001          3    
+Server 1.Queue.WaitingTime                  .22861     (Insuf)    .00000     .82579         10    
+Server 2.Queue.WaitingTime                  .24840     (Insuf)    .00000     .74520          3    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         12    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          9    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.7191     (Insuf)    .00000     5.0000     1.0000    
+Resource 1.NumberBusy                       .72294     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .72294     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .22693     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .22693     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .34233     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .34233     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .06646     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .05739     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .22861     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .07452     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           25.000    
+Entity 1.NumberOut                          24.000    
+Resource 1.NumberSeized                     10.000    
+Resource 1.ScheduledUtilization             .72294    
+Resource 2.NumberSeized                     3.0000    
+Resource 2.ScheduledUtilization             .22693    
+Bridge.NumberSeized                         21.000    
+Bridge.ScheduledUtilization                 .34233    
+System.NumberOut                            24.000    
+
+Beginning replication 3 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 3 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .47982     (Insuf)    .05173     .96611         32    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         32    
+Entity 1.WaitTime                           .22758     (Insuf)    .00000     .79265         32    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         32    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         32    
+Entity 1.TotalTime                          .70740     (Insuf)    .16596     1.6586         32    
+Wait for bridge down.Queue.WaitingTime      .07349     (Insuf)    .00000     .43597         17    
+Wait ship.Queue.WaitingTime                 .17217     (Insuf)    .03002     .30754          7    
+Server 1.Queue.WaitingTime                  .31965     (Insuf)    .00000     .78306         14    
+Server 2.Queue.WaitingTime                  .03704     (Insuf)    .00000     .14817          4    
+Ship crossing.Queue.WaitingTime             .01708     (Insuf)    .00000     .12877         15    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.3289     (Insuf)    .00000     6.0000     2.0000    
+Resource 1.NumberBusy                       .94411     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .94411     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .30750     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .30750     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .32839     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .32839     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .12493     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .12052     (Insuf)    .00000     3.0000     .00000    
+Server 1.Queue.NumberInQueue                .46302     (Insuf)    .00000     1.0000     1.0000    
+Server 2.Queue.NumberInQueue                .01482     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .02562     (Insuf)    .00000     2.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           34.000    
+Entity 1.NumberOut                          32.000    
+Resource 1.NumberSeized                     14.000    
+Resource 1.ScheduledUtilization             .94411    
+Resource 2.NumberSeized                     4.0000    
+Resource 2.ScheduledUtilization             .30750    
+Bridge.NumberSeized                         23.000    
+Bridge.ScheduledUtilization                 .32839    
+System.NumberOut                            32.000    
+
+Beginning replication 4 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 4 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .68515     (Insuf)    .07942     .99732         26    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         26    
+Entity 1.WaitTime                           .36970     (Insuf)    .00000     1.7581         26    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         26    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         26    
+Entity 1.TotalTime                          1.0548     (Insuf)    .22721     2.5307         26    
+Wait for bridge down.Queue.WaitingTime      .02963     (Insuf)    .00000     .32546         21    
+Wait ship.Queue.WaitingTime                 .14779     (Insuf)    .14779     .14779          1    
+Server 1.Queue.WaitingTime                  .56726     (Insuf)    .00000     1.7581         13    
+Server 2.Queue.WaitingTime                  .26739     (Insuf)    .00000     .78767          9    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          5    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          4    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.9511     (Insuf)    .00000     7.0000     2.0000    
+Resource 1.NumberBusy                       .99648     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .99648     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .66104     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66104     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .15923     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .15923     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .06223     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01478     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .81673     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .24065     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           28.000    
+Entity 1.NumberOut                          26.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .99648    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .66104    
+Bridge.NumberSeized                         9.0000    
+Bridge.ScheduledUtilization                 .15923    
+System.NumberOut                            26.000    
+
+Beginning replication 5 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 5 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .58859     (Insuf)    .06209     .96418         29    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         29    
+Entity 1.WaitTime                           .49126     (Insuf)    .00000     2.2843         29    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         29    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         29    
+Entity 1.TotalTime                          1.0798     (Insuf)    .09180     2.9532         29    
+Wait for bridge down.Queue.WaitingTime      .02436     (Insuf)    .00000     .24710         21    
+Wait ship.Queue.WaitingTime                 .17198     (Insuf)    .01383     .33012          2    
+Server 1.Queue.WaitingTime                  .67720     (Insuf)    .00000     2.2843         13    
+Server 2.Queue.WaitingTime                  .50970     (Insuf)    .00000     1.1721          9    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          8    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          6    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.1330     (Insuf)    .00000     10.000     1.0000    
+Resource 1.NumberBusy                       .89181     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .89181     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .59478     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .59478     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .22178     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .22178     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .05116     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .03440     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .88036     (Insuf)    .00000     3.0000     .00000    
+Server 2.Queue.NumberInQueue                .45873     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           30.000    
+Entity 1.NumberOut                          29.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .89181    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .59478    
+Bridge.NumberSeized                         14.000    
+Bridge.ScheduledUtilization                 .22178    
+System.NumberOut                            29.000    
+
+Beginning replication 6 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 6 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .65625     (Insuf)    .05095     .99899         32    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         32    
+Entity 1.WaitTime                           .73072     (Insuf)    .00000     2.3615         32    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         32    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         32    
+Entity 1.TotalTime                          1.3869     (Insuf)    .21899     3.1545         32    
+Wait for bridge down.Queue.WaitingTime      .04279     (Insuf)    .00000     .35061         23    
+Wait ship.Queue.WaitingTime                 .16804     (Insuf)    .16804     .16804          1    
+Server 1.Queue.WaitingTime                  1.0423     (Insuf)    .00000     2.2269         14    
+Server 2.Queue.WaitingTime                  .84287     (Insuf)    .00000     2.1600         11    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                4.6669     (Insuf)    .00000     9.0000     2.0000    
+Resource 1.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .86979     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .86979     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .29545     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .29545     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .09842     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01680     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                1.4593     (Insuf)    .00000     3.0000     .00000    
+Server 2.Queue.NumberInQueue                .92715     (Insuf)    .00000     3.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           34.000    
+Entity 1.NumberOut                          32.000    
+Resource 1.NumberSeized                     14.000    
+Resource 1.ScheduledUtilization             1.0000    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .86979    
+Bridge.NumberSeized                         17.000    
+Bridge.ScheduledUtilization                 .29545    
+System.NumberOut                            32.000    
+
+Beginning replication 7 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 7 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .64632     (Insuf)    .05103     .97908         27    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         27    
+Entity 1.WaitTime                           .37969     (Insuf)    .00000     1.3961         27    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         27    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         27    
+Entity 1.TotalTime                          1.0260     (Insuf)    .24674     2.0175         27    
+Wait for bridge down.Queue.WaitingTime      .02087     (Insuf)    .00000     .17305         18    
+Wait ship.Queue.WaitingTime                 .21198     (Insuf)    .19142     .24199          3    
+Server 1.Queue.WaitingTime                  .65083     (Insuf)    .00000     1.3961         12    
+Server 2.Queue.WaitingTime                  .25812     (Insuf)    .00000     .72101          8    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          6    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.9440     (Insuf)    .00000     7.0000     2.0000    
+Resource 1.NumberBusy                       .95282     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .95282     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .66277     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66277     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .23986     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .23986     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .03757     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .06359     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .78100     (Insuf)    .00000     2.0000     .00000    
+Server 2.Queue.NumberInQueue                .20649     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           29.000    
+Entity 1.NumberOut                          27.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .95282    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .66277    
+Bridge.NumberSeized                         15.000    
+Bridge.ScheduledUtilization                 .23986    
+System.NumberOut                            27.000    
+
+Beginning replication 8 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 8 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .68216     (Insuf)    .33668     .99747         23    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         23    
+Entity 1.WaitTime                           .32063     (Insuf)    .00000     1.3018         23    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         23    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         23    
+Entity 1.TotalTime                          1.0027     (Insuf)    .33668     1.8279         23    
+Wait for bridge down.Queue.WaitingTime      .00860     (Insuf)    .00000     .13242         19    
+Wait ship.Queue.WaitingTime                     --         --         --         --          0
+Server 1.Queue.WaitingTime                  .51207     (Insuf)    .00000     1.3018         14    
+Server 2.Queue.WaitingTime                  .05235     (Insuf)    .00000     .21624          7    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          4    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          4    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.4061     (Insuf)    .00000     5.0000     3.0000    
+Resource 1.NumberBusy                       .99846     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .99846     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .48660     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .48660     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .14106     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .14106     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .01634     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Server 1.Queue.NumberInQueue                .72703     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .03664     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           26.000    
+Entity 1.NumberOut                          23.000    
+Resource 1.NumberSeized                     14.000    
+Resource 1.ScheduledUtilization             .99846    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .48660    
+Bridge.NumberSeized                         8.0000    
+Bridge.ScheduledUtilization                 .14106    
+System.NumberOut                            23.000    
+
+Beginning replication 9 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 9 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .53696     (Insuf)    .06005     .98988         34    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         34    
+Entity 1.WaitTime                           .21608     (Insuf)    .00000     .91902         34    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         34    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         34    
+Entity 1.TotalTime                          .75304     (Insuf)    .18190     1.6913         34    
+Wait for bridge down.Queue.WaitingTime      .08241     (Insuf)    .00000     .44543         20    
+Wait ship.Queue.WaitingTime                 .16940     (Insuf)    .11210     .30663          6    
+Server 1.Queue.WaitingTime                  .29886     (Insuf)    .00000     .91902         13    
+Server 2.Queue.WaitingTime                  .09631     (Insuf)    .00000     .54140          8    
+Ship crossing.Queue.WaitingTime             .01037     (Insuf)    .00000     .07343         14    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.5732     (Insuf)    .00000     6.0000     1.0000    
+Resource 1.NumberBusy                       .96741     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .96741     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .55198     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .55198     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .30726     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .30726     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .16483     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .10164     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .38852     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .07705     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .01451     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           35.000    
+Entity 1.NumberOut                          34.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .96741    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .55198    
+Bridge.NumberSeized                         22.000    
+Bridge.ScheduledUtilization                 .30726    
+System.NumberOut                            34.000    
+
+Beginning replication 10 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 10 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .57989     (Insuf)    .30220     .96839         20    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         20    
+Entity 1.WaitTime                           .15515     (Insuf)    .00000     .89060         20    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         20    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         20    
+Entity 1.TotalTime                          .73505     (Insuf)    .30220     1.6859         20    
+Wait for bridge down.Queue.WaitingTime      .06036     (Insuf)    .00000     .28760         11    
+Wait ship.Queue.WaitingTime                     --         --         --         --          0
+Server 1.Queue.WaitingTime                  .32062     (Insuf)    .00000     1.0491          9    
+Server 2.Queue.WaitingTime                  .37522     (Insuf)    .00000     .89817          4    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          9    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.7871     (Insuf)    .00000     7.0000     3.0000    
+Resource 1.NumberBusy                       .68544     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .68544     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .22420     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .22420     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .31528     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .31528     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .06640     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Server 1.Queue.NumberInQueue                .34576     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .15009     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           23.000    
+Entity 1.NumberOut                          20.000    
+Resource 1.NumberSeized                     9.0000    
+Resource 1.ScheduledUtilization             .68544    
+Resource 2.NumberSeized                     4.0000    
+Resource 2.ScheduledUtilization             .22420    
+Bridge.NumberSeized                         18.000    
+Bridge.ScheduledUtilization                 .31528    
+System.NumberOut                            20.000    
+
+Beginning replication 11 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 11 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .58688     (Insuf)    .06627     .97546         31    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         31    
+Entity 1.WaitTime                           .47480     (Insuf)    .00000     1.6777         31    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         31    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         31    
+Entity 1.TotalTime                          1.0616     (Insuf)    .12259     2.6433         31    
+Wait for bridge down.Queue.WaitingTime      .07679     (Insuf)    .00000     .32981         20    
+Wait ship.Queue.WaitingTime                 .11079     (Insuf)    .05632     .16525          2    
+Server 1.Queue.WaitingTime                  .68945     (Insuf)    .00000     1.6777         13    
+Server 2.Queue.WaitingTime                  .49828     (Insuf)    .00000     1.3550         10    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         11    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000         10    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.6183     (Insuf)    .00000     8.0000     6.0000    
+Resource 1.NumberBusy                       .98092     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98092     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .66777     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66777     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .34756     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .34756     (Insuf)    .00000     1.0000     1.0000    
+Wait for bridge down.Queue.NumberInQueue    .15818     (Insuf)    .00000     2.0000     1.0000    
+Wait ship.Queue.NumberInQueue               .02888     (Insuf)    .00000     1.0000     1.0000    
+Server 1.Queue.NumberInQueue                .93672     (Insuf)    .00000     3.0000     1.0000    
+Server 2.Queue.NumberInQueue                .49828     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           37.000    
+Entity 1.NumberOut                          31.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .98092    
+Resource 2.NumberSeized                     10.000    
+Resource 2.ScheduledUtilization             .66777    
+Bridge.NumberSeized                         21.000    
+Bridge.ScheduledUtilization                 .34756    
+System.NumberOut                            31.000    
+
+Beginning replication 12 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 12 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .53343     (Insuf)    .06288     .99868         25    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         25    
+Entity 1.WaitTime                           .14455     (Insuf)    .00000     .60731         25    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         25    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         25    
+Entity 1.TotalTime                          .67798     (Insuf)    .27977     1.3773         25    
+Wait for bridge down.Queue.WaitingTime      .00865     (Insuf)    .00000     .09509         13    
+Wait ship.Queue.WaitingTime                 .18911     (Insuf)    .16132     .21689          2    
+Server 1.Queue.WaitingTime                  .25502     (Insuf)    .00000     .60731         12    
+Server 2.Queue.WaitingTime                  .00000     (Insuf)    .00000     .00000          3    
+Ship crossing.Queue.WaitingTime             .00524     (Insuf)    .00000     .06288         12    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000         10    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.7515     (Insuf)    .00000     5.0000     3.0000    
+Resource 1.NumberBusy                       .86049     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .86049     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .14060     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .14060     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .37925     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .37925     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .01124     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .03782     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .31584     (Insuf)    .00000     1.0000     1.0000    
+Server 2.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Ship crossing.Queue.NumberInQueue           .00629     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           28.000    
+Entity 1.NumberOut                          25.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .86049    
+Resource 2.NumberSeized                     3.0000    
+Resource 2.ScheduledUtilization             .14060    
+Bridge.NumberSeized                         22.000    
+Bridge.ScheduledUtilization                 .37925    
+System.NumberOut                            25.000    
+
+Beginning replication 13 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 13 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .61773     (Insuf)    .06537     .98778         25    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         25    
+Entity 1.WaitTime                           .26034     (Insuf)    .00000     1.0374         25    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         25    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         25    
+Entity 1.TotalTime                          .87807     (Insuf)    .10506     1.9768         25    
+Wait for bridge down.Queue.WaitingTime      .05185     (Insuf)    .00000     .34257         17    
+Wait ship.Queue.WaitingTime                 .15354     (Insuf)    .03075     .27632          2    
+Server 1.Queue.WaitingTime                  .36596     (Insuf)    .00000     .73199         12    
+Server 2.Queue.WaitingTime                  .15475     (Insuf)    .00000     .49836          6    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          8    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          6    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.2214     (Insuf)    .00000     5.0000     1.0000    
+Resource 1.NumberBusy                       .89428     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .89428     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .44966     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .44966     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .22662     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .22662     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .08814     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .03071     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .43915     (Insuf)    .00000     2.0000     .00000    
+Server 2.Queue.NumberInQueue                .09285     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           26.000    
+Entity 1.NumberOut                          25.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .89428    
+Resource 2.NumberSeized                     6.0000    
+Resource 2.ScheduledUtilization             .44966    
+Bridge.NumberSeized                         14.000    
+Bridge.ScheduledUtilization                 .22662    
+System.NumberOut                            25.000    
+
+Beginning replication 14 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 14 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .60255     (Insuf)    .06280     .99228         32    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         32    
+Entity 1.WaitTime                           .39933     (Insuf)    .00000     1.7063         32    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         32    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         32    
+Entity 1.TotalTime                          1.0018     (Insuf)    .06685     2.2182         32    
+Wait for bridge down.Queue.WaitingTime      .03817     (Insuf)    .00000     .33490         22    
+Wait ship.Queue.WaitingTime                 .20149     (Insuf)    .00405     .30965          3    
+Server 1.Queue.WaitingTime                  .74303     (Insuf)    .00000     1.7063         13    
+Server 2.Queue.WaitingTime                  .33635     (Insuf)    .00000     .80581         11    
+Ship crossing.Queue.WaitingTime             .00677     (Insuf)    .00000     .06771         10    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.5874     (Insuf)    .00000     9.0000     3.0000    
+Resource 1.NumberBusy                       .95185     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .95185     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .76643     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .76643     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .26979     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .26979     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .08397     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .06045     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                1.0781     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .36999     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00677     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           35.000    
+Entity 1.NumberOut                          32.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .95185    
+Resource 2.NumberSeized                     11.000    
+Resource 2.ScheduledUtilization             .76643    
+Bridge.NumberSeized                         17.000    
+Bridge.ScheduledUtilization                 .26979    
+System.NumberOut                            32.000    
+
+Beginning replication 15 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 15 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .54861     (Insuf)    .05105     .99683         32    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         32    
+Entity 1.WaitTime                           .32002     (Insuf)    .00000     1.6513         32    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         32    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         32    
+Entity 1.TotalTime                          .86863     (Insuf)    .10462     2.2017         32    
+Wait for bridge down.Queue.WaitingTime      .08274     (Insuf)    .00000     .37782         19    
+Wait ship.Queue.WaitingTime                 .14868     (Insuf)    .02969     .23861          5    
+Server 1.Queue.WaitingTime                  .47687     (Insuf)    .00000     1.2734         12    
+Server 2.Queue.WaitingTime                  .35884     (Insuf)    .00000     .95677          9    
+Ship crossing.Queue.WaitingTime             .00482     (Insuf)    .00000     .06272         13    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.9524     (Insuf)    .00000     9.0000     4.0000    
+Resource 1.NumberBusy                       .82117     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .82117     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .63311     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .63311     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .31794     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .31794     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .15721     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .07434     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .60247     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .33991     (Insuf)    .00000     2.0000     1.0000    
+Ship crossing.Queue.NumberInQueue           .00627     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           36.000    
+Entity 1.NumberOut                          32.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .82117    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .63311    
+Bridge.NumberSeized                         21.000    
+Bridge.ScheduledUtilization                 .31794    
+System.NumberOut                            32.000    
+
+Beginning replication 16 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 16 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .61981     (Insuf)    .06938     .99081         29    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         29    
+Entity 1.WaitTime                           .60333     (Insuf)    .00000     2.0510         29    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         29    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         29    
+Entity 1.TotalTime                          1.2231     (Insuf)    .18429     2.9347         29    
+Wait for bridge down.Queue.WaitingTime      .05585     (Insuf)    .00000     .38126         20    
+Wait ship.Queue.WaitingTime                 .13907     (Insuf)    .03552     .19500          3    
+Server 1.Queue.WaitingTime                  .87253     (Insuf)    .00000     2.0510         13    
+Server 2.Queue.WaitingTime                  .56750     (Insuf)    .00000     1.4269          8    
+Ship crossing.Queue.WaitingTime             .00882     (Insuf)    .00000     .07939          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          6    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                3.6064     (Insuf)    .00000     9.0000     1.0000    
+Resource 1.NumberBusy                       .96888     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .96888     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .64688     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .64688     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .24105     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .24105     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .11170     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .04172     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                1.1342     (Insuf)    .00000     3.0000     .00000    
+Server 2.Queue.NumberInQueue                .45400     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00794     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           30.000    
+Entity 1.NumberOut                          29.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .96888    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .64688    
+Bridge.NumberSeized                         15.000    
+Bridge.ScheduledUtilization                 .24105    
+System.NumberOut                            29.000    
+
+Beginning replication 17 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 17 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .60926     (Insuf)    .05815     .99040         24    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         24    
+Entity 1.WaitTime                           .21907     (Insuf)    .00000     .87801         24    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         24    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         24    
+Entity 1.TotalTime                          .82833     (Insuf)    .07601     1.7726         24    
+Wait for bridge down.Queue.WaitingTime      .01346     (Insuf)    .00000     .21533         16    
+Wait ship.Queue.WaitingTime                 .16603     (Insuf)    .00464     .26287          3    
+Server 1.Queue.WaitingTime                  .36177     (Insuf)    .00000     .85122         11    
+Server 2.Queue.WaitingTime                  .18545     (Insuf)    .00000     .87801          7    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          8    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          5    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.1440     (Insuf)    .00000     5.0000     3.0000    
+Resource 1.NumberBusy                       .80983     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .80983     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .50212     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .50212     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .20606     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .20606     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .02153     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .04981     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .39795     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .15679     (Insuf)    .00000     1.0000     1.0000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           27.000    
+Entity 1.NumberOut                          24.000    
+Resource 1.NumberSeized                     11.000    
+Resource 1.ScheduledUtilization             .80983    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .50212    
+Bridge.NumberSeized                         13.000    
+Bridge.ScheduledUtilization                 .20606    
+System.NumberOut                            24.000    
+
+Beginning replication 18 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 18 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .60565     (Insuf)    .05133     .99762         30    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         30    
+Entity 1.WaitTime                           .30314     (Insuf)    .00000     1.2145         30    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         30    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         30    
+Entity 1.TotalTime                          .90879     (Insuf)    .20296     2.2038         30    
+Wait for bridge down.Queue.WaitingTime      .06909     (Insuf)    .00000     .26256         20    
+Wait ship.Queue.WaitingTime                 .20958     (Insuf)    .09401     .32515          2    
+Server 1.Queue.WaitingTime                  .44209     (Insuf)    .00000     1.0801         13    
+Server 2.Queue.WaitingTime                  .24378     (Insuf)    .00000     .97382          9    
+Ship crossing.Queue.WaitingTime             .00513     (Insuf)    .00000     .05133         10    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.8321     (Insuf)    .00000     6.0000     2.0000    
+Resource 1.NumberBusy                       .91807     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .91807     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .62843     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .62843     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .30629     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .30629     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .13818     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .04192     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .57471     (Insuf)    .00000     2.0000     .00000    
+Server 2.Queue.NumberInQueue                .21940     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00513     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           32.000    
+Entity 1.NumberOut                          30.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .91807    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .62843    
+Bridge.NumberSeized                         18.000    
+Bridge.ScheduledUtilization                 .30629    
+System.NumberOut                            30.000    
+
+Beginning replication 19 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 19 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .54805     (Insuf)    .05626     .98195         20    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         20    
+Entity 1.WaitTime                           .17221     (Insuf)    .00000     .97855         20    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         20    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         20    
+Entity 1.TotalTime                          .72026     (Insuf)    .23215     1.8286         20    
+Wait for bridge down.Queue.WaitingTime      .02176     (Insuf)    .00000     .23937         11    
+Wait ship.Queue.WaitingTime                 .20433     (Insuf)    .10813     .30053          2    
+Server 1.Queue.WaitingTime                  .27285     (Insuf)    .00000     .97855         10    
+Server 2.Queue.WaitingTime                  .00000     (Insuf)    .00000     .00000          2    
+Ship crossing.Queue.WaitingTime             .00753     (Insuf)    .00000     .06777          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.4658     (Insuf)    .00000     4.0000     1.0000    
+Resource 1.NumberBusy                       .74240     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74240     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .11468     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .11468     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .26429     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .26429     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .02394     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .04087     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .27285     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Ship crossing.Queue.NumberInQueue           .00678     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           21.000    
+Entity 1.NumberOut                          20.000    
+Resource 1.NumberSeized                     10.000    
+Resource 1.ScheduledUtilization             .74240    
+Resource 2.NumberSeized                     2.0000    
+Resource 2.ScheduledUtilization             .11468    
+Bridge.NumberSeized                         16.000    
+Bridge.ScheduledUtilization                 .26429    
+System.NumberOut                            20.000    
+
+Beginning replication 20 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 20 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .52976     (Insuf)    .05369     .98595         28    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         28    
+Entity 1.WaitTime                           .25695     (Insuf)    .00000     1.1363         28    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         28    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         28    
+Entity 1.TotalTime                          .78672     (Insuf)    .08077     1.8037         28    
+Wait for bridge down.Queue.WaitingTime      .04662     (Insuf)    .00000     .33252         17    
+Wait ship.Queue.WaitingTime                 .14338     (Insuf)    .02649     .22918          4    
+Server 1.Queue.WaitingTime                  .35265     (Insuf)    .00000     1.0731         11    
+Server 2.Queue.WaitingTime                  .31137     (Insuf)    .00000     1.1363          8    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         11    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.3546     (Insuf)    .00000     7.0000     3.0000    
+Resource 1.NumberBusy                       .71982     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .71982     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .57939     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .57939     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .26254     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .26254     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .07926     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .05735     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .40718     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .24909     (Insuf)    .00000     2.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           31.000    
+Entity 1.NumberOut                          28.000    
+Resource 1.NumberSeized                     11.000    
+Resource 1.ScheduledUtilization             .71982    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .57939    
+Bridge.NumberSeized                         18.000    
+Bridge.ScheduledUtilization                 .26254    
+System.NumberOut                            28.000    
+
+Beginning replication 21 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 21 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .51917     (Insuf)    .05005     .99821         27    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         27    
+Entity 1.WaitTime                           .25764     (Insuf)    .00000     1.8906         27    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         27    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         27    
+Entity 1.TotalTime                          .77681     (Insuf)    .08853     2.7712         27    
+Wait for bridge down.Queue.WaitingTime      .02603     (Insuf)    .00000     .33423         15    
+Wait ship.Queue.WaitingTime                 .09460     (Insuf)    .01420     .19130          5    
+Server 1.Queue.WaitingTime                  .34099     (Insuf)    .00000     1.5563         12    
+Server 2.Queue.WaitingTime                  .40015     (Insuf)    .00000     .94451          5    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         12    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.2726     (Insuf)    .00000     6.0000     4.0000    
+Resource 1.NumberBusy                       .90856     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .90856     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .32412     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .32412     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .26886     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .26886     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .03905     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .04730     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .46777     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .21703     (Insuf)    .00000     2.0000     1.0000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           31.000    
+Entity 1.NumberOut                          27.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .90856    
+Resource 2.NumberSeized                     5.0000    
+Resource 2.ScheduledUtilization             .32412    
+Bridge.NumberSeized                         19.000    
+Bridge.ScheduledUtilization                 .26886    
+System.NumberOut                            27.000    
+
+Beginning replication 22 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 22 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .53625     (Insuf)    .05546     .94306         26    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         26    
+Entity 1.WaitTime                           .19091     (Insuf)    .00000     1.0385         26    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         26    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         26    
+Entity 1.TotalTime                          .72716     (Insuf)    .16519     1.5967         26    
+Wait for bridge down.Queue.WaitingTime      .03903     (Insuf)    .00000     .30405         15    
+Wait ship.Queue.WaitingTime                 .05857     (Insuf)    .00742     .10972          2    
+Server 1.Queue.WaitingTime                  .25122     (Insuf)    .00000     1.0385         11    
+Server 2.Queue.WaitingTime                  .30101     (Insuf)    .00000     .91354          5    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         12    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000         10    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.9607     (Insuf)    .00000     6.0000     3.0000    
+Resource 1.NumberBusy                       .75163     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .75163     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .33521     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .33521     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .37343     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .37343     (Insuf)    .00000     1.0000     1.0000    
+Wait for bridge down.Queue.NumberInQueue    .05855     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01171     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .27969     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .15050     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           29.000    
+Entity 1.NumberOut                          26.000    
+Resource 1.NumberSeized                     11.000    
+Resource 1.ScheduledUtilization             .75163    
+Resource 2.NumberSeized                     5.0000    
+Resource 2.ScheduledUtilization             .33521    
+Bridge.NumberSeized                         22.000    
+Bridge.ScheduledUtilization                 .37343    
+System.NumberOut                            26.000    
+
+Beginning replication 23 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 23 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .58967     (Insuf)    .05561     .97858         36    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         36    
+Entity 1.WaitTime                           .56233     (Insuf)    .00000     2.8968         36    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         36    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         36    
+Entity 1.TotalTime                          1.1520     (Insuf)    .08983     3.5511         36    
+Wait for bridge down.Queue.WaitingTime      .07858     (Insuf)    .00000     .58367         23    
+Wait ship.Queue.WaitingTime                 .18742     (Insuf)    .02030     .37272          6    
+Server 1.Queue.WaitingTime                  1.0895     (Insuf)    .00000     3.0158         13    
+Server 2.Queue.WaitingTime                  .66157     (Insuf)    .00000     1.9413         12    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         13    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          8    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.6175     (Insuf)    .00000     12.000     12.000    
+Resource 1.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .95985     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .95985     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .30867     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .30867     (Insuf)    .00000     1.0000     1.0000    
+Wait for bridge down.Queue.NumberInQueue    .18072     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .11580     (Insuf)    .00000     1.0000     1.0000    
+Server 1.Queue.NumberInQueue                1.8052     (Insuf)    .00000     4.0000     4.0000    
+Server 2.Queue.NumberInQueue                1.2473     (Insuf)    .00000     4.0000     4.0000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           48.000    
+Entity 1.NumberOut                          36.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             1.0000    
+Resource 2.NumberSeized                     12.000    
+Resource 2.ScheduledUtilization             .95985    
+Bridge.NumberSeized                         21.000    
+Bridge.ScheduledUtilization                 .30867    
+System.NumberOut                            36.000    
+
+Beginning replication 24 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 24 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .60546     (Insuf)    .06742     .98956         28    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         28    
+Entity 1.WaitTime                           .17843     (Insuf)    .00000     .77465         28    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         28    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         28    
+Entity 1.TotalTime                          .78389     (Insuf)    .14791     1.6615         28    
+Wait for bridge down.Queue.WaitingTime      .02335     (Insuf)    .00000     .15950         19    
+Wait ship.Queue.WaitingTime                 .08711     (Insuf)    .08050     .09373          2    
+Server 1.Queue.WaitingTime                  .35685     (Insuf)    .00000     .77465         12    
+Server 2.Queue.WaitingTime                  .04187     (Insuf)    .00000     .29504          8    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          9    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.3073     (Insuf)    .00000     5.0000     1.0000    
+Resource 1.NumberBusy                       .92027     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .92027     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .60129     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .60129     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .26231     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .26231     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .04437     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01742     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .42822     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .03350     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           29.000    
+Entity 1.NumberOut                          28.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .92027    
+Resource 2.NumberSeized                     8.0000    
+Resource 2.ScheduledUtilization             .60129    
+Bridge.NumberSeized                         16.000    
+Bridge.ScheduledUtilization                 .26231    
+System.NumberOut                            28.000    
+
+Beginning replication 25 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 25 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .53502     (Insuf)    .05075     .90029         29    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         29    
+Entity 1.WaitTime                           .20257     (Insuf)    .00000     .80450         29    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         29    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         29    
+Entity 1.TotalTime                          .73759     (Insuf)    .09709     1.4977         29    
+Wait for bridge down.Queue.WaitingTime      .06264     (Insuf)    .00000     .31463         17    
+Wait ship.Queue.WaitingTime                 .13111     (Insuf)    .04634     .22954          5    
+Server 1.Queue.WaitingTime                  .23306     (Insuf)    .00000     .56089         12    
+Server 2.Queue.WaitingTime                  .37711     (Insuf)    .00000     .72166          7    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000         12    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.3437     (Insuf)    .00000     7.0000     3.0000    
+Resource 1.NumberBusy                       .82233     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .82233     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .47255     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .47255     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .28141     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .28141     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .10649     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .06555     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .33144     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .26397     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           32.000    
+Entity 1.NumberOut                          29.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .82233    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .47255    
+Bridge.NumberSeized                         19.000    
+Bridge.ScheduledUtilization                 .28141    
+System.NumberOut                            29.000    
+
+Beginning replication 26 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 26 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .41705     (Insuf)    .05074     .98718         21    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         21    
+Entity 1.WaitTime                           .08514     (Insuf)    .00000     .28738         21    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         21    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         21    
+Entity 1.TotalTime                          .50220     (Insuf)    .07074     1.1540         21    
+Wait for bridge down.Queue.WaitingTime      .06638     (Insuf)    .00000     .28497          8    
+Wait ship.Queue.WaitingTime                 .14582     (Insuf)    .00178     .26919          6    
+Server 1.Queue.WaitingTime                  .04621     (Insuf)    .00000     .28738          7    
+Server 2.Queue.WaitingTime                  .00000     (Insuf)    .00000     .00000          1    
+Ship crossing.Queue.WaitingTime             .00451     (Insuf)    .00000     .05864         13    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.0546     (Insuf)    .00000     4.0000     .00000    
+Resource 1.NumberBusy                       .52350     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .52350     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .06603     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .06603     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .28628     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .28628     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .05310     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .08749     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .03234     (Insuf)    .00000     1.0000     .00000    
+Server 2.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Ship crossing.Queue.NumberInQueue           .00586     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           21.000    
+Entity 1.NumberOut                          21.000    
+Resource 1.NumberSeized                     7.0000    
+Resource 1.ScheduledUtilization             .52350    
+Resource 2.NumberSeized                     1.0000    
+Resource 2.ScheduledUtilization             .06603    
+Bridge.NumberSeized                         20.000    
+Bridge.ScheduledUtilization                 .28628    
+System.NumberOut                            21.000    
+
+Beginning replication 27 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 27 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .59469     (Insuf)    .07531     .98408         22    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         22    
+Entity 1.WaitTime                           .27003     (Insuf)    .00000     .92871         22    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         22    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         22    
+Entity 1.TotalTime                          .86472     (Insuf)    .26616     1.6155         22    
+Wait for bridge down.Queue.WaitingTime      .01241     (Insuf)    .00000     .07479         14    
+Wait ship.Queue.WaitingTime                 .19085     (Insuf)    .19085     .19085          1    
+Server 1.Queue.WaitingTime                  .43330     (Insuf)    .00000     .92871         11    
+Server 2.Queue.WaitingTime                  .20245     (Insuf)    .00000     .47536          4    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          8    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          7    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                1.9570     (Insuf)    .00000     7.0000     2.0000    
+Resource 1.NumberBusy                       .74486     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .74486     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .34960     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .34960     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .25217     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .25217     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .01737     (Insuf)    .00000     1.0000     .00000    
+Wait ship.Queue.NumberInQueue               .01908     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                .49301     (Insuf)    .00000     2.0000     1.0000    
+Server 2.Queue.NumberInQueue                .08098     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           24.000    
+Entity 1.NumberOut                          22.000    
+Resource 1.NumberSeized                     11.000    
+Resource 1.ScheduledUtilization             .74486    
+Resource 2.NumberSeized                     4.0000    
+Resource 2.ScheduledUtilization             .34960    
+Bridge.NumberSeized                         15.000    
+Bridge.ScheduledUtilization                 .25217    
+System.NumberOut                            22.000    
+
+Beginning replication 28 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 28 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .63568     (Insuf)    .05972     .98374         32    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         32    
+Entity 1.WaitTime                           .93146     (Insuf)    .00000     2.6143         32    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         32    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         32    
+Entity 1.TotalTime                          1.5671     (Insuf)    .11654     3.3443         32    
+Wait for bridge down.Queue.WaitingTime      .06048     (Insuf)    .00000     .36193         24    
+Wait ship.Queue.WaitingTime                 .16124     (Insuf)    .05505     .26743          2    
+Server 1.Queue.WaitingTime                  1.3463     (Insuf)    .00000     2.6143         14    
+Server 2.Queue.WaitingTime                  .98789     (Insuf)    .00000     2.0092         12    
+Ship crossing.Queue.WaitingTime             .00000     (Insuf)    .00000     .00000          8    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000          6    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.7387     (Insuf)    .00000     10.000     5.0000    
+Resource 1.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .87411     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .87411     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .24198     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .24198     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .14514     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .03225     (Insuf)    .00000     1.0000     .00000    
+Server 1.Queue.NumberInQueue                2.0148     (Insuf)    .00000     4.0000     1.0000    
+Server 2.Queue.NumberInQueue                1.4304     (Insuf)    .00000     3.0000     2.0000    
+Ship crossing.Queue.NumberInQueue           .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           37.000    
+Entity 1.NumberOut                          32.000    
+Resource 1.NumberSeized                     14.000    
+Resource 1.ScheduledUtilization             1.0000    
+Resource 2.NumberSeized                     12.000    
+Resource 2.ScheduledUtilization             .87411    
+Bridge.NumberSeized                         14.000    
+Bridge.ScheduledUtilization                 .24198    
+System.NumberOut                            32.000    
+
+Beginning replication 29 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 29 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .51013     (Insuf)    .05512     .95835         38    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         38    
+Entity 1.WaitTime                           .49034     (Insuf)    .00000     2.2114         38    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         38    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         38    
+Entity 1.TotalTime                          1.0004     (Insuf)    .12128     2.9570         38    
+Wait for bridge down.Queue.WaitingTime      .11173     (Insuf)    .00000     .50851         19    
+Wait ship.Queue.WaitingTime                 .21207     (Insuf)    .03904     .33900          8    
+Server 1.Queue.WaitingTime                  .91725     (Insuf)    .00000     2.1575         12    
+Server 2.Queue.WaitingTime                  .84216     (Insuf)    .00000     1.9770          9    
+Ship crossing.Queue.WaitingTime             .01904     (Insuf)    .00000     .14266         19    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000         11    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                4.9443     (Insuf)    .00000     12.000     7.0000    
+Resource 1.NumberBusy                       .88405     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .88405     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .65493     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .65493     (Insuf)    .00000     1.0000     1.0000    
+Bridge.NumberBusy                           .46480     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .46480     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .21228     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .16965     (Insuf)    .00000     3.0000     .00000    
+Server 1.Queue.NumberInQueue                1.4855     (Insuf)    .00000     4.0000     3.0000    
+Server 2.Queue.NumberInQueue                1.0369     (Insuf)    .00000     4.0000     2.0000    
+Ship crossing.Queue.NumberInQueue           .03618     (Insuf)    .00000     2.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           45.000    
+Entity 1.NumberOut                          38.000    
+Resource 1.NumberSeized                     12.000    
+Resource 1.ScheduledUtilization             .88405    
+Resource 2.NumberSeized                     9.0000    
+Resource 2.ScheduledUtilization             .65493    
+Bridge.NumberSeized                         30.000    
+Bridge.ScheduledUtilization                 .46480    
+System.NumberOut                            38.000    
+
+Beginning replication 30 of 30
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 30 of 30
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+Replication ended at time      : 10.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .53682     (Insuf)    .05339     .99124         33    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         33    
+Entity 1.WaitTime                           .25612     (Insuf)    .00000     1.1347         33    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         33    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         33    
+Entity 1.TotalTime                          .79294     (Insuf)    .07304     1.6824         33    
+Wait for bridge down.Queue.WaitingTime      .04522     (Insuf)    .00000     .22182         20    
+Wait ship.Queue.WaitingTime                 .17038     (Insuf)    .01777     .24801          3    
+Server 1.Queue.WaitingTime                  .40004     (Insuf)    .00000     1.1347         13    
+Server 2.Queue.WaitingTime                  .25466     (Insuf)    .00000     .86500          7    
+Ship crossing.Queue.WaitingTime             .00411     (Insuf)    .00000     .05339         13    
+Wait for Bridge.Queue.WaitingTime           .00000     (Insuf)    .00000     .00000         10    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                2.6167     (Insuf)    .00000     7.0000     .00000    
+Resource 1.NumberBusy                       .86654     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .86654     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .52973     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .52973     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberBusy                           .37524     (Insuf)    .00000     1.0000     .00000    
+Bridge.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Bridge.Utilization                          .37524     (Insuf)    .00000     1.0000     .00000    
+Wait for bridge down.Queue.NumberInQueue    .09044     (Insuf)    .00000     2.0000     .00000    
+Wait ship.Queue.NumberInQueue               .05111     (Insuf)    .00000     2.0000     .00000    
+Server 1.Queue.NumberInQueue                .52005     (Insuf)    .00000     2.0000     .00000    
+Server 2.Queue.NumberInQueue                .17826     (Insuf)    .00000     1.0000     .00000    
+Ship crossing.Queue.NumberInQueue           .00534     (Insuf)    .00000     1.0000     .00000    
+Wait for Bridge.Queue.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           33.000    
+Entity 1.NumberOut                          33.000    
+Resource 1.NumberSeized                     13.000    
+Resource 1.ScheduledUtilization             .86654    
+Resource 2.NumberSeized                     7.0000    
+Resource 2.ScheduledUtilization             .52973    
+Bridge.NumberSeized                         23.000    
+Bridge.ScheduledUtilization                 .37524    
+System.NumberOut                            33.000    
+
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                 Output Summary for 30 Replications
+
+Project: Unnamed Project                                             Run execution date : 2/18/2015
+Analyst: CoE IT Support                                              Model revision date: 2/18/2015
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           30.933     2.2846     21.000     48.000     30
+Entity 1.NumberOut                          28.133     1.7256     20.000     38.000     30
+Resource 1.NumberSeized                     12.033     .58406     7.0000     14.000     30
+Resource 1.ScheduledUtilization             .87226     .04365     .52350     1.0000     30
+Resource 2.NumberSeized                     7.1333     1.0862     1.0000     12.000     30
+Resource 2.ScheduledUtilization             .51856     .08510     .06603     .95985     30
+Bridge.NumberSeized                         18.033     1.6682     8.0000     30.000     30
+Bridge.ScheduledUtilization                 .28750     .02514     .14106     .46480     30
+System.NumberOut                            28.133     1.7256     20.000     38.000     30
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.

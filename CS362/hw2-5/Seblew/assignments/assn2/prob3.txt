@@ -1,0 +1,9 @@
+Unit tests performed as expected.
+ 
+When executing the card tests, I noticed that playing Smithy would only draw three cards, and that it would decrease the size of my hand with every successive play, even though I was adding it onto the end of the hand.
+
+Additionally, playing any card would increase the number of actions after playing it, instead of decreasing as expected. This gives every card an effective "+2 actions" in addition to its regular effects. However, Village doesn't add its additional action when played, it just adds one like any other, and doesn't draw a new card.
+
+The only card I tested that would decrease the actions as expected was Adventurer. After playing it with 1 action, state->numActions is 0, as expected.
+ 
+Cutpurse both doesn't add the +2 coin bonus but also treats the player as an "other player", forcing you to discard a copper, but this is not reflected in the hand composition.

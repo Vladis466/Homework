@@ -1,0 +1,28 @@
+E:\Projects\AIStudio\Release\SampleCropor.exe.config
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.exe
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.pdb
+E:\Projects\AIStudio\Release\SampleCropor.exe
+E:\Projects\AIStudio\Release\SampleCropor.pdb
+E:\Projects\AIStudio\Release\af\SampleCropor.resources.dll
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\ImageAnnotator.csprojResolveAssemblyReference.cache
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.InputForm.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.Properties.Resources.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\ImageAnnotator.csproj.GenerateResource.Cache
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.exe.licenses
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\af\SampleCropor.resources.dll
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.ImageAnnotator.resources
+E:\Projects\AIStudio\ImageAnnotator\obj\Release\SampleCropor.ImageAnnotator.af.resources
+L:\Summer Projects\Tools\Source\Release\SampleCropor.exe.config
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.exe
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.pdb
+L:\Summer Projects\Tools\Source\Release\SampleCropor.exe
+L:\Summer Projects\Tools\Source\Release\SampleCropor.pdb
+L:\Summer Projects\Tools\Source\Release\af\SampleCropor.resources.dll
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\ImageAnnotator.csprojResolveAssemblyReference.cache
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.InputForm.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.ImageAnnotator.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.Properties.Resources.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.ImageAnnotator.af.resources
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\ImageAnnotator.csproj.GenerateResource.Cache
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\SampleCropor.exe.licenses
+L:\Summer Projects\Tools\Source\ImageAnnotator\obj\Release\af\SampleCropor.resources.dll

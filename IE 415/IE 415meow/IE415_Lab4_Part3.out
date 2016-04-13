@@ -1,0 +1,262 @@
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 1 of 5
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+Replication ended at time      : 9600.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             3.2510     .13358     .00607     24.297       2780    
+Customer.NVATime                            .00000     .00000     .00000     .00000       2780    
+Customer.WaitTime                           40.071     (Corr)     .00000     133.03       2780    
+Customer.TranTime                           .00000     .00000     .00000     .00000       2780    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       2780    
+Customer.TotalTime                          43.323     (Corr)     .01045     133.84       2780    
+Process 1.Queue.WaitingTime                 40.093     (Corr)     .00000     133.03       2781    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                12.744     (Corr)     .00000     41.000     36.000    
+Server.NumberBusy                           .94178     (Corr)     .00000     1.0000     1.0000    
+Server.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Server.Utilization                          .94178     (Corr)     .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               11.802     (Corr)     .00000     40.000     35.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2816.0    
+Customer.NumberOut                          2780.0    
+Server.NumberSeized                         2781.0    
+Server.ScheduledUtilization                 .94178    
+System.NumberOut                            2780.0    
+
+Beginning replication 2 of 5
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 2 of 5
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+Replication ended at time      : 9600.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             3.2771     .09942     3.1767E-04 25.673       2768    
+Customer.NVATime                            .00000     .00000     .00000     .00000       2768    
+Customer.WaitTime                           42.217     14.274     .00000     150.29       2768    
+Customer.TranTime                           .00000     .00000     .00000     .00000       2768    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       2768    
+Customer.TotalTime                          45.494     14.309     .03209     156.04       2768    
+Process 1.Queue.WaitingTime                 42.235     14.274     .00000     150.29       2769    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                13.292     (Corr)     .00000     49.000     33.000    
+Server.NumberBusy                           .94509     (Corr)     .00000     1.0000     1.0000    
+Server.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Server.Utilization                          .94509     (Corr)     .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               12.347     (Corr)     .00000     48.000     32.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2801.0    
+Customer.NumberOut                          2768.0    
+Server.NumberSeized                         2769.0    
+Server.ScheduledUtilization                 .94509    
+System.NumberOut                            2768.0    
+
+Beginning replication 3 of 5
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 3 of 5
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+Replication ended at time      : 9600.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             3.2640     .10784     1.8116E-04 25.984       2798    
+Customer.NVATime                            .00000     .00000     .00000     .00000       2798    
+Customer.WaitTime                           35.194     12.371     .00000     170.72       2798    
+Customer.TranTime                           .00000     .00000     .00000     .00000       2798    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       2798    
+Customer.TotalTime                          38.458     12.384     .00982     182.99       2798    
+Process 1.Queue.WaitingTime                 35.188     12.371     .00000     170.72       2799    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                11.221     (Corr)     .00000     54.000     10.000    
+Server.NumberBusy                           .95169     (Insuf)    .00000     1.0000     1.0000    
+Server.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Server.Utilization                          .95169     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               10.269     (Corr)     .00000     53.000     9.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2808.0    
+Customer.NumberOut                          2798.0    
+Server.NumberSeized                         2799.0    
+Server.ScheduledUtilization                 .95169    
+System.NumberOut                            2798.0    
+
+Beginning replication 4 of 5
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 4 of 5
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+Replication ended at time      : 9600.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             3.3043     .10766     1.3571E-04 30.863       2895    
+Customer.NVATime                            .00000     .00000     .00000     .00000       2895    
+Customer.WaitTime                           76.354     (Corr)     .00000     203.80       2895    
+Customer.TranTime                           .00000     .00000     .00000     .00000       2895    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       2895    
+Customer.TotalTime                          79.658     (Corr)     .14464     206.29       2895    
+Process 1.Queue.WaitingTime                 76.359     (Corr)     .00000     203.80       2896    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                24.205     (Corr)     .00000     52.000     33.000    
+Server.NumberBusy                           .99675     (Insuf)    .00000     1.0000     1.0000    
+Server.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Server.Utilization                          .99675     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               23.209     (Corr)     .00000     51.000     32.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2928.0    
+Customer.NumberOut                          2895.0    
+Server.NumberSeized                         2896.0    
+Server.ScheduledUtilization                 .99675    
+System.NumberOut                            2895.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+Replication ended at time      : 9600.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                             3.3603     .17199     3.9984E-04 30.464       2839    
+Customer.NVATime                            .00000     .00000     .00000     .00000       2839    
+Customer.WaitTime                           205.14     (Corr)     .00000     479.21       2839    
+Customer.TranTime                           .00000     .00000     .00000     .00000       2839    
+Customer.OtherTime                          .00000     .00000     .00000     .00000       2839    
+Customer.TotalTime                          208.50     (Corr)     .28102     492.32       2839    
+Process 1.Queue.WaitingTime                 205.11     (Corr)     .00000     479.21       2840    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                62.029     (Corr)     .00000     152.00     46.000    
+Server.NumberBusy                           .99387     (Insuf)    .00000     1.0000     1.0000    
+Server.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Server.Utilization                          .99387     (Insuf)    .00000     1.0000     1.0000    
+Process 1.Queue.NumberInQueue               61.035     (Corr)     .00000     151.00     45.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           2885.0    
+Customer.NumberOut                          2839.0    
+Server.NumberSeized                         2840.0    
+Server.ScheduledUtilization                 .99387    
+System.NumberOut                            2839.0    
+
+
+                                      ARENA Simulation Results
+                                    support - License: 2957005153
+
+                                  Output Summary for 5 Replications
+
+Project: Unnamed Project                                             Run execution date : 7/22/2014
+Analyst: support                                                     Model revision date: 7/22/2014
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Customer.NumberIn                           2847.6     69.680     2801.0     2928.0     5
+Customer.NumberOut                          2816.0     64.191     2768.0     2895.0     5
+Server.NumberSeized                         2817.0     64.191     2769.0     2896.0     5
+Server.ScheduledUtilization                 .96583     .03372     .94178     .99675     5
+System.NumberOut                            2816.0     64.191     2768.0     2895.0     5
+
+Simulation run time: 0.18 minutes.
+Simulation run complete.

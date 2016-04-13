@@ -1,0 +1,25 @@
+[RESOURCES]
+Resource 1
+Resource 2
+[VARIABLES]
+ticket 1.NumberIn
+Batch 1.NumberOut
+walking.NumberIn
+ticket 1.NumberOut
+Dispose shutel.NumberOut
+Create 2.NumberOut
+walking.NumberOut
+Decide 4.NumberOut True
+got o shortest lie.NumberOut False
+Decide 4.NumberOut False
+shutel.NumberOut
+any grop in the q.NumberOut False
+ticket 2.NumberIn
+Separate 1.NumberOut Dup
+Decide 5.NumberOut True
+any grop in the q.NumberOut True
+got o shortest lie.NumberOut True
+ticket 2.NumberOut
+Dispose 3.NumberOut
+Decide 5.NumberOut False
+Separate 1.NumberOut Orig

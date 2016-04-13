@@ -1,0 +1,207 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}                                        
+
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{listings}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  basicstyle=\ttfamily,            % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=10pt,                  % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=8,                       % sets default tabsize to 8 spaces
+  %title=\lstname                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\lstdefinestyle{niceC}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=0.2in,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+%random comment
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\usepackage{hyperref}
+
+\def\name{Vlad Predovic}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs344 ``operating systems'' files filesystem I/O},
+  pdftitle = {Comparison of OS API's},
+  pdfsubject = {CS 344 Final},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+\title{Comparison of selected POSIX and Windows API}
+\subtitle{CS 344 Final, summer 2015 }
+\author{Vlad Predovic}
+\maketitle
+
+
+
+
+
+\section{Introduction}
+	Throughout this class several key topics of system programming have covered. Among these are file I/O, shell implementation with piping and redirection, 
+distributing work through threading or spawning sub-processes, and cross language server/client interaction. However, 
+if there is any key lesson to be learned about systems programming from this class it is not necessarily what can go right 
+but just how quickly everything can go wrong if system level implementations are not handled with meticulous scrutiny(they mean the same thing).
+
+	The following three sections provide a brief summary of the importance behind each tool. 
+A comparison of differences in the API implementation in POSIX and windows will then be laid out.
+Finally, these differences will be discussed, and, as in most duels to the death, a choice will be made for better implementation.
+The topics covered will be socket implementation(specifically network sockets), file I/O, and communication through Piping.
+
+
+
+\section{Sockets:}
+	Sockets were first implemented in UNIX as a method allowing autonomous processes to communicate. Most socket implementations
+at their core follow a client-server model where the server creates a socket that 'listens'
+while the client creates a socket which attempts to to connect to the former. Ultimately, information can
+be sent back and forth until the connection is interrupted.
+
+\begin{enumerate}
+  \item Set-up
+Header files used: Windows(winsock.h)			POSIX(sys/socket.h, arpa/inet.h, netinet/in.h)
+
+	For the most part, set-up of a simple socket connection is identical. Both implementations use the 'sockaddr_in'
+struct to maintain addressing data for create the connection. However, the windows implementation requires a few extra lines
+to initialize by using the WSAStartup() function. As a result, information on the WinSock implementation is stored in the WSADATA
+struct and the function serves to initialize much of the data and structures that are necessary to use the sockets.
+
+
+  \item Main Functionality
+	Both the windows API and POSIX standard use the same basic methods and calls to communicate between
+client and server.
+
+
+  \item Clean up and Error Checking \ldots
+	Since we initialize an additional struct we have to close it as well using WSAcleanup(). As for error 
+checking, POSIX relies on the errno library to set flags and report while the windows API uses 
+WSAgetlasterror() which reports the last error that occurred. Instead of directly closing the socket by
+accesing the file descriptor using close(), we use the close-socket() function.
+\end{enumerate}
+	The changes are slight between the two implementations. A few different function calls are used to 
+initialize, clean up, and error check functionality with basically the same parameters and functionality. These
+basically consist of prefixing POSIX function call names with 'WSA'(ex: WSAsend). Windows is a little cleaner 
+with only one necessary header file, and the WSAData struct can be ignored for the most part unless the user 
+specifically wants information it contains. However, windows 8 introduced specific socket API's like WinRT 
+and WebSockets, extensions used for specific purposes like high performance for developing network apps and special bi-directional web sockets.
+
+Although very similar, Windows deserves a slight edge due to having additional and more updated functionality
+which can be used for very specific purposes.
+
+
+	The use of 
+https://msdn.microsoft.com/en-us/library/ms740525(v=vs.85).aspx	
+https://msdn.microsoft.com/en-us/library/windows/desktop/ms740642(v=VS.85).aspx
+http://man7.org/linux/man-pages/man2/socket.2.html
+\section{File I/O}
+	One of the most critical aspects of an operating system is how objects interact with 
+each other and the user. File I/O(input and output) refers to the operations used to access,
+read, write, display, and manipulate standard files within the OS. 
+	
+\begin{enumerate}
+  \item Header files used: Windows()			POSIX(sys/stat.h, fcntl.h, sys/types.h)
+  
+  \item Main Functionality
+	OS functionality is to an extent defined by the fundamental needs and performance considerations 
+a working system as we know it. Due to this, many similarities can be found between the operations
+in the Windows and POSIX implementations. The CreateFile() call is the windows equivalent of the UNIX open()
+call. It also returns a file descriptor as an integer used to refer to files such as sockets/terminals/etc..
+In both versions a user must enter a pathname, access flags, and permissions. These similarites are seen throughout
+most of the function calls, at least on a superficial levels. How both operating systems achieve the similar results 
+tends to vary a little. 	
+
+  \item File Descriptors(FD)
+On both UNIX and Windows FD's map to their respective objects through a table.  
+However, FD objects in UNIX can be sent via sockets while in windows they cannot. Windows instead
+employs the function DuplicateHandle() which can be called by both the source and target processes.
+
+
+  \item Clean up and Error Checking \ldots
+http://man7.org/linux/man-pages/man2/open.2.html
+\end{enumerate}
+
+https://msdn.microsoft.com/en-us/library/windows/desktop/ms724251%28v=vs.85%29.aspx
+
+\section{Piping}
+\begin{enumerate}
+  \item Set-up
+Header files used: Windows()			POSIX()
+
+
+
+
+  \item Main Functionality
+
+
+
+  \item Clean up and Error Checking \ldots
+
+\end{enumerate}
+
+
+Redirecting: Used to pass output to a file. A redirect is an argument to a program.  What happens is that a program is ran and the output saved to a file. Then a second program  is ran using this temporary file as the input.
+
+Piping: Used to pass output to a program or utility. s pipe seperates two commands.  An example would be a program being ran and all the output will be placed in the desired program, overwriting contents if they already exist.
+
+
+
+\end{document}

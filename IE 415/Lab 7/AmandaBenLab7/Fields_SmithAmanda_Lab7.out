@@ -1,0 +1,64 @@
+
+                                      ARENA Simulation Results
+                                CoE IT Support - License: 2957005153
+
+                                  Summary for Replication 1 of 10
+
+Project: Unnamed Project                                             Run execution date : 3/ 3/2015
+Analyst: Windows User                                                Model revision date: 3/ 3/2015
+
+Replication ended at time      : 0.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                                 --         --         --         --          0
+Entity 1.NVATime                                --         --         --         --          0
+Entity 1.WaitTime                               --         --         --         --          0
+Entity 1.TranTime                               --         --         --         --          0
+Entity 1.OtherTime                              --         --         --         --          0
+Entity 1.TotalTime                              --         --         --         --          0
+Ticket 2.Queue.WaitingTime                      --         --         --         --          0
+Wait for Shuttle.Queue.WaitingTime              --         --         --         --          0
+Batch.Queue.WaitingTime                         --         --         --         --          0
+Match.Queue1.WaitingTime                        --         --         --         --          0
+Match.Queue2.WaitingTime                        --         --         --         --          0
+Ticket 1.Queue.WaitingTime                      --         --         --         --          0
+Hold 2.Queue.WaitingTime                        --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                .00000     (Insuf)    .00000     .00000     .00000    
+Resource 1.NumberBusy                       .00000     (Insuf)    .00000     .00000     .00000    
+Resource 1.NumberScheduled                  .00000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .00000     (Insuf)    .00000     .00000     .00000    
+Resource 2.NumberBusy                       .00000     (Insuf)    .00000     .00000     .00000    
+Resource 2.NumberScheduled                  .00000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .00000     (Insuf)    .00000     .00000     .00000    
+Ticket 2.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Wait for Shuttle.Queue.NumberInQueue        .00000     (Insuf)    .00000     .00000     .00000    
+Batch.Queue.NumberInQueue                   .00000     (Insuf)    .00000     .00000     .00000    
+Match.Queue1.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Match.Queue2.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+Ticket 1.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold 2.Queue.NumberInQueue                  .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           .00000    
+Entity 1.NumberOut                          .00000    
+Resource 1.NumberSeized                     .00000    
+Resource 1.ScheduledUtilization             .00000    
+Resource 2.NumberSeized                     .00000    
+Resource 2.ScheduledUtilization             .00000    
+System.NumberOut                            .00000    
+

@@ -1,0 +1,1 @@
+In dominion.c, refactored the following cards from cardEffect(): gardens, smithy, baron, great_hall, and minion. As instructed, there are at least two bugs introduced.

@@ -1,0 +1,160 @@
+\documentclass[letterpaper,10pt,titlepage]{article}
+
+\usepackage{graphicx}                                        
+
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{listings}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  basicstyle=\ttfamily,            % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=10pt,                  % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=8,                       % sets default tabsize to 8 spaces
+  %title=\lstname                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\lstdefinestyle{niceC}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=0.2in,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+%random comment
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\usepackage{hyperref}
+
+\def\name{Nels Oscar}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {cs344 ``operating systems'' files filesystem I/O},
+  pdftitle = {CS 344 Project n: Some catchy title},
+  pdfsubject = {CS 344 Project n},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+
+This is a \LaTeX\ document.
+
+\title{Homework 1 CS 344}
+
+
+\begin{enumerate}
+
+\item This provides a help message.
+
+\end{enumerate}
+
+
+\section{Problem 1:}
+One way of transferring files from a remote computer to yours and vice versa is to use secure shell, allowing a user to establish a secure connection with a remote computer in order to send and recieve information. WinSCP is a file transfer tool that uses a secure shell to allow its users to move files over a secure connection.
+
+FTP or file transfer protocol can also be used to transfer files. This is more risky because originally it did not go through a secure method such as the SSH. When an FTP connection between two machines is made machine B can prompt the remote user for a username and password. After this authentication is complete, a channel is opened for the transfer of files.
+
+Source:
+``Indiana UniversityPublic Safety and Institutional Assurance.'' Secure File Transfer Alternatives. N.p., n.d. Web. 25 June 2015.
+
+
+\section{Problem 2}
+Revision Control Systems are software implementations that automate the storing, retrieval, identification, and merging of revisions. It is used primarily for text files that are changed and manipulated often to save alot of time and reduce complexity for the user.
+
+Source:
+``Free Software Foundation!'' Rcs. N.p., n.d. Web. 25 June 2015.
+
+\section{Problem 3}
+Redirecting: Used to pass output to a file. A redirect is an argument to a program.  What happens is that a program is ran and the output saved to a file. Then a second program  is ran using this temporary file as the input.
+
+Piping: Used to pass output to a program or utility. s pipe seperates two commands.  An example would be a program being ran and all the output will be placed in the desired program, overwriting contents if they already exist.
+
+\section{problem 4}
+Make is the command that triggers the compilation of your code. Makefiles are useful because they allow you to specify some intricacies of how your code will compile. Makefiles are also efficienct because you can set them to only recompile files with errors when debugging. They also make the process of compiling your files much shorter using keywords.
+
+\section{problem 5}
+Syntax of a makefile:
+
+\begin{enumerate}
+\item:   The basic makefile has two primary parts. The target with it's dependencies and the system command. The makefile will sometimes use dependencies because if we only modify one file it is more efficienct to just recompile that file instead of everything incuded in the makefile.
+
+\item: Makefiles also use variables. You can set these equal to values at the beginning of your file and they serve the purpose of clarifying the objectives of the commands we write. We can use the mwith the deferencing operator *dollarsign*(VAR).
+
+\item: Finally, it is good practice to include a clean command at the end of your makefile to get rid of all current object files and executables. 
+\end{enumerate}
+
+source: ``Makefiles.'' Mrbooks Stuff. N.p., 29 Nov. 2008. Web. 27 June 2015.
+source: A Simple Makefile Tutorial.'' A Simple Makefile Tutorial. N.p., n.d. Web. 25 June 2015. 
+
+\section{6}
+The command 'find . -type f -print0 | xargs -0  file' will reade items from file instead of standard input. Stdin will remain unchanged. It will locate the files in the current directory and corresponding subtrees.
+
+
+
+
+
+
+\end{document}
+
+\section{8}
+Highest multiplied value: 40824
+
+\section{9}
+Total cost of the list of names: 871198282
+
+\section{10}
+
+
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{1cm}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+ label=\fbox{\color{Black}data.txt},
+ labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \vspace*{4cm}
+    \begin{flushleft}
+    {\huge
+        CS311\\[.5cm]
+    }
+    {\large
+        Assignment 2 Write-up
+    }
+    \end{flushleft}
+    \vfill
+    \rule{5in}{.5mm}\\
+    Vlad Predovic
+
+\end{titlepage}
+
+\section{Assumptions}
+\begin{itemize}
+\item Program should work with existing ar functions.
+\item permission allowances taken directly from The Linux Programming Interface.
+\item Wasn't able to add extract function on time.
+\end{itemize}
+
+\section{Design}
+
+This program attempts to mirrior a few of the key options provided by the unix command ar. This program has to be able to create an archive, append files to it, delete files, and extract them if necessary. It 
+will also have to be able to display a table of contents, printing the names or if required an extensive list of statistics for each file.
+In order to build this program I intend to have an initial main function through which I funnel each decision from the command line. Depending on the case, I will have a corresponding function to cater to
+the selected option. One of the cases however will just be a switch which will be used to print out the verbose version of the tables. Additional functions will be used to clean up duplicated code
+if necessary. I plan on using passing primarily file descriptors as arguments in order to traverse the functions.
+
+
+
+
+\section{Challenges}
+Debugging was a big issue for me throughout this project. I had multiple disconnects resulting in lost data and without the use of a powerful debugger like Visual Studio I found myself spending alot of 
+time trying to track down the cause of certain errors. Initially I attempted to write my code to be efficient with function calls throughout the project and keep things simple but this ended up overcomplicating the
+project. A final issue I had was successfully tracking down and manipulating file headers in order to smoothly add/delete files without bugging the archive.
+Overall a great learning experience.
+
+\section{Answers to Questions}
+\begin{enumerate}
+    \item
+	The main point of this assignment was to familiarize oneself with some of the lower level programming you can expect from creating operating systems. I think another great point was teaching the importance and value
+of knowing many of the built in calls and functions available to us for a variety of different purposes. Many of these utilities are available on all systems in slight different forms as they are necessary for creating the OS.
+	\item 
+	After any change I tested all functions of the program directly involved by deleting and creating different archives and comparing file sizes. It took me a while but something that proved very helpful was examining the changes in file sizes
+for the built-in archiving function and then comparing it to the results of my own. Other things I used for debugging were errno functions and many many printf statements to give me the values of variables at certain points.
+	\item
+	I learned primarily about the importance of extensive reading and planning. I don't like to think about it but I have this nagging feeling that if I had spent the first week just reading and planning the implementations by hand
+this project would have gone alot more smoothly. I also learned about how permissions work, file manipulation, and to consistently insert failure checks because things get overcomplicated fairly quickly.	
+    
+\end{enumerate}
+
+\section{Commit Log}
+
+
+\VerbatimInput{log.txt}
+\end{document}

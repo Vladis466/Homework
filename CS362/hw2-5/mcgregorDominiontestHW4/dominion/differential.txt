@@ -1,0 +1,20 @@
+I randomly chose kitchenr's code to test. After using diff on
+gameResults.out and gameResultsRerun.out, there was no difference
+found. So, I was able to run the same game more or less, with the 
+same winner. However, using diff on testdominion.out and 
+testdominionrerun.out, there was this:
+
+103,108d102
+< playCard returned -1:
+< handPos=4
+< card=11
+< choice1=0
+< choice2=4
+< choice3=-1
+
+
+So, there was one more error in my classmate's code. In particular, it is a 
+late-game error, using mine to discard something(gold?) for copper, but 
+failing for some reason. This corresponds to a bug I fixed, where the rules
+disallow trashing copper for gold, but the code disallows trashing gold for
+copper. Other than that there are identical bugs.

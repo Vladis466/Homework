@@ -1,0 +1,371 @@
+desc: (none)
+cmd: prog
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=98698
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=98749
+mem_heap_B=4016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=10771357
+mem_heap_B=4016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 4000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 4000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=4
+#-----------
+time=10771357
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=10771396
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=10771438
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=10771489
+mem_heap_B=8016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=53105445
+mem_heap_B=8016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 8016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 8000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 8000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=9
+#-----------
+time=53105445
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=53105484
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=53105526
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=53105577
+mem_heap_B=16016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=221770590
+mem_heap_B=16016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 16016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 16000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 16000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=14
+#-----------
+time=221770590
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=221770629
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=221770671
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=221770722
+mem_heap_B=32016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=895097962
+mem_heap_B=32016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 32016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 32000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 32000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=19
+#-----------
+time=895097962
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=895098001
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=895098043
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=895098094
+mem_heap_B=64016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=3585749584
+mem_heap_B=64016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 64016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 64000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 64000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 64000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=24
+#-----------
+time=3585749584
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=3585749623
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=3585749665
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=3585749716
+mem_heap_B=128016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=14343049195
+mem_heap_B=128016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 128016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 128000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 128000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 128000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=14343049195
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=14343049234
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=14343049276
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=14343049327
+mem_heap_B=256016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=57361645049
+mem_heap_B=256016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n2: 256016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 256000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 256000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 256000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=34
+#-----------
+time=57361645049
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=57361645088
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=57361645130
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=57361645181
+mem_heap_B=512016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=229414832937
+mem_heap_B=512016
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=peak
+n2: 512016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 512000 0x400691: _initDynArr (dynamicArray.c:30)
+  n1: 512000 0x400740: createDynArr (dynamicArray.c:51)
+   n0: 512000 0x400FC7: main (dynamicArrayMain.c:21)
+ n0: 16 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=39
+#-----------
+time=229414832937
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=229414832976
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
