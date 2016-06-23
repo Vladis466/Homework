@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="app_framework/3.0/af.ui.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/3.0/icons.min.css">
+        <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="galleria/galleria.classic.css">
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <meta charset="UTF-8">
+        <title>TimeStudy Application</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's screen.
+  * Note that the meta viewport approach is being phased out in favor of the @viewport CSS rule.
+  * For a quick overview of both, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see what happens, try the app on a real device with and without a "meta viewport" tag.
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; zoom: 100% ; }                           @viewport { width: 100vw ; zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; }                                    @viewport { user-zoom: fixed ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Most third-party libraries should go here. References (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <script src="intelxdk.js"></script>
+        <!-- phantom library, needed for Intel XDK "legacy" container api calls -->
+        <script src="cordova.js"></script>
+        <!-- phantom library, needed for Cordova api calls -->
+        <script src="xhr.js"></script>
+        <!-- phantom library, needed for Intel XDK "legacy" container CORS -->
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="galleria/galleria-1.3.6.min.js"></script>
+        <script type="application/javascript" src="galleria/galleria.classic.min.js"></script>
+        <script type="application/javascript" src="galleria/galleria-startup.js"></script>
+        <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+        <script type="application/javascript" src="app_framework/3.0/appframework.ui.min.js"></script>
+    </head>
+
+    <body id="afui" class="android">
+
+        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <header class="wrapping-col wrap-element uib_w_3 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-0"><a class="button backButton">Back </a>
+            <h1 class="apptitle">StudyT</h1>
+            <a class="button widget uib_w_63 d-margins header-right" data-uib="app_framework/button" data-ver="1">Clear</a>
+        </header>
+        <div id="content" class="uwrap">
+            <div class="upage vertical-col left panel" id="mainpage" data-header="af-header-0" data-footer="af-footer-0">
+
+                <div class="widget uib_w_2 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p id="frontPage">Welcome</p>
+                    </div>
+                </div>
+
+                <a class="button widget uib_w_56 d-margins" data-uib="app_framework/button" data-ver="1">Find me now!</a>
+                <a class="button widget uib_w_58 d-margins" data-uib="app_framework/button" data-ver="1">Hi There</a>
+            </div>
+            <div class="upage vertical-col left panel" id="About" data-header="af-header-0" data-footer="af-footer-0">
+
+                <div class="widget uib_w_6 d-margins PositioningText PositioningTextLeft" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>Welcome to the studyT. This application works with a centralized database and will ultimately allow you to take, share, and compare timestudies of processes in your workplace</p>
+                        <p>&nbsp;</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="Series" data-header="af-header-0" data-footer="af-footer-0">
+                <ul class="list widget uib_w_8 d-margins" data-uib="app_framework/listview" data-ver="1">
+                    <li class="widget uib_w_9" data-uib="app_framework/listitem" data-ver="1"><a href="#Position1" data-transition="fade"> Description</a>
+                    </li>
+                    <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1"><a href="#Position2" data-transition="fade">TimeStudies</a>
+                    </li>
+                    <li class="widget uib_w_11" data-uib="app_framework/listitem" data-ver="1"><a href="#Position3" data-transition="fade">Procedures</a>
+                    </li>
+                    <li class="widget uib_w_12" data-uib="app_framework/listitem" data-ver="1"><a href="#Position4" data-transition="fade">Study Instances</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="upage vertical-col panel" id="Position1" data-header="af-header-0" data-footer="af-footer-1">
+
+                <div class="widget uib_w_14 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>Interacting with the API:</p>
+                        <p>There are three seperate types of data you can access. These are the TimeStudies, TimeStudy Instances, and Procedures. For each of these you can choose to either see the current existing data or you can add TimeStudies and Procedures
+                            to the list of existing studies. Additionally, deleting a study will delete all associated procedures with it, so be careful. However, you cannot singularily delete a procedure. This was done in order to add rigidity to the
+                            process and is critical for the standardization of processes when conparing in the workplace. the system!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="upage vertical-col panel" id="Position2" data-header="af-header-0" data-footer="af-footer-2">
+
+                <div class="widget uib_w_18 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+
+                    <!-- TEXT AREA FOR TIMESTUDY NAME-->
+                </div><a class="button widget uib_w_64 d-margins" data-uib="app_framework/button" data-ver="1">Add a study</a>
+                <div class="table-thing with-label widget uib_w_66 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Study Name</label>
+                    <input id="studyName" class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+
+                <!-- TEXT AREA FOR PROCEDURE KEYS-->
+                <div class="table-thing with-label widget uib_w_67 d-margins" data-uib="app_framework/textarea" data-ver="1">
+                    <label class="narrow-control label-inline">Procedure Keys (add in each key seperated by a comma, no spaces)</label>
+                    <br>
+                    <br>
+                    <textarea id="studyKeys" class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft"></textarea>
+                </div>
+
+                <a class="button widget uib_w_59 d-margins" data-uib="app_framework/button" data-ver="1">Current TimeStudies available</a>
+
+                <div class="widget uib_w_60 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <center>
+                            <p id="studyResults"></p>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="upage vertical-col left panel" id="Position3" data-header="af-header-0" data-footer="af-footer-3">
+
+                <div class="widget uib_w_21 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p id="procedureResults"></p>
+                    </div>
+                </div>
+
+                <a class="button widget uib_w_68 d-margins" data-uib="app_framework/button" data-ver="1">Add a Procedure</a>
+                <div class="table-thing with-label widget uib_w_70 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Procedure Name</label>
+                    <input id="procName" class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <div class="table-thing with-label widget uib_w_69 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Iteration</label>
+                    <input id="procIter" class="wide-control" placeholder="Placeholder Text" type="text">
+                </div><a class="button widget uib_w_61 d-margins" data-uib="app_framework/button" data-ver="1">Current existing procedures</a>
+
+                <center>
+                    <p id="procedureResults"></p>
+                </center>
+            </div>
+
+            <div class="upage panel" id="Position4" data-header="af-header-0" data-footer="af-footer-4">
+
+                <div class="upage-content ac0 content-area vertical-col left" id="uib_page_4"><a class="button widget uib_w_71 d-margins" data-uib="app_framework/button" data-ver="1">Start a Study</a>
+                    <div class="table-thing with-label widget uib_w_72 d-margins" data-uib="app_framework/input" data-ver="1">
+                        <label class="narrow-control label-inline">Study Name</label>
+                        <input id="instName" class="wide-control" placeholder="Placeholder Text" type="text">
+                    </div>
+
+                    <a class="button widget uib_w_62 d-margins" data-uib="app_framework/button" data-ver="1">Current existing study instances</a>
+                    <div class="widget uib_w_24 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                         <div>
+
+                            <p id="instanceResults">*note: If the study does not already exist you will not be able to create a study instance.</p>
+                        </div>
+                    </div>
+                    <a class="button widget uib_w_84 d-margins" data-uib="app_framework/button" data-ver="1">Pass</a>
+                </div>
+
+                <div id="uib_page_3" class="upage-content vertical-col left hidden">
+                    <div class="widget uib_w_82 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle">
+                            <a class="button widget uib_w_83 d-margins" data-uib="app_framework/button" data-ver="1">Submit Study</a>
+                        </div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>&nbsp;</p>
+                        </div> 
+                    </div>
+                    <div class="button-grouped flex widget uib_w_85 d-margins" data-uib="app_framework/button_group" data-ver="2">
+                        <a class="button widget uib_w_86" data-uib="app_framework/button" data-ver="1" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(102, 102, 102); border-top-left-radius: 6px; border-bottom-left-radius: 6px;" value="Start"
+                        onclick="timeNow(startTime); time_object.StartTiming();" ;="" name="StartButton">Start</a>
+ 
+                        <a onclick="timeNow(endTime); time_object.EndTiming();" class="button widget uib_w_87" data-uib="app_framework/button" data-ver="1" value="Finish" ;="" name="EndButton">Finish</a>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <p>Timing Sequence
+                            </p>
+
+                            <form name="TimeDisplayForm">
+                                <input name="startTime" id="startTime" value="start time" disabled>
+                                <input name="endTime" id="endTime" value="end time" disabled>
+                                Elapsed time (in seconds):
+                                <input type="text" name="TimeDisplayBox" size="3">
+                            </form>
+
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim">
+								</span>
+                            </div>
+                        </div>
+						
+						
+						
+						
+						<div class="button-grouped flex widget uib_w_85 d-margins" data-uib="app_framework/button_group" data-ver="2">
+                        <a class="button widget uib_w_86" data-uib="app_framework/button" data-ver="1" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(102, 102, 102); border-top-left-radius: 6px; border-bottom-left-radius: 6px;" value="Start"
+                        onclick="time_object.StartTiming(); timeNow(startTime);" ;="" name="StartButton">Start</a>
+
+                        <a onclick="timeNow(endTime); time_object.EndTiming();" class="button widget uib_w_87" data-uib="app_framework/button" data-ver="1" value="Finish" ;="" name="EndButton">Finish</a>
+                    </div>
+						
+						
+						
+						
+                        <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <p>Timing Sequence
+                            </p>
+
+                            <form name="TimeDisplayForm2">
+                                <input name="startTime2" id="startTime2" value="start time" disabled>
+                                <input name="endTime2" id="endTime2" value="end time" disabled>
+                                Elapsed time (in seconds):
+                                <input type="text" name="TimeDisplayBox2" size="3">
+                            </form>
+
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim">
+								</span>
+                            </div>
+                        </div>
+						
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="upage panel" id="Resources" data-header="af-header-0" data-footer="af-footer-0">
+                <div class="upage-outer">
+                    <div class="upage-content ac0 content-area vertical-col" id="uib_page_2">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_26 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="http://vladis4661.appspot.com/" id="button1">
+                            <img>
+                            <span class="uib-caption">App Page</span>
+                        </a>
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_27 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        id="button2" href="http://proj2-1095.appspot.com/TimeStudies" data-transition="fade">
+                            <img>
+                            <span class="uib-caption">App Api</span>
+                        </a><a class="button widget uib_w_51 d-margins" data-uib="app_framework/button" data-ver="1">Secret!</a>
+                    </div>
+                    <div id="boobeer" class="upage-content vertical-col left hidden">
+                        <div class="uib-grid widget uib_w_54 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="button widget uib_w_55 d-margins" data-uib="app_framework/button" data-ver="1">Button</a>
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                </div>
+                            </div>
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container">
+
+                                </div>
+                            </div>
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="wrap-element uib_w_29" data-uib="app_framework/footer" data-ver="1" id="af-footer-0">
+                <a class="widget uib_w_35 d-margins icon home" data-uib="app_framework/button" data-ver="1" href="#mainpage" data-transition="fade" id="Home_Main">Home</a>
+                <a class="widget uib_w_36 d-margins icon info" data-uib="app_framework/button" data-ver="1" href="#About" data-transition="fade">About</a>
+                <a class="widget uib_w_37 d-margins icon star" data-uib="app_framework/button" data-ver="1" href="#Series" data-transition="fade">API</a>
+                <a class="widget uib_w_38 d-margins icon question" data-uib="app_framework/button" data-ver="1" href="#Resources" data-transition="fade">Resources</a>
+            </footer>
+            <footer class="wrap-element uib_w_31" data-uib="app_framework/footer" data-ver="1" id="af-footer-1">
+                <a class="widget uib_w_39 d-margins icon left" data-uib="app_framework/button" data-ver="1" href="#About" data-transition="fade" id="Prev_Pos1">Previous</a>
+                <a class="widget uib_w_40 d-margins icon home" data-uib="app_framework/button" data-ver="1" href="#mainpage" data-transition="fade" id="Home_Pos1">Home</a>
+                <a class="widget uib_w_41 d-margins icon right" data-uib="app_framework/button" data-ver="1" href="#Position2" data-transition="fade" id="Next_Pos1">Next</a>
+            </footer>
+            <footer class="wrap-element uib_w_32" data-uib="app_framework/footer" data-ver="1" id="af-footer-2">
+                <a class="widget uib_w_42 d-margins icon left" data-uib="app_framework/button" data-ver="1" href="#Position1" data-transition="fade" id="Prev_Pos2">Previous</a>
+                <a class="widget uib_w_43 d-margins icon home" data-uib="app_framework/button" data-ver="1" href="#mainpage" data-transition="fade" id="Home_Pos2">Home</a>
+                <a class="widget uib_w_44 d-margins icon right" data-uib="app_framework/button" data-ver="1" href="#Position3" data-transition="fade" id="Next_Pos2">Next</a>
+            </footer>
+            <footer class="wrap-element uib_w_33" data-uib="app_framework/footer" data-ver="1" id="af-footer-3">
+                <a class="widget uib_w_45 d-margins icon left" data-uib="app_framework/button" data-ver="1" href="#Position2" data-transition="fade" id="Prev_Pos3">Previous</a>
+                <a class="widget uib_w_46 d-margins icon home" data-uib="app_framework/button" data-ver="1" href="#mainpage" data-transition="fade" id="Home_Pos3">Home</a>
+                <a class="widget uib_w_47 d-margins icon right" data-uib="app_framework/button" data-ver="1" href="#Position4" data-transition="fade" id="Next_Pos3">Next</a>
+            </footer>
+            <footer class="wrap-element uib_w_34" data-uib="app_framework/footer" data-ver="1" id="af-footer-4">
+                <a class="widget uib_w_48 d-margins icon left" data-uib="app_framework/button" data-ver="1" href="#Position3" data-transition="fade" id="Prev_Pos4">Previous</a>
+                <a class="widget uib_w_49 d-margins icon home" data-uib="app_framework/button" data-ver="1" href="#mainpage" data-transition="fade" id="Home_Pos4">Home</a>
+                <a class="widget uib_w_50 d-margins icon right" data-uib="app_framework/button" data-ver="1" href="#Resources" data-transition="fade" id="Next_Pos4">Next</a>
+            </footer>
+-
+
+            <!--LOGIN PAGE -->
+            <div class="upage vertical-col left panel" id="Login_Page" data-header="none" data-footer="none" selected="true">
+                <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                    <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+
+                        <div class="galleria image-gallery-size widget uib_w_57 d-margins" data-uib="media/image_gallery" data-ver="0" data-sm-trigger="true" images-json="gallery_images/gallery_images.json">
+                        </div>
+
+                        <div class="widget-container content-area vertical-col">
+                            <div class="widget uib_w_78 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p><strong>Please Login Below </strong>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="table-thing with-label widget uib_w_75 d-margins" data-uib="app_framework/input" data-ver="1">
+                                <label class="narrow-control label-inline">Name</label>
+                                <input id="nameInput" class="wide-control" placeholder="Placeholder Text" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_77 d-margins" data-uib="app_framework/input" data-ver="1">
+                                <label class="narrow-control label-inline">Password</label>
+                                <input id="passInput" class="wide-control" placeholder="Placeholder Text" type="text">
+                            </div><a class="button widget uib_w_76 d-margins" data-uib="app_framework/button" data-ver="1">Login</a>
+                            <div class="widget uib_w_81 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div id="authResponse">
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div><span class="uib_shim"></span>
+                        </div>
+                    </div>
+                    <span class="uib_shim"></span>
+                </div>
+                <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                    <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                        <div class="widget-container content-area vertical-col">
+
+                            <div class="widget uib_w_80 d-margins PositioningText" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p><strong>For New Members</strong>&nbsp;</p>
+                                </div>
+                            </div><a class="button widget uib_w_79 d-margins" data-uib="app_framework/button" data-ver="1">Register</a><span class="uib_shim"></span>
+                        </div>
+                    </div>
+                    <span class="uib_shim"></span>
+                </div>
+            </div>
+
+        </div>
+		
+        <script type="text/javascript">
+            //<!-- Gracefully hide from old browsers
+			function timeNow(i) {
+			  var d = new Date(),
+				  h = (d.getHours()<10?'0':'') + d.getHours(),
+				  m = (d.getMinutes()<10?'0':'') + d.getMinutes(),
+				  s = (d.getSeconds()<10?'0':'') + d.getSeconds();
+			  i.value = h + ':' + m + ':' + s;
+			}           
+            // Javascript to compute elapsed time between "Start" and "Finish" button clicks
+            function timestamp_class(this_current_time, this_start_time, this_end_time, this_time_difference) { 
+                	this.this_current_time = this_current_time;
+                	this.this_start_time = this_start_time;
+                	this.this_end_time = this_end_time;
+                	this.this_time_difference = this_time_difference;
+                	this.GetCurrentTime = GetCurrentTime;
+                	this.StartTiming = StartTiming;
+                	this.EndTiming = EndTiming;
+                }
+            
+                //Get current time from date timestamp
+                function GetCurrentTime() {
+                var my_current_timestamp;
+                	my_current_timestamp = new Date();		//stamp current date & time
+                	return my_current_timestamp.getTime();
+                	}
+            
+                //Stamp current time as start time and reset display textbox
+                function StartTiming() {
+                	this.this_start_time = GetCurrentTime();	//stamp current time
+                	document.TimeDisplayForm.TimeDisplayBox.value = 0;	//init textbox display to zero
+					timeNow(document.TimeDisplayForm.startTime.value);
+                	}
+            
+                //Stamp current time as stop time, compute elapsed time difference and display in textbox
+                function EndTiming() {
+                	this.this_end_time = GetCurrentTime();		//stamp current time
+                	this.this_time_difference = (this.this_end_time - this.this_start_time) / 1000;	//compute elapsed time
+                	document.TimeDisplayForm.TimeDisplayBox.value = this.this_time_difference;	//set elapsed time in display box
+					timeNow(document.TimeDisplayForm.endTime.value);
+                	}
+            
+            var time_object = new timestamp_class(0, 0, 0, 0);  //create new time object and initialize it
+            
+            //-->
+        </script>
+    </body>
+
+</html>

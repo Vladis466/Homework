@@ -1,0 +1,69 @@
+
+eugene zhang <zhange@eecs.oregonstate.edu>
+12:54 AM (9 hours ago)
+
+to cs340-001-f15 
+Dear All,
+
+As promised, our DBA has created all the databases. Please see the instruction below.
+
+There are a couple of things:
+
+1. Please do not change your password. I may need to log in and check your data.
+
+2. Please do not save anything you do not wish me to see in the database.
+
+Have a nice weekend.
+
+Best,
+Eugene
+
+
+---------- Forwarded message ----------
+Date: Sat, 03 Oct 2015 14:47:13 -0700
+From: Michael Sander <msander@eecs.oregonstate.edu>
+To: eugene zhang <zhange@eecs.oregonstate.edu>
+Subject: Re: CS340-001 database creation
+
+Hi Eugene,
+
+Here's the list of databases I just created.
+
+DATABASES CREATED:
+Andrew Birks:cs340_birksa
+Elijah Voigt:cs340_voigte
+Vladimir Predovic:cs340_predoviv
+Sean Sung:cs340_sungs
+Molly Elliott:cs340_elliotmo
+Christopher Buttacavoli:cs340_buttacac
+Zhaoheng Wang:cs340_wangzhao
+Luay Alshawi:cs340_alshawil
+Gilderlane Ribeiro Alexandre:cs340_ribeirgi
+Bungo Takahashi:cs340_takahasb
+Here's the standard blurb...
+
+host name  mysql.cs.orst.edu
+
+Web access http://mysql.cs.orst.edu - use your ENGR user name and
+your db password (explained below)
+
+Access is only granted from the oregonstate.edu domain. It's enforced
+at the socket level by the OS on the physical db server. NO EXCEPTIONS.
+You can gain web access through the phpMyAdmin page,listed above, from
+anywhere because the db server is being accessed through the ENGR web
+server. If you try to run scripts running on an off campus server access
+to them will be denied.
+
+The username is your ENGR user name. This is a db account and
+has nothing to do with your ENGR account other than the user
+names are the same for convenience.
+
+Default pw is the last 4 digits of their OSU ID number (please change
+it the first time you access your account). If you forget your pw,
+simply e-mail support saying you forgot it and I'll reset it to the
+default. Please DO NOT e-mail me the new password. I don't want to
+know it and will not reset your account to that.
+
+I'll get your database built on Monday Eugene.
+
+Mike

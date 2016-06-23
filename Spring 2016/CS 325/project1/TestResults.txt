@@ -1,0 +1,232 @@
+Time for algorithm of length100
+0.0120000839233
+
+
+Time for algorithm of length100
+0.0120000839233
+
+
+Time for algorithm of length100
+0.00800013542175
+
+
+Time for algorithm of length100
+0.0120000839233
+
+
+Time for algorithm of length100
+0.00800013542175
+
+
+Time for algorithm of length100
+0.0120000839233
+
+
+Time for algorithm of length300
+0.216000080109
+
+
+Time for algorithm of length300
+0.22000002861
+
+
+Time for algorithm of length300
+0.211999893188
+
+
+Time for algorithm of length300
+0.211999893188
+
+
+Time for algorithm of length300
+0.211999893188
+
+
+Time for algorithm of length300
+0.21599984169
+
+
+Time for algorithm of length500
+0.960000038147
+
+
+Time for algorithm of length500
+0.951999902725
+
+
+Time for algorithm of length500
+0.960000038147
+
+
+Time for algorithm of length500
+0.947999954224
+
+
+Time for algorithm of length500
+0.955999851227
+
+
+Time for algorithm of length500
+0.951999902725
+
+
+Time for algorithm of length700
+2.62399983406
+
+
+Time for algorithm of length700
+2.59699988365
+
+
+Time for algorithm of length700
+2.57999992371
+
+
+Time for algorithm of length700
+2.65199995041
+
+
+Time for algorithm of length700
+2.62300014496
+
+
+Time for algorithm of length700
+2.62800002098
+
+Time for algorithm of length900
+5.57999992371
+
+
+Time for algorithm of length900
+5.54800009727
+
+
+Time for algorithm of length900
+5.79200005531
+
+
+Time for algorithm of length900
+5.64400005341
+
+
+Time for algorithm of length900
+5.63300013542
+
+
+Time for algorithm of length900
+5.57799983025
+
+
+Time for algorithm of length1100
+10.25
+
+
+Time for algorithm of length1300
+16.4249999523
+
+
+Time for algorithm of length1500
+25.7950000763
+
+
+Time for algorithm of length1100
+10.2849998474
+
+
+Time for algorithm of length1100
+10.2219998837
+
+
+Time for algorithm of length1100
+10.2030000687
+
+
+Time for algorithm of length1100
+10.242000103
+
+
+Time for algorithm of length1100
+10.1630001068
+
+Time for algorithm of length1300
+16.7050001621
+
+
+Time for algorithm of length1300
+16.5490000248
+
+
+Time for algorithm of length1300
+16.5169999599
+
+
+Time for algorithm of length1300
+16.6040000916
+
+
+Time for algorithm of length1300
+16.6410000324
+
+
+Time for algorithm of length1500
+25.4099998474
+
+
+Time for algorithm of length1500
+25.6530001163
+
+
+Time for algorithm of length1500
+25.5939998627
+
+
+Time for algorithm of length1500
+25.5450000763
+
+
+Time for algorithm of length1500
+25.3819999695
+
+
+
+Time for algorithm of length1700
+36.5039999485
+
+
+Time for algorithm of length1700
+36.8470001221
+
+
+Time for algorithm of length1700
+36.6019999981
+
+
+Time for algorithm of length1700
+36.3880000114
+
+Time for algorithm of length1700
+36.5590000153
+
+Time for algorithm of length1700
+36.9240000248
+
+Time for algorithm of length1900
+51.0270001888
+
+
+Time for algorithm of length1900
+51.9149999619
+
+
+Time for algorithm of length1900
+51.8740000725
+
+
+Time for algorithm of length1900
+51.367000103
+
+Time for algorithm of length1900
+51.7980000973
+
+Time for algorithm of length1900
+50.6629998684

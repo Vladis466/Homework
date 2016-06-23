@@ -1,0 +1,112 @@
+# Written by Charles Bennett, Vlad Predovic, and Conrad Lewin
+# This program runs four algorithms used to solve the maximun subarray problem 
+# Data input: from file MSS_Problems.txt 
+
+import random
+import time
+
+
+def enumeration_alg(lists, typechoice):
+	main_printlist = []
+	main_maxlist = []
+	for arr in lists:
+		t0 = time.time()			#start timer
+		max_sum=0
+		max_i=0
+		mak_j=0
+		for i in xrange(0, len(arr)):
+			# print arr[i]
+			for j in xrange(0, len(arr)):
+				curr_sum=0
+
+				for k in xrange(i, j+1):
+					curr_sum+=arr[k]
+
+				if(curr_sum > max_sum):
+					max_sum = curr_sum
+					max_i = i
+					max_j = j
+
+		printlist = []
+		for k in xrange(max_i, max_j+1):
+			printlist.append(arr[k])
+		main_printlist.append(printlist)
+
+		main_maxlist.append(max_sum)
+
+		#print printlist
+		#print max_sum
+		t1 = time.time()				#end timer
+		total = t1-t0
+		print "Time for algorithm of length" + str(len(arr))
+		print str(total) + "\n\n"
+
+	if typechoice == 1:
+		f = open('MSS_Results.txt','w')		
+		for i in xrange(0, len(main_maxlist)):
+			f.write(str(main_printlist[i])+'\n')
+			f.write(str(main_maxlist[i])+'\n\n')
+
+
+
+
+
+
+
+def main():
+	print "Hello, this program can test four different algorithms for speed."
+	print "Please enter 1 for Enumeration, 2 for Better Enumeration"
+	print "Press 3 for divide and conquer, or to use a linear-time algorithm"
+
+	choice=int(raw_input())
+
+	print "Press 1 to input from file or 2 to randomly generate a list of numbers"
+
+	dc=int(raw_input()) 
+	# list of lists in python. Like an array of arrays.
+	data=[]
+
+	if dc ==1:
+		with open('MSS_TestProblems-1.txt') as inputfile:				# replace with MSS_TestProblems-1.txt for testing. MSS_Problems for HW
+			for line in inputfile:
+				newstr=line.replace("[", "").replace("]", "")			# remove brackets when importing each line
+				if newstr != '\n':										# dont append new lines as lists.
+					data.append(map(int,newstr.strip().split(',')))		# puts each line into a list after turning it into an int, splitting it by commas
+	if dc ==2:
+		print "Enter amount of lists"
+		lamt=int(raw_input())
+		for each in xrange(lamt):
+			print "Enter size of list"
+			lsize=int(raw_input())
+			newlist=[]
+			for i in xrange(lsize):
+				newlist.append(random.randint(-100, 100))
+			data.append(newlist)
+
+
+ 	if choice == 1:
+ 		enumeration_alg(data, dc)
+ 	elif choice == 2: 
+ 		print "not completed yet"
+ 	elif choice ==3:
+ 		print "not completed yet"
+ 	elif choice == 4:
+ 		print "not completed yet"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    main()
+
