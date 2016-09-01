@@ -1,0 +1,170 @@
+Queueing Delay for a packet: [Packet # - 1]	*	packet size(L)	    /	    Transmission Rate (R)
+
+Avg Queueing Delay:  [# of packets - 1]      *     L     /     [R    *   # of packets]
+
+Propagation Delay: Distance between routers divided by propagation speed
+
+Transmission Delay: Number of bits in a packet /  rate of transmission
+
+End-to-End: ???????
+
+
+
+
+
+
+Compute the one's complement sum of the following two numbers.
+
+00000001
+11111111
+_____________ (sum it)
+100000000
+_____________ (1 goes around)
+00000001
+
+10010110
+10010000
+_____________ (sum it)
+100100110
+_____________ (1 goes around)
+00100111
+
+
+
+
+HostA has established a TCP connection with HostB in a remote network. 
+HostA is sending packets to HostB. Assume we have configured TCP, 
+somehow, to ACK every segment (no ACKing every other segment).
+HostB has already received and acknowledged everything sent by HostA’s 
+application up to and including byte #2491. 
+What is the sequence number on segment Q?
+What is the acknowledgment number on the segment sent in response to segment R?
+P: 375.0 bytes
+Q: 155.0 bytes
+R: 408.0 bytes
+________________________________________________________________________________
+Always add 1. Then add the amount necessary (in order)
+If sequence num, don't add that packet. If acknowledgement, add the packet to total
+
+
+
+
+Assume a TCP sender is continuously sending 1280.0-byte segment. 
+If a TCP receiver advertises a window size of 7281.0 bytes, 
+and with a link transmission rate 32.0 Mbps an end-to-end propagation delay of 20.7 ms, 
+what is the utilization? Assume no errors, no processing or queueing delay, and ACKs transmit instantly. 
+Also assume the sender will not transmit a non-full segment. Give answer in percentages.
+
+1.	Time to transmit 1 packet -->  L / R = (1280 * 8) / 32,000,000 = .00032s = .32ms 
+2.	Can transmit 7281 / 1280 = 5.68828 packets before wait....so 5 whole packets before wait.   .32 * 5 = 1.6ms
+3. 	RTT is 2 * 20.7 = 41.4ms
+4. 	Utilization = 1.6ms / 41.4ms + 1.6ms = 3.8
+
+
+
+
+
+
+Another example --------------------------------------------------------------------------------------------------
+
+
+This is how I solved it....
+
+We know that a packet pay load size is 1000 Bytes and the header size is 24 Bytes.  A header is added onto each packet.  So we know for every 1000 Bytes sent an extra 24 Bytes are sent as well that are not part of the original files.
+
+Statistical multiplexing is used, with details as follows
+Packet Payload Size = 1000 Bytes
+Packet Header Size = 24 Bytes (overhead)
+Since the packets are transferred in the order packet X, packet Y, packet X, packet Y etc from these two statements and we know that File Y finishes when all of File Y's packets have been transmitted and an equal number of File X's packets (since File X is bigger) have been transmitted (alternating packet transmission).  
+
+Note:  if it said streaming packet transmission ALL of File X would need to be transferred then all the packets of File Y and would result in a different answer. 
+
+Assume continuous alternating-packet transmission.
+Computer X gets the transmission medium first.
+So I chose to find how many packets there are for File Y and multiply by 2 to get the full number of packets transmitted since the same amount of X packets would have been sent (because X transmits first).  
+
+fileY is 77 KiB = 78848 Bytes
+
+78848 Bytes / 1000 Bytes per packet = 78.48 Bytes.
+
+It also states that 
+
+Assume partial packets (packets consisting of less than 1000 Bytes of data) are padded so that they are the same size as full packets.
+so this tells us to round up as the 78.48 packets will be padded to make a full 79 packets.  
+
+Each of these 79 packets is 1000 Bytes and because a header is added to them all each packet becomes 1024 Bytes.  
+
+So File Y now consists of 79 * 1024 Bytes or 80896 Bytes.
+
+Again since it is alternating we know that we sent the same number of packets of the same size for File X (since File X is bigger it will continue to transmit after File Y is finished but we only want to know the time up until File Y finishes).  
+
+So we have sent 80896 Bytes from file X and 80896 Bytes from File Y by the time File Y finishes transmitting so the total Bytes sent is 161792 (80896 + 80896).  
+
+161792 Bytes is 1294336 bits.  (multiply by 8 to get bits)
+
+so 1294336 is now our L and we can calculate L/R.
+
+Transmission rate is 91.7 Mbps or 91,700,000 bps and this is our R.
+
+1294336 / 91700000 = 0.01411 ms or 14.1 ms.
+
+ 
+
+
+
+
+Another example ----------------------------------------------------------------------------------------------------
+
+
+
+
+Suppose there are 4.0 routers in sequence between Host A and Host B, all of which use store-and-forward routing. What is the total end-to-end delay for a packet originating from Host A with destination Host B, under the following conditions.
+
+Each of the link transmission rates are 7.9 Mbps
+
+The total distance from Host A to Host B along its path of transmisison is 164.2 km
+
+The speed of propagation through the transmission medium is is 2.7 x 108 m/s
+
+The packet size is 2.0 KiB
+
+Remember that you must also uplink from Host A to the first router. Give answer in milliseconds, rounded to 1 decimal place, without units (e.g. for 0.12345 seconds you would enter "123.5" without the quotes)."
+
+The answer is 11.0
+
+
+I'm going without notes here but if you imagine the 4 routers between host A and B, there are 5 instances where we need the transmission rate (L/R):
+
+ 
+
+HostA --(L/R)-- router1 --(L/R)-- router2 --(L/R)-- router3 --(L/R)-- router4 --(L/R)-- HostB
+
+ 
+
+This gives us ( 5 * ( L / R ) ), which translates to ( 5 * ( 16384 b / 7,900,000 bps ) ).
+
+To calculate the total end-to-end delay we add propagation delay ( d / s ).
+
+We end up with:
+
+( 5 * ( 16384 b / 7,900,000 bps ) ) + ( 164,200 m / 270,000,000 m/s ) =
+
+10.3696 ms + 0.6081 ms =
+
+10.9777 which rounds up to 11.0 ms
+
+ 
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+ 

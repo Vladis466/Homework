@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Project Page</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+</head>
+<body>
+	<div id="wrap">
+        <p class="button-success pure-button">{{ message }} </p>
+		<form method="post" action="/admin" >
+		<input type="submit" value="Return to Admin Page">
+		</form><br><br>
+		
+		
+	<form method="post" action="{{ edit_url }}" enctype="multipart/form-data">
+		<input type="hidden" name="key" value="{{ channel.key.urlsafe() }}">
+        <p>Name: <input type="text" name="name" /></p>
+        <input type="hidden" name="updateVals" value="yes" >
+		<label> Design Image </label> <br>
+		<input type="radio" name="image-action" value="none">None
+		<input type="radio" name="image-action" value="remove">remove
+		<input type="radio" name="image-action" value="change">Change(select new)<br>
+		<input type="file" name="icon"><br>
+		{% if classes|length > 0 %}
+		<fieldset>
+			<legend>Associated Classes(checked)</legend>
+				{% for c in classes %}
+				<label> {{c.name }} </label><input type="checkbox" name="classes[]" value="{{c.key}}" {% if c.checked %}checked="{{ c.checked }}"{% endif %}
+				{% endfor %}
+		 </fieldset>
+		{% endif %}
+		</fieldset>
+		<br><input type="submit" value="Update">
+		</form>
+		
+		
+		<div id="Left2">
+		<ul>
+		{% for c in classes %}
+		{% if c.checked %}
+		<li>
+		<form  method="post" action='/edit?key={{ channel.key.urlsafe() }}&type=channel1'>
+		<label> {{ c.name }}:</label>			&#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+        <input type="hidden" name="chosenProc" value="{{c.key}}" >
+		<input type="submit"  name="action" value="start">
+		<input type="submit" name ="action" value="end">
+		<div id="Right2">Start Time: {{ c.start }} End Time: {{ c.end }} Total Time: {{ c.totTime }}</div>
+		</form>
+		</li><br>
+		{% endif %}
+		{% endfor %}
+		</ul>
+		</div>
+        
+		
+<br><br><br><br><br><br>
+<h2> Finished Product </h2>	
+	{% if img_url %}
+	<img src="{{ img_url }}">
+	{% endif %}
+	</div>
+    
+    
+    
+</form>
+</body>
+</html>
+
+
+<!-- Whenever you go to a url hit enter its a get request. Post is op. -->

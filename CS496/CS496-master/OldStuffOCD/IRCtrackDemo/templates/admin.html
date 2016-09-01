@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Time Study Administrator</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+</head>
+
+<body>
+	<div id="wrap">
+	<p> This resource is meant to help with designing quick and reusable time study applications for 
+	industrial environments. You can begin by creating a study and then associate the procedures that are 
+	going to make up this study</p>
+    <form action="/admin" method="post">
+          <br> <h2>Add Time Study Work Type:</h2>
+          <input type="hidden" name="action" value="add_channel">
+         <fieldset>
+          <legend>Time Study Name</legend>
+          <input type="text" name="channel-name">
+         </fieldset>
+         <fieldset>
+            <legend>Associated Procedures</legend>
+                {% for c in classes %}
+                <label> {{ c.name }} </label><input type="checkbox" name="classes[]" value="{{ c.key }}">
+                {% endfor %}
+			
+         <br><input type="submit" value="Add">
+		 </fieldset>
+    </form>
+	<br><br><br><br>
+	
+	
+	
+	
+	
+	
+	
+    <form action="/admin" method="post">
+       <h2>Add Time Study Procedure</h2>
+          <br>
+          <input type="hidden" name="action" value="add_class">
+         <fieldset>
+          <legend>Procedure Name</legend>
+          <input type="text" name="class-name">
+         </fieldset>
+         <fieldset>
+          <legend>Add Procedure</legend>
+          <input type="submit" value="Add">
+         </fieldset>
+		</form>
+<br><br><br>
+    <form action="/admin" method="post">
+        <h2>Delete Time Study Procedure</h2>
+          <input type="hidden" name="action" value="del_class">
+         <fieldset>
+          <legend>Procedure Name</legend>
+          <input type="text" name="class-name">
+         </fieldset>
+         <fieldset>
+          <legend>Delete Procedure</legend>
+          <input type="submit" value="Delete">
+         </fieldset>
+		</form>  <!-- conditional logic in jinja2, if variable called form_content gets passed in it happens. -->
+		
+
+		
+		
+    {% if channels|length > 0 %}
+    <section>
+        <h2> Edit Studies </h2>
+            {% for ch in channels %}
+             <!-- This url has to correspond to a particular channel. We have to pass the key.-->
+              <!-- This is why we went to all that trouble to 'pull out the key in admin.py'-->
+            <a href='/edit?key={{ ch.key }}&type=channel'>{{ ch.name }} <br>  </a>
+            {% endfor %}
+    </section>
+    {% endif %}
+    
+    {% if message %}
+    <section>
+        <h3> Result </h3>
+        <p>{{ message }}
+    </section>
+    {% endif %}
+
+    <p>Thanks for visiting my site.</p>
+	</div>
+</body>
+</html>
+
+
+<!-- Whenever you go to a url hit enter its a get request. Post is op. -->

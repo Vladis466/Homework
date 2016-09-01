@@ -1,0 +1,31 @@
+application: proj2-1095
+#application name. Where to deploy on google
+version: 1
+#version running (change as updating)
+runtime: python27    
+#version of python you are using
+api_version: 1
+#api version you are using. If google makes changes to python API.
+threadsafe: yes
+#If we can handle concurrent requests.
+
+
+
+handlers:      #If someone comes to a particular URL this is the thing that handles it
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /.*     
+  script: main.application  
+  
+
+  
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

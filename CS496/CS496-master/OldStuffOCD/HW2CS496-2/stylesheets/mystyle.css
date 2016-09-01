@@ -1,0 +1,53 @@
+/*Admin page*/
+
+#wrap {
+	
+	background-color: white;
+	width: 1000px;
+    margin: 0 auto;
+	text-align: center;
+}
+
+#Left {
+	position:relative;
+	float:left;
+	width: 70%;
+}
+#Right {
+	position:relative;
+	float:right;
+	width: 30%;
+	bottom: 19px;
+}
+
+
+#intro {
+	
+	background-color: green;
+	width: 1000px;
+    margin: 0 auto;
+	text-align: center;
+}
+
+.button-success {
+	background: rgb(28, 184, 65);
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/*Individual study page*/
+#Left2 {
+	text-align: left;
+	position:relative;
+	float:left;
+	
+	width: 100%;
+}
+#Right2 {
+	position:relative;
+	float:right;
+	width: 50%;
+	right: 150px;
+
+}

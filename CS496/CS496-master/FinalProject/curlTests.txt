@@ -1,0 +1,288 @@
+ Verify we can add instances of existing studies:
+
+curl --data "name=oilCar" -d "user=Vlad" -H "Accept: application/json" http://proj2-1095.appspot.com/TSinstance
+curl --data "name=oilCar" -d "user=Vlad" -H "Accept: application/json" http://localhost:8080/TSinstance
+
+FOr mapp data---------------------
+curl --data "name=oilCar" -d "choice=getAllCoords" -H "Accept: application/json" http://localhost:8080/TSinstance
+
+
+{"iteration": null, "procedures": [], "TSname": "oilCar,", "datetimeStarted": "2015-10-26T04:48:48.818000", "user": "Jerry"}
+
+Verify that it wont add instances of studies that don't exist.
+
+curl --data "name=NoStudy" -d "user=Vlad" -d "iter=1" -H "Accept: application/json" http://proj2-1095.appspot.com/TSinstance
+
+(no response)
+
+
+Verify we can add Procedures:
+
+curl --data "name=checkOil" -d "iter=0" -H "Accept: application/json" http://proj2-1095.appspot.com/studyProcedures
+curl --data "name=checkOil" -d "iter=0" -H "Accept: application/json" http://localhost:8080/studyProcedures
+{"datetimeStarted": "2015-10-26T07:23:08.148000", "Pname": "checkOil", "startTime": "07:23:08.148000", "endTime": "07:23:08.148000", "iteration": 0}
+
+Verify we can add Procedures round 2:
+curl --data "name=refillOil" -d "iter=0" -H "Accept: application/json" http://localhost:8080/studyProcedures
+curl --data "name=refillOil" -d "iter=0" -H "Accept: application/json" http://proj2-1095.appspot.com/studyProcedures
+curl --data "name=PaperWork" -d "iter=0" -H "Accept: application/json" http://localhost:8080/studyProcedures
+
+
+{"Pname": "refillOil", "datetimeStarted": "2015-10-26T18:47:47.260000", "startTime": "18:47:47.260000", "iteration": 0, "endTime": "18:47:47.260000"}
+
+
+
+
+Verify we can add multiple TimeStudies:
+curl --data "name=oilFerrari" -d "user=Vlad" -d "procedures[]=PaperWork, checkOil, refillOil" -H "Accept: application/json" http://localhost:8080/TimeStudies
+curl --data "name=oilFerrari" -d "user=Vlad" -d "procedures[]=5066549580791808, 5629499534213120, 6192449487634432" -H "Accept: application/json" http://localhost:8080/TimeStudies
+curl --data "name=oilCar" -d "user=Vlad" -d "procedures[]=5066549580791808, 5629499534213120, 6192449487634432" -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies
+
+
+
+{"name": "oilCar", "procedures": [6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528, 6682831673622528], "endFigure": null}
+
+
+Verify we can add singular TimeStudies:
+
+curl --data "name=oilCar" -d "user=Vlad" -d "procedures[]=5768037999312896" -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies
+
+{"name": "oilCar", "procedures": [5768037999312896], "endFigure": null}
+
+
+curl --data "name=oilCar" -d "user=Vlad" -d "procedures[]=6682831673622528" -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies
+
+{"name": "oilCar", "endFigure": null, "procedures": [6682831673622528]}
+
+
+Verify PUT is working and we can associate procedures to studies based on similar factors:
+
+curl -X PUT -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies/5205088045891584/proc/6682831673622528
+{"endFigure": null, "procedures": [6682831673622528], "name": "oilCar"}
+
+curl -X PUT -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies/5205088045891584/proc/6330987952734208
+{"endFigure": null, "procedures": [6682831673622528, 6330987952734208], "name": "oilCar"}
+
+
+To verify DELETE HTTP request is working by deleting a timestudy, it's associated studyProcedures, and all instances with that name. (THIS IS A BIG ONE)
+
+curl -XDELETE -H "Accept: application/json" http://proj2-1095.appspot.com/TimeStudies?name=oilCar
+
+StudyProcedures(key=Key('StudyProcedures', 6682831673622528), Pname=u'checkOil', datetimeStarted=datetime.datetime(2015, 10, 26, 7, 23, 8, 148000), endTime=datetime.time(7, 23, 8, 148000), iteration=0, startTime=datetime.time(7, 23, 8, 148000))   DELETED
+
+StudyProcedures(key=Key('StudyProcedures', 6330987952734208), Pname=u'refillOil', datetimeStarted=datetime.datetime(2015, 10, 26, 18, 47, 47, 260000), endTime=datetime.time(18, 47, 47, 260000), iteration=0, startTime=datetime.time(18, 47, 47, 260000))   DELETED
+
+TSInstance(key=Key('TSInstance', 4642138092470272), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 26, 7, 24, 33, 142000), iteration=0, user=u'Vlad')   DELETED
+
+TSInstance(key=Key('TSInstance', 4993981813358592), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 26, 4, 45, 49, 205000), iteration=None, user=u'Jerry')   DELETED
+
+TSInstance(key=Key('TSInstance', 5275456790069248), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 26, 4, 26, 1, 862000), iteration=None, user=u'Jerry')   DELETED
+
+TSInstance(key=Key('TSInstance', 5345825534246912), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 27, 3, 50, 32, 209000), iteration=1, user=u'Vlad')   DELETED
+
+TSInstance(key=Key('TSInstance', 5908775487668224), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 27, 1, 59, 2, 275000), iteration=1, user=u'Vlad')   DELETED
+
+TSInstance(key=Key('TSInstance', 6401356696911872), TSname=u'oilCar', datetimeStarted=datetime.datetime(2015, 10, 26, 4, 43, 42, 430000), iteration=None, user=u'Jerry')   DELETED
+
+
+TimeStudy Deleted, associated instances and procedures deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	user authentitcation
+
+
+
+
+
+curl --data "userName=Vlad" -d "passWord=Dad" -d "Choice=Login" -H "Accept: application/json" http://localhost:8080/UserAuth
+
+curl --data "userName=Vlad" -d "passWord=Dad" -d "Choice=Login" -H "Accept: application/json" http://localhost:8080/UserAuth
+no
+
+curl --data "userName=Vlad" -d "passWord=Vlad" -d "Choice=Register" -H "Accept: application/json" http://localhost:8080/UserAuth
+Invalid request. User already exists
+
+curl --data "userName=Vlad" -d "passWord=Vlad" -d "Choice=Login" -H "Accept: application/json" http://localhost:8080/UserAuth
+
+
+
+
+
+
+
+
+
+
+
+
+testing for updating timer data in db
+this one works for hard-coded variable input
+# '{"studyName":"SandCars","instanceProcs":{"checkOil":6330359545331712,"sanding":6309771351162880,"sandShelf":6198899186335744,"startTimecheckOil":1455007208310,"endTimecheckOil":1455007207546,"startTimesanding":1455007190363,"startTimesandShelf":1455007211081,"endTimesanding":1455007265118,"endTimesandShelf":1455007213061},"instanceKey":6238164314226688}'
+
+This one works for curling
+curl --data "name=SandCars" -d "user=t" -d "choice=updatetime" -d "procTimes={\"studyName\":\"SandCars\",\"instanceProcs\":{\"checkOil\":6330359545331712,\"sanding\":6309771351162880,\"sandShelf\":6198899186335744,\"startTimecheckOil\":1455007208310,\"endTimecheckOil\":1455007207546,\"startTimesanding\":1455007265118,\"endTimesanding\":1454658027896,\"startTimesandShelf\":1455007211081,\"endTimesandShelf\":1455007213061},\"instanceKey\":6238164314226688}" -H "Accept: application/json" http://proj2-1095.appspot.com/TSinstance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				

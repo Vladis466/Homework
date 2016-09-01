@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Time Study Administrator</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+</head>
+
+<body>
+<div id="wrap">
+
+
+    <p class="pure-button pure-button-active"> This resource is meant to help with designing quick <br> and reusable time study applications for 
+    industrial environments. <br></p>
+
+    <div id="Left">
+        <form action="/admin" method="post">
+              <br> <h2>Add Time Study Work Type:</h2>
+              <input type="hidden" name="action" value="add_study">
+             <fieldset>
+              <legend>Time Study Name</legend>
+              <input type="text" name="study-name">
+    		  <br><br><input class="pure-button pure-button-primary" type="submit" value="Add">
+             </fieldset>
+             <fieldset>
+                <legend>Available Procedures</legend>
+                    {% for c in StudyProcedures %}
+                    <label> {{ c.name }} </label><input type="checkbox" name="studies[]" value="{{ c.key }}">
+                    {% endfor %}
+    		 </fieldset>
+        </form>
+    </div>
+
+	<br>
+	<div id="Right">
+    <form action="/admin" method="post">
+          <br> <h2>Delete Study:</h2>
+          <input type="hidden" name="action" value="del_study">
+         <fieldset>
+          <legend>Time Study Name</legend>
+          <input type="text" name="study-name">
+		  <br><br><input class="pure-button pure-button-primary" type="submit" value="Delete">
+		 </fieldset>
+    </form>
+	</div>
+
+	<p class="pure-button pure-button-active"> 
+		You can begin by adding a New Time Study and checking the boxes for any procedures you want<br>
+		to associate to this time study. Additionally, you can add more procedures if you need to. The thought<br>
+		processbehind this is that in a factory setting you will be doing studies on projects that utilize the same<br>
+		elementary procedures
+	</p>
+	
+	
+	
+<div id="Left">
+    <form action="/admin" method="post">
+       <br><br><h2>Add Time Study Procedure</h2>
+          <input type="hidden" name="action" value="add_proc">
+         <fieldset>
+          <legend>Procedure Name</legend>
+          <input type="text" name="proc-name"><br><br>
+          <input class="pure-button pure-button-primary" type="submit" value="Add">
+         </fieldset>
+	</form>
+</div>
+
+<br><br><br>
+
+<div id="Right">
+    <form action="/admin" method="post">
+        <h2>Delete Procedure</h2>
+          <input type="hidden" name="action" value="del_proc">
+         <fieldset>
+          <legend>Procedure Name</legend>
+          <input type="text" name="proc-name"><br><br>
+            <input class="pure-button pure-button-primary" type="submit" value="Delete">
+         </fieldset>
+    </form>  
+</div>  
+
+<br><br><br><br><br><br>
+
+{% if TimeStudies|length > 0 %}
+<section>
+    <br><br><br>
+        <h2> Edit Studies </h2>
+            {% for st in TimeStudies %}
+            <a href='/runStudy?key={{ st.key }}&type=TSinst&user={{ currentUser }}'>{{ st.name }}  </a> &#160 &#160 <!-- How to make white space!! -->
+            {% endfor %}
+    </section>
+    {% endif %}
+    
+    {% if message %}
+    <section>
+        <h3> Result </h3>
+        <p class="button-success pure-button">{{ message }} </p>
+    </section>
+    {% endif %}
+    <br><br><br>
+
+    
+    <a class="pure-button pure-button-active" href="/"> Return To View</a>
+</div>    
+</body>
+</html>

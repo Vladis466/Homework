@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>The current time</title>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <h1>My helpful timestamp site</h1>
+    <p>It is now {{ foo }}.</p>
+    <p>It is now {{ bar }}.</p>
+    <h2>Create Account</h2> 
+
+    <form action="/" method="post">
+          Name:<br>
+          <input type="text" name="user-name">
+         <fieldset>
+          <legend>Message</legend>
+          <input type="text" name="message">
+         </fieldset>
+         <fieldset>
+          <legend>Save Message</legend>
+          <input type="submit" value="save">
+         </fieldset>
+    </form>  <!-- conditional logic in jinja2, if variable called form_content gets passed in it happens. -->
+    {% if form_content %}
+    <section>
+        <dl>
+        {% for key, value in form_content.iteritems() %}
+            <dt>
+                {{ key|e }}
+            </dt>
+            <dd>
+                {{ value|e }}
+            </dd>
+        {% endfor %}
+        <dl>
+    </section>
+    {% endif %}
+
+    <p>Thanks for visiting my site.</p>
+</body>
+</html>
+
+
+<!-- Whenever you go to a url hit enter its a get request. Post is op. -->

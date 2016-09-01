@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Time Study Administrator</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+</head>
+
+<body>
+	<div id="wrap">
+	<p class="pure-button pure-button-active"> This resource is meant to help with designing quick <br> and reusable time study applications for 
+	industrial environments. <br>You can begin by creating a study and then associate the procedures that are 
+	going to make up this study</p>
+
+
+ <fieldset>
+	<legend><h2>Currently Available Procedures</h2></legend> &#160 &#160
+		{% for c in Procedures %}
+		<label> {{ c.name }} </label>
+		{% endfor %}
+ </fieldset>
+  <br><br><br>
+  
+    {% if Procedures|length > 0 %}
+<fieldset>
+        <legend><h2> Current Studies </h2></legend>
+            {% for ch in Studies %}
+             <!-- This url has to correspond to a particular channel. We have to pass the key.-->
+              <!-- This is why we went to all that trouble to 'pull out the key in admin.py'-->
+            <a>{{ ch.name }}  </a> &#160 &#160 <!-- How to make white space!! -->
+            {% endfor %}
+
+    {% endif %}
+</fieldset>
+
+
+	
+	
+<br><br><br>
+    <form action="/admin" method="post">
+          <input type="hidden" name="action" value="login">
+         <fieldset>
+          <legend><h2>Administrate Resources</h2></legend>
+		  <br>Username<br>
+          <input type="text" name="Uname">
+          <br><br><input class="pure-button pure-button-primary" type="submit" value="Login">
+         </fieldset>
+		</form>  <!-- conditional logic in jinja2, if variable called form_content gets passed in it happens. -->
+		
+
+    <p>Thanks for visiting my site.</p>
+	</div>
+</body>
+</html>
+
+
+<!-- Whenever you go to a url hit enter its a get request. Post is op. -->
